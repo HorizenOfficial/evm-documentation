@@ -52,7 +52,7 @@ The **Receipts** contains the following information:
 
 `logs` - The array of log objects, which this transaction generated.
 
-l`ogsBloom` - The Bloom filter for light clients to quickly retrieve related logs.
+`logsBloom` - The Bloom filter for light clients to quickly retrieve related logs.
 
 `status` - It is either 1 (success) or 0 (failure).
 

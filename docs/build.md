@@ -69,4 +69,20 @@ The list of the methods supported, together with some interactive examples are a
    <td>Reserved for implementation-defined server-errors
    </td>
   </tr>
+  <tr>
+   <td>-39001
+   </td>
+   <td>Unknown block
+   </td>
+   <td>Request for a finalized or safe block before merge
+   </td>
+  </tr>
+  <tr>
+   <td>3
+   </td>
+   <td>Execution reverted
+   </td>
+   <td>JSON error code for a reverted EVM execution
+   </td>
+  </tr>
 </table>

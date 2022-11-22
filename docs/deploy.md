@@ -64,7 +64,7 @@ truffle init
 ```
 
 
-Next, In the `truffle-project` directory, create a subfolder called, `contracts/ `for your smart contract(s). Use the following sample contract, <strong><code>ForgerStakes.sol</code></strong>:
+Next, In the `truffle-project` directory, create a subfolder called, `contracts/` for your smart contract(s). Use the following sample contract, <strong><code>ForgerStakes.sol</code></strong>:
 
 
 ```
