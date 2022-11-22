@@ -11,9 +11,9 @@ You can connect to an EVM-compatible wallet such as:
 
 
 * [Cobalt](https://tokenmint.global) wallet 
-* [Metamask](https://metamask.io) wallet 
+* [MetaMask](https://metamask.io) wallet 
 
-Next, with your wallet, specify the RPC endpoint and chain Id to make a connection.
+Next, with your wallet, specify the RPC endpoint and chain ID to make a connection.
 
 
 # RPC Server
@@ -25,7 +25,7 @@ The RPC (remote procedure call) endpoint is like a node's address: it's a URL at
   <tr>
    <td><strong>Environment</strong>
    </td>
-   <td><strong>Chain Id</strong>
+   <td><strong>Chain ID</strong>
    </td>
   </tr>
   <tr>
@@ -50,16 +50,16 @@ The RPC (remote procedure call) endpoint is like a node's address: it's a URL at
 
 
 
-# Chain Id
+# Chain ID
 
-The `chainId` was introduced by Ethereum to prevent replay attacks on different networks, where every EVM-compatible blockchain should have its own and unique chain Id.
+The `chainId` was introduced by Ethereum to prevent replay attacks on different networks, where every EVM-compatible blockchain should have its own and unique chain ID.
 
 
 <table>
   <tr>
    <td><strong>Environment</strong>
    </td>
-   <td><strong>Chain Id</strong>
+   <td><strong>Chain ID</strong>
    </td>
   </tr>
   <tr>
