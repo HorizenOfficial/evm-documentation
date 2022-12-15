@@ -54,5 +54,10 @@
   --ifm-color-primary-lightest: #48baf4;
   --ifm-background-color: #0c0c1c !important;
   --ifm-navbar-background-color: #0c0c1c;
+  --ifm-toc-border-color: rgba(194, 224, 255, 0.08) !important;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+[data-theme='dark'] .navbar {
+  border-bottom: 1px solid rgba(194, 224, 255, 0.08);
 }
