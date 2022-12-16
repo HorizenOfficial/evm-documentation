@@ -41,12 +41,19 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Horizen EON Documentation',
         logo: {
           alt: 'Horizen EON Logo',
-          src: 'img/horizen-icon.svg',
+          src: 'img/HEON_logo_dark_1.svg',
+          srcDark: 'img/HEON_logo_light_1.svg',
         },
-        items: [],
+        items: [
+          {
+            type: 'doc',
+            docId: 'getting-started',
+            position: 'left',
+            label: 'Documentation',
+          },
+        ],
       },
       footer: {
         style: 'dark',
