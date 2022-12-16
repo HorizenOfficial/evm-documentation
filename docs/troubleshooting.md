@@ -3,11 +3,11 @@ sidebar_position: 5
 ---
 
 # Troubleshooting
-
+*Look at the configuration details and the collection of methods that are already available on EON (EVM).*
 
 ## JSON-RPC specification
 
-We currently support most of the methods that can be considered standard for EVM compatible chains.
+EON EVM supports most of the methods that are considered standard for EVM compatible chains.
 
 
 ## Ethereum JSON-RPC API
