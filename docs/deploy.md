@@ -3,36 +3,13 @@ sidebar_position: 4
 ---
 
 # Deploy
+*Learn how to deploy a simple Solidity-based smart contract in EON EVM Testnet using the Truffle framework.*
 
 
 ### Deploy a Contract
 
-Once you have compiled your smart contract, then you can deploy it. In this deployment example, you will use the standard ERC20 contact by [OpenZeppelin](https://www.openzeppelin.com/).
-
-Install the OpenZeppelin contract by using NPM. Run the command:
-
-
-```
-npm install @openzeppelin/contracts
-```
-
-
-Create the sample contract, [ERC20.sol](https://github.com/rocknitive/zen-sidechain-truffle/blob/master/contracts/DemoToken.sol) (below) in your `/contract` folder:
-
-
-```
-//SPDX-License-Identifier: Unlicense
-pragma solidity ^0.8.0;
-
-import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-
-contract DemoToken is ERC20 {
-    constructor() ERC20("Demo Token", "DEMO"){
-        // mint 100 tokens to the sender on deployment
-        _mint(msg.sender, 100);
-    }
-}
-```
+Once the DemoToken contract is successfully compiled, it can now be deployed. 
+However, before deploying, make sure that the account you plan to use has sufficient ZEN. See [Getting Started](https://docs.google.com/document/d/1Eg0S8f0aKUltwQyMPZiAlSzXgWuv4dbWV8G140EfLPc/edit#heading=h.7y4iolt4u3un) to install the MetaMask wallet, if needed. To deploy a contract on EON EVM Testnet, your account must have sufficient ZEN. You can get some free test ZEN by using the [**Faucet**](https://faucet.horizen.io/).
 
 
 Add the deployment script, [1_deploy_DEMOToken.js](https://github.com/rocknitive/zen-sidechain-truffle/blob/master/migrations/1_deploy_DemoToken.js)  (below) in the `/migrations` folder:
@@ -58,9 +35,13 @@ truffle migrate --network zen
 
 ### Interact with a Contract Instance
 
-To interact with your deployed contract, you first need to get the contract instance. Run the command:
+To interact with your deployed contract, you first need to get the contract instance. First, run the truffle console again by running the command:
 
+```
+truffle console --network zen
+```
 
+Then get the contract instance by running the command:
 ```
 truffle(zen)> const contract = await DemoToken.deployed()
 ```
@@ -149,13 +130,6 @@ Send ZEN from the main address to a known address.
 
 ```
 truffle(zen)> web3.eth.sendTransaction({ from: myAccounts[0], to: "0x03f14683E2f95883815f0df3C9145Efe24575163", value: 100 })
-```
-
-
-You will see the expected output:
-
-
-```
 {
   type: '0x02',
   transactionHash: '0x8577a509da611abb479bed415677e04c7083d75d96b45f4f38ad794f8b2a0799',
@@ -171,20 +145,22 @@ You will see the expected output:
   status: true,
   effectiveGasPrice: 2500000007
 }
+
 ```
 
 
 
 #### Interact with native smart contracts 
 
-There is no difference between getting an abstraction of a native smart contract and a traditional smart contract. In this exercise, you will send ZEN from the EVM sidechain address to the Horizen mainchain using web3 pages for two main functionalities (backward transfer and forgers) provided through native smart contracts. 
+There is no difference between interacting with an abstraction of a native smart contract (abstract contract or child contract created from base contract) and a traditional smart contract. In this example, you will send ZEN from an EON EVM address to the Horizen mainchain for two main functionalities (backward transfer and forgers) provided through native smart contracts.
 
 To interact with the native contract, you will use the function, **backward transfer** (also called, **withdrawal request**) at the reserved address as:
 
 <strong><code>0x0000000000000000000011111111111111111111</code></strong> 
 
-You can also send ZEN using the smart contract address and the ABI. However, in this example, a Solidity interface (below) will be used:
+You can also send ZEN using the smart contract address and the ABI. In this example, the Solidity file, **WithdrawalRequests.sol** (below) is used to demonstrate the interaction.
 
+You can obtain a copy of the [WithdrawalRequests.sol](https://github.com/rocknitive/zen-sidechain-truffle/blob/master/contracts/WithdrawalRequests.sol) file and put it in the <code>/contracts</code> folder. 
 
 ```
 // SPDX-License-Identifier: MIT
@@ -206,8 +182,13 @@ interface WithdrawalRequests {
 }
 ```
 
+To compile the contract, **WithdrawalRequests.sol**, go to the <code>contracts/</code> directory and run the command:
 
-You can now get the contract abstraction. Run the command:
+```
+truffle compile
+```
+
+Next, get the contract abstraction. Run the command:
 
 
 ```
@@ -229,7 +210,8 @@ truffle(zen)> withdrawalContract.submitWithdrawalRequest(mcAddress, { value: 100
 
 **Note:** The mcAddress needs to be defined or replaced by the string containing the Horizen mainchain address. 
 
-You will see the expected output:
+The target mainchain address of a backward transfer has to be a valid address: starting with “**zn**” for *mainnet* or “**zt**” for *testnet*.
+
 
 
 ```
@@ -246,22 +228,13 @@ You will see the expected output:
     cumulativeGasUsed: 24167,
     gasUsed: 24167,
     logs: [],
-```
-
-
-    <strong><code>logsBloom: '0x01000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000400000000000000000010000000000000008000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080000008000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000001000000000000008000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000001000000000000000000000',</code></strong>
-
-
-```
+    logsBloom: '0x01000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000400000000000000000010000000000000008000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080000008000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000001000000000000008000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000001000000000000000000000',
     status: true,
     effectiveGasPrice: 2500000007,
     rawLogs: [ [Object] ]
   },
   logs: []
 }
+
 ```
 
-
-**Note:** The target address of a backward transfer has to be a z-address (starting with “**zn**” for _mainnet_ or “**zt**” for _testnet_ network).
-
-**Note:** If your dapp requires a specific interface not available in this document, we do not guarantee it is available, but please open a ticket with as much details as possible in our Discord.
