@@ -3,23 +3,23 @@ sidebar_position: 1
 slug: /
 ---
 
-# Getting Started
+# Get Started
 
-For the EVM project, Horizen Labs has adopted Ethereum’s Account-based transaction model to represent assets as balances within accounts. The Account model has two different types of accounts; **Externally Owned Account** (**EOA**) and **Contract **accounts (which are deployed to the network and controlled by code as smart contracts).
+*Learn how to communicate with Horizen EVM (Ethereum Virtual Machine) using the JSON-RPC to retrieve data from a node.*
 
-You can connect to an EVM-compatible wallet such as:
-
-
-
-* [Cobalt](https://tokenmint.global) wallet 
-* [MetaMask](https://metamask.io) wallet 
-
-Next, with your wallet, specify the RPC endpoint and chain ID to make a connection.
+EON is Horizen Labs Ethereum Virtual Machine. EON has adopted Ethereum’s Account-based transaction model to represent assets as balances within accounts. The Account model has two different types of accounts; **Externally Owned Account** (**EOA**) and **Contract **accounts (which are deployed to the network and controlled by code as smart contracts).
 
 
-# RPC Server
+## Connect to a Wallet
 
-The RPC (remote procedure call) endpoint is like a node's address: it's a URL at which requests for blockchain data can be sent to. The Ethereum JSON-RPC specification defines some industry standard methods which you can use to retrieve data from a node.
+Connect to an EVM-compatible wallet such as [MetaMask](https://metamask.io).
+
+Once connected to MetaMask, specify the RPC endpoint and Chain ID to make a connection.
+
+
+## RPC Server
+
+The RPC (Remote Procedure Call) endpoint works as a node's address: it's a URL where requests for blockchain data can be sent to. The Ethereum JSON-RPC specification defines some industry standard methods which can be used to retrieve data from a node.
 
 
 <table>
@@ -51,7 +51,7 @@ The RPC (remote procedure call) endpoint is like a node's address: it's a URL at
 
 
 
-# Chain ID
+## Chain ID
 
 The `chainId` was introduced by Ethereum to prevent replay attacks on different networks, where every EVM-compatible blockchain should have its own and unique chain ID.
 
