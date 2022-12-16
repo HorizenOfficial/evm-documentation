@@ -57,3 +57,9 @@ The **Receipts** contains the following information:
 `status` - It is either 1 (success) or 0 (failure).
 
 **Note:** See [Receipts](https://github.com/ethereum/go-ethereum/blob/master/core/types/receipt.go) for detailed information.
+
+# HDWallet Provider 
+
+The **Truffle HDWallet Provider** is used to sign transactions for addresses derived from a 12-word mnemonic. Use the HDWallet Provider wherever a Web3 provider is needed.  
+
+See [truffle-hdwallet-provider](https://github.com/trufflesuite/truffle-hdwallet-provider) for information on installation and usage.
