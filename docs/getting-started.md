@@ -14,7 +14,7 @@ EON is Horizen Labs Ethereum Virtual Machine. EON has adopted Ethereum’s Accou
 
 Connect to an EVM-compatible wallet such as [MetaMask](https://metamask.io).
 
-Once connected to Metamask, specify the RPC endpoint and Chain ID to make a connection.
+Once connected to MetaMask, specify the RPC endpoint and Chain ID to make a connection.
 
 
 ## RPC Server

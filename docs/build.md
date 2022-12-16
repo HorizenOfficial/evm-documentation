@@ -13,7 +13,7 @@ There are many development environment tools you can use in creating and deployi
 
 This section shows how *__Truffle__* is used for implementing the smart contract examples.
 
-## Building Smart Contract: Using Truffle
+## Building Smart Contracts: Using Truffle
 
 Use Truffle to create and deploy smart contracts. Truffle is a development environment where you can develop smart contracts with its built-in testing framework, smart contract compilation, deployment, and interactive console.
 
