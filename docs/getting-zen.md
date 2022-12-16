@@ -6,7 +6,7 @@ sidebar_position: 2
 *$ZEN (Cryptocurrency) is needed to develop, stake or perform transactions on EON EVM. Learn how to get ZEN into an account.*
 
 
-# Deposit ZEN into your account
+## Deposit ZEN into your account
 
 You can choose one of the two options below to deposit some test ZEN into an account:
 

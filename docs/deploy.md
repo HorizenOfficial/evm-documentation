@@ -6,8 +6,6 @@ sidebar_position: 4
 *Learn how to deploy a simple Solidity-based smart contract in EON EVM Testnet using the Truffle framework.*
 
 
-### Deploy a Contract
-
 Once the DemoToken contract is successfully compiled, it can now be deployed. 
 However, before deploying, make sure that the account you plan to use has sufficient ZEN. See [Getting Started](https://docs.google.com/document/d/1Eg0S8f0aKUltwQyMPZiAlSzXgWuv4dbWV8G140EfLPc/edit#heading=h.7y4iolt4u3un) to install the MetaMask wallet, if needed. To deploy a contract on EON EVM Testnet, your account must have sufficient ZEN. You can get some free test ZEN by using the [**Faucet**](https://faucet.horizen.io/).
 
@@ -33,7 +31,7 @@ truffle migrate --network zen
 
 
 
-### Interact with a Contract Instance
+## Interact with a Contract Instance
 
 To interact with your deployed contract, you first need to get the contract instance. First, run the truffle console again by running the command:
 
@@ -50,7 +48,7 @@ truffle(zen)> const contract = await DemoToken.deployed()
 Next, you will get some information from the ERC20 contract by calling the token methods from [EIP-20](https://eips.ethereum.org/EIPS/eip-20). Be aware of the method names by looking at the ABI of the contract or look at the code itself. 
 
 
-#### Get the token name
+### Get the token name
 
 
 ```
@@ -60,7 +58,7 @@ truffle(zen)> contract.name()
 
 
 
-#### Get the token symbol
+### Get the token symbol
 
 
 ```
@@ -70,7 +68,7 @@ truffle(zen)> contract.symbol()
 
 
 
-#### Get the account balance 
+### Get the account balance 
 
 In this example, use the main (first) account, where 20 bytes of an account can be directly specified. 
 
@@ -88,7 +86,7 @@ BN {
 
 
 
-#### Send token to an account 
+### Send token to an account 
 
 Send 12 tokens to the following account:
 
@@ -123,7 +121,7 @@ BN { negative: 0, words: [ 88, <1 empty item> ], length: 1, red: null }
  
 
 
-#### EOA to EOA transactions 
+## EOA to EOA transactions 
 
 Send ZEN from the main address to a known address.
 
@@ -150,7 +148,7 @@ truffle(zen)> web3.eth.sendTransaction({ from: myAccounts[0], to: "0x03f14683E2f
 
 
 
-#### Interact with native smart contracts 
+## Interact with native smart contracts 
 
 There is no difference between interacting with an abstraction of a native smart contract (abstract contract or child contract created from base contract) and a traditional smart contract. In this example, you will send ZEN from an EON EVM address to the Horizen mainchain for two main functionalities (backward transfer and forgers) provided through native smart contracts.
 
@@ -198,7 +196,7 @@ undefined
 
 
 
-#### Interact with native smart instance 
+## Interact with native smart instance 
 
 To interact with a native contract instance, use the method, <strong><code>submitWithdrawalRequest</code></strong>.
 
