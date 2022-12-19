@@ -61,3 +61,11 @@
 [data-theme='dark'] .navbar {
   border-bottom: 1px solid rgba(194, 224, 255, 0.08);
 }
+
+.navbar__link {
+  font-weight: bold;
+}
+
+.navbar__logo img {
+  height: 30px;
+}
