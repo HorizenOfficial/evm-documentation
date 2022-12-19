@@ -65,3 +65,7 @@
 .navbar__link {
   font-weight: bold;
 }
+
+.navbar__logo img {
+  height: 30px;
+}
