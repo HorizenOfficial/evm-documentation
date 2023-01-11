@@ -69,3 +69,7 @@
 .navbar__logo img {
   height: 30px;
 }
+
+p:has(img) {
+  text-align: center;
+}
