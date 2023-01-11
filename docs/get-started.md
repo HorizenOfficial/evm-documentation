@@ -36,7 +36,7 @@ The RPC (Remote Procedure Call) endpoint works as a node's address: it's a URL w
    </td>
   </tr>
   <tr>
-   <td>Testnet
+   <td>Dune Testnet
    </td>
    <td>https://evm-tn-m2.horizenlabs.io/ethv1
    </td>
