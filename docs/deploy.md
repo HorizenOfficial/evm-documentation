@@ -3,11 +3,11 @@ sidebar_position: 4
 ---
 
 # Deploy
-*Learn how to deploy a simple Solidity-based smart contract in EON EVM Testnet using the Truffle framework.*
+*Learn how to deploy a simple Solidity-based smart contract in Dune Testnet using the Truffle framework.*
 
 
 Once the DemoToken contract is successfully compiled, it can now be deployed. 
-However, before deploying, make sure that the account you plan to use has sufficient ZEN. See [Get Started](/#connect-to-a-wallet) to install the MetaMask wallet, if needed. To deploy a contract on EON EVM Testnet, your account must have sufficient ZEN. You can get some free test ZEN by using the [**Faucet**](https://faucet.horizen.io/).
+However, before deploying, make sure that the account you plan to use has sufficient ZEN. See [Get Started](/#connect-to-a-wallet) to install the MetaMask wallet, if needed. To deploy a contract on Dune Testnet, your account must have sufficient ZEN. You can get some free test ZEN by using the [**Faucet**](https://faucet.horizen.io/).
 
 
 Add the deployment script, [1_deploy_DEMOToken.js](https://github.com/rocknitive/zen-sidechain-truffle/blob/master/migrations/1_deploy_DemoToken.js)  (below) in the `/migrations` folder:

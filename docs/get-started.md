@@ -7,7 +7,7 @@ slug: /
 
 _Learn how to communicate with Horizen EVM (Ethereum Virtual Machine) using the JSON-RPC to retrieve data from a node._
 
-EON is Horizen Labs' Ethereum Virtual Machine. EON has adopted Ethereum’s Account-based transaction model to represent assets as balances within accounts. The Account model has two types of accounts: **Externally Owned Account** (**EOA**) and **Contract **accounts. The Contract accounts are deployed to the network and controlled by code as smart contracts.
+EON is Horizen Labs’ Ethereum Virtual Machine. EON has adopted Ethereum’s Account-based transaction model to represent assets as balances within accounts. The Account model has two types of accounts: **Externally Owned Account** (**EOA**) and **Contract **accounts. The Contract accounts are deployed to the network and controlled by code as smart contracts.
 
 
 ## Connect to a Wallet
@@ -65,7 +65,7 @@ You can add a network to your MetaMask wallet by specifying the RPC endpoint and
 
   **Currency  symbol** - The currency symbol supported by the network. 
 
-  **Note:** For this example, ZEN is the currency symbol used. However, when you get free ZEN from the Horizen Faucet, you are actually receiving **TZEN**, as it is required for the EON Testnet network.
+  **Note:** For this example, ZEN is the currency symbol used. However, when you get free ZEN from the Horizen Faucet, you are actually receiving **TZEN**, as it is required for the Dune Testnet network.
 
   **Block explorer URL** - Optionally, add the URL address of the supported block explorer.
 
@@ -136,7 +136,7 @@ The `chainId` was introduced by Ethereum to prevent replay attacks on different 
    </td>
   </tr>
   <tr>
-   <td>Testnet
+   <td>Dune Testnet
    </td>
    <td>1661
    </td>
