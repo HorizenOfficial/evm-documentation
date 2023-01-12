@@ -92,7 +92,7 @@ The RPC (Remote Procedure Call) endpoint works as a node's address: it's a URL w
   <tr>
    <td><strong>Environment</strong>
    </td>
-   <td><strong>Chain ID</strong>
+   <td><strong>URL</strong>
    </td>
   </tr>
   <tr>
