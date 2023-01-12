@@ -69,3 +69,8 @@
 .navbar__logo img {
   height: 30px;
 }
+
+.markdown p img {
+  display: block;
+  margin: auto;
+}

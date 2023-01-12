@@ -19,13 +19,15 @@ Use Truffle to create and deploy smart contracts. Truffle is a development envir
 
 ### Prerequisites
 
-Before you can begin to deploy your smart contract, make sure you have completed the following:
+To deploy a smart contract, complete the steps below:
+
 
 
 * Install Truffle 
 * Create a project contract 
 * Compile a contract
 * Test a contract
+
 
 
 ### Install Truffle
@@ -143,7 +145,7 @@ A network is needed in order to deploy a smart contract. In the configuration fi
 
 **Note**: In the account field, replace “**word1 … word12**” with a mnemonic seed phrase for a valid wallet. Use the following [instructions](https://metamask.zendesk.com/hc/en-us/articles/360015290032-How-to-reveal-your-Secret-Recovery-Phrase) to retrieve your mnemonic seed phrase from MetaMask.
 
-The <code>network_id</code> is dependent on the environment in use and corresponds to the Chain ID. For Horizen EON Testnet, the Chain ID is **1661**.
+The <code>network_id</code> is dependent on the environment in use and corresponds to the Chain ID. For Dune Testnet, the Chain ID is **1661**.
 
 Next, add this line at the top of the file:
 
