@@ -9,7 +9,7 @@ _$ZEN (Cryptocurrency) is needed to develop, stake, or perform transactions on E
 
 ## Add ZEN to Wallet
 
-In order to deploy a smart contract, the account (in the wallet) that is associated with EON EVM requires some amount of currency for transactions. You can add tZEN to your wallet by using the **Horizen Faucet**.
+In order to deploy a smart contract, the account (in the wallet) that is associated with EON EVM requires some amount of currency for transactions. You can add TZEN to your wallet by using the **Horizen Faucet**.
 
 Perform the following steps to add TZEN to your wallet:
 
@@ -24,7 +24,7 @@ Perform the following steps to add TZEN to your wallet:
 
 
 
-3. In the **Select Testnet** field, use the pull-down menu and select **Horizen EVM Testnet**.
+3. In the **Select Testnet** field, use the pull-down menu and select **Dune Testnet**.
 4. In the Wallet Address field, paste your MetaMask wallet address.
 5. Click **Request 0.51 TZEN**.
 6. After a few minutes, check your MetaMask wallet for** TZEN**.
