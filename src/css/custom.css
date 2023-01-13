@@ -1,0 +1,76 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+ @font-face {
+  font-family: "Proxima-Nova";
+  src: local("Proxima-Nova"),
+      url(./fonts/Proxima_Nova/proxima-nova-normal.otf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Proxima-Nova";
+  src: local("Proxima-Nova-Semibold"),
+      url(./fonts/Proxima_Nova/proxima-nova-semibold.otf) format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Proxima-Nova";
+  src: local("Proxima-Nova-Bold"),
+      url(./fonts/Proxima_Nova/proxima-nova-bold.otf) format("truetype");
+  font-weight: 700;
+}
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-font-family-base: 'Proxima-Nova';
+  --ifm-color-primary: #0c7db6;
+  --ifm-color-primary-dark: #0b70a4;
+  --ifm-color-primary-darker: #0a6a9b;
+  --ifm-color-primary-darkest: #08577f;
+  --ifm-color-primary-light: #0d89c8;
+  --ifm-color-primary-lighter: #0e90d1;
+  --ifm-color-primary-lightest: #10a2ed;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='light'] {
+  --ifm-font-color-base: #242F42;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #0e9de5;
+  --ifm-color-primary-dark: #0d8dce;
+  --ifm-color-primary-darker: #0c85c3;
+  --ifm-color-primary-darkest: #0a6ea0;
+  --ifm-color-primary-light: #1aa9f1;
+  --ifm-color-primary-lighter: #26adf2;
+  --ifm-color-primary-lightest: #48baf4;
+  --ifm-background-color: #0c0c1c !important;
+  --ifm-navbar-background-color: #0c0c1c;
+  --ifm-toc-border-color: rgba(194, 224, 255, 0.08) !important;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+[data-theme='dark'] .navbar {
+  border-bottom: 1px solid rgba(194, 224, 255, 0.08);
+}
+
+.navbar__link {
+  font-weight: bold;
+}
+
+.navbar__logo img {
+  height: 30px;
+}
+
+.markdown p img {
+  display: block;
+  margin: auto;
+}
