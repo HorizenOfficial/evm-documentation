@@ -33,6 +33,10 @@ $ npm run serve
 This command serves the static content in the `build` directory.
 
 ### More Resources
+[EON Documentation Production Site](https://eon.horizen.io/docs)
+
 [Updating Public Documentation](https://horizenlabs.atlassian.net/wiki/spaces/TOOLS/pages/155058200/Updating+Public+Documentation)
-[EVM Documentation](https://horizenlabs.atlassian.net/wiki/spaces/PE/pages/128680055/EVM+Documentation)
-[Cloudflare Pages Deployment](https://horizenlabs.atlassian.net/wiki/spaces/PE/pages/133529601/Cloudflare+Pages)
+
+[EVM Documentation Guide](https://horizenlabs.atlassian.net/wiki/spaces/PE/pages/128680055/EVM+Documentation)
+
+[Cloudflare Pages Deployment Guide](https://horizenlabs.atlassian.net/wiki/spaces/PE/pages/133529601/Cloudflare+Pages)
