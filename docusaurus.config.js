@@ -7,8 +7,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Horizen EON Documentation',
-  url: 'http://hltoolstest.com/', 
-  baseUrl: '/',
+  url: 'https://eon.horizen.io',
+  baseUrl: '/docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/Horizen_EON_Favicon_256.ico',
