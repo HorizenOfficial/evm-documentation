@@ -5,13 +5,13 @@ This website is built using [Docusaurus 2](https://docusaurus.io/), a modern sta
 ### Installation
 
 ```
-$ yarn
+$ npm install
 ```
 
 ### Local Development
 
 ```
-$ yarn start
+$ npm run start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
@@ -19,23 +19,24 @@ This command starts a local development server and opens up a browser window. Mo
 ### Build
 
 ```
-$ yarn build
+$ npm run build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-### Deployment
-
-Using SSH:
+### Test Build Locally
 
 ```
-$ USE_SSH=true yarn deploy
+$ npm run serve
 ```
 
-Not using SSH:
+This command serves the static content in the `build` directory.
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
+### More Resources
+[EON Documentation Production Site](https://eon.horizen.io/docs)
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+[Updating Public Documentation](https://horizenlabs.atlassian.net/wiki/spaces/TOOLS/pages/155058200/Updating+Public+Documentation)
+
+[EVM Documentation Guide](https://horizenlabs.atlassian.net/wiki/spaces/PE/pages/128680055/EVM+Documentation)
+
+[Cloudflare Pages Deployment Guide](https://horizenlabs.atlassian.net/wiki/spaces/PE/pages/133529601/Cloudflare+Pages)
