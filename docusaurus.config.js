@@ -11,7 +11,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/Horizen_EON_Favicon_256.ico',
+  favicon: 'img/EON-favicon.svg',
 
   plugins: [
     "./matomo",
@@ -60,6 +60,7 @@ const config = {
           alt: 'Horizen EON Logo',
           src: 'img/HEON_logo_dark_1.svg',
           srcDark: 'img/HEON_logo_light_1.svg',
+          href: '/docs/',
         },
         items: [
           {
