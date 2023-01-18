@@ -20,7 +20,7 @@ Perform the following steps to add TZEN to your wallet:
 
 
 
-![alt_text](images/getting-zen/horizen-faucet.png)
+![alt_text](../static/img/docs/getting-zen/horizen-faucet.png)
 
 
 
@@ -31,7 +31,7 @@ Perform the following steps to add TZEN to your wallet:
 
 
 
-![alt_text](images/getting-zen/metamask-zen.png)
+![alt_text](../static/img/docs/getting-zen/metamask-zen.png)
 
 
 
