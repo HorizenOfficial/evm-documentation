@@ -40,7 +40,7 @@ In order to interact with smart contracts in the EVM, you need a valid EVM-compa
 
 
 
-![alt_text](../static/img/docs/get-started/metamask-acct-details.png)
+![alt_text](/img/docs/get-started/metamask-acct-details.png)
 
 
 
@@ -54,7 +54,7 @@ You can add a network to your MetaMask wallet by specifying the RPC endpoint and
 
         
 
-![alt_text](../static/img/docs/get-started/metamask-networks-dd.png)
+![alt_text](/img/docs/get-started/metamask-networks-dd.png)
 
 
 
@@ -78,7 +78,7 @@ Adding a network example:
 
 
 
-![alt_text](../static/img/docs/get-started/metamask-add-network.png)
+![alt_text](/img/docs/get-started/metamask-add-network.png)
 
 
 
