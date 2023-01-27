@@ -88,13 +88,11 @@ Adding a network example:
 
 ##### Dune Testnet
 
-Network name:  Dune Testnet
-
-New RPC URL:  https://evm-tn-m2.horizenlabs.io/ethv1 
-
-Chain ID: 1661 
-Currency symbol: ZEN
-Block Explorer: https://dune-explorer.horizen.io/
+      Network name:  Dune Testnet
+      New RPC URL:  https://evm-tn-m2.horizenlabs.io/ethv1 
+      Chain ID: 1661 
+      Currency symbol: ZEN
+      Block Explorer: https://dune-explorer.horizen.io/
 
 
 A notification stating “Dune Testnet” was successfully added, appears.
