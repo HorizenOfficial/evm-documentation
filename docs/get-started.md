@@ -86,9 +86,17 @@ Adding a network example:
 
 ![alt_text](/img/docs/get-started/metamask-add-network.png)
 
+##### Dune Testnet
+
+      Network name:  Dune Testnet
+      New RPC URL:  https://evm-tn-m2.horizenlabs.io/ethv1 
+      Chain ID: 1661 
+      Currency symbol: ZEN
+      Block Explorer: https://dune-explorer.horizen.io/
 
 
-A notification stating** “EON Testnet” was successfully added**, appears.
+A notification stating **“Dune Testnet was successfully added"**, appears.
+
 
 Once connected to MetaMask, specify the RPC endpoint and Chain ID to make a connection.
 
