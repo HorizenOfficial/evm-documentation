@@ -95,10 +95,8 @@ Adding a network example:
       Block Explorer: https://dune-explorer.horizen.io/
 
 
-A notification stating **“Dune Testnet was successfully added"**, appears.
 
-
-Once connected to MetaMask, specify the RPC endpoint and Chain ID to make a connection.
+Once you have specified the RPC endpoint and Chain ID to make a connection, a notification appears stating **“Dune Testnet was successfully added”**.
 
 
 ## RPC Server
