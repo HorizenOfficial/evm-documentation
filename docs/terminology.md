@@ -4,6 +4,31 @@ sidebar_position: 6
 
 # Terminology
 
+# Account-based Model
+
+The account-based model represents coins as balances within an account. The account model is similar to a bank account, where the balance is the result of the sum of deposits less the sum of withdrawals with no notion of the denominations composing the balance.
+
+# Account Model and State Transition
+
+During the chain advance process, multiple transactions are stored in each block. Each of those transactions produces a change in the state of at least two accounts per transaction. It would be impossible for the chain to store in each block the new state of every transaction’s involved account as a result of the previous state recorded in the previous block, as this would lead to an enormous and unsustainable amplification of storage space and network traffic. This problem is solved by having the state be represented in the form of Patricia Merkle Trie for which the root of the trie results from the application of all transactions in the header of the block.
+
+When nodes synchronize with the tip of the chain they need to ensure that the application of the consensus rules produce the same value of the state root as recorded in each block header.
+
+# Backward Transfer
+
+The sidechain initiates a backward transfer, where special transactions are batched in withdrawal certificates. The transactions are then propagated to the mainchain by sidechain nodes.
+
+# Forger Stake
+
+The Forger Stake is the amount of ZEN locked in the EON sidechain that gives the node operator proportional chances to be the forger of the next block, on the basis of the total ZEN staked in the sidechain.
+
+In EON the procedure for staking is handled using a precompiled message processor (or Native Contract). 
+
+# Forward Transfer
+
+A forward transfer moves ZEN from the mainchain to one of its sidechains. These transactions, specifically the transaction outputs, are unspendable on the mainchain, but include some metadata so they are redeemable on one sidechains. 
+
+
 
 # Gas 
 
@@ -19,7 +44,7 @@ After EIP-1559, it is `baseFeePergas + min(maxFeePerGas - baseFeePerGas, maxPrio
 `Legacy` and EIP-2930 transactions are coerced into the EIP-1559 format by setting both `maxFeePerGas` and `maxPriorityFeePerGas` as the transaction's gas price.
 
 
-# Base Fees
+# Fees (Base)
 
 An important aspect of this fee system is that miners only get to keep the priority fee. In Horizen EVM the base fee is not burned like in Ethereum, but it goes instead in a shared pool to be redistributed among the forgers. This will contribute just like in Ethereum in reducing risks of attacks (an attacker doesn’t have immediate benefit from the block rewards, only the priority fee), but also considers fees as part of the economic incentive for validators. 
 
@@ -29,6 +54,22 @@ On Proof-of-Stake risks are mitigated and anyway handled the way described above
 
 **Note: **See [Base Fees](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1559.md) and [Fees in EIP-1559](https://www.blocknative.com/blog/eip-1559-fees) for additional information.
 
+
+# HDWallet Provider 
+
+The **Truffle HDWallet Provider** is used to sign transactions for addresses derived from a 12-word mnemonic. Use the HDWallet Provider wherever a Web3 provider is needed.  
+
+See [truffle-hdwallet-provider](https://github.com/trufflesuite/truffle-hdwallet-provider) for information on installation and usage.
+
+# Message Processor
+
+A message processor is code that executes once a transaction is received. In EON, there are many message processors, one is the EVM, which executes the smart contracts transactions, for example.
+
+# Native Contract
+
+A Native or pre-compiled Contract is the name Horizen has assigned to the custom message processors that the Horizen SDK gives the possibility of building.
+ 
+The Message Processors for **Backward Transfer Contract** and **Forging Stake Contract** are Native Contracts.
 
 # Receipts
 
@@ -58,8 +99,16 @@ The **Receipts** contains the following information:
 
 **Note:** See [Receipts](https://github.com/ethereum/go-ethereum/blob/master/core/types/receipt.go) for detailed information.
 
-# HDWallet Provider 
+# Transactions
 
-The **Truffle HDWallet Provider** is used to sign transactions for addresses derived from a 12-word mnemonic. Use the HDWallet Provider wherever a Web3 provider is needed.  
+Transactions are cryptographically signed data messages that contain a set of instructions. They are initiated by EOAs (externally-owned accounts) and transform the state of the EVM, which are broadcasted to the entire network. Transactions require a fee, known as **gas**. 
 
-See [truffle-hdwallet-provider](https://github.com/trufflesuite/truffle-hdwallet-provider) for information on installation and usage.
+There are several types of transactions:
+* Regular transactions, where transactions are from one account to another
+* Contract deployment transactions: transactions without a to address, where the contract code is sent to the data field
+* Execution of a contract: transactions that interact with a deployed smart contract, where the to address is the smart contract
+
+
+
+
+
