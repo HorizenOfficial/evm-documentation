@@ -14,6 +14,24 @@ During the chain advance process, multiple transactions are stored in each block
 
 When nodes synchronize with the tip of the chain they need to ensure that the application of the consensus rules produce the same value of the state root as recorded in each block header.
 
+
+# Account State (Methods of)
+
+While Horizen’s implementation of the Account State for updating account balances is fully compatible with the one implemented in Ethereum (including complete compatibility with Ethereum’s VM), new transaction types are designed to implement the Zendoo paradigm fully. 
+
+The following methods are provided for:
+
+* The transfer of funds from mainchain to the EVM compatible sidechain (Forward Transfer)
+* The transfer of funds from EVM compatible sidechain back to mainchain (Backward Transfer)
+* The lock of funds into a stake for accounts willing to participate to the forging of new blocks (our sidechain implements Ouroboros PoS consensus instead of Ethereum’s Casper)
+
+While the first bullet depicts a special transaction originating on the mainchain, which is acquired by the sidechain, while the other two are implemented using **two special functions** which are **NOT** executed by the EVM but rather by custom Message Processors. 
+Given their implementation in Java, all special functions can be treated from the user perspective as normal Smart Contracts, even if their code implementation is not stored on-chain and is not deployed at runtime (pre-compiled).
+
+To address the two special functions, we are calling them ”contracts” because of the similarities. These contracts (Native Contracts) are arbitrarily defined by Horizen and are hard-coded into node implementation when a transaction has any of the two recorded as destination. If in a transaction, the destination address corresponds to one of the predefined Message Processors, that special function will be invoked instead of the EVM.
+
+
+
 # Backward Transfer
 
 The sidechain initiates a backward transfer, where special transactions are batched in withdrawal certificates. The transactions are then propagated to the mainchain by sidechain nodes.
@@ -104,9 +122,12 @@ The **Receipts** contains the following information:
 Transactions are cryptographically signed data messages that contain a set of instructions. They are initiated by EOAs (externally-owned accounts) and transform the state of the EVM, which are broadcasted to the entire network. Transactions require a fee, known as **gas**. 
 
 There are several types of transactions:
-* Regular transactions, where transactions are from one account to another
-* Contract deployment transactions: transactions without a to address, where the contract code is sent to the data field
-* Execution of a contract: transactions that interact with a deployed smart contract, where the to address is the smart contract
+* Regular transactions: where transactions are from one account to another
+* Contract deployment transactions: transactions without a **to** address, where the contract code is sent to the **data** field
+* Execution of a Smart Contract: transactions that interact with a deployed smart contract, where the **to** address is the smart contract
+* Execution of the code of a Native Contract: transactions that interact with a pre-compiled smart contract written in Java, where the **to** address is written in the code
+
+
 
 
 
