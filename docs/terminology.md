@@ -25,7 +25,7 @@ The following methods are provided for:
 * The transfer of funds from EVM compatible sidechain back to mainchain (Backward Transfer)
 * The lock of funds into a stake for accounts willing to participate to the forging of new blocks (our sidechain implements Ouroboros PoS consensus instead of Ethereum’s Casper)
 
-While the first bullet depicts a special transaction originating on the mainchain, which is acquired by the sidechain, while the other two are implemented using **two special functions** which are **NOT** executed by the EVM but rather by custom Message Processors. 
+While the first bullet depicts a special transaction originating on the mainchain, which is acquired by the sidechain, the other two are implemented using **two special functions** which are **NOT** executed by the EVM but rather by custom Message Processors. 
 Given their implementation in Java, all special functions can be treated from the user perspective as normal Smart Contracts, even if their code implementation is not stored on-chain and is not deployed at runtime (pre-compiled).
 
 To address the two special functions, we are calling them ”contracts” because of the similarities. These contracts (Native Contracts) are arbitrarily defined by Horizen and are hard-coded into node implementation when a transaction has any of the two recorded as destination. If in a transaction, the destination address corresponds to one of the predefined Message Processors, that special function will be invoked instead of the EVM.
@@ -44,7 +44,7 @@ In EON the procedure for staking is handled using a precompiled message processo
 
 # Forward Transfer
 
-A forward transfer moves ZEN from the mainchain to one of its sidechains. These transactions, specifically the transaction outputs, are unspendable on the mainchain, but include some metadata so they are redeemable on one sidechains. 
+A forward transfer moves ZEN from the mainchain to one sidechain. These transactions, specifically the transaction outputs, are unspendable on the mainchain, but include some metadata so they are redeemable on one sidechains. 
 
 
 
