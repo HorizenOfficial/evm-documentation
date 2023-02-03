@@ -3,7 +3,7 @@ sidebar_position: 3
 ---
 
 # Plan
-General information describing Stateful model and Accounts, with a comparison highlighting the major differences from stateless chains.
+*General information describing Stateful model and Accounts, with a comparison highlighting the major differences from stateless chains.*
 # Inside EON
 
 For the EVM project, Horizen Labs has adopted Ethereum’s Account-based transaction model to represent assets as balances within accounts.
