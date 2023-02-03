@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+title: Get Started
 slug: /
 description: Dive into the official Horizen EON documentation portal to learn how to communicate, interact, and build on Horizen’s EVM sidechain.
 ---
@@ -8,7 +9,6 @@ description: Dive into the official Horizen EON documentation portal to learn ho
   <title>Horizen EON Documentation</title>
 </head>
 
-# Get Started
 
 _Learn how to communicate with Horizen EVM (Ethereum Virtual Machine) using the JSON-RPC to retrieve data from a node._
 
