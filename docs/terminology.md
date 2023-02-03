@@ -10,9 +10,9 @@ The account-based model represents coins as balances within an account. The acco
 
 # Account Model and State Transition
 
-During the chain advance process, multiple transactions are stored in each block. Each of those transactions produces a change in the state of at least two accounts per transaction. It would be impossible for the chain to store in each block the new state of every transaction’s involved account as a result of the previous state recorded in the previous block, as this would lead to an enormous and unsustainable amplification of storage space and network traffic. This problem is solved by having the state be represented in the form of Patricia Merkle Trie for which the root of the trie results from the application of all transactions in the header of the block.
+During the chain advance process, each block stores multiple transactions. Each transaction changes the state of at least two accounts per transaction. It would be impossible for the chain to keep the new state of every transaction's account history and the previously recorded state in each block. This storage issue would lead to enormous and unsustainable storage space and network traffic amplification. Representing the state in Patricia Merkle Trie, for which the root of trie results from applying all transactions in the block's header, would solve this problem.
 
-When nodes synchronize with the tip of the chain they need to ensure that the application of the consensus rules produce the same value of the state root as recorded in each block header.
+When nodes synchronize with the tip of the chain, they need to ensure that the application of the consensus rules produces the exact value of the state root as recorded in each block header.
 
 
 # Account State (Methods of)
