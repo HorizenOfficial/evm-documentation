@@ -142,6 +142,8 @@ A network is needed in order to deploy a smart contract. In the configuration fi
 …
 ```
 
+**WARNING:** The use and storage of your mnemonic seed phrase is your **sole responsibility**.
+
 
 **Note**: In the account field, replace “**word1 … word12**” with a mnemonic seed phrase for a valid wallet. Use the following [instructions](https://metamask.zendesk.com/hc/en-us/articles/360015290032-How-to-reveal-your-Secret-Recovery-Phrase) to retrieve your mnemonic seed phrase from MetaMask.
 
