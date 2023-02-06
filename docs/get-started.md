@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
-slug: /
 title: Get Started
+slug: /
 description: Dive into the official Horizen EON documentation portal to learn how to communicate, interact, and build on Horizen’s EVM sidechain.
 image: /img/MetaData_img_blueprint_eon-doc.jpg
 ---
@@ -10,7 +10,6 @@ image: /img/MetaData_img_blueprint_eon-doc.jpg
   <title>Horizen EON Documentation</title>
 </head>
 
-# Get Started
 
 _Learn how to communicate with Horizen EVM (Ethereum Virtual Machine) using the JSON-RPC to retrieve data from a node._
 
@@ -96,10 +95,8 @@ Adding a network example:
       Block Explorer: https://dune-explorer.horizen.io/
 
 
-A notification stating **“Dune Testnet was successfully added"**, appears.
 
-
-Once connected to MetaMask, specify the RPC endpoint and Chain ID to make a connection.
+Once you have specified the RPC endpoint and Chain ID to make a connection, a notification appears stating **“Dune Testnet was successfully added”**.
 
 
 ## RPC Server
