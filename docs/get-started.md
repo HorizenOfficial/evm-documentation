@@ -3,7 +3,8 @@ sidebar_position: 1
 title: Get Started
 slug: /
 description: Dive into the official Horizen EON documentation portal to learn how to communicate, interact, and build on Horizen’s EVM sidechain.
-image: /img/MetaData_img_blueprint_eon-doc.jpg
+image: https://eon.horizen.io/img/MetaData_img_blueprint_eon-doc.jpg
+
 ---
 
 <head>
