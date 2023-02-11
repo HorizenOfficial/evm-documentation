@@ -294,7 +294,7 @@ Perform the following steps to compile your contract:
 
 1. In the **Icon panel**, click the **Solidity Compiler** icon. 
 2. The Solidity Compiler appears in the Side panel. 
-3. Click **Compile <Your contract file name>**. In this example, the filename is *MyProjectContract.sol*.
+3. Click **Compile &lt;Your contract file name&gt;**. In this example, the filename is *MyProjectContract.sol*.
 
 ![alt_text](/img/docs/build/soliditycompiler.png)
 
@@ -337,7 +337,7 @@ The **Value** field is always reset to 0 after each transaction execution. This 
 
 3. Click **Deploy**. The **Deployed Contract** pane displays your contract set as TESTCONTRACT and location. This indicates that your smart contract is deployed and ready for interaction.
 
-![alt_text](/img/docs/build/deployedcontract.png)
+![alt_text](/img/docs/build/deployedcontracts.png)
 
 ### Interact with a Contract Instance
 
@@ -382,4 +382,4 @@ If any issues arise, the Remix IDE will provide a status notification before con
 
 4. Click **transact**. The Terminal panel displays a success status for the interaction with your smart contract.
 
-![alt_text](/img/docs/<doc-section-name>/successmessage.png)
+![alt_text](/img/docs/build/successmessage.png)
