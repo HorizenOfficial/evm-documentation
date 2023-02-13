@@ -355,7 +355,7 @@ Upon expanding the pane, your contract instance displays three actions that corr
 
 **SetNP (orange button)** - This is a non-payable function, where it is not possible to send value (ZEN) to the contract.
 
-**get (blue button)** - The get function does not execute a transaction, therefore it does not change the state (the value variable in your contract) of your contact instance. However, it is a view function and a return value is shown.
+**get (blue button)** - The get function does not execute a transaction, therefore it does not change the state (the value variable in your contract) of your contract instance. However, it is a view function and a return value is shown.
 
 2. Click on the **down arrow** next to the **setP** field to expand the function.
 
