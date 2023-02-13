@@ -311,7 +311,7 @@ Perform the following steps to run and deploy your smart contract:
 2. For EON, configure the **Deploy and Run module** settings with the following:
 
 **Environment** - Click the drop-down menu to select the **Injected Provider** option.
-This option allows Remix to use your wallet (e.g. Metamask). Your wallet must be active and running.  The Environment option details information about your wallet, such as the ChainID
+This option allows Remix to use your wallet (e.g. Metamask). Your wallet must be active and running.  The Environment option details information about your wallet, such as the ChainID.
 
 **Note:** Make sure that **Dune Testnet** is selected as the current environment in your wallet. See [Get Started](https://eon.horizen.io/docs/) chapter for details on configuring Dune Testnet to your wallet.
 
@@ -322,7 +322,7 @@ By default, the **Remix VM** (previously called JavaScript VM) is used to connec
 
 **Gas Limit** - This field sets the maximum amount of gas that will be allowed for all the transactions created in Remix. The Gas Limit value can be **ignored** at this time.
 
-**Value** - This field sets the amount of **ZEN**. Given that Remix is a tool for Ethereum, the tokens listed in the drop-down menu reflect the amount of digit you wish to use for the value that is sent to a contract or a payable function.
+**Value** - This field sets the amount of **ZEN**. Given that Remix is a tool for Ethereum, the tokens listed in the drop-down menu reflect the amount of digits you wish to use for the value that is sent to a contract or a payable function.
 
 Select one of the symbol you wish for the ZEN token conversion:
 
@@ -353,7 +353,7 @@ Upon expanding the pane, your contract instance displays three actions that corr
 
 **SetP(red button)** - This is a payable function that sends value (ZEN) to the contract instance.
 
-**SetPN (orange button)** - This is a non-payable function, where it is not possible to send value (ZEN) to the contract.
+**SetNP (orange button)** - This is a non-payable function, where it is not possible to send value (ZEN) to the contract.
 
 **get (blue button)** - The get function does not execute a transaction, therefore it does not change the state (the value variable in your contract) of your contact instance. However, it is a view function and a return value is shown.
 
