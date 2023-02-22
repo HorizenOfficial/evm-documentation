@@ -11,7 +11,7 @@ sidebar_position: 4
 
 There are many development environment tools you can use in creating and deploying a smart contract. For EON, the use of **Truffle**, **Hardhat**, or **Remix IDE** are highly recommended.
 
-This section shows how *__Truffle__* is used for implementing the smart contract examples.
+This section shows how *__Truffle__* and *__Hardhat__*are used for implementing the smart contract examples.
 
 ## Building Smart Contracts: Using Truffle
 
@@ -208,3 +208,210 @@ truffle(zen)> web3.eth.getChainId()
 truffle(zen)> web3.eth.getGasPrice()
 "7"
 ```
+
+## Building Smart Contracts: Using Hardhat
+
+When using the Hardhat development tool, you will use the main component Hardhat Runner to interact with in creating and deploying your smart contract. 
+
+**Note:** See the [Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started#overview) website for detailed information on installing and using Hardhat Runner.
+
+### Prerequisites
+**Note:** Hardhat recommends that you use TypeScript or JavaScript for the setup of your project, testing, and deployment of your contracts. However, the steps that you will be performing use TypeScript in the instructions.
+
+Before you can begin to deploy your smart contract, make sure you have completed the following:
+
+* Install Hardhat
+* Create a project 
+* Compile a contract
+
+
+Afterwards, you can deploy a smart contract and then connect to your dApp.
+
+**Important:** The following instructions to perform the prerequisites listed above should first be completed. Once you are comfortable using Hardhat, then you can perform the same tasks using the smart contract(s) that you actually created.
+
+### Install Hardhat
+
+To install Hardhat, you first need to install the following to your localhost:
+
+**NodeJS (v14.17.0)** -  Install the long-term support (LTS) version. This bundle includes npm.
+
+**Yarn** - Yarn is used to install and run itself in your JavaScript projects. 
+
+```
+npm install -g yarn
+```
+Install the Hardhat library in your localhost. Run the command:
+
+```
+npm install --save hardhat 
+```
+
+### Create a Project
+Create a new folder for your NPM project. Run the command:
+
+```
+npm init
+```
+To create a smart contract project (in your project folder), run the command:
+
+```
+npx hardhat 
+```
+You will see the following:
+
+$ npx hardhat
+```
+888    888                      888 888               888
+888    888                      888 888               888
+888    888                      888 888               888
+8888888888  8888b.  888d888 .d88888 88888b.   8888b.  888888
+888    888     "88b 888P"  d88" 888 888 "88b     "88b 888
+888    888 .d888888 888    888  888 888  888 .d888888 888
+888    888 888  888 888    Y88b 888 888  888 888  888 Y88b.
+888    888 "Y888888 888     "Y88888 888  888 "Y888888  "Y888
+
+
+👷 Welcome to Hardhat v2.12.0 👷‍
+
+
+? What do you want to do? …
+❯ Create a JavaScript project
+  Create a TypeScript project
+  Create an empty hardhat.config.js
+  Quit
+```
+Create a project using TypeScript and install additional dependencies. Run the commands:
+
+```
+npm install --save-dev typescript
+```
+```
+npm install --save-dev ts-node
+```
+
+```
+npm install --save @nomicfoundation/hardhat-toolbox
+ ```
+
+Hardhat provides a list of available tasks that you can run. In your project folder, run the command:
+
+```
+npx hardhat
+```
+You will see the following:
+
+```
+$ npx hardhat
+Hardhat version 2.12.0
+
+
+Usage: hardhat [GLOBAL OPTIONS] <TASK> [TASK OPTIONS]
+
+
+GLOBAL OPTIONS:
+
+
+  --config              A Hardhat config file.
+  --emoji               Use emoji in messages.
+  --help                Shows this message, or a task's help if its name is provided
+  --max-memory          The maximum amount of memory that Hardhat can use.
+  --network             The network to connect to.
+  --show-stack-traces   Show stack traces.
+  --tsconfig            A TypeScript config file.
+  --verbose             Enables Hardhat verbose logging
+  --version             Shows hardhat's version.
+
+
+
+
+AVAILABLE TASKS:
+
+
+  check                 Check whatever you need
+  clean                 Clears the cache and deletes all artifacts
+  compile               Compiles the entire project, building all artifacts
+  console               Opens a hardhat console
+  coverage              Generates a code coverage report for tests
+  flatten               Flattens and prints contracts and their dependencies
+  help                  Prints this message
+  node                  Starts a JSON-RPC server on top of Hardhat Network
+  run                   Runs a user-defined script after compiling the project
+  test                  Runs mocha tests
+  typechain             Generate Typechain typings for compiled contracts
+  verify                Verifies contract on Etherscan
+
+To get help for a specific task run: npx hardhat help [task]
+```
+
+
+Hardhat provides a list of all the tasks you can perform. However, you will be performing the run, test, and compile tasks.
+
+
+### Add the ZEN Network
+In order to deploy your smart contract, you will need a network. In the configuration file, **hardhat.config.ts**, replace the content with the following:
+
+**Note:** In the account field, replace “word1 … word12” with a valid seed phrase.
+
+```
+import { HardhatUserConfig } from "hardhat/config";
+import "@nomicfoundation/hardhat-toolbox";
+
+
+const config: HardhatUserConfig = {
+  solidity: "0.8.9",
+  defaultNetwork: "zen",
+  networks: {
+    zen: {
+      url: ‘https://evm-tn-m2.horizenlabs.io/ethv1’,
+      accounts: {mnemonic: "word1 … word12"},
+      gasPrice: "auto"
+    }, 
+  
+  }
+};
+
+
+export default config;
+```
+
+### Compile a Contract
+In your project folder, create a folder called, **contracts/** to store all your smart contracts. Use the following sample contract files to compile and test. 
+
+#### Sample contract ERC20.sol
+
+Use the [ERC20.sol](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v4.0.0/contracts/token/ERC20/ERC20.sol) file in GitHub. Import this file to your Hardhat contracts folder by using the script:
+
+```
+/ SPDX-License-Identifier: MIT pragma solidity ^0.8.0;
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+contract TestERC20 is ERC20 {
+constructor(uint256 initialSupply) ERC20("Test", "TST") {
+_mint(msg.sender, initialSupply); }
+}
+```
+
+#### Sample contract TestPayable.sol
+
+Copy and paste the TestPayable.sol file to your Hardhat contracts folder:
+
+```
+// SPDX-License-Identifier: MIT pragma solidity ^0.8.0;
+contract TestPayable {
+string public sentence = "This is payable";
+event Pay(address payer, uint256 amount); constructor() {}
+receive() external payable {}
+function pay() external payable {
+emit Pay(msg.sender, msg.value);
+}
+function dontPay() external {} 
+}
+```
+
+To compile the sample contract file,run the command:
+
+``
+npx hardhat compile
+``
+Because you used TypeScript, the compile task also generates TypeScript bindings using [TypeChain](https://www.npmjs.com/package/typechain).
+
+
