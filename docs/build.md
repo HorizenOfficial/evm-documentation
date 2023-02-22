@@ -90,7 +90,7 @@ contract DemoToken is ERC20 {
 
 ```
 
-**Note**: Make sure that the Solidity version (example: <code>solidity ^0.8.0;</code>) corresponds to the version in <code>truffle.config.js</code>.
+**Note**: Make sure that the Solidity version (example: <code>solidity ^0.8.0;</code>) corresponds to the version in <code>truffle-config.js</code>.
 
 Near the top of the sample contract is an import statement for the **ERC20** contract, which **DemoToken** inherits. Use NPM to install the contract. Run the command:
 
@@ -151,7 +151,7 @@ The <code>network_id</code> is dependent on the environment in use and correspon
 
 Next, add this line at the top of the file:
 
-```// const HDWalletProvider = require('@truffle/hdwallet-provider');```
+```const HDWalletProvider = require('@truffle/hdwallet-provider');```
 
 **Note**: The [Truffle HDWallet Provider](https://docs.google.com/document/d/1Eg0S8f0aKUltwQyMPZiAlSzXgWuv4dbWV8G140EfLPc/edit#heading=h.a5ho8bfasvz3) helps in configuring the network connection as well as to sign transactions for addresses derived from the 12-word mnemonic.
 
