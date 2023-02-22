@@ -392,7 +392,7 @@ _mint(msg.sender, initialSupply); }
 
 #### Sample contract TestPayable.sol
 
-Copy and paste the TestPayable.sol file to your Hardhat contracts folder:
+Copy and paste the **TestPayable.sol** file to your contracts folder:
 
 ```
 // SPDX-License-Identifier: MIT pragma solidity ^0.8.0;
@@ -407,7 +407,7 @@ function dontPay() external {}
 }
 ```
 
-To compile the sample contract file,run the command:
+To compile the sample contract file, run the command:
 
 ``
 npx hardhat compile
