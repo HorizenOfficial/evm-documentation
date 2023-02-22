@@ -84,7 +84,7 @@ Adding a network example:
 
 
 
-![alt_text](/img/docs/get-started/metamask-add-network.png)
+![alt_text](/img/docs/get-started/metamask-add-network2.png)
 
 ##### Dune Testnet
 
@@ -94,9 +94,16 @@ Adding a network example:
       Currency symbol: ZEN
       Block Explorer: https://dune-explorer.horizen.io/
 
+##### Yuma Testnet
 
+      Network name:  Yuma Testnet
+      New RPC URL:  https://yuma-testnet.horizenlabs.io/ethv1
+      Chain ID: 1662 
+      Currency symbol: ZEN
+      Block Explorer: https://yuma-explorer.horizen.io/
 
-Once you have specified the RPC endpoint and Chain ID to make a connection, a notification appears stating **“Dune Testnet was successfully added”**.
+Once you have specified the RPC endpoint and Chain ID to make a connection, a notification appears stating for example, **“Yuma Testnet was successfully added”**.
+
 
 
 ## RPC Server
@@ -121,6 +128,12 @@ The RPC (Remote Procedure Call) endpoint works as a node's address: it's a URL w
    <td>Dune Testnet
    </td>
    <td>https://evm-tn-m2.horizenlabs.io/ethv1
+   </td>
+  </tr>
+  <tr>
+   <td>Yuma Testnet
+   </td>
+   <td>https://yuma-testnet.horizenlabs.io/ethv1
    </td>
   </tr>
   <tr>
@@ -155,6 +168,12 @@ The `chainId` was introduced by Ethereum to prevent replay attacks on different 
    <td>Dune Testnet
    </td>
    <td>1661
+   </td>
+  </tr>
+  <tr>
+   <td>Yuma Testnet
+   </td>
+   <td>1662
    </td>
   </tr>
   <tr>
