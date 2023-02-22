@@ -27,7 +27,7 @@ In order to interact with smart contracts in the EVM, you need a valid EVM-compa
 
 ### Install MetaMask
 
-**Note: **The MetaMask connection is illustrated using the Chrome browser.
+**Note:** The MetaMask connection is illustrated using the Chrome browser.
 
 
 
@@ -102,7 +102,7 @@ Adding a network example:
       Currency symbol: ZEN
       Block Explorer: https://yuma-explorer.horizen.io/
 
-Once you have specified the RPC endpoint and Chain ID to make a connection, a notification appears stating for example, **“Yuma Testnet was successfully added”**.
+Once you have specified the RPC endpoint and Chain ID to make a connection, a notification appears stating, **“Yuma Testnet was successfully added”**,  for example.
 
 
 
