@@ -382,7 +382,7 @@ const invalidPayment = async () => {
    // @ts-ignore
    await payable.dontPay({ value: ethers.utils.parseEther("1") }); 
 };
-   invalidPayment();
+invalidPayment();
 ```
 
 Run the command to interact with this contract instance:
