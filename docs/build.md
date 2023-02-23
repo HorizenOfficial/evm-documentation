@@ -381,14 +381,14 @@ In your project folder, create a folder called, **contracts/** to store all your
 
 Use the [ERC20.sol](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v4.0.0/contracts/token/ERC20/ERC20.sol) file in GitHub. Import this file to your Hardhat contracts folder by using the script:
 
-```
+
 / SPDX-License-Identifier: MIT pragma solidity ^0.8.0;
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 contract TestERC20 is ERC20 {
-constructor(uint256 initialSupply) ERC20("Test", "TST") {
-_mint(msg.sender, initialSupply); }
+   constructor(uint256 initialSupply) ERC20("Test", "TST") {
+      _mint(msg.sender, initialSupply); 
+   }
 }
-```
 
 #### Sample contract TestPayable.sol
 
