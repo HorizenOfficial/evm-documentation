@@ -280,11 +280,13 @@ $ npx hardhat
   Create an empty hardhat.config.js
   Quit
 ```
+
 Create a project using TypeScript and install additional dependencies. Run the commands:
 
 ```
 npm install --save-dev typescript
 ```
+
 ```
 npm install --save-dev ts-node
 ```
@@ -381,7 +383,7 @@ In your project folder, create a folder called, **contracts/** to store all your
 
 Use the [ERC20.sol](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v4.0.0/contracts/token/ERC20/ERC20.sol) file in GitHub. Import this file to your Hardhat contracts folder by using the script:
 
-
+```
 / SPDX-License-Identifier: MIT pragma solidity ^0.8.0;
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 contract TestERC20 is ERC20 {
@@ -389,6 +391,7 @@ contract TestERC20 is ERC20 {
       _mint(msg.sender, initialSupply); 
    }
 }
+```
 
 #### Sample contract TestPayable.sol
 
