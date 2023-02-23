@@ -406,15 +406,16 @@ You can interact with the ECR20 contract instance by using the approve or transf
 
 ```
 const testApproveAndTransfer = async () => {
-const testERC20 = await deployTestERC20();
-const receiver = "0xF102765ba64849f77A2AC31a58e787B23480a6E0";
-const approveReceipt = await (await testERC20.approve(receiver, 1)).wait(); const approveEvent = approveReceipt.events?.filter(
+   const testERC20 = await deployTestERC20();
+   const receiver = "0xF102765ba64849f77A2AC31a58e787B23480a6E0";
+   const approveReceipt = await (await testERC20.approve(receiver, 1)).wait(); const approveEvent = approveReceipt.events?.filter(
 (e) => e.event === "Approval" );
-console.log(approveEvent);
-const transferReceipt = await (await testERC20.transfer(receiver, 1)).wait(); const transferEvent = transferReceipt.events?.filter(
+   console.log(approveEvent);
+   const transferReceipt = await (await testERC20.transfer(receiver, 1)).wait(); const transferEvent = transferReceipt.events?.filter(
 (e) => e.event === "Transfer" );
-console.log(transferEvent); };
-testApproveAndTransfer();
+   console.log(transferEvent); };
+   testApproveAndTransfer();
+}
 ```
 
 Run the command to interact with this contract instance:
