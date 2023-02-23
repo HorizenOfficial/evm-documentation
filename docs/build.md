@@ -211,7 +211,7 @@ truffle(zen)> web3.eth.getGasPrice()
 
 ## Building Smart Contracts: Using Hardhat
 
-When using the Hardhat development tool, you will use the main component Hardhat Runner to interact with in creating and deploying your smart contract. 
+When using the Hardhat development tool, you will use the main component, Hardhat Runner, to interact with in creating and deploying your smart contract. 
 
 **Note:** See the [Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started#overview) website for detailed information on installing and using Hardhat Runner.
 
