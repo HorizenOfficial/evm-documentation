@@ -135,7 +135,7 @@ A network is needed in order to deploy a smart contract. In the configuration fi
 ```
 …networks: {    
 	zen: {
-		provider: () => new HDWalletProvider("word1 … word12", `https://yuma-testnet-faucet.horizen.io/`),
+		provider: () => new HDWalletProvider("word1 … word12", `https://yuma-testnet.horizenlabs.io/ethv1`),
       network_id: 1662,  
       production: false
     }
