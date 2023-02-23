@@ -338,7 +338,7 @@ You will see the following execution results:
 
 
 ### Interact with TestPayable: Read → Call 
-Interact with TestPayable by using Read. Copy the script (below) into your **test/** folder:
+Interact with TestPayable by using the Read function. Copy the script (below) into your **test/** folder:
 
 ```
 const read = async () => {
