@@ -380,7 +380,8 @@ const invalidPayment = async () => {
       await deployPayable() 
    );
    // @ts-ignore
-   await payable.dontPay({ value: ethers.utils.parseEther("1") }); };
+   await payable.dontPay({ value: ethers.utils.parseEther("1") }); 
+};
    invalidPayment();
 ```
 
