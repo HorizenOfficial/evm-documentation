@@ -515,7 +515,7 @@ You will see the following:
 $ npx hardhat node
 Started HTTP and WebSocket JSON-RPC server at http://127.0.0.1:9045/
 ```
-This exposes a JSON-RPC interface to the Hardhat Network. Use the address, **http://127.0.0.1:9045/** in your Dapp.
+This exposes a JSON-RPC interface to the Hardhat Network. Use the address, **http://127.0.0.1:9045/** in your dApp.
 
 **Note:** The port number may vary.  Check in your ***.conf** file.
 
