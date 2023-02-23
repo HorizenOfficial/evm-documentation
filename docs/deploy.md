@@ -319,14 +319,17 @@ Interact with TestPayable by passing the ABI and without passing the ABI. Copy t
 const contractInteraction = async () => {
    const payableAddress = await deployPayable();
    // passing the ABI
-   const payable = await ethers.getContractAt("TestPayable", payableAddress); await payable.pay({ value: ethers.utils.parseEther("1") });
+   const payable = await ethers.getContractAt("TestPayable", payableAddress); 
+   await payable.pay({ value: ethers.utils.parseEther("1") });
    // without passing the ABI
-   const [sender] = await ethers.getSigners(); await sender.sendTransaction({
+   const [sender] = await ethers.getSigners(); 
+   await sender.sendTransaction({
       to: payableAddress,
       value: ethers.utils.parseEther("1"), 
    });
-   console.log((await ethers.provider.getBalance(payableAddress)).toString()); };
-   contractInteraction();
+   console.log((await ethers.provider.getBalance(payableAddress)).toString()); 
+};
+contractInteraction();
 ```
 
 Run the command to interact with this contract instance:
