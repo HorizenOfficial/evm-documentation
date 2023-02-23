@@ -250,13 +250,17 @@ import {ether} from hardhat;
 ```
 
 
-Use the deployment script for the contract, ERC20.sol:  
+Use the deployment script for the contract, ERC20.sol:
+
+```
 const deployERC20 = async () => {
    const ERC20 = await ethers.getContractFactory("ERC20"); const erc20 = await ERC20.deploy("Test", "TST");
    await erc20.deployed();
    console.log(erc20.address); 
 };
 deployERC20();
+```
+
 Run the command to deploy the contract:
 
 ```
