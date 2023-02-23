@@ -367,12 +367,13 @@ Interact with TestPayable by calling a non-payable function along with ZEN to ve
 
 ```
 const invalidPayment = async () => {
-const payable = await ethers.getContractAt(
-"TestPayable",
-await deployPayable() );
-// @ts-ignore
-await payable.dontPay({ value: ethers.utils.parseEther("1") }); };
-invalidPayment();
+   const payable = await ethers.getContractAt(
+      "TestPayable",
+      await deployPayable() 
+   );
+   // @ts-ignore
+   await payable.dontPay({ value: ethers.utils.parseEther("1") }); };
+   invalidPayment();
 ```
 
 Run the command to interact with this contract instance:
