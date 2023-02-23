@@ -486,20 +486,15 @@ You can also interact with the ECR20 contract instance by making an EOA to EOA t
 ```
 const eoaToEoa = async () => {
    const receiver = "0xF102765ba64849f77A2AC31a58e787B23480a6E0"; 
-   console.log(
-`Receiver balance before: ${(
-await ethers.provider.getBalance(receiver)
-).toString()}` );
-   const [sender] = await ethers.getSigners(); await sender.sendTransaction({
+   console.log(`Receiver balance before: ${(await ethers.provider.getBalance(receiver)).toString()}` );
+   const [sender] = await ethers.getSigners(); 
+   await sender.sendTransaction({
       to: receiver,
       value: ethers.utils.parseEther("1"), 
    });
-   console.log(
-`Receiver balance after: ${(
-await ethers.provider.getBalance(receiver) ).toString()}`
-); };
-   eoaToEoa();
-}
+   console.log(`Receiver balance after: ${(await ethers.provider.getBalance(receiver)).toString()}`); 
+};
+eoaToEoa();
 ```
 
 Run the command to interact with this contract instance:
