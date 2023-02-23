@@ -254,7 +254,8 @@ Use the deployment script for the contract, ERC20.sol:
 
 ```
 const deployERC20 = async () => {
-   const ERC20 = await ethers.getContractFactory("ERC20"); const erc20 = await ERC20.deploy("Test", "TST");
+   const ERC20 = await ethers.getContractFactory("ERC20"); 
+   const erc20 = await ERC20.deploy("Test", "TST");
    await erc20.deployed();
    console.log(erc20.address); 
 };
