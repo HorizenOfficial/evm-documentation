@@ -147,7 +147,7 @@ A network is needed in order to deploy a smart contract. In the configuration fi
 
 **Note**: In the account field, replace “**word1 … word12**” with a mnemonic seed phrase for a valid wallet. Use the following [instructions](https://metamask.zendesk.com/hc/en-us/articles/360015290032-How-to-reveal-your-Secret-Recovery-Phrase) to retrieve your mnemonic seed phrase from MetaMask.
 
-The <code>network_id</code> is dependent on the environment in use and corresponds to the Chain ID. For Dune Testnet, the Chain ID is **1661**.
+The <code>network_id</code> is dependent on the environment in use and corresponds to the Chain ID. For Yuma Testnet, the Chain ID is **1662**.
 
 Next, add this line at the top of the file:
 
@@ -196,7 +196,7 @@ truffle(zen)> web3.eth.getBlockNumber()
 
 ```
 truffle(zen)> web3.eth.getChainId()
-1661
+1662
 ```
 
 
