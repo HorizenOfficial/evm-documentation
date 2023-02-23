@@ -350,10 +350,12 @@ Interact with TestPayable by using the Read function. Copy the script (below) in
 
 ```
 const read = async () => {
-const payable = await ethers.getContractAt(
-"TestPayable",
-await deployPayable() );
-console.log(await payable.sentence()); };
+   const payable = await ethers.getContractAt(
+      "TestPayable",
+      await deployPayable() 
+   );
+   console.log(await payable.sentence()); 
+};
 read();
 ```
 
