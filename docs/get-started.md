@@ -75,7 +75,7 @@ You can add a network to your MetaMask wallet by specifying the RPC endpoint and
 
   **Currency  symbol** - The currency symbol supported by the network. 
 
-  **Note:** For this example, ZEN is the currency symbol used. However, when you get free ZEN from the Horizen Faucet, you are actually receiving **TZEN**, as it is required for the Dune Testnet network.
+  **Note:** For this example, ZEN is the currency symbol used. However, when you get free ZEN from the Horizen Faucet, you are actually receiving **TZEN**, as it is required for the **Yuma Testnet** network.
 
   **Block explorer URL** - Optionally, add the URL address of the supported block explorer.
 
@@ -86,13 +86,7 @@ Adding a network example:
 
 ![alt_text](/img/docs/get-started/metamask-add-network2.png)
 
-##### Dune Testnet
 
-      Network name:  Dune Testnet
-      New RPC URL:  https://evm-tn-m2.horizenlabs.io/ethv1 
-      Chain ID: 1661 
-      Currency symbol: ZEN
-      Block Explorer: https://dune-explorer.horizen.io/
 
 ##### Yuma Testnet
 
@@ -102,7 +96,7 @@ Adding a network example:
       Currency symbol: ZEN
       Block Explorer: https://yuma-explorer.horizen.io/
 
-Once you have specified the RPC endpoint and Chain ID to make a connection, a notification appears stating, **“Yuma Testnet was successfully added”**,  for example.
+Once you have specified the RPC endpoint and Chain ID to make a connection, a notification appears stating, **“Yuma Testnet was successfully added”**.
 
 
 
@@ -122,12 +116,6 @@ The RPC (Remote Procedure Call) endpoint works as a node's address: it's a URL w
    <td>LocalHost
    </td>
    <td>127.0.0.1 (a local node is required)
-   </td>
-  </tr>
-  <tr>
-   <td>Dune Testnet
-   </td>
-   <td>https://evm-tn-m2.horizenlabs.io/ethv1
    </td>
   </tr>
   <tr>
@@ -162,12 +150,6 @@ The `chainId` was introduced by Ethereum to prevent replay attacks on different 
    <td>LocalHost
    </td>
    <td>1997
-   </td>
-  </tr>
-  <tr>
-   <td>Dune Testnet
-   </td>
-   <td>1661
    </td>
   </tr>
   <tr>
