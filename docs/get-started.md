@@ -27,7 +27,7 @@ In order to interact with smart contracts in the EVM, you need a valid EVM-compa
 
 ### Install MetaMask
 
-**Note: **The MetaMask connection is illustrated using the Chrome browser.
+**Note:** The MetaMask connection is illustrated using the Chrome browser.
 
 
 
@@ -75,7 +75,7 @@ You can add a network to your MetaMask wallet by specifying the RPC endpoint and
 
   **Currency  symbol** - The currency symbol supported by the network. 
 
-  **Note:** For this example, ZEN is the currency symbol used. However, when you get free ZEN from the Horizen Faucet, you are actually receiving **TZEN**, as it is required for the Dune Testnet network.
+  **Note:** For this example, ZEN is the currency symbol used. However, when you get free ZEN from the Horizen Faucet, you are actually receiving **TZEN**, as it is required for the **Yuma Testnet** network.
 
   **Block explorer URL** - Optionally, add the URL address of the supported block explorer.
 
@@ -84,19 +84,20 @@ Adding a network example:
 
 
 
-![alt_text](/img/docs/get-started/metamask-add-network.png)
+![alt_text](/img/docs/get-started/metamask-add-network2.png)
 
-##### Dune Testnet
 
-      Network name:  Dune Testnet
-      New RPC URL:  https://evm-tn-m2.horizenlabs.io/ethv1 
-      Chain ID: 1661 
+
+##### Yuma Testnet
+
+      Network name:  Yuma Testnet
+      New RPC URL:  https://yuma-testnet.horizenlabs.io/ethv1
+      Chain ID: 1662 
       Currency symbol: ZEN
-      Block Explorer: https://dune-explorer.horizen.io/
+      Block Explorer: https://yuma-explorer.horizen.io/
 
+Once you have specified the RPC endpoint and Chain ID to make a connection, a notification appears stating, **“Yuma Testnet was successfully added”**.
 
-
-Once you have specified the RPC endpoint and Chain ID to make a connection, a notification appears stating **“Dune Testnet was successfully added”**.
 
 
 ## RPC Server
@@ -118,9 +119,9 @@ The RPC (Remote Procedure Call) endpoint works as a node's address: it's a URL w
    </td>
   </tr>
   <tr>
-   <td>Dune Testnet
+   <td>Yuma Testnet
    </td>
-   <td>https://evm-tn-m2.horizenlabs.io/ethv1
+   <td>https://yuma-testnet.horizenlabs.io/ethv1
    </td>
   </tr>
   <tr>
@@ -152,9 +153,9 @@ The `chainId` was introduced by Ethereum to prevent replay attacks on different 
    </td>
   </tr>
   <tr>
-   <td>Dune Testnet
+   <td>Yuma Testnet
    </td>
-   <td>1661
+   <td>1662
    </td>
   </tr>
   <tr>
