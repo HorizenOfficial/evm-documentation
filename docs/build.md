@@ -11,7 +11,7 @@ sidebar_position: 4
 
 There are many development environment tools you can use in creating and deploying a smart contract. For EON, the use of **Truffle**, **Hardhat**, or **Remix IDE** are highly recommended.
 
-This section shows how *__Truffle__* and *__Hardhat__*are used for implementing the smart contract examples.
+This section shows how *__Truffle__* and *__Hardhat__* are used for implementing the smart contract examples.
 
 ## Building Smart Contracts: Using Truffle
 
@@ -34,7 +34,7 @@ To deploy a smart contract, complete the steps below:
 
 Install the following to your localhost:
 
-**NodeJS (v18.0) **-  Install the long-term support (LTS) version. This bundle includes **NPM**.
+**NodeJS (v18.0)** -  Install the long-term support (LTS) version. This bundle includes **NPM**.
 
 To install **NodeJS** in your local system, perform the following steps:
 
@@ -412,6 +412,8 @@ To compile the sample contract file, run the command:
 ``
 npx hardhat compile
 ``
+
+
 Because you used TypeScript, the compile task also generates TypeScript bindings using [TypeChain](https://www.npmjs.com/package/typechain).
 
 
