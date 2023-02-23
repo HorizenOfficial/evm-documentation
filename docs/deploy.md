@@ -411,7 +411,7 @@ value: BigNumber { _hex: '0x0de0b6b3a7640000', _isBigNumber: true }
 ```
 
 ### Interact with ERC20: Using Approve or Transfer Methods
-You can interact with the ECR20 contract instance by using the approve or transfer methods to check for emit events. Copy the script (below) into your **tests/** folder:
+You can interact with the ERC20 contract instance by using the approve or transfer methods to check for emit events. Copy the script (below) into your **tests/** folder:
 
 ```
 const testApproveAndTransfer = async () => {
