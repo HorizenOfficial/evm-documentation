@@ -286,7 +286,8 @@ To deploy your contract **TestPayable.sol**, create a folder in your Hardhat pro
 
 ```
 const deployPayable = async () => {
-   const Payable = await ethers.getContractFactory("TestPayable"); const payable = await Payable.deploy();
+   const Payable = await ethers.getContractFactory("TestPayable"); 
+   const payable = await Payable.deploy();
    await payable.deployed();
    console.log(payable.address);
    await payable.pay({ value: ethers.utils.parseEther("1") });
