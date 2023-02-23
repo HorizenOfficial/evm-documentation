@@ -3,12 +3,12 @@ sidebar_position: 5
 ---
 
 # Deploy
-*Learn how to deploy a simple Solidity-based smart contract in Dune Testnet or Yuma Testnet using the Truffle or Hardhat framework.*
+*Learn how to deploy a simple Solidity-based smart contract in Yuma Testnet using the Truffle or Hardhat framework.*
 
 ## Deploying a Contract using Truffle
 
 Once the DemoToken contract is successfully compiled, it can now be deployed. 
-However, before deploying, make sure that the account you plan to use has sufficient ZEN. See [Get Started](/#connect-to-a-wallet) to install the MetaMask wallet, if needed. To deploy a contract on Dune Testnet or Yuma Testnet, your account must have sufficient ZEN. You can get some free test ZEN by using the [**Faucet**](https://faucet.horizen.io/).
+However, before deploying, make sure that the account you plan to use has sufficient ZEN. See [Get Started](/#connect-to-a-wallet) to install the MetaMask wallet, if needed. To deploy a contract on Dune Testnet or Yuma Testnet, your account must have sufficient ZEN. You can get some free test ZEN by using the [**Faucet**](https://yuma-testnet-faucet.horizen.io/ ).
 
 
 Add the deployment script, [1_deploy_DEMOToken.js](https://github.com/rocknitive/zen-sidechain-truffle/blob/master/migrations/1_deploy_DemoToken.js)  (below) in the `/migrations` folder:
@@ -503,8 +503,8 @@ Receiver balance before: 0
 Receiver balance after: 1000000000000000000
 ```
 
-## Connect to a Dapp
-To connect your smart contract to an external client, such as your Dapp or MetMask, you first need to run the Hardhat Network as a standalone. Run the Hardhat Network by running the command:
+## Connect to a dApp
+To connect your smart contract to an external client, such as your dApp or MetMask, you first need to run the Hardhat Network as a standalone. Run the Hardhat Network by running the command:
 
 ```
 npx hardhat node
