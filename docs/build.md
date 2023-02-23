@@ -362,7 +362,7 @@ const config: HardhatUserConfig = {
   defaultNetwork: "zen",
   networks: {
     zen: {
-      url: ‘https://evm-tn-m2.horizenlabs.io/ethv1’,
+      url: ‘https://yuma-testnet.horizenlabs.io/ethv1',
       accounts: {mnemonic: "word1 … word12"},
       gasPrice: "auto"
     }, 
