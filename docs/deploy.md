@@ -238,8 +238,7 @@ The target mainchain address of a backward transfer has to be a valid address: s
 ```
 
 ## Deploying a Contract using Hardhat
-To deploy a contract, you will use a deployment script that is specific for your smart contract. 
-Hardhat script.  Go to the `script/` folder and find the following deploy.ts file:
+To deploy a contract, you will use a deployment script that is specific for your smart contract. Go to the `script/` folder and find the following deploy.ts file:
 
 ### Deploy contract ERC20.sol
 To deploy your contract ERC20.sol, create a folder in your Hardhat project and name it, **scripts/**. Copy this script (below) and name it **ERC20.ts**.  
