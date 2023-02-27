@@ -420,3 +420,120 @@ npx hardhat compile
 Because you used TypeScript, the compile task also generates TypeScript bindings using [TypeChain](https://www.npmjs.com/package/typechain).
 
 
+## Build a dApp locally
+
+*Learn how to set up a local environment or a local Yuma testnet node to build a dApp (decentralized application).*
+
+In this section you will accomplish the following:
+
+* Deploy an existing dApp into a local environment or using Yuma testnet
+* Run a private instance of EON 
+
+The easiest way to do it is using Docker. The EON client will be running in a Dockerized container. See **Node Client** setup below.
+
+Horizen Labs has provided two separate projects giving you the ability to enable:
+
+* **SANDBOX:** creating a sandboxed blockchain 
+* **TESTNET:** starting your EON node
+
+In the first project, where you use a **personal sandboxed blockchain**, there is no required configuration. A local and disposable sidechain will be created from scratch with the latest available version of EON. Check in the **.env** file for the port you will use for RPC calls. 
+
+For the latter project, where you use the **Yuma Testnet**, Horizen Labs have reserved the right to know who will be using our testnet to start your EON node. To use a testnet node (and the mainnet later) **contact us** for details, including environmental variables that are not publicly shared during the early stages of the project. 
+
+Horizen Labs repositories are open source, including EON. The code can be pulled from the GitHub repository and executed, however this is not considered in the scope of the testnet documentation. 
+
+**Note:** EON is considered a sample application of what can be built using our Sidechains-SDK, that’s why you will find it in the same repository.
+
+At the time of writing EON is not finalized. It is recommended to use the **M3-V2** tag.  
+
+### Node Client
+To start your node, run our Docker compose (a tool required to run our multi-container application) on your computer. Next, open a terminal and send some simple commands.
+
+#### Set Up
+
+1. Remove any previous version of Docker and Docker compose plugin before starting.
+2. Install Docker, the Docker compose plugin, bc (arbitrary precision calculator language) and jq (a command-line JSON processor), using the following commands:
+
+```
+sudo apt update
+```
+```
+sudo apt install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin bc jq pwgen
+```
+
+**Note:** Step 2 refers to Ubuntu or almost any Debian-based Linux distro. Check the official documentation for other OS or other kinds of incompatibilities.
+
+3. Clone this Horizen Labs repository  using the following command:
+
+```
+git clone https://github.com/HorizenLabs/$PROJECT.git
+```
+
+Where **$PROJECT** is replaced by one of the following project, depending on what you have decided to run:
+
+* compose-evm-regtest-simplified → for YUMA SANDBOX
+* compose-evm-testnet-simplified → for YUMA TESTNET
+
+4. Build the project by using the following command:
+
+```
+./scripts/init.sh
+```
+
+You are now set, the **client** starts automatically.
+
+**Note:** YUMA TESTNET requires time to synchronize the entire blockchain. While waiting, check the progress by comparing the last block in the **Yuma Explorer** with the response of the following rpc method:
+
+```
+curl -X POST "http://127.0.0.1:9545/ethv1/" --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":"test"}' -H "accept: application/json"
+```
+
+**WARNING:** **Risk Data Corruption** - Always remember to shutdown the node properly by executing *shutdown.sh* available in the scripts folder at the end of your testing session and/or before turning off your machine (computer or virtual machine). 
+
+### Run the client
+If you have already gone through the set up instructions previously and you want to start the client again, run the following command at the root folder of the project (inside the cloned repository):
+
+```
+docker compose up -d
+```
+
+**WARNING:** **Risk Data Corruption** - Always remember to shutdown the node properly by executing *shutdown.sh* available in the scripts folder at the end of your testing session and/or before turning off your machine (computer or virtual machine). 
+
+### Configuration
+Set up your network provider as **localhost (127.0.0.1)** and **port (9545)**, and also change the **Chain ID** according to the environment you are using.
+
+##### YUMA SANDBOX
+
+
+Network name:  Yuma Sandbox 
+New RPC URL:  http://127.0.0.1:9545/ethv1
+Chain ID: 1997 
+Currency symbol: ZEN
+Block Explorer: leave blank
+
+**Note:** The **Yuma Explorer** is not available for this sandbox environment.
+
+##### YUMA TESTNET (localhost)
+
+Network name:  Yuma Testnet Local
+New RPC URL:  http://127.0.0.1:9545/ethv1 
+Chain ID: 1662
+Currency symbol: ZEN
+Block Explorer: https://yuma-explorer.horizen.io/
+
+**Note:** For configuring a wallet or network provider with the testnet local node the "RPC Server" must be the **local one (localhost)**. Use the **Chain ID** for  the  corresponding  testnet. 
+
+### Why Should I Run a node?
+
+Running your own node allows you to preserve your privacy and bolster your security. It also allows you to prove that no one is manipulating the transactions in EON or changing any rule.
+
+### Privacy Benefits
+
+When you run your own node, you can create and broadcast transactions directly from the node, and thus avoid using services that might compromise private information. A node also removes the need to use a block explorer to verify the status of your transactions. Block explorers allow third parties to track your transaction history and link it to your IP address, leaking your physical location, your balance, and your financial counterparties.
+Horizen does not collect such information, but by providing free access to the code, Horizen can not guarantee that the same will be done by third-party operated dApps, and in either way the statement can not be "**trustless**".
+
+### Security Benefits
+Using an EON node to create transactions can also improve your security by reducing or eliminating the need to expose your private keys to the internet through  a web browser.he private key is needed to sign the transactions before submission 
+While the signature generally takes place locally.
+
+**Note:** If you own a Validator node, you will benefit from the latest secure enclave features for key management, where the documentation of which will be shared privately. In this case, the signature takes place in a remote trusted execution environment.
