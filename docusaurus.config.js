@@ -8,13 +8,24 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Horizen EON Documentation',
   url: 'https://eon.horizen.io',
-  baseUrl: '/docs',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/EON-favicon.svg',
 
   plugins: [
     "./matomo",
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            to: '/docs/',
+            from: '/',
+          },
+        ],
+      },
+    ],
   ],
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -31,7 +42,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/',
+          routeBasePath: '/docs/',
           sidebarPath: require.resolve('./sidebars.js'),
         },
         theme: {
@@ -49,7 +60,7 @@ const config = {
           alt: 'Horizen EON Logo',
           src: 'img/HEON_logo_dark_1.svg',
           srcDark: 'img/HEON_logo_light_1.svg',
-          href: '/',
+          href: '/docs/',
         },
         items: [
           {
