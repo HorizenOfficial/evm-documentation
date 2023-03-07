@@ -438,8 +438,6 @@ Horizen Labs has provided two separate projects giving you the ability to enable
 
 In the first project, where you use a **personal sandboxed blockchain**, there is no required configuration. A local and disposable sidechain will be created from scratch with the latest available version of EON. Check in the **.env** file for the port you will use for RPC calls. 
 
-For the latter project, where you use the **Yuma Testnet**, Horizen Labs have reserved the right to know who will be using our testnet to start your EON node. To use a testnet node (and the mainnet later) **contact us** for details, including environmental variables that are not publicly shared during the early stages of the project. 
-
 Horizen Labs repositories are open source, including EON. The code can be pulled from the GitHub repository and executed, however this is not considered in the scope of the testnet documentation. 
 
 **Note:** EON is considered a sample application of what can be built using our Sidechains-SDK, that’s why you will find it in the same repository.
