@@ -472,7 +472,17 @@ Where **$PROJECT** is replaced by one of the following project, depending on wha
 * compose-evm-regtest-simplified → for YUMA SANDBOX
 * compose-evm-testnet-simplified → for YUMA TESTNET
 
-4. Build the project by using the following command:
+4. Set up environment variables in the **.env** file:
+
+```
+SCNODE_NET_NODENAME= # This variable requires a name. Enter a name using characters, special characters, or numbers. 
+SCNODE_WALLET_SEED= # This variable can be empty or filled with a random string.
+SCNODE_REST_PASSWORD= # Use this variable only to set up authentication on the rest api endpoints, where you have to uncomment.
+```
+
+
+
+5. Build the project by using the following command:
 
 ```
 ./scripts/init.sh
