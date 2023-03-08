@@ -429,7 +429,7 @@ In this section, you will accomplish the following:
 * Deploy an existing dApp into a local environment or Yuma Testnet
 * Run a private instance of EON 
 
-The easiest way to deploy a dApp is to use **Docker**. The EON client will be running in a Dockerized container. See **Node Client** below.
+The easiest way to deploy a dApp is to use **Docker**. The EON client will be running in a Dockerized container. See **[Node Client](/docs/build#node-client)** below.
 
 Horizen Labs provides two separate projects to enable:
 
