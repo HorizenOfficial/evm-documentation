@@ -420,7 +420,7 @@ npx hardhat compile
 Because you used TypeScript, the compile task also generates TypeScript bindings using [TypeChain](https://www.npmjs.com/package/typechain).
 
 
-## Build a dApp locally
+## Build a dApp Locally
 
 *Learn how to set up a local environment or a local Yuma testnet node to build a dApp (decentralized application).*
 
