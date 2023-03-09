@@ -547,12 +547,13 @@ Network name:  Yuma Testnet Local
 New RPC URL:  http://127.0.0.1:9545/ethv1 
 Chain ID: 1662
 Currency symbol: ZEN
-Block Explorer: https://yuma-explorer.horizen.io/
+Block Explorer: _leave blank_
 ```
+**Note:** The **Yuma Explorer** should not be used for localhost testnet for privacy considerations.
 
 **Note:** For configuring a wallet or network provider with the testnet local node the "RPC Server" must be the **local one (localhost)**. Use the **Chain ID** for  the  corresponding  testnet. 
 
-### Why Should I Run a node?
+### Why Should I Run a Node?
 
 Running your own node preserves your privacy and bolster your security. It also allows you to prove that no one is manipulating the transactions in EON or changing any rule.
 
