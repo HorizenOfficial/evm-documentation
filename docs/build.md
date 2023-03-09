@@ -486,11 +486,11 @@ Get **'docker compose'** bash completion.
 curl -fsSL https://raw.githubusercontent.com/docker/cli/master/contrib/completion/bash/docker -o /etc/bash_completion.d/docker
 ```
 
-**Note:** Step 2 refers to Ubuntu or almost any Debian-based Linux distro. Check the official documentation for other OS or other kinds of incompatibilities.
+**Note:** Step 2 refers to Ubuntu or almost any Debian-based Linux distro. See [Ubuntu documentation](https://ubuntu.com/) for other OS or other kinds of incompatibilities.
 
 3. Clone this Horizen Labs repository using the following command:
 
-**Note:** See the official [GitHub documentation](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository?tool=cli) for detailed cloning instructions.
+**Note:** See [GitHub documentation](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository?tool=cli) for detailed cloning instructions.
 
 ```
 git clone https://github.com/HorizenLabs/$PROJECT.git
