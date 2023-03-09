@@ -214,19 +214,19 @@ The target mainchain address of a backward transfer must be a **valid address** 
 1. Use **zn** for *mainnet* or **zt** for *testnet*.
 
 
-**Example:** ztWBHD2Eo6uRLN6xAYxj8mhmSPbUYrvMPwt
+    **Example:** ztWBHD2Eo6uRLN6xAYxj8mhmSPbUYrvMPwt
 
 
 2. The address must be decoded.
 
 
-**Example:** 0x2098212831547ff1a3508ae0d1c79f43bc7920c15ebfbccfefd7
+    **Example:** 0x2098212831547ff1a3508ae0d1c79f43bc7920c15ebfbccfefd7
 
 
 3. Remove the CRC and network identifier (the network identifier is in the first two bytes).
 
 
-**Example:** 0x212831547ff1a3508ae0d1c79f43bc7920c15ebf 
+    **Example:** 0x212831547ff1a3508ae0d1c79f43bc7920c15ebf 
 
 The operation can be performed either with a library (such as a base58 for Javascript, which Horizen does not provide) or with some online editing tools.
 
