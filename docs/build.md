@@ -445,7 +445,7 @@ Horizen Labs repositories are open source, including EON. The code can be pulled
 At the time of this writing, EON is not finalized. It is recommended to use the **M3-V2** tag.  
 
 ### Node Client
-To start your node, run our Docker compose (a tool required to run our multi-container application) on your computer. Next, open a terminal and send some simple commands.
+To start your node, run our Docker compose (a tool required to run our multi-container application) on your computer. Next, open a terminal and execute some simple commands.
 
 #### Set Up
 
