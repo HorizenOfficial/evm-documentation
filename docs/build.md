@@ -536,7 +536,7 @@ Network name:  Yuma Sandbox
 New RPC URL:  http://127.0.0.1:9545/ethv1
 Chain ID: 1997 
 Currency symbol: ZEN
-Block Explorer: leave blank
+Block Explorer: _leave blank_
 ```
 **Note:** The **Yuma Explorer** is not available for this sandbox environment.
 
