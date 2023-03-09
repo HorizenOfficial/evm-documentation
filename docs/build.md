@@ -438,7 +438,7 @@ Horizen Labs provides two separate projects to enable:
 
 For using a **personal sandboxed blockchain**, there is no required configuration. A local and disposable sidechain will be created from scratch with the latest available version of EON. Check the **.env** file for the port you will use for RPC calls. 
 
-Horizen Labs repositories are open source, including EON. The code can be pulled from the GitHub repository and executed, however this is not considered in the scope of the testnet documentation. 
+Horizen Labs repositories are open source, including EON. The code can be pulled from the GitHub repository and executed. However, this is not considered in the scope of the testnet documentation. 
 
 **Note:** EON is considered a sample application of what can be built using our Sidechains-SDK, that’s why you will find it in the same repository.
 
