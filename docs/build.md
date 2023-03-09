@@ -565,6 +565,6 @@ Horizen does not collect private information. However, by providing free access 
 ### Security Benefits
 Using an EON node to create transactions can also improve your security by reducing or eliminating the need to expose your private keys to the internet through a web browser. The private key is required to sign the transactions before submission, while the signature generally takes place locally.
 
-**Note:** If you own a Validator node, you will benefit from the latest secure enclave features for key management, where the documentation of which will be shared privately. In this case, the signature takes place in a remote trusted execution environment.
+**Note:** If you own a Validator node, you will benefit from the latest secure enclave features for key management, where the documentation of which will be shared privately. In this case, the signature occurs in a remote trusted execution environment.
 
 
