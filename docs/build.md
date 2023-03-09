@@ -515,7 +515,7 @@ You are now set, the **client** starts automatically.
 curl -X POST "http://127.0.0.1:9545/ethv1/" --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":"test"}' -H "accept: application/json"
 ```
 
-**WARNING:** **Risk Data Corruption** - Always shutdown the node properly by executing *shutdown.sh* available in the scripts folder at the end of your testing session and/or before turning off your machine (computer or virtual machine). 
+**WARNING:** **Risk Data Corruption** - Always shutdown the node properly by executing *shutdown.sh*, available in the scripts folder, at the end of your testing session and/or before turning off your machine (computer or virtual machine). 
 
 ### Run the client
 If you have performed the previous setup instructions and you want to restart the client, run the following command at the root folder of the project (inside the cloned repository):
