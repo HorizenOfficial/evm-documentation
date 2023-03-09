@@ -450,15 +450,8 @@ To start your node, run our Docker compose (a tool required to run our multi-con
 #### Set Up
 
 1. Remove any previous version of Docker including any Docker-compose plugins before starting.
-2. Install Docker, the Docker-compose plugin, bc (arbitrary precision calculator language) and jq (a command-line JSON processor), using the following commands:
 
-```
-sudo apt update
-```
-```
-sudo apt install -y bc jq pwgen
-```
-Install Docker and Docker-compose (**compose v2** is included as plugin with **apt install**)
+2. Install Docker, the Docker compose v2 (which is included as a plugin with **apt install**), bc (arbitrary precision calculator language) and jq (a command-line JSON processor), using the following commands:
 
 ```
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
@@ -466,21 +459,22 @@ echo \
 "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
 $(lsb_release -cs) stable" > /etc/apt/sources.list.d/docker.list
 ```
+
+Update dependencies.
+
 ```
-apt-get update
-```
-```
-apt-get -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+sudo apt-get update
+sudo apt-get -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin bc jq pwgen
 ```
 
 
-Add a Docker group if it does not exist. If it does exist, make sure its group id (gid) is 999 to sync with the 'infra' user.
+Add Docker group if it does not exist. If it does exist, make sure its group id (gid) is **999** to sync with 'infra' user.
 
 ```
 groupadd -g 999 docker 2>&1 || groupmod -g 999 docker
 ```
 
-Get **'docker compose'** bash completion.
+Get *'docker compose'* bash completion.
 
 ```
 curl -fsSL https://raw.githubusercontent.com/docker/cli/master/contrib/completion/bash/docker -o /etc/bash_completion.d/docker
@@ -488,7 +482,7 @@ curl -fsSL https://raw.githubusercontent.com/docker/cli/master/contrib/completio
 
 **Note:** Step 2 refers to Ubuntu or almost any Debian-based Linux distro. See [Ubuntu documentation](https://ubuntu.com/) for other OS or other kinds of incompatibilities.
 
-3. Clone this Horizen Labs repository using the following command:
+3. Clone this Horizen repository using the following command:
 
 **Note:** See [GitHub documentation](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository?tool=cli) for detailed cloning instructions.
 
