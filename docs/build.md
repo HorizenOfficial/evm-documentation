@@ -449,7 +449,7 @@ To start your node, run our Docker compose (a tool required to run our multi-con
 
 #### Set Up
 
-1. Remove any previous version of Docker including any Docker-compose plugin before starting.
+1. Remove any previous version of Docker including any Docker-compose plugins before starting.
 2. Install Docker, the Docker-compose plugin, bc (arbitrary precision calculator language) and jq (a command-line JSON processor), using the following commands:
 
 ```
