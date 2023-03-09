@@ -555,7 +555,7 @@ Block Explorer: _leave blank_
 
 ### Why Should I Run a Node?
 
-Running your own node preserves your privacy and bolster your security. It also allows you to prove that no one is manipulating the transactions in EON or changing any rule.
+Running your own node preserves your privacy and bolsters your security. It also allows you to prove that no one is manipulating the transactions in EON or changing any rules.
 
 ### Privacy Benefits
 
