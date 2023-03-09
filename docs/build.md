@@ -440,7 +440,7 @@ For using a **personal sandboxed blockchain**, there is no required configuratio
 
 Horizen Labs repositories are open source, including EON. The code can be pulled from the GitHub repository and executed. However, this is not considered in the scope of the testnet documentation. 
 
-**Note:** EON is considered a sample application of what can be built using our Sidechains-SDK, that’s why you will find it in the same repository.
+**Note:** EON is considered a sample application of what can be built using our Sidechains-SDK, which is why you will find it in the same repository.
 
 At the time of this writing, EON is not finalized. It is recommended to use the **M3-V2** tag.  
 
