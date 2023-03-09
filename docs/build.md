@@ -509,7 +509,7 @@ Where **$PROJECT** is replaced by one of the following project, depending on wha
 
 You are now set, the **client** starts automatically.
 
-**Note:** YUMA TESTNET requires time to synchronize the entire blockchain. While waiting, check the progress by comparing the last block in the **Yuma Explorer** with the response of the following rpc method:
+**Note:** YUMA TESTNET requires time to synchronize the entire blockchain. While waiting, check the progress by comparing the last block in the **Yuma Explorer** with the response of the following RPC method:
 
 ```
 curl -X POST "http://127.0.0.1:9545/ethv1/" --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":"test"}' -H "accept: application/json"
