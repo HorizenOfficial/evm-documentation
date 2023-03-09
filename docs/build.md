@@ -560,7 +560,7 @@ Running your own node preserves your privacy and bolsters your security. It also
 ### Privacy Benefits
 
 When you run your own node, you can create and broadcast transactions directly from the node, thereby avoid using services that might compromise private information. A node also removes the need to use a block explorer to verify the status of your transactions. Block explorers allow third parties to track your transaction history by linking it to your IP address, leaking your physical location, your balance, and your financial counterparties.
-Horizen does not collect private information. However, by providing free access to the code, Horizen cannot guarantee that the same privacy with third-party operated dApps, and in either way the statement cannot be "**trustless**".
+Horizen does not collect private information. However, by providing free access to the code, Horizen cannot guarantee the same privacy with third-party operated dApps, and in either way the statement cannot be "**trustless**".
 
 ### Security Benefits
 Using an EON node to create transactions can also improve your security by reducing or eliminating the need to expose your private keys to the internet through a web browser. The private key is required to sign the transactions before submission, while the signature generally takes place locally.
