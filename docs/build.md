@@ -490,7 +490,7 @@ curl -fsSL https://raw.githubusercontent.com/docker/cli/master/contrib/completio
 git clone https://github.com/HorizenLabs/$PROJECT.git
 ```
 
-Where **$PROJECT** is replaced by one of the following project, depending on what you have decided to run:
+Where **$PROJECT** is replaced by one of the following projects, depending on what you have decided to run:
 
 * compose-evm-regtest-simplified → for YUMA SANDBOX
 * compose-evm-testnet-simplified → for YUMA TESTNET
