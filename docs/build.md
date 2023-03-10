@@ -453,20 +453,21 @@ To start your node, run our Docker compose (a tool required to run our multi-con
 
 2. Install Docker, the Docker compose v2 (which is included as a plugin with **apt install**), bc (arbitrary precision calculator language) and jq (a command-line JSON processor), using the following commands:
 
+Update dependencies.
+
+```
+sudo apt-get update
+sudo apt-get -y install bc jq pwgen
+```
+
+Install Docker.
+
 ```
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 echo \
 "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
 $(lsb_release -cs) stable" > /etc/apt/sources.list.d/docker.list
 ```
-
-Update dependencies.
-
-```
-sudo apt-get update
-sudo apt-get -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin bc jq pwgen
-```
-
 
 Add Docker group if it does not exist. If it does exist, make sure its group id (gid) is **999** to sync with 'infra' user.
 
@@ -495,7 +496,15 @@ Where **$PROJECT** is replaced by one of the following projects, depending on wh
 * compose-evm-regtest-simplified → for YUMA SANDBOX
 * compose-evm-testnet-simplified → for YUMA TESTNET
 
-4. Build the project by using the following command:
+4. Set up environment variables in the **.env** file:
+
+```
+SCNODE_NET_NODENAME= # This variable requires a name. Enter a name using characters, special characters, or numbers. 
+SCNODE_WALLET_SEED= # This variable can be empty or filled with a random string.
+SCNODE_REST_PASSWORD= # Use this variable only to set up authentication on the rest api endpoints, where you have to uncomment.
+```
+
+5. Build the project by using the following command:
 
 ```
 ./scripts/init.sh
@@ -503,7 +512,7 @@ Where **$PROJECT** is replaced by one of the following projects, depending on wh
 
 You are now set, the **client** starts automatically.
 
-**Note:** YUMA TESTNET requires time to synchronize the entire blockchain. While waiting, check the progress by comparing the last block in the **Yuma Explorer** with the response of the following RPC method:
+**Note:** YUMA TESTNET requires time to synchronize the entire blockchain. While waiting, check the progress by comparing the last block in the [Yuma Explorer](https://yuma-explorer.horizen.io) with the response of the following RPC method:
 
 ```
 curl -X POST "http://127.0.0.1:9545/ethv1/" --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":"test"}' -H "accept: application/json"
@@ -541,9 +550,8 @@ Network name:  Yuma Testnet Local
 New RPC URL:  http://127.0.0.1:9545/ethv1 
 Chain ID: 1662
 Currency symbol: ZEN
-Block Explorer: _leave blank_
+Block Explorer: https://yuma-explorer.horizen.io
 ```
-**Note:** The **Yuma Explorer** should not be used for localhost testnet for privacy considerations.
 
 **Note:** For configuring a wallet or network provider with the testnet local node the "RPC Server" must be the **local one (localhost)**. Use the **Chain ID** for  the  corresponding  testnet. 
 
