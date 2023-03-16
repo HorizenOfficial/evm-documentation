@@ -462,7 +462,7 @@ sudo apt-get -y install bc jq pwgen
 
 Install Docker by following the instructions from the [official Docker guide](https://docs.docker.com/engine/install/).
 
-Add Docker group if it does not exist.
+Add a Docker group if it does not exist.
 
 ```
 groupadd -g 999 docker 2>&1 || groupmod -g 999 docker
