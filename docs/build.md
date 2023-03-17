@@ -460,16 +460,9 @@ sudo apt-get update
 sudo apt-get -y install bc jq pwgen
 ```
 
-Install Docker.
+Install Docker by following the instructions from the [official Docker guide](https://docs.docker.com/engine/install/).
 
-```
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
-echo \
-"deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
-$(lsb_release -cs) stable" > /etc/apt/sources.list.d/docker.list
-```
-
-Add Docker group if it does not exist. If it does exist, make sure its group id (gid) is **999** to sync with 'infra' user.
+Add a Docker group if it does not exist.
 
 ```
 groupadd -g 999 docker 2>&1 || groupmod -g 999 docker
@@ -481,7 +474,7 @@ Get *'docker compose'* bash completion.
 curl -fsSL https://raw.githubusercontent.com/docker/cli/master/contrib/completion/bash/docker -o /etc/bash_completion.d/docker
 ```
 
-**Note:** Step 2 refers to Ubuntu or almost any Debian-based Linux distro. See [Ubuntu documentation](https://ubuntu.com/) for other OS or other kinds of incompatibilities.
+**Note:** Step 2 refers to Ubuntu or almost any Debian-based Linux distro. Check the [official Docker guide](https://docs.docker.com/engine/install/) for other OS or other kinds of incompatibilities.
 
 3. Clone this Horizen repository using the following command:
 
