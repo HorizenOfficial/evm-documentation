@@ -599,15 +599,15 @@ In the [EON Explorer](https://yuma-explorer.horizen.io/), perform the following 
 
 2. Open the EON Explorer and paste the contract address into the **Search** field.
 
-![alt_text](/img/docs/deploy/contractAddressNew.png)
+![alt_text](/img/docs/deploy/contract-address.png)
 
 3. The **Contract Address Details** page appears. Review the information displayed. In the lower pane, click **Code**.
 
-![alt_text](/img/docs/deploy/addressDetailsNew.png)
+![alt_text](/img/docs/deploy/address-details.png)
 
 4. The **Contract Creation Code** page appears. Click **Verify & Publish**. 
 
-![alt_text](/img/docs/deploy/verifyPublish.png)
+![alt_text](/img/docs/deploy/verify-publish.png)
 
 5. The **New Smart Contract Verification** page appears. It displays the contract address and various methods for verifying. By default, the **Via flattened source code** is selected.
 
