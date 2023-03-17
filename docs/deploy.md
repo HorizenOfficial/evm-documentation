@@ -548,3 +548,102 @@ This exposes a JSON-RPC interface to the Hardhat Network. Use the address, **htt
 
 **Note:** The port number may vary.  Check in your ***.conf** file.
 
+## Verifying a Smart Contract
+
+Any deployed smart contract can be verified using the EON Explorer.  The verification process begins with submitting the smart contract's source code to EON Explorer. The EON Explorer compares the submitted source code with the deployed byte code. If there is a match, then the smart contract is verified successfully, whereby the EON Explorer generates an interface to call the methods of the contract.
+
+**Note:** It is highly recommended that you use the **Chrome web browser** to interact with the **EON Explorer** for optimized user experience.
+
+The major steps for verifying a smart contract are:
+
+* Deploy a smart contract to the Yuma Testnet network
+
+
+**Note:** See the [Build](https://eon.horizen.io/docs/build) section for details on compiling and deploying a smart contract.
+
+* Flatten the smart contract, if needed
+* Check for the deployed contract using the EON Explorer
+* Verify and publish the contract
+
+Make sure that you deploy your contract to the Yuma Testnet. If you are using a wallet, you must connect it to the Yuma Testnet network.
+
+Use the following parameters to set connect to Yuma Testnet:
+
+```
+Network name:  Yuma Testnet 
+New RPC URL:  https://yuma-testnet.horizenlabs.io/ethv1 
+Chain ID: 1662 
+Currency symbol: ZEN
+```
+
+In this exercise, the [EON Explorer](https://yuma-explorer.horizen.io/) is connected to the Yuma Testnet. The smart contract was developed and deployed to the Yuma Testnet network. The verification process will be performed using the **Via flattened source code** option in the EON Explorer.
+
+### Flatten the Smart Contract
+
+Before using the EON Explorer, the smart contract you want to verify has been deployed in the Yuma Testnet network. You need to flatten the smart contract if the contract inherits from other contracts or if it uses a library. Flattening a smart contract refers to combining all Solidity code into one file instead of multiple source files, thereby having the imported code be embedded in the same file. 
+
+All smart contract development tools have a source code flattener. For example: 
+
+* **Truffle** - uses the [Truffle Flattener](https://www.npmjs.com/package/truffle-flattener)
+* **Hardhat** - uses the [Hardhat flattener](https://hardhat.org/hardhat-runner/docs/advanced/flattening) 
+* The [POA Solidity Flattener](https://github.com/poanetwork/solidity-flattener) can be used to flatten a smart contract
+* **Remix** - provides a built-in flattener tool
+ 
+**Note:** In the **Remix Explorer**, select your smart contract file ( **.sol** ) to flatten, then right click to the flattener tool. 
+
+### Check for the Deployed Contract
+
+In the [EON Explorer](https://yuma-explorer.horizen.io/), perform the following steps to begin the verification process:
+
+1. Once you have deployed your contract, your developer tool will display a contract address to check the pending transaction. Copy the contract address.
+
+2. Open the EON Explorer and paste the contract address into the **Search** field.
+
+![alt_text](/img/docs/build/contractAddressNew.png)
+
+3. The **Contract Address Details** page appears. Review the information displayed. In the lower pane, click **Code**.
+
+![alt_text](/img/docs/build/addressDetailsNew.png)
+
+4. The **Contract Creation Code** page appears. Click **Verify & Publish**. 
+
+![alt_text](/img/docs/build/verifyPublish.png)
+
+5. The **New Smart Contract Verification** page appears. It displays the contract address and various methods for verifying. By default, the **Via flattened source code** is selected.
+
+![alt_text](/img/docs/build/viaflattenedsource.png)
+
+6. In the **New Smart Contract Verification** page, click **Next**. A form page appears. 
+
+![alt_text](/img/docs/build/verifyform.png)
+
+Set the form with the following:
+
+  * **Contract name:** The name of the class called in the **.sol** file is the contract name. For example, in contract Owner {.., Owner is the contract name.
+
+  * **Include Nightly Builds:** By default, **No** is populated. Enter **Yes** to display nightly builds.
+
+  * **Compiler:** Make sure that you select the same version that you had compiled your contract.
+
+  * **EVM Version:** See the EVM version information. In this example, it is **default**.
+
+  * **Optimization:** If you enabled optimization during compilation, click **Yes**. For example, if you used Truffle, keep this option set to **No** as it does not use optimization by default. The Solidity compiler default value is **200**. Change this value only if it was altered during compilation.
+
+  * **Enter the Solidity Contract Code:** Enter your Solidity contract code in this field. For example, the content of the **Token.sol** file is entered. 
+
+  * **Try to fetch constructor arguments automatically:** By default, **Yes** is enabled. If similar contracts exist, their constructor arguments may be available.
+
+  * **ABI-encoded Constructor Arguments:** See the [ABI Constructor Arguments](https://docs.blockscout.com/for-users/abi-encoded-constructor-arguments) for detailed information. 
+
+  * **Add Contract Libraries:** Enter the **name** and **0x address** of any required libraries called in the **.sol** file. If your contract is  flattened, you do not need to add a contract library.
+
+7. Click **Verify & publish**. A checkmark symbol appears next in the **Code** tab, if successful. Also, the **Read Contract** tab and **Write Contract** tab appears.
+
+  **Note:** It is recommended **NOT** to use the **Brave web browser** for **EON Explorer** contract verification because of interface limitations.
+  
+8. Click **Read Contract** tab or **Write Contract** tab to display and interact with the contract details and any related transactions. 
+
+![alt_text](/img/docs/build/verifysuccess1.png)
+
+![alt_text](/img/docs/build/verifysuccess2.png)
+
