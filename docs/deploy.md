@@ -589,7 +589,7 @@ All smart contract development tools have a source code flattener. For example:
 * The [POA Solidity Flattener](https://github.com/poanetwork/solidity-flattener) can be used to flatten a smart contract
 * **Remix** - provides a built-in flattener tool
  
-**Note:** In the **Remix Explorer**, select your smart contract file ( **.sol** ) to flatten, then right click to the flattener tool. 
+**Note:** In the **Remix Explorer**, select your smart contract file ( **.sol** ) to flatten, then right-click to the flattener tool. 
 
 ### Check for the Deployed Contract
 
@@ -619,7 +619,7 @@ In the [EON Explorer](https://yuma-explorer.horizen.io/), perform the following 
 
 Set the form with the following:
 
-  * **Contract name:** The name of the class called in the **.sol** file is the contract name. For example, in contract Owner {.., Owner is the contract name.
+  * **Contract name:** The name of the class called in the **.sol** file is the contract name. For example, *Owner* is the contract name.
 
   * **Include Nightly Builds:** By default, **No** is populated. Enter **Yes** to display nightly builds.
 
@@ -637,7 +637,7 @@ Set the form with the following:
 
   * **Add Contract Libraries:** Enter the **name** and **0x address** of any required libraries called in the **.sol** file. If your contract is  flattened, you do not need to add a contract library.
 
-7. Click **Verify & publish**. A checkmark symbol appears next in the **Code** tab, if successful. Also, the **Read Contract** tab and **Write Contract** tab appears.
+7. Click **Verify & publish**. A checkmark symbol appears next in the **Code** tab, if successful. Also, the **Read Contract** tab and the **Write Contract** tab appears.
 
   **Note:** It is recommended **NOT** to use the **Brave web browser** for **EON Explorer** contract verification because of interface limitations.
   
