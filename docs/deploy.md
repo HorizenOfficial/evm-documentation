@@ -567,7 +567,7 @@ The major steps for verifying a smart contract are:
 
 Make sure that you deploy your contract to the Yuma Testnet. If you are using a wallet, you must connect it to the Yuma Testnet network.
 
-Use the following parameters to set connect to Yuma Testnet:
+Use the following parameters to connect to Yuma Testnet:
 
 ```
 Network name:  Yuma Testnet 
