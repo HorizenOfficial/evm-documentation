@@ -641,7 +641,7 @@ Set the form with the following:
 
   **Note:** It is recommended **NOT** to use the **Brave web browser** for **EON Explorer** contract verification because of interface limitations.
   
-8. Click **Read Contract** tab or **Write Contract** tab to display and interact with the contract details and any related transactions. 
+8. Click the **Read Contract** tab or **Write Contract** tab to display and interact with the contract details and any related transactions. 
 
 ![alt_text](/img/docs/deploy/verifysuccess1.png)
 
