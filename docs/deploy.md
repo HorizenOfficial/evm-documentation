@@ -589,7 +589,7 @@ All smart contract development tools have a source code flattener. For example:
 * The [POA Solidity Flattener](https://github.com/poanetwork/solidity-flattener) can be used to flatten a smart contract
 * **Remix** - provides a built-in flattener tool
  
-**Note:** In the **Remix Explorer**, select your smart contract file ( **.sol** ) to flatten, then right-click to the flattener tool. 
+**Note:** In the **Remix Explorer**, select your smart contract file ( **.sol** ) to flatten, then right-click on the flattener tool. 
 
 ### Check for the Deployed Contract
 
