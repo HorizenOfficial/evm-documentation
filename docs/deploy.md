@@ -585,7 +585,7 @@ Before using the EON Explorer for verification, the Yuma Testnet network has the
 All smart contract development tools have a source code flattener. For example: 
 
 * **Truffle** - uses the [Truffle Flattener](https://www.npmjs.com/package/truffle-flattener)
-* **Hardhat** - uses the [Hardhat flattener](https://hardhat.org/hardhat-runner/docs/advanced/flattening) 
+* **Hardhat** - uses the [Hardhat Flattener](https://hardhat.org/hardhat-runner/docs/advanced/flattening) 
 * The [POA Solidity Flattener](https://github.com/poanetwork/solidity-flattener) can be used to flatten a smart contract
 * **Remix** - provides a built-in flattener tool
  
