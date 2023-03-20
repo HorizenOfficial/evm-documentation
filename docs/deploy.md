@@ -580,7 +580,7 @@ In this exercise, the [EON Explorer](https://yuma-explorer.horizen.io/) is conne
 
 ### Flatten the Smart Contract
 
-Before using the EON Explorer for verification, the Yuma Testnet network has the deployed smart contract you want to verify. You need to flatten the smart contract if the contract inherits from other contracts or if it uses a library. Flattening a smart contract refers to combining all Solidity code into one file instead of multiple source files, thereby having the imported code be embedded in the same file. 
+Before using the EON Explorer for verification, make sure the Yuma Testnet network has the deployed smart contract you want to verify. You need to flatten the smart contract if the contract inherits from other contracts or if it uses a library. Flattening a smart contract refers to combining all Solidity code into one file instead of multiple source files, thereby having the imported code be embedded in the same file. 
 
 All smart contract development tools have a source code flattener. For example: 
 
