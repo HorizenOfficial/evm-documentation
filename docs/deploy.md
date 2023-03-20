@@ -637,7 +637,7 @@ Set the form with the following:
 
   * **Add Contract Libraries:** Enter the **name** and **0x address** of any required libraries called in the **.sol** file. If your contract is  flattened, you do not need to add a contract library.
 
-7. Click **Verify & publish**. A checkmark symbol appears next in the **Code** tab, if successful. Also, the **Read Contract** tab and the **Write Contract** tab appears.
+7. Click **Verify & publish**. A checkmark symbol appears next to the **Code** tab if successful. Also, the **Read Contract** tab and the **Write Contract** tab will appear.
 
   **Note:** It is recommended **NOT** to use the **Brave web browser** for **EON Explorer** contract verification because of interface limitations.
   
