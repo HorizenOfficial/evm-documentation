@@ -621,7 +621,7 @@ Set the form with the following:
 
   * **Contract name:** The name of the class called in the **.sol** file is the contract name. For example, *Owner* is the contract name.
 
-  * **Include Nightly Builds:** By default, **No** is populated. Enter **Yes** to display nightly builds.
+  * **Include Nightly Builds:** By default, **No** is selected. Enter **Yes** to display nightly builds.
 
   * **Compiler:** Make sure that you select the same version that you had compiled your contract.
 
