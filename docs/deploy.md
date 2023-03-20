@@ -623,7 +623,7 @@ Set the form with the following:
 
   * **Include Nightly Builds:** By default, **No** is selected. Enter **Yes** to display nightly builds.
 
-  * **Compiler:** Make sure that you select the same version that you had compiled your contract.
+  * **Compiler:** Make sure that you select the same version that you used to compile your contract.
 
   * **EVM Version:** See the EVM version information. In this example, it is **default**.
 
