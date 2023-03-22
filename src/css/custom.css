@@ -66,8 +66,8 @@
   font-weight: bold;
 }
 
-.navbar__logo img {
-  height: 30px;
+.navbar__logo {
+  height: 28px;
 }
 
 .markdown p img {
