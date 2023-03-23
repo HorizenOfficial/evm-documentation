@@ -595,7 +595,7 @@ All smart contract development tools have a source code flattener. For example:
 
 In the [EON Explorer](https://yuma-explorer.horizen.io/), perform the following steps to begin the verification process:
 
-1. Once you have deployed your contract, your developer tool will display a contract address to check the pending transaction. Copy the contract address.
+1. Once you have deployed your contract, your developer tool will display the address the network has assigned your contract to. Copy that address.
 
 2. Open the EON Explorer and paste the contract address into the **Search** field.
 
