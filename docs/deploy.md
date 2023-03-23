@@ -627,7 +627,7 @@ Set the form with the following:
 
   * **EVM Version:** See the EVM version information. In this example, it is **default**.
 
-  * **Optimization:** If you enabled optimization during compilation, click **Yes**. For example, if you used Truffle, keep this option set to **No** as it does not use optimization by default. The Solidity compiler default value is **200**. Change this value only if it was altered during compilation.
+  * **Optimization:** Set to **No** unless you explicitly chose *optimization* when you compiled your contract.
 
   * **Enter the Solidity Contract Code:** Enter your Solidity contract code in this field. For example, the content of the **Token.sol** file is entered. 
 
