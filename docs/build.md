@@ -351,7 +351,7 @@ Perform the following steps to interact with run your smart contract:
 
 Upon expanding the pane, your contract instance displays three actions that corresponds to the functions:
 
-**SetP(red button)** - This is a payable function that sends value (ZEN) to the contract instance.
+**SetP (red button)** - This is a payable function that sends value (ZEN) to the contract instance.
 
 **SetNP (orange button)** - This is a non-payable function, where it is not possible to send value (ZEN) to the contract.
 
