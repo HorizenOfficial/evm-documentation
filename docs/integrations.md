@@ -145,7 +145,7 @@ A thirdweb Dashboard is a multi-purpose tool for deploying pre-built smart contr
  
 To view your deployed contract(s), click **Contracts** in the top-left menu on the thirdweb launch webpage. The **Deployed contract** page appears. 
 
-![alt_text](/img/docs/integrations/thirdweb-mycontract-dashboard.png)
+![alt_text](/img/docs/integrations/thirdweb-my-contract-dashboard.png)
 
 The **Deployed contract** page list all of your deployed contracts and pertinent information:
 
