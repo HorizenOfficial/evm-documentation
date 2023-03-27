@@ -361,17 +361,19 @@ Upon expanding the pane, your contract instance displays three actions that corr
 
 ![alt_text](/img/docs/build/expandfunction.png)
 
+#### Non-Payable Functions
+
+For **non-payable functions**, DO NOT specify a value other than zero (0). Any value more than 0 is not accepted by the smart contract and the transaction will fail (in this example, Value is 100 and setNP is 18).
+
+![alt_text](/img/docs/build/nonpayablefunction.png)
+
 #### Payable Functions
 
 For **payable functions**, you can specify an amount of ZEN in the Value field to be paid to the smart contract. A successful execution of the transaction subtracts this value amount including the required fees for a *normal* smart contract method call.
 
 ![alt_text](/img/docs/build/payablefunction.png)
 
-#### Non-Payable Functions
 
-For **non-payable functions**, DO NOT specify a value other than zero (0). Any value more than 0 is not accepted by the smart contract and the transaction will fail (in this example, Value is 100 and setNP is 18).
-
-![alt_text](/img/docs/build/nonpayablefunction.png)
 
 
 If any issues arise, the Remix IDE will provide a status notification before confirming the operation.
