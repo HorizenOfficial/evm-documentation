@@ -163,7 +163,7 @@ npm install @truffle/hdwallet-provider
 
 
 
-## Set EON EVM as Network Provider
+### Set EON EVM as Network Provider
 
 Set EON EVM as the network provider to get an interactive console to execute commands.
 
