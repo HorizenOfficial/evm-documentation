@@ -228,7 +228,7 @@ To deploy a smart contract, complete the steps below:
 
 ### Install Remix IDE
 
-To install Remix, you can use the [online version](https://remix-project.org/) or [download](https://github.com/ethereum/remix-desktop/releases) the app. Follow the instructions on the website to install Remix IDE.
+To install Remix, you can use the [online version](https://remix.ethereum.org/) or [download](https://github.com/ethereum/remix-desktop/releases) the app. Follow the instructions on the website to install Remix IDE.
 
 Once you have installed the Remix IDE, the tool layout appears:
 
