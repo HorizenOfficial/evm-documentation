@@ -584,14 +584,13 @@ Select one of the symbol you wish for the ZEN token conversion:
 
 The **Value** field is always reset to 0 after each transaction execution. This field **DOES NOT** include gas.
 
-
 3. Click **Deploy**. The **Deployed Contract** pane displays your contract set as TESTCONTRACT and location. This indicates that your smart contract is deployed and ready for interaction.
 
 ![alt_text](/img/docs/build/deployedcontracts.png)
 
 ### Interact with a Contract Instance
 
-Interacting with your smart contract can be a simple transaction such as sending a payable amount of Ether, for example. A transaction will change the state of the EVM.
+Interacting with your smart contract can be a simple transaction, such as sending some amount of Ether to trigger an action, unlike a generic smart contract method call, where a transaction will change the state of the EVM.
 
 Perform the following steps to interact with run your smart contract:
 
