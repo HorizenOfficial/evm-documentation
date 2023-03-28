@@ -29,11 +29,11 @@ Use the following steps to connect to a wallet. In this example, the MetaMask wa
 
 3. Enter the password for your wallet. 
 
-**Note:** If you have forgotten your password, Metamask allows you to create a new password, however, you will need to provide your 12-word seed phrase for your wallet.
+**Note:** If you have forgotten your password, MetaMask allows you to create a new password, however, you will need to provide your 12-word seed phrase for your wallet.
 
 4. Optional. Click on your wallet to display its details. Once you have connected your wallet, you can configure a new network connection.
 
-![alt_text](/img/docs/integrations/thirdweb-add-network.png)
+![add-network](/img/docs/integrations/thirdweb-add-network.png)
 
 ## thirdweb Deployment Platform 
 
@@ -80,11 +80,11 @@ Perform the following steps to deploy a token.
 
 1, Select **Token**.
 
-![alt_text](/img/docs/integrations/thirdweb-explore.png)
+![explore-page](/img/docs/integrations/thirdweb-explore.png)
 
 2. The **Token** page appears. Read the description. Click **Deploy now**.
 
-![alt_text](/img/docs/integrations/thirdweb-token-contract.png)
+![token-contract](/img/docs/integrations/thirdweb-token-contract.png)
 
 3. The **Contract Metadata** page appears. Enter metadata about your token in the following fields:
 
@@ -94,52 +94,52 @@ Perform the following steps to deploy a token.
 * Description - a brief description of your token (not required)
 * Recipient Address - automatically populates with your wallet address
 
-![alt_text](/img/docs/integrations/thirdweb-token-tzen.png)
+![token-tzen](/img/docs/integrations/thirdweb-token-tzen.png)
 
 4. Click **Deploy Now**. The **Deploy Status** page appears. It states that your wallet will prompt you to sign the transaction.
 
-![alt_text](/img/docs/integrations/thirdweb-deploy-status.png)
+![deploy-status](/img/docs/integrations/thirdweb-deploy-status.png)
 
-5. The Metamask wallet displays a confirmation of the transaction. Click **Confirm**.
+5. The MetaMask wallet displays a confirmation of the transaction. Click **Confirm**.
 
-![alt_text](/img/docs/integrations/metamask-confirm-deploy-tzen.png)
+![confirm-deploy](/img/docs/integrations/metamask-confirm-deploy-tzen.png)
 
-6. The Metamask wallet displays a second confirmation of the transaction. Click **Confirm**.
+6. The MetaMask wallet displays a second confirmation of the transaction. Click **Confirm**.
 
-![alt_text](/img/docs/integrations/metamask-confirm-second-tzen.png)
+![confirm-second](/img/docs/integrations/metamask-confirm-second-tzen.png)
 
-7. The Metamask wallet displays a signature notification. A signature is needed to add the transaction to the thirdweb Dashboard. Read the content fully before signing. Use the down-arrow to scroll to bottom the page.
+7. The MetaMask wallet displays a signature notification. A signature is needed to add the transaction to the thirdweb Dashboard. Read the content fully before signing. Use the down-arrow to scroll to bottom the page.
 
-![alt_text](/img/docs/integrations/metamask-signature-request.png)
+![signature-request](/img/docs/integrations/metamask-signature-request.png)
 
 8. Read and fully understand the content. Click **Sign**.
 
-![alt_text](/img/docs/integrations/metamask-signature-second.png)
+![signature-second](/img/docs/integrations/metamask-signature-second.png)
 
 The **Deploy Status** notification appears displaying, **Adding to dashboard** message.
 
-![alt_text](/img/docs/integrations/thirdweb-deploy-status-dashboard.png)
+![deploy-status](/img/docs/integrations/thirdweb-deploy-status-dashboard.png)
 
 When the process completes, the **Overview** page displays your token. Review your token details. You can now create additional tokens using the minting process. To mint, click **Tokens** (under Extensions) in the left-column menu.
 
-![alt_text](/img/docs/integrations/thirdweb-tzen-details.png)
+![tzen-details](/img/docs/integrations/thirdweb-tzen-details.png)
 
 9. Your contract token details are displayed. Since your token is newly deployed, the token’s **Total Supply** value is zero (0). Click **Mint**.
 
-![alt_text](/img/docs/integrations/thirdweb-tzen-mint.png)
+![tzen=mint](/img/docs/integrations/thirdweb-tzen-mint.png)
 
 10. The **Mint additional tokens** page appears. In the **Additional Supply** field, enter an amount to mint additional tokens. In this example, 100 units are entered.
 
-![alt_text](/img/docs/integrations/thirdweb-mint-tokens.png)
+![mint-token](/img/docs/integrations/thirdweb-mint-tokens.png)
 
 
-11. The Metamask wallet displays a confirmation notification. Read the transaction details and click **Confirm**.
+11. The MetaMask wallet displays a confirmation notification. Read the transaction details and click **Confirm**.
 
-![alt_text](/img/docs/integrations/metamask-mint-confirm.png)
+![mint-confirm](/img/docs/integrations/metamask-mint-confirm.png)
 
 12. When the transaction completes, the **Tokens** page displays your token information. Review your token details. In this example, the Total Supply is the amount that is minted. 
 
-![alt_text](/img/docs/integrations/thirdweb-tzen-verify.png)
+![tzen-verify](/img/docs/integrations/thirdweb-tzen-verify.png)
 
 ## View Contracts
 
@@ -147,7 +147,7 @@ A thirdweb Dashboard is a multi-purpose tool for deploying pre-built smart contr
  
 To view your deployed contract(s), click **Contracts** in the top-left menu on the thirdweb launch webpage. The **Deployed contract** page appears. 
 
-![alt_text](/img/docs/integrations/thirdweb-my-contract-dashboard.png)
+![mycontract-dashboard](/img/docs/integrations/thirdweb-my-contract-dashboard.png)
 
 The **Deployed contract** page list all of your deployed contracts and pertinent information:
 
@@ -158,7 +158,7 @@ The **Deployed contract** page list all of your deployed contracts and pertinent
 
 You can click on any field to display the contract’s **Overview** page. In this example, the *GOSURF Token* is displayed.
 
-![alt_text](/img/docs/integrations/thirdweb-tzen-tokendetails.png)
+![tzen-tokendetails](/img/docs/integrations/thirdweb-tzen-tokendetails.png)
 
 The **Token Details** page displays current information about your deployed token as well as transaction history. The following information fields include:
 
