@@ -623,9 +623,6 @@ For **payable functions**, you can specify an amount of ZEN in the Value field t
 
 ![alt_text](/img/docs/build/payablefunction.png)
 
-
-
-
 If any issues arise, the Remix IDE will provide a status notification before confirming the operation.
 
 ![alt_text](/img/docs/build/confirmation.png)
@@ -636,11 +633,86 @@ If any issues arise, the Remix IDE will provide a status notification before con
 
 ![alt_text](/img/docs/build/successmessage.png)
 
+### Interaction with Sample Contract 
+
+To illustrate interaction with smart contracts, the **EonWorkspace** is created in Remix. This workspace provides a set of script files to perform specific tasks, such as displaying information or executing a transaction within the blockchain.
+
+#### Access the EonWorkspace
+
+To Be Developed
+
+In the **Remix File Explorer**,the scripts are located in the **examples** folder. To execute a script, select the desired filename.js file. Right-click to open the drop-down menu. Select **Run**. 
+
+![eonworkspace](/img/docs/build/remix-eonworkspace.png)
 
 
+### Get Basic Information
 
+The script, get basic information.js displays the basic information that includes:
 
+* Block Height
+* Block 
+* Chain ID
+* Gas Price 
 
+The **Remix Terminal** displays the results. 
+
+![basic_info](/img/docs/deploy/basic-info-remix.png)
+
+### Deploy a Contract
+
+The script, **deploy a contract.js** displays the contract address. 
+
+The MetaMask wallet connected with Remix appears with a notification of the contract deployment. Click **Confirm** to proceed with the deployment.
+
+![deploy-confirm](/img/docs/deploy/metamask-deploy-confirm.png)
+
+The **Remix Terminal** displays the results. 
+
+![deploy-contract](/img/docs/deploy/deploy-contract-remix.png) 
+
+### Interact with Existing Contracts 
+The script, **Interact with existing contracts.js** displays the wallet address invoking a contract.
+
+The MetaMask wallet connected with Remix appears with a notification of the payable transaction of ZEN (TZEN). Click **Confirm** to proceed with the transaction.
+
+![interact-confirm](/img/docs/deploy/metamask-interact-confirm.png)
+
+The **Remix Terminal** displays the results. 
+
+![remix-interact](/img/docs/deploy/interact-contract-remix.png)
+
+The MetaMask wallet connected with Remix appears with a second notification of the payable transaction of **ZEN (TZEN)**. Click **Confirm** to complete the transaction.
+
+![interact-complete](/img/docs/deploy/metamask-interact-complete.png)
+
+### EOA to EOA transaction 
+
+The script, **Make EOA to EOA transactions.js** displays an EOA to EOA transaction.
+
+The MetaMask wallet connected with Remix appears with a notification of the pending transaction of sending **ZEN (TZEN)** to the receiving address. Click **Confirm** to proceed with the transaction.
+
+![eoa-confirm](/img/docs/deploy/metamask-eoa-confirm.png)
+
+The **Remix Terminal** displays the results. 
+
+![eoa-eoa](/img/docs/deploy/eoa-eoa-remix-ok.png)
+
+The MetaMask wallet appears with a second notification of the **Send** transaction of **ZEN (TZEN)** to the receiving address. 
+
+![eoa-send](/img/docs/deploy/metamask-eoa-send.png)
+
+### Interact with Native Smart Contracts
+
+The script, **Interact with native smart contracts.js** displays a backwards transfer (native contract). 
+
+The MetaMask wallet connected with Remix appears. Read the transaction information and click **Confirm**.
+
+![native-confirm](/img/docs/deploy/metamask-native-confirm.png)
+
+The **Remix Terminal** displays the results. 
+
+![native-interact](/img/docs/deploy/native-interact-remix.png)
 
 ## Verifying a Smart Contract
 
