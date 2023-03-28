@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Integrations
 
-*Learn how to deploy pre-built smart contracts with thirdweb. 
+*Learn how to deploy pre-built smart contracts with thirdweb.* 
 
 
 ## Using thirdweb for Internet's Next Generation
