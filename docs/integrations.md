@@ -16,7 +16,8 @@ The thirdweb platform provides easy-to-use templates to deploy pre-built smart c
 
 ## Connect thirdweb to a Wallet
 
-Use the following steps to connect to a wallet. In this example, the Metamask wallet is connected to thirdweb.
+Use the following steps to connect to a wallet. In this example, the MetaMask wallet is connected to thirdweb.
+
 
 1. Click **Connect Wallet** at the top-right of the page.
 
