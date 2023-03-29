@@ -149,7 +149,8 @@ When the process completes, the **Overview** page displays your token. Review yo
 
 A thirdweb Dashboard is a multi-purpose tool for deploying pre-built smart contracts, viewing the details of deployed smart contracts, and interacting with the contracts where you can modify its features, such as metadata, royalty fees, primary sales recipient, platform fees, and permission controls.
  
-To view your deployed contract(s), click **Contracts** in the top-left menu on the thirdweb launch webpage. The **Deployed contract** page appears. 
+To view your deployed contract(s), click **Contracts** in the top-left menu on the thirdweb launch webpage. The **Deployed contracts** page appears. 
+
 
 ![mycontract-dashboard](/img/docs/integrations/thirdweb-my-contract-dashboard.png)
 
