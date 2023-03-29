@@ -9,7 +9,7 @@ sidebar_position: 6
 
 ## Using thirdweb for Internet's Next Generation
 
-thirdweb is a development framework for building web3 apps. thirdweb provides tools for developers and creators to deploy smart contracts to a blockchain network (mainnet or testnet) with the interaction of crypto-wallets.  
+thirdweb is a development framework for building web3 apps. thirdweb provides tools for developers and creators to deploy smart contracts to a blockchain network (mainnet or testnet) with the interaction of crypto wallets.  
 
 The thirdweb platform provides easy-to-use templates to deploy pre-built smart contracts as well as custom and original contracts from your own source. Additionally, thirdweb allows you to connect to dApps, games, and a number of web3 projects.  
 
