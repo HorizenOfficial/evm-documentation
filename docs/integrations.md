@@ -159,7 +159,8 @@ The **Deployed contract** page lists all of your deployed contracts and pertinen
 
 * **Name** - The user-defined contract name. 
 * **Contract Type** - The type of smart contract deployed. In this example, the contract type was selected from the thirdweb Explore page. 
-* **Network** - The network name that the contract was deployed on. The network name was defined during connecting thirdweb to a wallet.
+* **Network** - The network name that the contract was deployed on. The network name was defined when connecting thirdweb to a wallet.
+
 * **Contract Address** - The address assigned to your deployed contract. This field allows for copying the address to the clipboard.
 
 You can click on any field to display the contract’s **Overview** page. In this example, the *GOSURF Token* is displayed.
