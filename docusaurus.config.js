@@ -49,7 +49,8 @@ const config = {
           alt: 'Horizen EON Logo',
           src: 'img/HEON_logo_dark_1.svg',
           srcDark: 'img/HEON_logo_light_1.svg',
-          href: '/',
+          href: process.env.URL,
+          target: '_self',
         },
         items: [
           {
