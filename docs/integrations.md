@@ -110,7 +110,8 @@ Perform the following steps to deploy a token.
 
 ![confirm-second](/img/docs/integrations/metamask-confirm-second-tzen.png)
 
-7. The MetaMask wallet displays a signature notification. A signature is needed to add the transaction to the thirdweb Dashboard. Read the content fully before signing. Use the down-arrow to scroll to bottom the page.
+7. The MetaMask wallet displays a signature notification. A signature is needed to add the transaction to the thirdweb dashboard. Read the content fully before signing. Use the down-arrow to scroll to the bottom of the page.
+
 
 ![signature-request](/img/docs/integrations/metamask-signature-request.png)
 
