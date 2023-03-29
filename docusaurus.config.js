@@ -7,8 +7,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Horizen EON Documentation',
-  url: 'https://eon.horizen.io',
-  baseUrl: '/docs',
+  url: process.env.URL,
+  baseUrl: process.env.BASE_URL,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/EON-favicon.svg',
