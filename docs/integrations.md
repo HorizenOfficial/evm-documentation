@@ -154,7 +154,8 @@ To view your deployed contract(s), click **Contracts** in the top-left menu on t
 
 ![mycontract-dashboard](/img/docs/integrations/thirdweb-my-contract-dashboard.png)
 
-The **Deployed contract** page list all of your deployed contracts and pertinent information:
+The **Deployed contract** page lists all of your deployed contracts and pertinent information:
+
 
 * **Name** - The user-defined contract name. 
 * **Contract Type** - The type of smart contract deployed. In this example, the contract type was selected from the thirdweb Explore page. 
