@@ -119,7 +119,8 @@ Perform the following steps to deploy a token.
 
 ![signature-second](/img/docs/integrations/metamask-signature-second.png)
 
-The **Deploy Status** notification appears displaying, **Adding to dashboard** message.
+The **Deploy Status** notification appears displaying an **Adding to dashboard** message.
+
 
 ![deploy-status](/img/docs/integrations/thirdweb-deploy-status-dashboard.png)
 
