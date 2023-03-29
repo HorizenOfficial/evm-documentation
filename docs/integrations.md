@@ -69,7 +69,7 @@ You can deploy an existing smart contract from a source to the blockchain by usi
 
 * Compile your contract
 * Upload your contract source code (ABI) to an IPFS
-* Open the thirdweb Dashboard to network (such as Horizen Yuma Testnet)
+* Open the thirdweb dashboard to a network (such as Horizen Yuma Testnet)
 
 See thirdweb’s [Deploy from Source](https://portal.thirdweb.com/getting-started/contracts#deploy-contract-section) for detailed information.
 
@@ -147,14 +147,14 @@ When the process completes, the **Overview** page displays your token. Review yo
 
 ## View Contracts
 
-A thirdweb Dashboard is a multi-purpose tool for deploying pre-built smart contracts, viewing the details of deployed smart contracts, and interacting with the contracts where you can modify its features, such as metadata, royalty fees, primary sales recipient, platform fees, and permission controls.
+A thirdweb dashboard is a multi-purpose tool for deploying pre-built smart contracts, viewing the details of deployed smart contracts, and interacting with the contracts. Additionally, you can modify its features, such as metadata, royalty fees, primary sales recipient, platform fees, and permission controls.
  
 To view your deployed contract(s), click **Contracts** in the top-left menu on the thirdweb launch webpage. The **Deployed contracts** page appears. 
 
 
 ![mycontract-dashboard](/img/docs/integrations/thirdweb-my-contract-dashboard.png)
 
-The **Deployed contract** page lists all of your deployed contracts and pertinent information:
+The **Deployed contracts** page lists all of your deployed contracts and pertinent information:
 
 
 * **Name** - The user-defined contract name. 
