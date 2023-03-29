@@ -74,7 +74,8 @@ You can deploy an existing smart contract from a source to the blockchain by usi
 See thirdweb’s [Deploy from Source](https://portal.thirdweb.com/getting-started/contracts#deploy-contract-section) for detailed information.
 
 ## Deploy a Pre-built Popular Contract
-In the **Explore** page, you can choose from a collection of popular deployed contracts, which includes NFTs, tokens, and marketplace. For this exercise, a pre-built token is deployed.
+In the **Explore** page, you can choose from a collection of popular deployed contracts, which includes NFTs, tokens, and marketplaces. For this exercise, a pre-built token is deployed.
+
 
 #### Deploy Token
 Perform the following steps to deploy a token. 
