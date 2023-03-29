@@ -64,7 +64,8 @@ thirdweb allows you to create and deploy custom contracts by using the ContractK
 See thirdweb’s [ContractKit](https://portal.thirdweb.com/contractkit) for detailed information. 
 
 ### Deploy Contracts from a Source
-You can deploy an existing smart contract from a source to the blockchain by using thirdweb’s CLI tool. To deploy a contract, use the CLI tool to perform the three steps:
+You can deploy an existing smart contract from a source to the blockchain by using thirdweb’s CLI tool. To deploy a contract, use the CLI tool to perform these three steps:
+
 
 * Compile your contract
 * Upload your contract source code (ABI) to an IPFS
