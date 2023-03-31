@@ -556,7 +556,7 @@ Perform the following steps to run and deploy your smart contract:
 
 1. In the **Icon panel**, click the **Deploy and Run** icon. The **Deploy and Run module** appears in the **Side panel**.
 
-![alt_text](/img/docs/build/deployrun.png)
+![deployrun](/img/docs/deploy/deployrun.png)
 
 2. For EON, configure the **Deploy and Run module** settings with the following:
 
@@ -586,7 +586,7 @@ The **Value** field is always reset to 0 after each transaction execution. This 
 
 3. Click **Deploy**. The **Deployed Contract** pane displays your contract set as TESTCONTRACT and location. This indicates that your smart contract is deployed and ready for interaction.
 
-![alt_text](/img/docs/build/deployedcontracts.png)
+![deployedcontract](/img/docs/deploy/deployedcontracts.png)
 
 ### Interact with a Contract Instance
 
@@ -596,7 +596,7 @@ Perform the following steps to interact with run your smart contract:
 
 1. In the **Deployed Contract** pane, click on the **right arrow** next to the filename to expand. In this example, the filename is TESTCONTRACT. The functions of the deployed contract are displayed.
 
-![alt_text](/img/docs/build/threebuttons.png)
+![threebuttons](/img/docs/deploy/threebuttons.png)
 
 Upon expanding the pane, your contract instance displays three actions that corresponds to the functions:
 
@@ -608,29 +608,29 @@ Upon expanding the pane, your contract instance displays three actions that corr
 
 2. Click on the **down arrow** next to the **setP** field to expand the function.
 
-![alt_text](/img/docs/build/expandfunction.png)
+![expandfunction](/img/docs/deploy/expandfunction.png)
 
 #### Non-Payable Functions
 
 For **non-payable functions**, DO NOT specify a value other than zero (0). Any value more than 0 is not accepted by the smart contract and the transaction will fail (in this example, Value is 100 and setNP is 18).
 
-![alt_text](/img/docs/build/nonpayablefunction.png)
+![nonpayfunction](/img/docs/deploy/nonpayablefunction.png)
 
 #### Payable Functions
 
 For **payable functions**, you can specify an amount of ZEN in the Value field to be paid to the smart contract. A successful execution of the transaction subtracts this value amount including the required fees for a *normal* smart contract method call.
 
-![alt_text](/img/docs/build/payablefunction.png)
+![payfunction](/img/docs/deploy/payablefunction.png)
 
 If any issues arise, the Remix IDE will provide a status notification before confirming the operation.
 
-![alt_text](/img/docs/build/confirmation.png)
+![confirmation](/img/docs/deploy/confirmation.png)
 
 3. In the expanded function (**setP**), enter a **desired value** in the **value** field. Currently, this field is filled with 256. 
 
 4. Click **transact**. The Terminal panel displays a success status for the interaction with your smart contract.
 
-![alt_text](/img/docs/build/successmessage.png)
+![sucessmessage](/img/docs/deploy/successmessage.png)
 
 ### Interaction with Sample Contract 
 
@@ -638,11 +638,11 @@ To illustrate interaction with smart contracts, the **EonWorkspace** is created 
 
 #### Access the EonWorkspace
 
-To Be Developed
+### To Be Developed
 
 In the **Remix File Explorer**,the scripts are located in the **examples** folder. To execute a script, select the desired filename.js file. Right-click to open the drop-down menu. Select **Run**. 
 
-![eonworkspace](/img/docs/build/remix-eonworkspace.png)
+![eonworkspace](/img/docs/deploy/remix-eonworkspace.png)
 
 
 ### Get Basic Information
@@ -656,7 +656,7 @@ The script, get basic information.js displays the basic information that include
 
 The **Remix Terminal** displays the results. 
 
-![basic_info](/img/docs/deploy/basic-info-remix.png)
+![basicinfo](/img/docs/deploy/basic-info-remix.png)
 
 ### Deploy a Contract
 
@@ -664,26 +664,26 @@ The script, **deploy a contract.js** displays the contract address.
 
 The MetaMask wallet connected with Remix appears with a notification of the contract deployment. Click **Confirm** to proceed with the deployment.
 
-![deploy-confirm](/img/docs/deploy/metamask-deploy-confirm.png)
+![deployconfirm](/img/docs/deploy/metamask-deploy-confirm.png)
 
 The **Remix Terminal** displays the results. 
 
-![deploy-contract](/img/docs/deploy/deploy-contract-remix.png) 
+![deploycontract](/img/docs/deploy/deploy-contract-remix.png) 
 
 ### Interact with Existing Contracts 
 The script, **Interact with existing contracts.js** displays the wallet address invoking a contract.
 
 The MetaMask wallet connected with Remix appears with a notification of the payable transaction of ZEN (TZEN). Click **Confirm** to proceed with the transaction.
 
-![interact-confirm](/img/docs/deploy/metamask-interact-confirm.png)
+![interactconfirm](/img/docs/deploy/metamask-interact-confirm.png)
 
 The **Remix Terminal** displays the results. 
 
-![remix-interact](/img/docs/deploy/interact-contract-remix.png)
+![remixinteract](/img/docs/deploy/interact-contract-remix.png)
 
 The MetaMask wallet connected with Remix appears with a second notification of the payable transaction of **ZEN (TZEN)**. Click **Confirm** to complete the transaction.
 
-![interact-complete](/img/docs/deploy/metamask-interact-complete.png)
+![interactcomplete](/img/docs/deploy/metamask-interact-complete.png)
 
 ### EOA to EOA transaction 
 
@@ -691,15 +691,15 @@ The script, **Make EOA to EOA transactions.js** displays an EOA to EOA transacti
 
 The MetaMask wallet connected with Remix appears with a notification of the pending transaction of sending **ZEN (TZEN)** to the receiving address. Click **Confirm** to proceed with the transaction.
 
-![eoa-confirm](/img/docs/deploy/metamask-eoa-confirm.png)
+![eoaconfirm](/img/docs/deploy/metamask-eoa-confirm.png)
 
 The **Remix Terminal** displays the results. 
 
-![eoa-eoa](/img/docs/deploy/eoa-eoa-remix-ok.png)
+![eoaeoa](/img/docs/deploy/eoa-eoa-remix-ok.png)
 
 The MetaMask wallet appears with a second notification of the **Send** transaction of **ZEN (TZEN)** to the receiving address. 
 
-![eoa-send](/img/docs/deploy/metamask-eoa-send.png)
+![eoasend](/img/docs/deploy/metamask-eoa-send.png)
 
 ### Interact with Native Smart Contracts
 
@@ -707,11 +707,11 @@ The script, **Interact with native smart contracts.js** displays a backwards tra
 
 The MetaMask wallet connected with Remix appears. Read the transaction information and click **Confirm**.
 
-![native-confirm](/img/docs/deploy/metamask-native-confirm.png)
+![nativeconfirm](/img/docs/deploy/metamask-native-confirm.png)
 
 The **Remix Terminal** displays the results. 
 
-![native-interact](/img/docs/deploy/native-interact-remix.png)
+![nativeinteract](/img/docs/deploy/native-interact-remix.png)
 
 ## Verifying a Smart Contract
 
