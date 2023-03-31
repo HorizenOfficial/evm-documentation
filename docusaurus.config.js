@@ -6,36 +6,34 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Horizen EON Documentation',
+  title: "Horizen EON Documentation",
   url: process.env.URL,
   baseUrl: process.env.BASE_URL,
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/EON-favicon.svg',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/EON-favicon.svg",
 
-  plugins: [
-    "./matomo",
-  ],
+  plugins: ["./matomo"],
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/',
-          sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: "/",
+          sidebarPath: require.resolve("./sidebars.js"),
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -46,28 +44,29 @@ const config = {
     ({
       navbar: {
         logo: {
-          alt: 'Horizen EON Logo',
-          src: 'img/HEON_logo_dark_1.svg',
-          srcDark: 'img/HEON_logo_light_1.svg',
+          alt: "Horizen EON Logo",
+          src: "img/HEON_logo_dark_1.svg",
+          srcDark: "img/HEON_logo_light_1.svg",
           href: process.env.URL,
-          target: '_self',
+          target: "_self",
         },
         items: [
           {
-            type: 'doc',
-            docId: 'get-started',
-            position: 'left',
-            label: 'Documentation',
+            type: "doc",
+            docId: "get-started",
+            position: "left",
+            label: "Documentation",
           },
         ],
       },
+      /* values are defined in cloudflare */
       algolia: {
         appId: process.env.ALGOLIA_APP_ID,
         apiKey: process.env.ALGOLIA_API_KEY,
         indexName: process.env.ALGOLIA_INDEX_NAME,
       },
       colorMode: {
-        defaultMode: 'dark',
+        defaultMode: "dark",
       },
       prism: {
         theme: lightCodeTheme,
