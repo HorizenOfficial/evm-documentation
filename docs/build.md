@@ -440,18 +440,18 @@ To install Remix, you can use the [online version](https://remix.ethereum.org/) 
 
 Once you have installed the Remix IDE, the tool layout appears:
 
-![alt_text](/img/docs/build/remixlaunch.png)
+![launchpage](/img/docs/build/remixlaunch.png)
 
 ### Create a Project Contract
 A project contract is a smart contract that you will create in order to test, deploy, and subsequently interact with. You will use a sample contract template to create your project contract. 
 
 1. Go to the **File Explorer** pane. Click on the **Create New File** icon. 
 
-![alt_text](/img/docs/build/createnewfile.png)
+![createfile](/img/docs/build/createnewfile.png)
 
 2. A new file name field appears. Enter your desired file name.
 
-![alt_text](/img/docs/build/newfilename.png)
+![newfile](/img/docs/build/newfilename.png)
 
 3. Use this sample project contract by copy and paste it in the Editor panel. This sample contract is written in Solidity.
 
@@ -493,7 +493,7 @@ contract testContract {
 
 In the **Editor** panel, your file name tab is active and the Solidity code appears. 
 
-![alt_text](/img/docs/build/contractcode.png)
+![code](/img/docs/build/contractcode.png)
 
 ### Compile a Contract
 Before compiling your project contract, you can configure the Solidity compiler to perform a specific task(s). See the [Solidity Compiler](https://remix-ide.readthedocs.io/en/latest/compile.html) webpage for detailed information. Depending on the complexity of your smart contract, you can use the auto-compilation option as required. 
@@ -504,7 +504,7 @@ Perform the following steps to compile your contract:
 2. The Solidity Compiler appears in the Side panel. 
 3. Click **Compile &lt;Your contract file name&gt;**. In this example, the filename is *MyProjectContract.sol*.
 
-![alt_text](/img/docs/build/soliditycompiler.png)
+![compiler](/img/docs/build/soliditycompiler.png)
 
 **Note:** A check mark appears next to the task icons once the operation is complete.
 
