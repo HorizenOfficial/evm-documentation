@@ -4,30 +4,40 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
-    "build": "docusaurus build",
+    "env:local": "dotenv -e ./env/.env.local",
+    "env:dev": "dotenv -e ./env/.env.dev",
+    "env:dev-evm": "dotenv -e ./env/.env.dev_evm",
+    "env:prod": "dotenv -e ./env/.env.prod",
+    "env:prod-evm": "dotenv -e ./env/.env.prod_evm",
+    "start": "npm run env:local docusaurus start",
+    "build": "npm run env:local docusaurus build",
+    "build:dev": "npm run env:dev docusaurus build",
+    "build:dev-evm": "npm run env:dev-evm docusaurus build",
+    "build:prod": "npm run env:prod docusaurus build",
+    "build:prod-evm": "npm run env:prod-evm docusaurus build",
+    "serve": "npm run env:local docusaurus serve",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
-    "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@docusaurus/core": "2.2.0",
-    "@docusaurus/plugin-client-redirects": "2.2.0",
-    "@docusaurus/preset-classic": "2.2.0",
+    "@docusaurus/core": "2.4.0",
+    "@docusaurus/plugin-client-redirects": "2.4.0",
+    "@docusaurus/preset-classic": "2.4.0",
     "@mdx-js/react": "1.6.22",
     "clsx": "1.2.1",
+    "dotenv-cli": "7.1.0",
     "prism-react-renderer": "1.3.5",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "2.2.0",
-    "@tsconfig/docusaurus": "1.0.5",
-    "typescript": "4.7.4"
+    "@docusaurus/module-type-aliases": "2.4.0",
+    "@tsconfig/docusaurus": "1.0.7",
+    "typescript": "5.0.2"
   },
   "browserslist": {
     "production": [
