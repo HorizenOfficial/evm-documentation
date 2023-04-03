@@ -70,7 +70,7 @@ const config = {
         ],
       },
       /* values are defined in cloudflare */
-      algoliaConfig,
+      ...algoliaConfig,
       colorMode: {
         defaultMode: 'dark',
       },
