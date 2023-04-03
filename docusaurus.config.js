@@ -4,7 +4,7 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
-const algoliaConfig = process.env.APP_ID ? {
+const algoliaConfig = process.env.ALGOLIA_APP_ID ? {
   algolia: {
     appId: process.env.ALGOLIA_APP_ID,
     apiKey: process.env.ALGOLIA_API_KEY,
