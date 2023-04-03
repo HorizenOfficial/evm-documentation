@@ -4,6 +4,8 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+// Algolia search config
+// Values are stored in cloudflare
 const algoliaConfig = process.env.ALGOLIA_APP_ID ? {
   algolia: {
     appId: process.env.ALGOLIA_APP_ID,
@@ -69,7 +71,6 @@ const config = {
           },
         ],
       },
-      /* values are defined in cloudflare */
       ...algoliaConfig,
       colorMode: {
         defaultMode: 'dark',
