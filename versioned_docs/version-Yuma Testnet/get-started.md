@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 slug: /
-title: Get Started - Gobi Testnet
+title: Get Started - Yuma Testnet (bug fixed)
 description: Dive into the official Horizen EON documentation portal to learn how to communicate, interact, and build on Horizen’s EVM sidechain.
 image: https://eon.horizen.io/docs/img/MetaData_img_blueprint_eon-doc.jpg
 ---
