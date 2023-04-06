@@ -25,7 +25,7 @@ const config = {
   baseUrl: process.env.BASE_URL,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/EON-favicon.svg',
+  favicon: 'img/favicon.svg',
 
   plugins: [
     "./matomo",
