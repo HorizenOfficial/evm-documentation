@@ -636,10 +636,6 @@ If any issues arise, the Remix IDE will provide a status notification before con
 
 To illustrate interaction with smart contracts, the **EonWorkspace** is created in Remix. This workspace provides a set of script files to perform specific tasks, such as displaying information or executing a transaction within the blockchain.
 
-#### Access the EonWorkspace
-
-### To Be Developed
-
 In the **Remix File Explorer**,the scripts are located in the **examples** folder. To execute a script, select the desired filename.js file. Right-click to open the drop-down menu. Select **Run**. 
 
 ![eonworkspace](/img/docs/deploy/remix-eonworkspace.png)
