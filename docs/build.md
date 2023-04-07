@@ -135,7 +135,7 @@ A network is needed in order to deploy a smart contract. In the configuration fi
 ```
 …networks: {    
 	zen: {
-		provider: () => new HDWalletProvider("word1 … word12", `https://yuma-testnet.horizenlabs.io/ethv1`),
+		provider: () => new HDWalletProvider("word1 … word12", `https://gobi-testnet.horizenlabs.io/ethv1`),
       network_id: 1662,  
       production: false
     }
@@ -147,7 +147,7 @@ A network is needed in order to deploy a smart contract. In the configuration fi
 
 **Note**: In the account field, replace “**word1 … word12**” with a mnemonic seed phrase for a valid wallet. Use the following [instructions](https://metamask.zendesk.com/hc/en-us/articles/360015290032-How-to-reveal-your-Secret-Recovery-Phrase) to retrieve your mnemonic seed phrase from MetaMask.
 
-The <code>network_id</code> is dependent on the environment in use and corresponds to the Chain ID. For Yuma Testnet, the Chain ID is **1662**.
+The <code>network_id</code> is dependent on the environment in use and corresponds to the Chain ID. For Gobi Testnet, the Chain ID is **1662**.
 
 Next, add this line at the top of the file:
 
@@ -364,7 +364,7 @@ const config: HardhatUserConfig = {
   defaultNetwork: "zen",
   networks: {
     zen: {
-      url: ‘https://yuma-testnet.horizenlabs.io/ethv1',
+      url: ‘https://gobi-testnet.horizenlabs.io/ethv1',
       accounts: {mnemonic: "word1 … word12"},
       gasPrice: "auto"
     }, 
@@ -422,11 +422,11 @@ Because you used TypeScript, the compile task also generates TypeScript bindings
 
 ## Build a dApp Locally
 
-*Learn how to set up a local environment or a local Yuma testnet node to build a dApp (decentralized application).*
+*Learn how to set up a local environment or a local Gobi testnet node to build a dApp (decentralized application).*
 
 In this section, you will accomplish the following:
 
-* Deploy an existing dApp into a local environment or Yuma Testnet
+* Deploy an existing dApp into a local environment or Gobi Testnet
 * Run a private instance of EON 
 
 The easiest way to deploy a dApp is to use **Docker**. The EON client will be running in a Dockerized container. See **[Node Client](#node-client)** below.
@@ -486,8 +486,8 @@ git clone https://github.com/HorizenLabs/$PROJECT.git
 
 Where **$PROJECT** is replaced by one of the following projects, depending on what you have decided to run:
 
-* compose-evm-regtest-simplified → for YUMA SANDBOX
-* compose-evm-testnet-simplified → for YUMA TESTNET
+* compose-evm-regtest-simplified → for GOBI SANDBOX
+* compose-evm-testnet-simplified → for GOBI TESTNET
 
 4. Set up environment variables in the **.env** file:
 
@@ -505,7 +505,7 @@ SCNODE_REST_PASSWORD= # Use this variable only to set up authentication on the r
 
 You are now set, the **client** starts automatically.
 
-**Note:** YUMA TESTNET requires time to synchronize the entire blockchain. While waiting, check the progress by comparing the last block in the [Yuma Explorer](https://yuma-explorer.horizen.io) with the response of the following RPC method:
+**Note:** GOBI TESTNET requires time to synchronize the entire blockchain. While waiting, check the progress by comparing the last block in the [Gobi Explorer](https://gobi-explorer.horizen.io) with the response of the following RPC method:
 
 ```
 curl -X POST "http://127.0.0.1:9545/ethv1/" --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":"test"}' -H "accept: application/json"
@@ -525,25 +525,25 @@ docker compose up -d
 ### Configuration
 Set up your network provider as **localhost (127.0.0.1)** and **port (9545)**, and also change the **Chain ID** according to the environment you are using.
 
-##### YUMA SANDBOX
+##### GOBI SANDBOX
 
 ```
-Network name:  Yuma Sandbox 
+Network name:  Gobi Sandbox 
 New RPC URL:  http://127.0.0.1:9545/ethv1
 Chain ID: 1997 
 Currency symbol: ZEN
 Block Explorer: _leave blank_
 ```
-**Note:** The **Yuma Explorer** is not available for this sandbox environment.
+**Note:** The **Gobi Explorer** is not available for this sandbox environment.
 
-##### YUMA TESTNET (localhost)
+##### GOBI TESTNET (localhost)
 
 ```
-Network name:  Yuma Testnet Local
+Network name:  Gobi Testnet Local
 New RPC URL:  http://127.0.0.1:9545/ethv1 
 Chain ID: 1662
 Currency symbol: ZEN
-Block Explorer: https://yuma-explorer.horizen.io
+Block Explorer: https://gobi-explorer.horizen.io
 ```
 
 **Note:** For configuring a wallet or network provider with the testnet local node the "RPC Server" must be the **local one (localhost)**. Use the **Chain ID** for  the  corresponding  testnet. 

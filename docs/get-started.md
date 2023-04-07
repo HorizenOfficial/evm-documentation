@@ -88,7 +88,7 @@ Adding a network example:
 
 
 
-##### Yuma Testnet
+##### Gobi Testnet
 
       Network name:  Gobi Testnet
       New RPC URL:  https://gobi-testnet.horizenlabs.io/ethv1
@@ -96,7 +96,7 @@ Adding a network example:
       Currency symbol: ZEN
       Block Explorer: https://gobi-explorer.horizen.io/
 
-Once you have specified the RPC endpoint and Chain ID to make a connection, a notification appears stating, **“Yuma Testnet was successfully added”**.
+Once you have specified the RPC endpoint and Chain ID to make a connection, a notification appears stating, **Gobi Testnet was successfully added”**.
 
 
 
