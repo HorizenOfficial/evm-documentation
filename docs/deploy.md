@@ -568,7 +568,7 @@ This option allows Remix to use your wallet (e.g. MetaMask). Your wallet must be
 
 By default, the **Remix VM** (previously called JavaScript VM) is used to connect to a sandbox blockchain in the web browser. The London version refers to the London fork of Ethereum. 
 
-**Account** - Click the drop-down menu to display a list of accounts associated with the current environment (and their associated balances). Since the Environment option is set to the **Injected Provider**, the menu shows the available accounts in your wallet. 
+**Account** - Click the drop-down menu to display a list of accounts associated with the current environment (and their associated balances). Since the Environment option is set to the **Injected Provider**, the list displays the available account(s) in your wallet. This is the account where the smart contract is deployed from. 
 
 **Gas Limit** - This field sets the maximum amount of gas that will be allowed for all the transactions created in Remix. The Gas Limit value can be **ignored** at this time.
 
