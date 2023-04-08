@@ -699,7 +699,7 @@ The MetaMask wallet appears with a second notification of the **Send** transacti
 
 ### Interact with Native Smart Contracts
 
-The script, **Interact with native smart contracts.js** displays a backwards transfer (native contract). 
+The script, **Interact with native smart contracts.js** displays a [backwards transfer](/terminology) contract (native contract). 
 
 The MetaMask wallet connected with Remix appears. Read the transaction information and click **Confirm**.
 
