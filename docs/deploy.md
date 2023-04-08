@@ -578,8 +578,8 @@ Select one of the symbol you wish for the ZEN token conversion:
 
 | Symbol/Unit | Value to use |
 | ------ | ------ |
-| Wei | ZEN*10^18 |
-| Gwei | ZEN*10^9 |
+| Wei | ZEN x 10<sup>18</sup> |
+| Gwei | ZEN x 10<sup>9</sup> |
 | Ether | ZEN |
 
 The **Value** field is always reset to 0 after each transaction execution. This field **DOES NOT** include gas.
