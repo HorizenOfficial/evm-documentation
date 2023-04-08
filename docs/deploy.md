@@ -640,7 +640,7 @@ To illustrate interaction with smart contracts, the **EonWorkspace** is created 
 
 In the **Remix File Explorer**, the scripts are located in the **examples** folder. To execute a script, select the desired filename.js file. Right-click to open the drop-down menu. Select **Run**. 
 
-![eonworkspace](/img/docs/deploy/remix-eonworkspace.png)
+![eonworkspace](/img/docs/deploy/remix-script-rightclick.png)
 
 
 ### Get Basic Information
