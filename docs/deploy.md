@@ -561,7 +561,7 @@ Perform the following steps to run and deploy your smart contract:
 2. For EON, configure the **Deploy and Run module** settings with the following:
 
 **Environment** - Click the drop-down menu to select the **Injected Provider** option.
-This option allows Remix to use your wallet (e.g. Metamask). Your wallet must be active and running.  The Environment option details information about your wallet, such as the ChainID.
+This option allows Remix to use your wallet (e.g. MetaMask). Your wallet must be active and running.  The Environment option details information about your wallet, such as the ChainID.
 
 **Note:** Make sure that **Yuma Testnet** is selected as the current environment in your wallet. See [Get Started](https://eon.horizen.io/docs/) chapter for details on configuring Yuma Testnet to your wallet.
 
