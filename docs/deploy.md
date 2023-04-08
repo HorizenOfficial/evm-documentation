@@ -612,7 +612,7 @@ Upon expanding the pane, your contract instance displays three actions that corr
 
 #### Non-Payable Functions
 
-For **non-payable functions**, DO NOT specify a value other than zero (0). Any value more than 0 is not accepted by the smart contract and the transaction will fail (in this example, Value is 100 and setNP is 18).
+For **non-payable functions**, DO NOT specify a value other than zero (0). Any value more than 0 is not accepted by the smart contract and the transaction will fail.
 
 ![nonpayfunction](/img/docs/deploy/nonpayablefunction.png)
 
@@ -626,7 +626,9 @@ If any issues arise, the Remix IDE will provide a status notification before con
 
 ![confirmation](/img/docs/deploy/confirmation.png)
 
-3. In the expanded function (**setP**), enter a **desired value** in the **value** field. Currently, this field is filled with 256. 
+3. In the expanded function (**setP**), enter a **desired value** in the **value** field.  
+
+   **Note:** Initially, the fields, **setP** and **setNP** display *uint256*. This indicates that it is expecting an unsigned integer (256 bit) type to store non-negative integers.  
 
 4. Click **transact**. The Terminal panel displays a success status for the interaction with your smart contract.
 
