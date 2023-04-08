@@ -643,7 +643,7 @@ In the **Remix File Explorer**, the scripts are located in the **examples** fold
 
 ### Get Basic Information
 
-The script, get basic information.js displays the basic information that includes:
+The script, **get basic information.js** displays the basic information that includes:
 
 * Block Height
 * Block 
