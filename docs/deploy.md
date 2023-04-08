@@ -563,7 +563,7 @@ Perform the following steps to run and deploy your smart contract:
 **Environment** - Click the drop-down menu to select the **Injected Provider** option.
 This option allows Remix to use your wallet (e.g. MetaMask). Your wallet must be active and running.  The Environment option details information about your wallet, such as the ChainID.
 
-**Note:** Make sure that **Yuma Testnet** is selected as the current environment in your wallet. See [Get Started](https://eon.horizen.io/docs/) chapter for details on configuring Yuma Testnet to your wallet.
+**Note:** Make sure that **Yuma Testnet** is selected as the current environment in your wallet. See the [Get Started](https://eon.horizen.io/docs/) section for details on configuring Yuma Testnet to your wallet.
 
 
 By default, the **Remix VM** (previously called JavaScript VM) is used to connect to a sandbox blockchain in the web browser. The London version refers to the London fork of Ethereum. 
