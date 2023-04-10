@@ -16,6 +16,20 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 //   return result;
 // }, {});
 
+// Algolia search config
+// Values are stored in cloudflare
+const algoliaConfig = process.env.ALGOLIA_APP_ID ? {
+  algolia: {
+    appId: process.env.ALGOLIA_APP_ID,
+    apiKey: process.env.ALGOLIA_API_KEY,
+    indexName: process.env.ALGOLIA_INDEX_NAME,
+    replaceSearchResultPathname: {
+      from: "/docs/",
+      to: process.env.BASE_URL,
+  },
+  }
+} : {};
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Horizen EON Documentation',
@@ -23,7 +37,7 @@ const config = {
   baseUrl: process.env.BASE_URL,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/EON-favicon.svg',
+  favicon: 'img/favicon.svg',
 
   plugins: [
     "./matomo",
@@ -80,6 +94,7 @@ const config = {
         // },
         ],
       },
+      ...algoliaConfig,
       colorMode: {
         defaultMode: 'dark',
       },
