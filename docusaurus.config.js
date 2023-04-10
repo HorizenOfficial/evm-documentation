@@ -5,16 +5,16 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 // read versions names
-const versions = require('./versions.json');
+// const versions = require('./versions.json');
 
 // remove the first version from the list, which is the current one, and will be used as the default version
-versions.shift();
+// versions.shift();
 
-const dynamicVersions = versions.reduce((result, version) => {
-  const path = version.toLowerCase().replace(/\s+/g, '-');
-  result[version] = { path };
-  return result;
-}, {});
+// const dynamicVersions = versions.reduce((result, version) => {
+//   const path = version.toLowerCase().replace(/\s+/g, '-');
+//   result[version] = { path };
+//   return result;
+// }, {});
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -45,8 +45,8 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          includeCurrentVersion: false,
-          versions: dynamicVersions
+          // includeCurrentVersion: false,
+          // versions: dynamicVersions
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -73,11 +73,11 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          {
-          type: 'docsVersionDropdown',
-          position: 'right',
-          dropdownActiveClassDisabled: true,
-        },
+        //   {
+        //   type: 'docsVersionDropdown',
+        //   position: 'right',
+        //   dropdownActiveClassDisabled: true,
+        // },
         ],
       },
       colorMode: {
