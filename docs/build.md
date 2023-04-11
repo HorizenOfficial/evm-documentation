@@ -419,6 +419,96 @@ npx hardhat compile
 
 Because you used TypeScript, the compile task also generates TypeScript bindings using [TypeChain](https://www.npmjs.com/package/typechain).
 
+## Building Smart Contracts: Using Remix IDE
+
+Use the Remix IDE to create and deploy smart contracts. It is an open source tool that helps you write Solidity contracts straight from a web browser. Remix IDE has modules for creating, testing, debugging, and deploying smart contracts.
+
+### Prerequisites
+
+To deploy a smart contract, complete the steps below:
+
+* Install Remix IDE or use the online web version
+* Create a project contract 
+* Compile a contract
+* Deploy a contract
+
+
+**Important:** The following instructions to perform the prerequisites listed above should first be completed using the sample file provided in the Remix directory structure. Once you are comfortable using Remix, then you can perform the same tasks using the smart contract(s) that you actually created.
+### Install Remix IDE
+
+To install Remix, you can use the [online version](https://remix.ethereum.org/) or [download](https://github.com/ethereum/remix-desktop/releases) the app. Follow the instructions on the website to install Remix IDE.
+
+Once you have installed the Remix IDE, the tool layout appears:
+
+![launchpage](/img/docs/build/remixlaunch.png)
+
+### Create a Project Contract
+A project contract is a smart contract that you will create in order to test, deploy, and subsequently interact with. You will use a sample contract template to create your project contract. 
+
+1. Go to the **File Explorer** pane. Click on the **Create New File** icon. 
+
+![createfile](/img/docs/build/createnewfile.png)
+
+2. A new file name field appears. Enter your desired file name.
+
+![newfile](/img/docs/build/newfilename.png)
+
+3. Use this sample project contract by copying and pasting it in the Editor panel. This sample contract is written in Solidity.
+
+```
+
+// SPDX-License-Identifier: GPL-3.0
+
+
+pragma solidity ^0.7.6;
+
+
+contract testContract {
+
+
+    uint256 value;
+
+
+    constructor (uint256 _p) {
+        value = _p;
+    }
+
+
+    function setP(uint256 _n) payable public {
+        value = _n;
+    }
+
+
+    function setNP(uint256 _n) public {
+        value = _n;
+    }
+
+
+    function get () view public returns (uint256) {
+        return value;
+    }
+}
+
+```
+
+In the **Editor** panel, your file name tab is active and the Solidity code appears. 
+
+![code](/img/docs/build/contractcode.png)
+
+### Compile a Contract
+Before compiling your project contract, you can configure the Solidity compiler to perform a specific task(s). See the [Solidity Compiler](https://remix-ide.readthedocs.io/en/latest/compile.html) webpage for detailed information. Depending on the complexity of your smart contract, you can use the auto-compilation option as required. 
+
+Perform the following steps to compile your contract:
+
+1. In the **Icon panel**, click the **Solidity Compiler** icon. 
+2. The Solidity Compiler appears in the side panel. 
+3. Click **Compile &lt;Your contract file name&gt;**. In this example, the filename is *MyProjectContract.sol*.
+
+![compiler](/img/docs/build/soliditycompiler.png)
+
+**Note:** A check mark appears next to the task icons once the operation is complete.
+
+
 
 ## Build a dApp Locally
 
