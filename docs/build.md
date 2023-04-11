@@ -453,7 +453,7 @@ A project contract is a smart contract that you will create in order to test, de
 
 ![newfile](/img/docs/build/newfilename.png)
 
-3. Use this sample project contract by copy and paste it in the Editor panel. This sample contract is written in Solidity.
+3. Use this sample project contract by copying and pasting it in the Editor panel. This sample contract is written in Solidity.
 
 ```
 
