@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
+    "create-docs-version": "echo 'Creating docs version...' && read -p 'Enter version name: ' version && npm run env:local docusaurus docs:version \"$version\"",
     "env:local": "dotenv -e .env -e ./env/.env.local",
     "env:dev": "dotenv -e .env -e ./env/.env.dev",
     "env:dev-evm": "dotenv -e .env -e ./env/.env.dev_evm",
