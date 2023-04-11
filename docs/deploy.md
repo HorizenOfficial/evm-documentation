@@ -554,7 +554,7 @@ Once you have compiled your smart contract, use the Deploy and Run module to run
 
 Perform the following steps to run and deploy your smart contract:
 
-1. In the **Icon panel**, click the **Deploy and Run** icon. The **Deploy and Run module** appears in the **Side panel**.
+1. In the **Icon panel**, click the **Deploy and Run** icon. The **Deploy and Run module** appears in the **side panel**.
 
 ![deployrun](/img/docs/deploy/deployrun.png)
 
