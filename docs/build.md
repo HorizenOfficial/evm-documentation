@@ -501,7 +501,7 @@ Before compiling your project contract, you can configure the Solidity compiler 
 Perform the following steps to compile your contract:
 
 1. In the **Icon panel**, click the **Solidity Compiler** icon. 
-2. The Solidity Compiler appears in the Side panel. 
+2. The Solidity Compiler appears in the side panel. 
 3. Click **Compile &lt;Your contract file name&gt;**. In this example, the filename is *MyProjectContract.sol*.
 
 ![compiler](/img/docs/build/soliditycompiler.png)
