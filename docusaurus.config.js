@@ -18,17 +18,19 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 // Algolia search config
 // Values are stored in cloudflare
-const algoliaConfig = process.env.ALGOLIA_APP_ID ? {
-  algolia: {
-    appId: process.env.ALGOLIA_APP_ID,
-    apiKey: process.env.ALGOLIA_API_KEY,
-    indexName: process.env.ALGOLIA_INDEX_NAME,
-    replaceSearchResultPathname: {
-      from: "/docs/",
-      to: process.env.BASE_URL,
-  },
-  }
-} : {};
+const algoliaConfig = process.env.ALGOLIA_APP_ID
+  ? {
+      algolia: {
+        appId: process.env.ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_API_KEY,
+        indexName: process.env.ALGOLIA_INDEX_NAME,
+        replaceSearchResultPathname: {
+          from: "/docs/",
+          to: "/",
+        },
+      },
+    }
+  : {};
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
