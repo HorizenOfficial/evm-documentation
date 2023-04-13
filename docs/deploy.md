@@ -565,7 +565,6 @@ This option allows Remix to use your wallet (e.g. MetaMask). Your wallet must be
 
 **Note:** Make sure that **Gobi Testnet** is selected as the current environment in your wallet. See the [Get Started](https://eon.horizen.io/docs/) section for details on configuring Gobi Testnet to your wallet.
 
-
 By default, the **Remix VM** (previously called JavaScript VM) is used to connect to a sandbox blockchain in the web browser. The London version refers to the London fork of Ethereum. 
 
 **Account** - Click the drop-down menu to display a list of accounts associated with the current environment (and their associated balances). Since the Environment option is set to the **Injected Provider**, the list displays the available account(s) in your wallet. This is the account where the smart contract is deployed from. 
