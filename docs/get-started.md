@@ -92,7 +92,7 @@ Adding a network example:
 
       Network name:  Gobi Testnet
       New RPC URL:  https://gobi-testnet.horizenlabs.io/ethv1
-      Chain ID: 1662 
+      Chain ID: 1663 
       Currency symbol: ZEN
       Block Explorer: https://gobi-explorer.horizen.io/
 
@@ -155,7 +155,7 @@ The `chainId` was introduced by Ethereum to prevent replay attacks on different 
   <tr>
    <td>Gobi Testnet
    </td>
-   <td>1662
+   <td>1663
    </td>
   </tr>
   <tr>

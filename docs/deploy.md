@@ -8,7 +8,7 @@ sidebar_position: 5
 ## Deploying a Contract using Truffle
 
 Once the DemoToken contract is successfully compiled, it can now be deployed. 
-However, before deploying, make sure that the account you plan to use has sufficient ZEN. See [Get Started](/#connect-to-a-wallet) to install the MetaMask wallet, if needed. To deploy a contract on Dune Testnet or Gobi Testnet, your account must have sufficient ZEN. You can get some free test ZEN by using the [**Faucet**](https://gobi-testnet-faucet.horizen.io/ ).
+However, before deploying, make sure that the account you plan to use has sufficient ZEN. See [Get Started](/#connect-to-a-wallet) to install the MetaMask wallet, if needed. To deploy a contract on Dune Testnet or Gobi Testnet, your account must have sufficient ZEN. You can get some free test ZEN by using the [**Faucet**](https://faucet.horizen.io/ ).
 
 
 Add the deployment script, [1_deploy_DEMOToken.js](https://github.com/rocknitive/zen-sidechain-truffle/blob/master/migrations/1_deploy_DemoToken.js)  (below) in the `/migrations` folder:
@@ -563,7 +563,7 @@ Perform the following steps to run and deploy your smart contract:
 **Environment** - Click the drop-down menu to select the **Injected Provider** option.
 This option allows Remix to use your wallet (e.g. MetaMask). Your wallet must be active and running.  The Environment option details information about your wallet, such as the ChainID.
 
-**Note:** Make sure that **Yuma Testnet** is selected as the current environment in your wallet. See the [Get Started](https://eon.horizen.io/docs/) section for details on configuring Yuma Testnet to your wallet.
+**Note:** Make sure that **Gobi Testnet** is selected as the current environment in your wallet. See the [Get Started](https://eon.horizen.io/docs/) section for details on configuring Gobi Testnet to your wallet.
 
 
 By default, the **Remix VM** (previously called JavaScript VM) is used to connect to a sandbox blockchain in the web browser. The London version refers to the London fork of Ethereum. 
@@ -735,7 +735,7 @@ Use the following parameters to connect to Gobi Testnet:
 ```
 Network name:  Gobi Testnet 
 New RPC URL:  https://gobi-testnet.horizenlabs.io/ethv1 
-Chain ID: 1662 
+Chain ID: 1663 
 Currency symbol: ZEN
 ```
 

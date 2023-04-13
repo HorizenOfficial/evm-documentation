@@ -136,7 +136,7 @@ A network is needed in order to deploy a smart contract. In the configuration fi
 …networks: {    
 	zen: {
 		provider: () => new HDWalletProvider("word1 … word12", `https://gobi-testnet.horizenlabs.io/ethv1`),
-      network_id: 1662,  
+      network_id: 1663,  
       production: false
     }
 …
@@ -147,7 +147,7 @@ A network is needed in order to deploy a smart contract. In the configuration fi
 
 **Note**: In the account field, replace “**word1 … word12**” with a mnemonic seed phrase for a valid wallet. Use the following [instructions](https://metamask.zendesk.com/hc/en-us/articles/360015290032-How-to-reveal-your-Secret-Recovery-Phrase) to retrieve your mnemonic seed phrase from MetaMask.
 
-The <code>network_id</code> is dependent on the environment in use and corresponds to the Chain ID. For Gobi Testnet, the Chain ID is **1662**.
+The <code>network_id</code> is dependent on the environment in use and corresponds to the Chain ID. For Gobi Testnet, the Chain ID is **1663**.
 
 Next, add this line at the top of the file:
 
@@ -196,7 +196,7 @@ truffle(zen)> web3.eth.getBlockNumber()
 
 ```
 truffle(zen)> web3.eth.getChainId()
-1662
+1663
 ```
 
 
@@ -631,7 +631,7 @@ Block Explorer: _leave blank_
 ```
 Network name:  Gobi Testnet Local
 New RPC URL:  http://127.0.0.1:9545/ethv1 
-Chain ID: 1662
+Chain ID: 1663
 Currency symbol: ZEN
 Block Explorer: https://gobi-explorer.horizen.io
 ```
