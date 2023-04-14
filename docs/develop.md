@@ -114,7 +114,7 @@ Perform the following steps to run and deploy your smart contract:
 **Environment** - Click the drop-down menu to select the **Injected Provider** option.
 This option allows Remix to use your wallet (e.g. MetaMask). Your wallet must be active and running.  The Environment option details information about your wallet, such as the ChainID.
 
-**Note:** Make sure that **Yuma Testnet** is selected as the current environment in your wallet. See the [Get Started](https://eon.horizen.io/docs/) section for details on configuring Yuma Testnet to your wallet.
+**Note:** Make sure that **Gobi Testnet** is selected as the current environment in your wallet. See the [Get Started](https://eon.horizen.io/docs/) section for details on configuring Gobi Testnet to your wallet.
 
 
 By default, the **Remix VM** (previously called JavaScript VM) is used to connect to a sandbox blockchain in the web browser. The London version refers to the London fork of Ethereum. 
@@ -417,7 +417,7 @@ const config: HardhatUserConfig = {
   defaultNetwork: "zen",
   networks: {
     zen: {
-      url: ‘https://yuma-testnet.horizenlabs.io/ethv1',
+      url: ‘https://gobi-testnet.horizenlabs.io/ethv1',
       accounts: {mnemonic: "word1 … word12"},
       gasPrice: "auto"
     }, 
@@ -880,8 +880,8 @@ A network is needed in order to deploy a smart contract. In the configuration fi
 ```
 …networks: {    
 	zen: {
-		provider: () => new HDWalletProvider("word1 … word12", `https://yuma-testnet.horizenlabs.io/ethv1`),
-      network_id: 1662,  
+		provider: () => new HDWalletProvider("word1 … word12", `https://gobi-testnet.horizenlabs.io/ethv1`),
+      network_id: 1663,  
       production: false
     }
 …
@@ -892,7 +892,7 @@ A network is needed in order to deploy a smart contract. In the configuration fi
 
 **Note**: In the account field, replace “**word1 … word12**” with a mnemonic seed phrase for a valid wallet. Use the following [instructions](https://metamask.zendesk.com/hc/en-us/articles/360015290032-How-to-reveal-your-Secret-Recovery-Phrase) to retrieve your mnemonic seed phrase from MetaMask.
 
-The <code>network_id</code> is dependent on the environment in use and corresponds to the Chain ID. For Yuma Testnet, the Chain ID is **1662**.
+The <code>network_id</code> is dependent on the environment in use and corresponds to the Chain ID. For Gobi Testnet, the Chain ID is **1663**.
 
 Next, add this line at the top of the file:
 
@@ -941,7 +941,7 @@ truffle(zen)> web3.eth.getBlockNumber()
 
 ```
 truffle(zen)> web3.eth.getChainId()
-1662
+1663
 ```
 
 
@@ -956,7 +956,7 @@ truffle(zen)> web3.eth.getGasPrice()
 ## Deploying a Contract using Truffle
 
 Once the DemoToken contract is successfully compiled, it can now be deployed. 
-However, before deploying, make sure that the account you plan to use has sufficient ZEN. See [Get Started](/#connect-to-a-wallet) to install the MetaMask wallet, if needed. To deploy a contract on Dune Testnet or Yuma Testnet, your account must have sufficient ZEN. You can get some free test ZEN by using the [**Faucet**](https://yuma-testnet-faucet.horizen.io/ ).
+However, before deploying, make sure that the account you plan to use has sufficient ZEN. See [Get Started](/#connect-to-a-wallet) to install the MetaMask wallet, if needed. To deploy a contract on Dune Testnet or Gobi Testnet, your account must have sufficient ZEN. You can get some free test ZEN by using the [**Faucet**](https://gobi-testnet-faucet.horizen.io/ ).
 
 
 Add the deployment script, [1_deploy_DEMOToken.js](https://github.com/rocknitive/zen-sidechain-truffle/blob/master/migrations/1_deploy_DemoToken.js)  (below) in the `/migrations` folder:
@@ -1208,11 +1208,11 @@ In the example below, the mcAddress is 0x212831547ff1a3508ae0d1c79f43bc7920c15eb
 
 ## Local Build and Deploy 
 
-*Learn how to set up a local environment or a local Yuma testnet node to build a dApp (decentralized application).*
+*Learn how to set up a local environment or a local Gobi testnet node to build a dApp (decentralized application).*
 
 In this section, you will accomplish the following:
 
-* Deploy an existing dApp into a local environment or Yuma Testnet
+* Deploy an existing dApp into a local environment or Gobi Testnet
 * Run a private instance of EON 
 
 The easiest way to deploy a dApp is to use **Docker**. The EON client will be running in a Dockerized container. See **[Node Client](#node-client)** below.
@@ -1272,8 +1272,8 @@ git clone https://github.com/HorizenLabs/$PROJECT.git
 
 Where **$PROJECT** is replaced by one of the following projects, depending on what you have decided to run:
 
-* compose-evm-regtest-simplified → for YUMA SANDBOX
-* compose-evm-testnet-simplified → for YUMA TESTNET
+* compose-evm-regtest-simplified → for GOBI SANDBOX
+* compose-evm-testnet-simplified → for GOBI TESTNET
 
 4. Set up environment variables in the **.env** file:
 
@@ -1291,7 +1291,7 @@ SCNODE_REST_PASSWORD= # Use this variable only to set up authentication on the r
 
 You are now set, the **client** starts automatically.
 
-**Note:** YUMA TESTNET requires time to synchronize the entire blockchain. While waiting, check the progress by comparing the last block in the [Yuma Explorer](https://yuma-explorer.horizen.io) with the response of the following RPC method:
+**Note:** GOBI TESTNET requires time to synchronize the entire blockchain. While waiting, check the progress by comparing the last block in the [Gobi Explorer](https://gobi-explorer.horizen.io) with the response of the following RPC method:
 
 ```
 curl -X POST "http://127.0.0.1:9545/ethv1/" --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":"test"}' -H "accept: application/json"
@@ -1311,25 +1311,25 @@ docker compose up -d
 ### Configuration
 Set up your network provider as **localhost (127.0.0.1)** and **port (9545)**, and also change the **Chain ID** according to the environment you are using.
 
-##### YUMA SANDBOX
+##### GOBI SANDBOX
 
 ```
-Network name:  Yuma Sandbox 
+Network name:  Gobi Sandbox 
 New RPC URL:  http://127.0.0.1:9545/ethv1
 Chain ID: 1997 
 Currency symbol: ZEN
 Block Explorer: _leave blank_
 ```
-**Note:** The **Yuma Explorer** is not available for this sandbox environment.
+**Note:** The **Gobi Explorer** is not available for this sandbox environment.
 
-##### YUMA TESTNET (localhost)
+##### GOBI TESTNET (localhost)
 
 ```
-Network name:  Yuma Testnet Local
+Network name:  Gobi Testnet Local
 New RPC URL:  http://127.0.0.1:9545/ethv1 
-Chain ID: 1662
+Chain ID: 1663
 Currency symbol: ZEN
-Block Explorer: https://yuma-explorer.horizen.io
+Block Explorer: https://gobi-explorer.horizen.io
 ```
 
 **Note:** For configuring a wallet or network provider with the testnet local node the "RPC Server" must be the **local one (localhost)**. Use the **Chain ID** for  the  corresponding  testnet. 
@@ -1356,29 +1356,29 @@ Any deployed smart contract can be verified using the EON Explorer.  The verific
 
 The major steps for verifying a smart contract are:
 
-* Deploy a smart contract to the Yuma Testnet network
+* Deploy a smart contract to the Gobi Testnet network
 
 
 * Flatten the smart contract, if needed
 * Check for the deployed contract using the EON Explorer
 * Verify and publish the contract
 
-Make sure that you deploy your contract to the Yuma Testnet. If you are using a wallet, you must connect it to the Yuma Testnet network.
+Make sure that you deploy your contract to the Gobi Testnet. If you are using a wallet, you must connect it to the Gobi Testnet network.
 
-Use the following parameters to connect to Yuma Testnet:
+Use the following parameters to connect to Gobi Testnet:
 
 ```
-Network name:  Yuma Testnet 
-New RPC URL:  https://yuma-testnet.horizenlabs.io/ethv1 
-Chain ID: 1662 
+Network name:  Gobi Testnet 
+New RPC URL:  https://gobi-testnet.horizenlabs.io/ethv1 
+Chain ID: 1663 
 Currency symbol: ZEN
 ```
 
-In this exercise, the [EON Explorer](https://yuma-explorer.horizen.io/) is connected to the Yuma Testnet. The smart contract was developed and deployed to the Yuma Testnet network. The verification process will be performed using the **Via flattened source code** option in the EON Explorer.
+In this exercise, the [EON Explorer](https://gobi-explorer.horizen.io/) is connected to the Gobi Testnet. The smart contract was developed and deployed to the Gobi Testnet network. The verification process will be performed using the **Via flattened source code** option in the EON Explorer.
 
 ### Flatten the Smart Contract
 
-Before using the EON Explorer for verification, make sure the Yuma Testnet network has the deployed smart contract you want to verify. You need to flatten the smart contract if the contract inherits from other contracts or if it uses a library. Flattening a smart contract refers to combining all Solidity code into one file instead of multiple source files, thereby having the imported code be embedded in the same file. 
+Before using the EON Explorer for verification, make sure the Gobi Testnet network has the deployed smart contract you want to verify. You need to flatten the smart contract if the contract inherits from other contracts or if it uses a library. Flattening a smart contract refers to combining all Solidity code into one file instead of multiple source files, thereby having the imported code be embedded in the same file. 
 
 All smart contract development tools have a source code flattener. For example: 
 
@@ -1391,7 +1391,7 @@ All smart contract development tools have a source code flattener. For example:
 
 ### Check for the Deployed Contract
 
-In the [EON Explorer](https://yuma-explorer.horizen.io/), perform the following steps to begin the verification process:
+In the [EON Explorer](https://gobi-explorer.horizen.io/), perform the following steps to begin the verification process:
 
 1. Once you have deployed your contract, your developer tool will display the address the network has assigned your contract to. Copy that address.
 

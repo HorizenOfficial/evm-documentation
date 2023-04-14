@@ -54,7 +54,7 @@ You can add a network to your MetaMask wallet by specifying the RPC endpoint and
 
   **Currency  symbol** - The currency symbol supported by the network. 
 
-  **Note:** For this example, ZEN is the currency symbol used. However, when you get free ZEN from the Horizen Faucet, you are actually receiving **TZEN**, as it is required for the **Yuma Testnet** network.
+  **Note:** For this example, ZEN is the currency symbol used. However, when you get free ZEN from the Horizen Faucet, you are actually receiving **TZEN**, as it is required for the **Gobi Testnet** network.
 
   **Block explorer URL** - Optionally, add the URL address of the supported block explorer.
 
@@ -67,15 +67,15 @@ Adding a network example:
 
 
 
-##### Yuma Testnet
+##### Gobi Testnet
 
-      Network name:  Yuma Testnet
-      New RPC URL:  https://yuma-testnet.horizenlabs.io/ethv1
-      Chain ID: 1662 
+      Network name:  Gobi Testnet
+      New RPC URL:  https://gobi-testnet.horizenlabs.io/ethv1
+      Chain ID: 1663 
       Currency symbol: ZEN
-      Block Explorer: https://yuma-explorer.horizen.io/
+      Block Explorer: https://gobi-explorer.horizen.io/
 
-Once you have specified the RPC endpoint and Chain ID to make a connection, a notification appears stating, **“Yuma Testnet was successfully added”**.
+Once you have specified the RPC endpoint and Chain ID to make a connection, a notification appears stating, **“Gobi Testnet was successfully added”**.
 
 
 

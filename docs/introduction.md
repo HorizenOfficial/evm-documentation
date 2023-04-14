@@ -80,8 +80,8 @@ The RPC (Remote Procedure Call) endpoint works as a node's address: it's a URL w
       <td>127.0.0.1 (a local node is required)</td>
     </tr>
     <tr>
-      <td>Yuma Testnet</td>
-      <td>https://yuma-testnet.horizenlabs.io/ethv1</td>
+      <td>Gobi Testnet</td>
+      <td>https://gobi-testnet.horizenlabs.io/ethv1</td>
     </tr>
     <tr>
       <td>Mainnet</td>
@@ -110,8 +110,8 @@ The `chainId` was introduced by Ethereum to prevent replay attacks on different 
       <td>1997</td>
     </tr>
     <tr>
-      <td>Yuma Testnet</td>
-      <td>1662</td>
+      <td>Gobi Testnet</td>
+      <td>1663</td>
     </tr>
     <tr>
       <td>Mainnet</td>
