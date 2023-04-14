@@ -3,12 +3,12 @@ sidebar_position: 5
 ---
 
 # Deploy
-*Learn how to deploy a simple Solidity-based smart contract in Yuma Testnet using the Truffle or Hardhat framework.*
+*Learn how to deploy a simple Solidity-based smart contract in Gobi Testnet using the Truffle or Hardhat framework.*
 
 ## Deploying a Contract using Truffle
 
 Once the DemoToken contract is successfully compiled, it can now be deployed. 
-However, before deploying, make sure that the account you plan to use has sufficient ZEN. See [Get Started](/#connect-to-a-wallet) to install the MetaMask wallet, if needed. To deploy a contract on Dune Testnet or Yuma Testnet, your account must have sufficient ZEN. You can get some free test ZEN by using the [**Faucet**](https://yuma-testnet-faucet.horizen.io/ ).
+However, before deploying, make sure that the account you plan to use has sufficient ZEN. See [Get Started](/#connect-to-a-wallet) to install the MetaMask wallet, if needed. To deploy a contract on Dune Testnet or Gobi Testnet, your account must have sufficient ZEN. You can get some free test ZEN by using the [**Faucet**](https://faucet.horizen.io/ ).
 
 
 Add the deployment script, [1_deploy_DEMOToken.js](https://github.com/rocknitive/zen-sidechain-truffle/blob/master/migrations/1_deploy_DemoToken.js)  (below) in the `/migrations` folder:
@@ -563,8 +563,7 @@ Perform the following steps to run and deploy your smart contract:
 **Environment** - Click the drop-down menu to select the **Injected Provider** option.
 This option allows Remix to use your wallet (e.g. MetaMask). Your wallet must be active and running.  The Environment option details information about your wallet, such as the ChainID.
 
-**Note:** Make sure that **Yuma Testnet** is selected as the current environment in your wallet. See the [Get Started](https://eon.horizen.io/docs/) section for details on configuring Yuma Testnet to your wallet.
-
+**Note:** Make sure that **Gobi Testnet** is selected as the current environment in your wallet. See the [Get Started](https://eon.horizen.io/docs/) section for details on configuring Gobi Testnet to your wallet.
 
 By default, the **Remix VM** (previously called JavaScript VM) is used to connect to a sandbox blockchain in the web browser. The London version refers to the London fork of Ethereum. 
 
@@ -719,7 +718,7 @@ Any deployed smart contract can be verified using the EON Explorer.  The verific
 
 The major steps for verifying a smart contract are:
 
-* Deploy a smart contract to the Yuma Testnet network
+* Deploy a smart contract to the Gobi Testnet network
 
 
 **Note:** See the [Build](https://eon.horizen.io/docs/build) section for details on compiling and deploying a smart contract.
@@ -728,22 +727,22 @@ The major steps for verifying a smart contract are:
 * Check for the deployed contract using the EON Explorer
 * Verify and publish the contract
 
-Make sure that you deploy your contract to the Yuma Testnet. If you are using a wallet, you must connect it to the Yuma Testnet network.
+Make sure that you deploy your contract to the Gobi Testnet. If you are using a wallet, you must connect it to the Gobi Testnet network.
 
-Use the following parameters to connect to Yuma Testnet:
+Use the following parameters to connect to Gobi Testnet:
 
 ```
-Network name:  Yuma Testnet 
-New RPC URL:  https://yuma-testnet.horizenlabs.io/ethv1 
-Chain ID: 1662 
+Network name:  Gobi Testnet 
+New RPC URL:  https://gobi-testnet.horizenlabs.io/ethv1 
+Chain ID: 1663 
 Currency symbol: ZEN
 ```
 
-In this exercise, the [EON Explorer](https://yuma-explorer.horizen.io/) is connected to the Yuma Testnet. The smart contract was developed and deployed to the Yuma Testnet network. The verification process will be performed using the **Via flattened source code** option in the EON Explorer.
+In this exercise, the [EON Explorer](https://gobi-explorer.horizen.io/) is connected to the Gobi Testnet. The smart contract was developed and deployed to the Gobi Testnet network. The verification process will be performed using the **Via flattened source code** option in the EON Explorer.
 
 ### Flatten the Smart Contract
 
-Before using the EON Explorer for verification, make sure the Yuma Testnet network has the deployed smart contract you want to verify. You need to flatten the smart contract if the contract inherits from other contracts or if it uses a library. Flattening a smart contract refers to combining all Solidity code into one file instead of multiple source files, thereby having the imported code be embedded in the same file. 
+Before using the EON Explorer for verification, make sure the Gobi Testnet network has the deployed smart contract you want to verify. You need to flatten the smart contract if the contract inherits from other contracts or if it uses a library. Flattening a smart contract refers to combining all Solidity code into one file instead of multiple source files, thereby having the imported code be embedded in the same file. 
 
 All smart contract development tools have a source code flattener. For example: 
 
@@ -756,7 +755,7 @@ All smart contract development tools have a source code flattener. For example:
 
 ### Check for the Deployed Contract
 
-In the [EON Explorer](https://yuma-explorer.horizen.io/), perform the following steps to begin the verification process:
+In the [EON Explorer](https://gobi-explorer.horizen.io/), perform the following steps to begin the verification process:
 
 1. Once you have deployed your contract, your developer tool will display the address the network has assigned your contract to. Copy that address.
 

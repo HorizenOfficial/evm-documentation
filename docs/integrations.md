@@ -69,7 +69,7 @@ You can deploy an existing smart contract from a source to the blockchain by usi
 
 * Compile your contract
 * Upload your contract source code (ABI) to an IPFS
-* Open the thirdweb dashboard to a network (such as Horizen Yuma Testnet)
+* Open the thirdweb dashboard to a network (such as Horizen Gobi Testnet)
 
 See thirdweb’s [Deploy from Source](https://portal.thirdweb.com/getting-started/contracts#deploy-contract-section) for detailed information.
 
