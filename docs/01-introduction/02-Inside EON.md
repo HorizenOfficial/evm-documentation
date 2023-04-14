@@ -1,8 +1,6 @@
 ---
-sidebar_position: 1
-slug: /
-title: Introduction - What is EON
-description: Dive into the official Horizen EON documentation portal to learn how to communicate, interact, and build on Horizen’s EVM sidechain.
+title: Inside EON
+
 image: https://eon.horizen.io/docs/img/MetaData_img_blueprint_eon-doc.jpg
 ---
 
@@ -11,16 +9,6 @@ image: https://eon.horizen.io/docs/img/MetaData_img_blueprint_eon-doc.jpg
 </head>
 
 
-
-
-# Introduction
-
-EON is Horizen's Ethereum Virtual Machine. EON has adopted Ethereum’s Account-based transaction model to represent assets as balances within accounts. The Account model, in VM capable blockchains, differentiate account types on whether they represent a _normal_ account balance or an account which is bound to some **code** that has has to be executed by the VM (Virtual Machine). The conventional terminology to differentiate those is: 
-- **Externally Owned Account** (**EOA**) 
-- **Contract** account
-In both cases, the account has a balance.
-
-## Inside EON
 
 For the EVM project, Horizen Labs has adopted Ethereum’s Account-based transaction model to represent assets as balances within accounts.
 
@@ -61,65 +49,6 @@ However, there are some key differences described here:
 | Transaction initiation | Can initiate transactions | Cannot initiate transactions, where it can only execute the code based on the input received.|
 | Transaction between EOA and Contract account | EOA to EOA transaction can only be ZEN transfer (native EON asset transfer) | EOA to Contract account transaction triggers the EVM to execute the code bound to the contract. Implies the transfer of an asset being defined in a contract through the execution of code. |
 | Cryptographic pair of keys | When an account address (the public key) is bound to a private key the balance can be spent by the owner of the private key. | Does not have private keys: cannot initiate transactions due to lacking the capability of signing. |
-
-## RPC Server
-
-The RPC (Remote Procedure Call) endpoint works as a node's address: it's a URL where requests for blockchain data can be sent to. The Ethereum JSON-RPC specification defines some industry standard methods which can be used to retrieve data from a node.
-
-
-<table>
-  <thead>
-    <tr>
-      <td><strong>Environment</strong></td>
-      <td><strong>URL</strong></td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>LocalHost</td>
-      <td>127.0.0.1 (a local node is required)</td>
-    </tr>
-    <tr>
-      <td>Gobi Testnet</td>
-      <td>https://gobi-testnet.horizenlabs.io/ethv1</td>
-    </tr>
-    <tr>
-      <td>Mainnet</td>
-      <td>TBD</td>
-    </tr>
-  </tbody>
-</table>
-
-
-
-## Chain ID
-
-The `chainId` was introduced by Ethereum to prevent replay attacks on different networks, where every EVM-compatible blockchain should have its own and unique Chain ID.
-
-
-<table>
-  <thead>
-    <tr>
-      <td><strong>Environment</strong></td>
-      <td><strong>Chain ID</strong></td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>LocalHost</td>
-      <td>1997</td>
-    </tr>
-    <tr>
-      <td>Gobi Testnet</td>
-      <td>1663</td>
-    </tr>
-    <tr>
-      <td>Mainnet</td>
-      <td>TBD</td>
-    </tr>
-  </tbody>
-</table>
-
 
 
 
