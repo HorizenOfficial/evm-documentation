@@ -147,70 +147,50 @@ The list of the methods supported, together with some interactive examples are a
 ### General Error Messages
 
 <table>
-  <tr>
-   <td><strong>Error Code</strong>
-   </td>
-   <td><strong>Message</strong>
-   </td>
-   <td><strong>Definition</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>-32600
-   </td>
-   <td>Invalid Request
-   </td>
-   <td>The JSON sent is not a valid request object
-   </td>
-  </tr>
-  <tr>
-   <td>-32601
-   </td>
-   <td>Method not found
-   </td>
-   <td>The method does not exist / is not available
-   </td>
-  </tr>
-  <tr>
-   <td>-32602
-   </td>
-   <td>Invalid params
-   </td>
-   <td>Invalid method parameter(s)
-   </td>
-  </tr>
-  <tr>
-   <td>-32603
-   </td>
-   <td>Internal error
-   </td>
-   <td>Internal JSON-RPC error - e.g. key <code>id</code> is missing
-   </td>
-  </tr>
-  <tr>
-   <td>-32000 to -32099
-   </td>
-   <td>Server error
-   </td>
-   <td>Reserved for implementation-defined server-errors
-   </td>
-  </tr>
-  <tr>
-   <td>-39001
-   </td>
-   <td>Unknown block
-   </td>
-   <td>Request for a finalized or safe block before merge
-   </td>
-  </tr>
-  <tr>
-   <td>3
-   </td>
-   <td>Execution reverted
-   </td>
-   <td>JSON error code for a reverted EVM execution
-   </td>
-  </tr>
+  <thead>
+    <tr>
+      <td><strong>Error Code</strong></td>
+      <td><strong>Message</strong></td>
+      <td><strong>Definition</strong></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-32600</td>
+      <td>Invalid Request</td>
+      <td>The JSON sent is not a valid request object</td>
+    </tr>
+    <tr>
+      <td>-32601</td>
+      <td>Method not found</td>
+      <td>The method does not exist / is not available</td>
+    </tr>
+    <tr>
+      <td>-32602</td>
+      <td>Invalid params</td>
+      <td>Invalid method parameter(s)</td>
+    </tr>
+    <tr>
+      <td>-32603</td>
+      <td>Internal error</td>
+      <td>Internal JSON-RPC error - e.g. key <code>id</code> is missing</td>
+    </tr>
+    <tr>
+      <td>-32000 to -32099</td>
+      <td>Server error</td>
+      <td>Reserved for implementation-defined server-errors</td>
+    </tr>
+    <tr>
+      <td>-39001</td>
+      <td>Unknown block</td>
+      <td>Request for a finalized or safe block before merge</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Execution reverted</td>
+      <td>JSON error code for a reverted EVM execution</td>
+    </tr>
+  </tbody>
 </table>
 
 ## Disclaimer
