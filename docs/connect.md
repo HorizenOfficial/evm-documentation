@@ -93,7 +93,7 @@ Perform the following steps to add TZEN to your wallet:
 
 
 
-![alt_text](/img/docs/getting-zen/gobi-faucet.png)
+![alt_text](/img/docs/getting-zen/yuma-faucet.png)
 
 
 
