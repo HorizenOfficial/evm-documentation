@@ -1,13 +1,8 @@
 ---
-sidebar_position: 5
+title: ThirdWeb
 ---
 
-# Tutorial
-
-*Learn how to deploy pre-built smart contracts with thirdweb.* 
-
-
-## Using thirdweb for Internet's Next Generation
+## Using thirdweb
 
 thirdweb is a development framework for building web3 apps. thirdweb provides tools for developers and creators to deploy smart contracts to a blockchain network (mainnet or testnet) with the interaction of crypto wallets.  
 

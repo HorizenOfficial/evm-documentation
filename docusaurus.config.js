@@ -85,7 +85,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'introduction/introduction',
+            docId: 'introduction_what_is_eon/introduction',
             position: 'left',
             label: 'Documentation',
           },

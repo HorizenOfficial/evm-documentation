@@ -1,17 +1,8 @@
 ---
-sidebar_position: 6
+title: Terminology
 ---
 
 
-# Get Help
-
-For addtional information and reference, use the following help topics:
-
-* [Terminology](#Terminology)
-* [Troubleshooting](#Troubleshooting)
-* [Disclaimer](#Disclaimer)
-
-## Terminology
 
 ### Account-based Model
 
