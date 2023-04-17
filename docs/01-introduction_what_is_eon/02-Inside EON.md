@@ -29,7 +29,8 @@ As mentioned, the account model has two account types:
 
 ## EOA vs. Smart Contract account
 
-To better understand the differences between these two types of accounts is important to understand the concept of transaction: **a transaction is an operation or a set of operations that produces a change in the state of the accounts involved in the transaction.**    
+To better understand the differences between these two types of accounts, it is important to understand the concept of a transaction: **a transaction is an operation or a set of operations that produces a change in the state of the accounts involved in the transaction.**    
+
 A transaction can be initiated only by an account with spending capabilities (such as, signing rights) hence by an EOA account. As an analogy, assume your bank account is an EOA, and whatever financial product is a smart contract. If you want to transfer some liquidity from your account to the financial product, only you (the owner of the account), with your PIN or password title, can start the operation. Once the funds are in the financial product, they generate revenues or losses. Still, any resulting outcome can be returned to your liquid bank account only if you (the original owner) sign a new transaction to withdraw from the financial product. 
 
 The operational process of the two types of accounts becomes relevant when they are the destination part of a transaction, where the difference is based on the following:
