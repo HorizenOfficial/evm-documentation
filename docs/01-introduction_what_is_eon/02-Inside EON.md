@@ -49,7 +49,8 @@ However, there are some key differences described here:
 
 | Key Difference | EOA | Contract Account |
 | ------ | ------ |  ------ |
-| Cost | No cost to create an account | A one-time creation cost where transparently it is the cost of the deployment transaction. |
+| Cost | No cost to create an account | A one-time creation cost, where transparently it is the cost of the deployment transaction. |
+
 | Transaction initiation | Can initiate transactions | Cannot initiate transactions, where it can only execute the code based on the input received.|
 | Transaction between EOA and Contract account | EOA to EOA transaction can only be ZEN transfer (native EON asset transfer) | EOA to Contract account transaction triggers the EVM to execute the code bound to the contract. Implies the transfer of an asset being defined in a contract through the execution of code. |
 | Cryptographic pair of keys | When an account address (the public key) is bound to a private key the balance can be spent by the owner of the private key. | Does not have private keys: cannot initiate transactions due to lacking the capability of signing. |
