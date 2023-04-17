@@ -16,7 +16,8 @@ For the EVM project, Horizen Labs has adopted Ethereum’s Account-based transac
 
 Unlike UTXO model chains (like ZEN), in which coins are uniquely referenced, account model chains represent coins as balances within an account. The Account-based model is simpler than the UTXO model as it voids the notion of "change", where the account model is similar to a bank account where the balance is the result of the sum of deposits less the sum of withdrawals with no notion of the denominations composing the balance.
 
-In the UTXO model, where a user is willing to spend 10 tokens needs a composition of coins to be greater or equal to the amount to spend, and if that value does not match exactly 10, the user will receive change back (a new coin to be spent in future). In the account model, the amount spent is subtracted from the balance.
+In the UTXO model, where a user willing to spend 10 tokens needs a composition of coins to be greater or equal to the amount to spend, if that value does not match exactly 10, the user will receive change back (a new coin to be spent in future). In the account model, the amount spent is subtracted from the balance.
+
 
 ## Differences Between Account Types
 As mentioned, the account model has two account types:
