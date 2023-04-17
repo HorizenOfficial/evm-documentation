@@ -22,7 +22,8 @@ In the UTXO model, where a user willing to spend 10 tokens needs a composition o
 ## Differences Between Account Types
 As mentioned, the account model has two account types:
 
-* **Externally-Owned Account (EOA)** - accounts that are NOT bound to any executable (by the VM) code and may or may not be owned by an external entity (an individual, an organization, a program) that has the related private key. EOA accounts are defined “externally owned” as only the owner of the corresponding private key (which is not public and not stored on the chain - hence external) can issue spend transactions using the account in argument as a source of funds. 
+* **Externally-Owned Account (EOA)** - accounts that are NOT bound to any executable (by the VM) code and may or may not be owned by an external entity (an individual, an organization, a program) that has the related private key. EOA accounts are defined as “externally owned”, as only the owner of the corresponding private key (which is not public and not stored on the chain - hence external) can issue spend transactions using the account in argument as a source of funds. 
+
 
 * **Contract Account** - accounts that are bound to an arbitrary code executable by the VM and do NOT have private keys for signing transactions.  
 
