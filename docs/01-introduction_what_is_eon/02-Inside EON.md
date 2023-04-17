@@ -42,7 +42,8 @@ The operational process of the two types of accounts becomes relevant when they 
 * **A Contract account:** the transaction invokes the execution (by the VM) of the code bound to the account, and the output of the executed program is added to the balance either of the original account or to what the contract itself specifies (again using the bank analogy you may have bought some company stocks)
 
 
-It is worth mentioning that due to contracts composability, during the execution of a contract other contract’s code execution can be invoked.
+It is worth mentioning that, due to contracts composability, during the execution of a contract, other contract’s code execution can be invoked.
+
 
 However, there are some key differences described here:
 
