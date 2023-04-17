@@ -43,7 +43,8 @@ The RPC (Remote Procedure Call) endpoint works as a node's address: it's a URL w
 
 ## Chain ID
 
-The `chainId` was introduced by Ethereum to prevent replay attacks on different networks, where every EVM-compatible blockchain should have its own and unique Chain ID.
+The `chainId` was introduced by Ethereum to prevent replay attacks on different networks, where every EVM-compatible blockchain should have its own unique Chain ID.
+
 
 
 <table>
