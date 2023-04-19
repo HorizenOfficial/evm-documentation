@@ -21,7 +21,9 @@ In this discussion, the [Chrome web browser](https://chrome.google.com/webstore/
 
 In a web browser, open the Cobalt web extension in the Chrome Web Store. Add the Cobalt extension. Then, click the Cobalt icon in the top-right corner of your browser.  The Cobalt Welcome! page appears.
 
-![cobalt welcome](/img/docs/get-started/cobalteon-welcome.png)
+<p>
+<img src="/img/docs/get-started/cobalteon-welcome.png" alt="Cobalt welcome" width="300" height="200" />
+</p>
 
 ### Create an Account
 To begin, create an account for your wallet. Make sure that your password meets the following criteria:
