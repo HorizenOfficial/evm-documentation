@@ -21,7 +21,7 @@ In this discussion, the [Chrome web browser](https://chrome.google.com/webstore/
 
 In a web browser, open the Cobalt web extension in the Chrome Web Store. Add the Cobalt extension. Then, click the Cobalt icon in the top-right corner of your browser.  The Cobalt Welcome! page appears.
 
-![cobalt welcome](/img/docs/build/cobalteon-welcome.png)
+![cobalt welcome](/img/docs/get-started/cobalteon-welcome.png)
 
 ### Create an Account
 To begin, create an account for your wallet. Make sure that your password meets the following criteria:
@@ -45,7 +45,7 @@ Perform the following steps:
 
 2. The **Choose a wallet** page appears. Click **Horizen EON** or **TokenMint** to create a wallet on a supported sidechain. 
 
-![cobalt-choose-wallet](/img/docs/build/cobalteon-choose-wallet.png)
+![cobalt-choose-wallet](/img/docs/get-started/cobalteon-choose-wallet.png)
 
 3. The **Create wallet for EON Testnet** page appears. Enter your wallet’s name. Click **Next**.
 
@@ -63,7 +63,7 @@ Perform the following steps:
 
 6. Click **Confirm**. Cobalt displays your wallet name.
 
-![cobalt-wallet-complete](/img/docs/build/cobalteon-wallet-complete.png)
+![cobalt-wallet-complete](/img/docs/get-started/cobalteon-wallet-complete.png)
 
 ### Import a Wallet
 
