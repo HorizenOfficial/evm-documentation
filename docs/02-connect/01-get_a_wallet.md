@@ -41,8 +41,7 @@ Perform the following steps:
 
 1. To create the new wallet, click **Create Wallet**.
 
-
-<img src="/img/docs/get-started/cobalteon-import-wallet.png" width="50" height="50"
+![cobalt-get-started](/img/docs/get-started/cobalteon-import-wallet.png)
 
 2. The **Choose a wallet** page appears. Click **Horizen EON** or **TokenMint** to create a wallet on a supported sidechain. 
 
