@@ -55,7 +55,10 @@ Perform the following steps:
 
 3. The **Create wallet for EON Testnet** page appears. Enter your wallet’s name. Click **Next**. 
 
-![cobalt-walletname](/img/docs/get-started/cobalteon-wallet-name.png)
+
+<p>
+<img src="/img/docs/get-started/cobalteon-wallet-name.png" alt="Cobalt WalletName" width="300" height="200" />
+</p>
 
 <p>
 <img src="/img/docs/get-started/cobalteon-wallet-name.png" alt="Cobalt Wallet Name" width="300" height="200" />
@@ -155,15 +158,12 @@ The Cobalt wallet allows you to view and copy your wallet’s private key. You n
 
 3. In the **Security** page, click **View Recovery Seed Phrase**. You will need your wallet’s seed phrase if you change browser or computer. The **View Recovery Seed Phase** page appears. 
 
-![cobalt-account-recovery](/img/docs/get-started/cobalteon-account-recovery.png)
 
 <p>
-<img src="/img/docs/get-started/cobalteon-account-recovery.png" alt="Cobalt Recovery" width="300" height="200" />
+<img src="/img/docs/get-started/cobalteon-account-recovery.png" alt="Cobalt PrivateKey" width="300" height="200" />
 </p>
 
 4. The **View Recovery Seed Phase** page displays your secret recovery phrase. Write it down and keep it safe. Click **Close**.
-
-![cobalt-account-seedphrase](/img/docs/get-started/cobalteon-account-seedphrase.png)
 
 <p>
 <img src="/img/docs/get-started/cobalteon-account-seedphrase.png" alt="Cobalt SeedPhrase" width="300" height="200" />
@@ -304,8 +304,6 @@ To illustrate Cobalt wallet’s versatility, this example uses a contract addres
 </p>
 
 4. Once the import transaction is complete, the Cobalt wallet displays the imported token in the Assets page.
-
-![cobalt-import-token-complete](/img/docs/get-started/cobalteon-import-complete.png)
 
 <p>
 <img src="/img/docs/get-started/cobalteon-import-complete.png" alt="Cobalt ImportToken Complete" width="300" height="200" />
