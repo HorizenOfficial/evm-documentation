@@ -47,9 +47,7 @@ Perform the following steps:
 
 ![cobalt-choose-wallet](/img/docs/get-started/cobalteon-choose-wallet.png)
 
-3. The **Create wallet for EON Testnet** page appears. Enter your wallet’s name. Click **Next**.
-
-   **Note:** The name of the current EON Testnet is displayed as part of the page title. In this example (below) the **Dune EON Testnet** name is shown. 
+3. The **Create wallet for EON Testnet** page appears. Enter your wallet’s name. Click **Next**. 
 
 ![cobalt-walletname](/img/docs/get-started/cobalteon-wallet-name.png)
 
