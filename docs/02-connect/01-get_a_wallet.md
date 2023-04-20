@@ -39,12 +39,14 @@ Perform the following steps:
 3. Click **Terms of Use**. After reading the terms and conditions, click the **checkbox** to agree on the terms.
 4. Click **Create**.
 
+
 ### Create a New Wallet
 
 1. To create the new wallet, click **Create Wallet**.
 
-![Get Started](/img/docs/get-started/gobi-cobalteon-getstarted.png)
-
+<p>
+<img src="/img/docs/get-started/gobie-cobalteon-getstarted.png" alt="Cobalt 2-sidechains" width="300" height="200" />
+</p>
 
 2. The **Choose a wallet** page appears. Click **Horizen EON** or **TokenMint** to create a wallet on a supported sidechain. 
 
