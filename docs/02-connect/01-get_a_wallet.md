@@ -47,6 +47,12 @@ Perform the following steps:
 <img src="/img/docs/get-started/gobi-cobalteon-getstarted.png" alt="Cobalt Get Started" width="300" height="200" />
 </p>
 
+![Get Started](/img/docs/get-started/gobi-cobalteon-getstarted.png)
+
+<p>
+<img src="/img/docs/get-started/gobi-cobalteon-getstarted.png" alt="Cobalt Get Started" width="300" height="200" />
+</p>
+
 2. The **Choose a wallet** page appears. Click **Horizen EON** or **TokenMint** to create a wallet on a supported sidechain. 
 
 <p>
