@@ -368,7 +368,8 @@ To send ZEN, perform the following steps:
 
 ### Send ERC-20 Tokens
 
-The Cobalt wallet allows sending standard ERC20 tokens to an Ethereum address. 
+The Cobalt wallet allows sending standard ERC-20 tokens to an Ethereum address. 
+
 
 In this example, the LINK token is used for illustrating the send transaction. Make sure you have sufficient gas fees for the transaction. In this case, MATIC is the native currency of the Polygon network.
 
