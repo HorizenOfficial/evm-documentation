@@ -6,7 +6,7 @@ title: Get a Wallet
 
 To interact with smart contracts in the EVM, you need a valid EVM-compatible wallet. Use one of the following wallets to connect to the EON network:
 
-* [Cobalt](https://chrome.google.com/webstore/detail/cobalt/hekbjgfncacdinlajhgiakpaieajpfph/related)
+* [Cobalt](https://chrome.google.com/webstore/detail/cobalt/hekbjgfncacdinlajhgiakpaieajpfph)
 * [MetaMask](https://metamask.io/)
 
 ## Using Cobalt Wallet
