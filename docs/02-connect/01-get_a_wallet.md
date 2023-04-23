@@ -17,7 +17,8 @@ Cobalt allows you to create and restore wallets from any EVM-compatible network.
 
 ### Before You Begin
 
-In this discussion, the [Chrome web browser](https://chrome.google.com/webstore/detail/cobalt/hekbjgfncacdinlajhgiakpaieajpfph/related) is used to illustrate the instructions to install and use the Cobalt wallet. 
+In this discussion, the [Chrome web browser](https://chrome.google.com/webstore/detail/cobalt/hekbjgfncacdinlajhgiakpaieajpfph) is used to illustrate the instructions to install and use the Cobalt wallet. 
+
 
 In a web browser, open the Cobalt web extension in the Chrome Web Store. Add the Cobalt extension. Then, click the Cobalt icon in the top-right corner of your browser.  The Cobalt Welcome! page appears.
 
