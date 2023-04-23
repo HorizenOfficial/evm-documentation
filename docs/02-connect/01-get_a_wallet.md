@@ -311,7 +311,8 @@ To illustrate Cobalt wallet’s versatility, this example uses a contract addres
 <img src="/img/docs/get-started/cobalteon-import-proceed.png" alt="Cobalt ImportToken Proceed" width="300" height="200" />
 </p>
 
-4. Once the import transaction is complete, the Cobalt wallet displays the imported token in the Assets page.
+4. Once the import transaction is complete, the Cobalt wallet displays the imported token in the **Assets** page.
+
 
 <p>
 <img src="/img/docs/get-started/cobalteon-import-complete.png" alt="Cobalt ImportToken Complete" width="300" height="200" />
