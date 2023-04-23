@@ -197,7 +197,8 @@ The Cobalt wallet displays the network addresses that are connected. The **Conne
 <img src="/img/docs/get-started/cobalteon-connect-site.png" alt="Cobalt ConnectSite" width="300" height="200" />
 </p>
 
-2. If desired, you can disconnect from a site by hovering your cursor over the chain icon, where a **Disconnect button** appears. Click the **Disconnect icon** to delete the address.
+2. If desired, you can disconnect from a site by hovering your cursor over the chain icon, where a **Disconnect button** appears. Click the **Disconnect button** to delete the address.
+
 
 <p>
 <img src="/img/docs/get-started/cobalteon-connectsite-disconnect.png" alt="Cobalt DisConnectSite" width="300" height="200" />
