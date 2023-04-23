@@ -146,7 +146,8 @@ To manage your Cobalt wallet, use the Account settings to perform the following 
 * **Terms of Use** - display the Terms of Use page
 
 #### Security
-The Cobalt wallet allows you to view and copy your wallet’s private key. You need the wallet’s private key if you change your web browser or computer. You can also view the recovery seed phrase of your wallet. 
+The Cobalt wallet allows you to view your wallet’s private key. You need the wallet’s private key if you change your web browser or computer. You can also view the recovery seed phrase of your wallet. 
+
 
 1. In the **Account** menu, click **Security**. The **Security** page appears. 
 
