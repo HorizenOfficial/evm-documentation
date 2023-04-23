@@ -188,7 +188,8 @@ The Cobalt wallet allows you to lock and unlock your wallet. Use the lock option
 
 #### Connected Sites
 
-The Cobalt wallet displays the network addresses that are connected. The Connected Sites page is populated with all site URLs connected to your account, automatically. You can disconnect to a network address if desired. 
+The Cobalt wallet displays the network addresses that are connected. The **Connected Sites** page is populated with all site URLs connected to your account, automatically. You can disconnect to a network address if desired. 
+
 
 1. In the **Account** menu, click **Connected Sites**. A list of connected network addresses is displayed.
 
