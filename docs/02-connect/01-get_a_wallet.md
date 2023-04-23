@@ -361,7 +361,8 @@ To send ZEN, perform the following steps:
 <img src="/img/docs/get-started/gobie-cobalteon-transact-submitted.png" alt="Cobalt SendZ CheckMark" width="300" height="200" />
 </p>
 
-6. Optionally, verify that the send ZEN transaction is successful. Click **Link in the Explorer** field. The **EON Explorer** appears. It displays the recent Send transaction history.
+6. Optionally, verify that the send ZEN transaction is successful. Click **Link** in the Explorer field. The **EON Explorer** appears. It displays the recent Send transaction history.
+
 
 ![cobalt-send-zen-explorer](/img/docs/get-started/gobie-cobalteon-explorer-transdetails.png)
 
