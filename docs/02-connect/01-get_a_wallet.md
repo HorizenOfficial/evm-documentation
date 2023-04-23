@@ -387,7 +387,8 @@ To send ERC20 tokens, perform the following steps:
 <img src="/img/docs/get-started/cobalteon-erc20-link.png" alt="Cobalt Send ERC20 Link" width="300" height="200" />
 </p>
 
-3. Click **Next**. The **Send Link Tokens** page displays the token amount that is specified, the recipient address, and estimated gas fee for the send transaction. 
+3. Click **Next**. The **Send LINK Tokens** page displays the token amount that is specified, the recipient address, and estimated gas fee for the send transaction. 
+
 
 <p>
 <img src="/img/docs/get-started/cobalteon-erc20-gasfee.png" alt="Cobalt Send ERC20 GasFee" width="300" height="200" />
