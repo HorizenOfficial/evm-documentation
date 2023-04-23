@@ -50,7 +50,9 @@ Perform the following steps:
 <img src="/img/docs/get-started/gobie-cobalteon-getstarted.png" alt="Cobalt 2-sidechains" width="300" height="200" />
 </p>
 
-2. The **Choose a wallet** page appears. Click **Horizen EON** or **TokenMint** to create a wallet on a supported sidechain. 
+2. The **Choose a wallet** page appears. There are options to create a wallet for supported sidechains **Horizen EON** or **TokenMint**. Click **Horizen EON**.
+The wallet created for Horizen EON is compatible with any other EVM-compatible chain. 
+
 
 <p>
 <img src="/img/docs/get-started/cobalteon-choose-wallet.png" alt="Cobalt 2-sidechains" width="300" height="200" />
