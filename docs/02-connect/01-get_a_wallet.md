@@ -372,7 +372,8 @@ The Cobalt wallet allows sending standard ERC20 tokens to an Ethereum address.
 
 In this example, the LINK token is used for illustrating the send transaction. Make sure you have sufficient gas fees for the transaction. In this case, MATIC is the native currency of the Polygon network.
 
-To send ERC20 tokens, perform the following steps:
+To send ERC-20 tokens, perform the following steps:
+
 
 1. In the **Assets** page, click on the **Asset row**
 
