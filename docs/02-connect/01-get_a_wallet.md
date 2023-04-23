@@ -68,7 +68,8 @@ Perform the following steps:
 <img src="/img/docs/get-started/cobalteon-wallet-name.png" alt="Cobalt Wallet Name" width="300" height="200" />
 </p>
 
-4. The **Seed Phrase** page appears. Write down your seed phrase. Click **Next**.
+4. The **Seed phrase** page appears. Write down your seed phrase. Click **Next**.
+
 
 <p>
 <img src="/img/docs/get-started/gobie-cobalteon-FriedSard-seed.png" alt="Cobalt Wallet Name" width="300" height="200" />
