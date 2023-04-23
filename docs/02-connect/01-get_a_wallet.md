@@ -66,9 +66,6 @@ The wallet created for Horizen EON is compatible with any other EVM-compatible c
 <img src="/img/docs/get-started/cobalteon-wallet-name.png" alt="Cobalt WalletName" width="300" height="200" />
 </p>
 
-<p>
-<img src="/img/docs/get-started/cobalteon-wallet-name.png" alt="Cobalt Wallet Name" width="300" height="200" />
-</p>
 
 4. The **Seed phrase** page appears. Write down your seed phrase. Click **Next**.
 
