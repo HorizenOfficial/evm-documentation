@@ -218,7 +218,8 @@ You can manage your wallet accounts. The Manage Account option allows you to ren
 <img src="/img/docs/get-started/gobie-cobalteon-manageacct-rename.png" alt="Cobalt ManageAcct Rename" width="300" height="200" />
 </p>
 
-3. Toggle the **eye icon** next to the wallet name you want to be visible or not. This option does not delete the account but rather hides the account in the setting option.
+3. Toggle the **Eye icon** next to the wallet name you want to be visible or not. This option does not delete the account but rather hides the account in the setting option.
+
 
 <p>
 <img src="/img/docs/get-started/gobie-cobalteon-manageacct-visible.png" alt="Cobalt ManageAcct Visible" width="300" height="200" />
