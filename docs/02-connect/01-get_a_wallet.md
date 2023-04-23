@@ -210,7 +210,8 @@ You can manage your wallet accounts. The Manage Account option allows you to ren
 <img src="/img/docs/get-started/gobie-cobalteon-manageacct-list.png" alt="Cobalt ManageAcct List" width="300" height="200" />
 </p>
 
-2. Click the **pencil icon** next to the wallet name you want to modify. The Rename page appears. In the Account name field, make the changes to the wallet  name. Click **Confirm**.
+2. Click the **Pencil icon** next to the wallet name you want to modify. The **Rename** page appears. In the Account name field, make the changes to the wallet  name. Click **Confirm**.
+
 
 <p>
 <img src="/img/docs/get-started/gobie-cobalteon-manageacct-rename.png" alt="Cobalt ManageAcct Rename" width="300" height="200" />
