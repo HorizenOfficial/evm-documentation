@@ -56,7 +56,8 @@ Perform the following steps:
 <img src="/img/docs/get-started/cobalteon-choose-wallet.png" alt="Cobalt 2-sidechains" width="300" height="200" />
 </p>
 
-3. The **Create wallet for EON Testnet** page appears. Enter your wallet’s name. Click **Next**. 
+3. The **Create wallet for Horizen Gobi Testnet** page appears. Enter your wallet’s name. Click **Next**. 
+
 
 
 <p>
