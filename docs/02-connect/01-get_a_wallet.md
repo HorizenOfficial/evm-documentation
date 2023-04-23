@@ -188,7 +188,7 @@ The Cobalt wallet allows you to lock and unlock your wallet. Use the lock option
 
 #### Connected Sites
 
-The Cobalt wallet displays the network addresses that are connected. The **Connected Sites** page is populated with all site URLs connected to your account, automatically. You can disconnect to a network address if desired. 
+The Cobalt wallet displays the network addresses that are connected. The **Connected Sites** page is populated with all site URLs connected to your account, automatically. You can disconnect from a network address if desired. 
 
 
 1. In the **Account** menu, click **Connected Sites**. A list of connected network addresses is displayed.
@@ -244,7 +244,7 @@ You can manage your wallet accounts. The Manage Account option allows you to ren
 
 #### Manage Networks
 
-The Cobalt wallet displays a list of networks connected to your wallet. You can add or delete an EVM-compatible network if desired. 
+The Cobalt wallet displays a list of networks to which you can connect your wallet. You can add or delete an EVM-compatible network if desired. 
 
 1. In the **Account** menu, click **Manage Networks**. A list of networks is displayed. These are the networks currently added to your wallet.
 
@@ -403,7 +403,7 @@ To send ERC-20 tokens, perform the following steps:
 <img src="/img/docs/get-started/cobalteon-erc20-checkmark.png" alt="Cobalt Send ERC20 CheckMark" width="300" height="200" />
 </p>
 
-5. Optionally, verify that the send ERC20 transaction is successful. Click **Link** in the Explorer field. The **Polyscan Explorer** appears. It displays the recent transaction history.
+5. Optionally, verify that the send ERC20 transaction is successful. Click **Link** in the Explorer field. The **PolygonScan Explorer** appears. It displays the recent transaction history.
 
 ![import-link](/img/docs/get-started/cobalteon-erc20-explorer.png)
 
