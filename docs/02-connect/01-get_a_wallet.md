@@ -88,7 +88,7 @@ The wallet created for Horizen EON is compatible with any other EVM-compatible c
 
 ### Import a Wallet
 
-To restore a previously created wallet, use the **Import Wallet** option. Before you restore a wallet, you need the wallet’s name, password, and seed phrase. 
+Alternatively, you can restore a previously created wallet by using the **Import Wallet** option. Before you restore a wallet, you need the wallet’s name, password, and seed phrase. 
 
 After installing Cobalt, perform the following steps to import a wallet:
 
