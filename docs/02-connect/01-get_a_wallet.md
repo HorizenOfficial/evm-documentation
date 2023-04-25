@@ -104,7 +104,7 @@ After installing Cobalt, perform the following steps to import a wallet:
 <img src="/img/docs/get-started/cobalteon-importwallet-choose.png" alt="Cobalt Choose Sidechain" width="300" height="200" />
 </p>
 
-3. The **Importing wallet for TokenMint Chain** page appears. Enter the wallet name and password. Click **Next**. 
+3. The **Importing wallet for Horizen Gobi Testnet** page appears. Enter the wallet name and password. Click **Next**. 
 
 <p>
 <img src="/img/docs/get-started/cobalteon-import-walletname.png" alt="Cobalt Import WalletName" width="300" height="200" />
@@ -373,7 +373,7 @@ In this example, the LINK token is used for illustrating the send transaction. M
 To send ERC-20 tokens, perform the following steps:
 
 
-1. In the **Assets** page, click on the **Asset row**
+1. In the **Assets** page, click on the asset (**TZEN**) or corresponding value (for example, **0.51**) in the **Assets row**. 
 
 <p>
 <img src="/img/docs/get-started/cobalteon-send-erc20.png" alt="Cobalt Send ERC20" width="300" height="200" />
