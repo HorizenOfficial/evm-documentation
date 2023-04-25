@@ -99,11 +99,11 @@ Once you have compiled your smart contract, use the Deploy and Run module to run
 
 Perform the following steps to run and deploy your smart contract:
 
-1. In the **Icon panel**, click the **Deploy and Run** icon. The **Deploy and Run module** appears in the **side panel**.
+1. In the **Icon panel**, click the **DEPLOY & RUN** icon. The **DEPLOY & RUN TRANSACTIONS** appears in the **side panel**.
 
 ![deployrun](/img/docs/deploy/deployrun.png)
 
-2. For EON, configure the **Deploy and Run module** settings with the following:
+2. For EON, configure the **DEPLOY & RUN TRANSACTIONS** settings with the following:
 
 **Environment** - Click the drop-down menu to select the **Injected Provider** option.
 This option allows Remix to use your wallet (e.g. MetaMask). Your wallet must be active and running.  The Environment option details information about your wallet, such as the ChainID.
@@ -182,6 +182,15 @@ If any issues arise, the Remix IDE will provide a status notification before con
 ### Interaction with Sample Contract 
 
 To illustrate interaction with smart contracts, the **EonWorkspace** is created in Remix. This workspace provides a set of script files to perform specific tasks, such as displaying information or executing a transaction within the blockchain.
+
+**Note:** The EonWorkspace file is available as a gist link using the Remix IDE.
+
+To use the EonWorkspace example files, perform the following:
+
+* Access the [EonWorkspace files](https://remix.ethereum.org/#version=soljson-v0.8.18+commit.87f61d96.js&optimize=false&runs=200&gist=ba9cb95ef4cd4ad3c55f2094029d22c3) - The Remix IDE automatically loads the workspace.
+* In the Remix IDE, set the execution environment to **Injected Provider** in the **DEPLOY & TRANSACTIONS** pane.
+* Make sure that your **MetaMask** wallet is connected to the **Gobi Testnet**.
+
 
 In the **Remix File Explorer**, the scripts are located in the **examples** folder. To execute a script, select the desired filename.js file. Right-click to open the drop-down menu. Select **Run**. 
 
