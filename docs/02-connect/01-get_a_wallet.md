@@ -110,7 +110,7 @@ After installing Cobalt, perform the following steps to import a wallet:
 <img src="/img/docs/get-started/cobalteon-import-walletname.png" alt="Cobalt Import WalletName" width="300" height="200" />
 </p>
 
-4. The **Enter seed phrase** page appears. Enter your wallet’s 24-words seed phrase. Click **Confirm**. 
+4. The **Enter seed phrase** page appears. Enter your wallet’s 12-words seed phrase. Click **Confirm**. 
 
 
 <p>
