@@ -26,7 +26,7 @@ You can add a network to your MetaMask wallet by specifying the RPC endpoint and
 
   **Currency  symbol** - The currency symbol supported by the network. 
 
-  **Note:** For this example, ZEN is the currency symbol used. However, when you get free ZEN from the Horizen Faucet, you are actually receiving **TZEN**, as it is required for the **Gobi Testnet** network.
+  **Note:** When you get free ZEN from the Horizen Faucet, you are actually receiving **TZEN**, as it is required for the **Gobi Testnet** network.
 
   **Block explorer URL** - Optionally, add the URL address of the supported block explorer.
 
