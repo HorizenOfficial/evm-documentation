@@ -24,7 +24,7 @@ In a web browser, open the Cobalt web extension in the Chrome Web Store. Add the
 
 
 <p>
-<img src="/img/docs/get-started/cobalteon-welcome.png" alt="Cobalt welcome" width="300" height="200" />
+<img src={require("/img/docs/get-started/cobalteon-welcome.png").default} alt="Cobalt welcome" width="300" height="200" />
 </p>
 
 ### Create an Account
@@ -47,7 +47,7 @@ Perform the following steps:
 1. To create the new wallet, click **Create Wallet**.
 
 <p>
-<img src="/img/docs/get-started/gobie-cobalteon-getstarted.png" alt="Cobalt 2-sidechains" width="300" height="200" />
+<img src={require("/img/docs/get-started/gobie-cobalteon-getstarted.png").default} alt="Cobalt 2-sidechains" width="300" height="200" />
 </p>
 
 2. The **Choose a wallet** page appears. There are options to create a wallet for supported sidechains **Horizen EON** or **TokenMint**. Click **Horizen EON**.
@@ -55,7 +55,7 @@ The wallet created for Horizen EON is compatible with any other EVM-compatible c
 
 
 <p>
-<img src="/img/docs/get-started/cobalteon-choose-wallet.png" alt="Cobalt 2-sidechains" width="300" height="200" />
+<img src={require("/img/docs/get-started/cobalteon-choose-wallet.png").default} alt="Cobalt 2-sidechains" width="300" height="200" />
 </p>
 
 3. The **Create wallet for Horizen Gobi Testnet** page appears. Enter your wallet’s name. Click **Next**. 
@@ -63,7 +63,7 @@ The wallet created for Horizen EON is compatible with any other EVM-compatible c
 
 
 <p>
-<img src="/img/docs/get-started/cobalteon-wallet-name.png" alt="Cobalt WalletName" width="300" height="200" />
+<img src={require("/img/docs/get-started/cobalteon-wallet-name.png").default} alt="Cobalt WalletName" width="300" height="200" />
 </p>
 
 
@@ -71,19 +71,19 @@ The wallet created for Horizen EON is compatible with any other EVM-compatible c
 
 
 <p>
-<img src="/img/docs/get-started/gobie-cobalteon-FriedSard-seed.png" alt="Cobalt Wallet Name" width="300" height="200" />
+<img src={require("/img/docs/get-started/gobie-cobalteon-FriedSard-seed.png").default} alt="Cobalt Wallet Name" width="300" height="200" />
 </p>
 
 5. The **Confirm seed phrase** page appears. Select the word in the correct order to confirm your seed phrase. 
 
 <p>
-<img src="/img/docs/get-started/gobie-cobalteon-FSseed-confirm.png" alt="Cobalt SeedConfirm" width="300" height="200" />
+<img src={require("/img/docs/get-started/gobie-cobalteon-FSseed-confirm.png").default} alt="Cobalt SeedConfirm" width="300" height="200" />
 </p>
 
 6. Click **Confirm**. Cobalt displays your wallet name.
 
 <p>
-<img src="/img/docs/get-started/gobie-cobalteon-wallet-complete.png" alt="Cobalt Wallet complete" width="300" height="200" />
+<img src={require("/img/docs/get-started/gobie-cobalteon-wallet-complete.png").default} alt="Cobalt Wallet complete" width="300" height="200" />
 </p>
 
 ### Import a Wallet
@@ -95,32 +95,32 @@ After installing Cobalt, perform the following steps to import a wallet:
 1. In the **Get Started** page, click **Import Wallet**.
 
 <p>
-<img src="/img/docs/get-started/cobalteon-import-wallet.png" alt="Cobalt Import Wallet" width="300" height="200" />
+<img src={require("/img/docs/get-started/cobalteon-import-wallet.png").default} alt="Cobalt Import Wallet" width="300" height="200" />
 </p>
 
 2. The **Choose a wallet** page appears. Select either **Horizen EON** or **TokenMint** for your public sidechain. 
 
 <p>
-<img src="/img/docs/get-started/cobalteon-importwallet-choose.png" alt="Cobalt Choose Sidechain" width="300" height="200" />
+<img src={require("/img/docs/get-started/cobalteon-importwallet-choose.png").default} alt="Cobalt Choose Sidechain" width="300" height="200" />
 </p>
 
 3. The **Importing wallet for Horizen Gobi Testnet** page appears. Enter the wallet name and password. Click **Next**. 
 
 <p>
-<img src="/img/docs/get-started/cobalteon-import-walletname.png" alt="Cobalt Import WalletName" width="300" height="200" />
+<img src={require("/img/docs/get-started/cobalteon-import-walletname.png").default} alt="Cobalt Import WalletName" width="300" height="200" />
 </p>
 
 4. The **Enter seed phrase** page appears. Enter your wallet’s 12-words seed phrase. Click **Confirm**. 
 
 
 <p>
-<img src="/img/docs/get-started/cobalteon-importwallet-seed1.png" alt="Cobalt Wallet Seed" width="300" height="200" />
+<img src={require("/img/docs/get-started/cobalteon-importwallet-seed1.png").default} alt="Cobalt Wallet Seed" width="300" height="200" />
 </p>
 
 5. When the import is complete, the Cobalt wallet displays the restored wallet.
 
 <p>
-<img src="/img/docs/get-started/cobalteon-importwallet-complete.png" alt="Cobalt Wallet Complete" width="300" height="200" />
+<img src={require("/img/docs/get-started/cobalteon-importwallet-complete.png").default} alt="Cobalt Wallet Complete" width="300" height="200" />
 </p>
 
 ### Account Settings
@@ -130,7 +130,7 @@ The Cobalt wallet provides a setting feature where you can manage your account.
 Click on the the **Account icon** on the top-right corner of the page to display the Account menu:
 
 <p>
-<img src="/img/docs/get-started/gobie-cobalteon-account.png" alt="Cobalt Account" width="300" height="200" />
+<img src={require("/img/docs/get-started/gobie-cobalteon-account.png").default} alt="Cobalt Account" width="300" height="200" />
 </p>
 
 To manage your Cobalt wallet, use the Account settings to perform the following options:
@@ -149,7 +149,7 @@ The Cobalt wallet allows you to view your wallet’s private key. You need the w
 1. In the **Account** menu, click **Security**. The **Security** page appears. 
 
 <p>
-<img src="/img/docs/get-started/cobalteon-account-security.png" alt="Cobalt Security" width="300" height="200" />
+<img src={require("/img/docs/get-started/cobalteon-account-security.png").default} alt="Cobalt Security" width="300" height="200" />
 </p>
 
 ##### View Private Key
@@ -157,7 +157,7 @@ The Cobalt wallet allows you to view your wallet’s private key. You need the w
 2. Click **View Private Key**. The private key is used to access your account. It is highly recommended that you write down your private key and keep it in a safe place. Enter your password to access your private key. Click **Next**.
 
 <p>
-<img src="/img/docs/get-started/gobie-cobalteon-account-privatekey.png" alt="Cobalt PrivateKey" width="300" height="200" />
+<img src={require("/img/docs/get-started/gobie-cobalteon-account-privatekey.png").default} alt="Cobalt PrivateKey" width="300" height="200" />
 </p>
 
 ##### View Recovery Seed Phrase
@@ -166,13 +166,13 @@ The Cobalt wallet allows you to view your wallet’s private key. You need the w
 
 
 <p>
-<img src="/img/docs/get-started/cobalteon-account-recovery.png" alt="Cobalt PrivateKey" width="300" height="200" />
+<img src={require("/img/docs/get-started/cobalteon-account-recovery.png").default} alt="Cobalt PrivateKey" width="300" height="200" />
 </p>
 
 4. The **View Recovery Seed Phase** page displays your secret recovery phrase. Write it down and keep it safe. Click **Close**.
 
 <p>
-<img src="/img/docs/get-started/cobalteon-account-seedphrase.png" alt="Cobalt SeedPhrase" width="300" height="200" />
+<img src={require("/img/docs/get-started/cobalteon-account-seedphrase.png").default} alt="Cobalt SeedPhrase" width="300" height="200" />
 </p>
 
 #### Lock 
@@ -181,7 +181,7 @@ The Cobalt wallet allows you to lock and unlock your wallet. Use the lock option
 1. In the **Account** menu, click **Lock**. Your wallet is locked. The **Welcome Back!** page appears.
 
 <p>
-<img src="/img/docs/get-started/cobalteon-account-welcomeback.png" alt="Cobalt WelcomeBack" width="300" height="200" />
+<img src={require("/img/docs/get-started/cobalteon-account-welcomeback.png").default} alt="Cobalt WelcomeBack" width="300" height="200" />
 </p>
 
 2. To unlock, enter your password.  Click **Unlock**.
@@ -194,14 +194,14 @@ The Cobalt wallet displays the network addresses that are connected. The **Conne
 1. In the **Account** menu, click **Connected Sites**. A list of connected network addresses is displayed.
 
 <p>
-<img src="/img/docs/get-started/cobalteon-connect-site.png" alt="Cobalt ConnectSite" width="300" height="200" />
+<img src={require("/img/docs/get-started/cobalteon-connect-site.png").default} alt="Cobalt ConnectSite" width="300" height="200" />
 </p>
 
 2. If desired, you can disconnect from a site by hovering your cursor over the chain icon, where a **Disconnect button** appears. Click the **Disconnect button** to delete the address.
 
 
 <p>
-<img src="/img/docs/get-started/cobalteon-connectsite-disconnect.png" alt="Cobalt DisConnectSite" width="300" height="200" />
+<img src={require("/img/docs/get-started/cobalteon-connectsite-disconnect.png").default} alt="Cobalt DisConnectSite" width="300" height="200" />
 </p>
 
 #### Manage Account
@@ -211,21 +211,21 @@ You can manage your wallet accounts. The Manage Account option allows you to ren
 1. In the **Account** menu, click **Manage Account**. A list of valid wallet names and associated addresses are displayed.
 
 <p>
-<img src="/img/docs/get-started/gobie-cobalteon-manageacct-list.png" alt="Cobalt ManageAcct List" width="300" height="200" />
+<img src={require("/img/docs/get-started/gobie-cobalteon-manageacct-list.png").default} alt="Cobalt ManageAcct List" width="300" height="200" />
 </p>
 
 2. Click the **Pencil icon** next to the wallet name you want to modify. The **Rename** page appears. In the Account name field, make the changes to the wallet  name. Click **Confirm**.
 
 
 <p>
-<img src="/img/docs/get-started/gobie-cobalteon-manageacct-rename.png" alt="Cobalt ManageAcct Rename" width="300" height="200" />
+<img src={require("/img/docs/get-started/gobie-cobalteon-manageacct-rename.png").default} alt="Cobalt ManageAcct Rename" width="300" height="200" />
 </p>
 
 3. Toggle the **Eye icon** next to the wallet name you want to be visible or not. This option does not delete the account but rather hides the account in the setting option.
 
 
 <p>
-<img src="/img/docs/get-started/gobie-cobalteon-manageacct-visible.png" alt="Cobalt ManageAcct Visible" width="300" height="200" />
+<img src={require("/img/docs/get-started/gobie-cobalteon-manageacct-visible.png").default} alt="Cobalt ManageAcct Visible" width="300" height="200" />
 </p>
 
 4. You can also add an account to your wallet. In the **Manage Account** page, click **Add account**.
@@ -233,13 +233,13 @@ You can manage your wallet accounts. The Manage Account option allows you to ren
    **Note:** When adding a new account, the account’s seed phrase is the same as its initial phrase.
 
 <p>
-<img src="/img/docs/get-started/gobie-manageacct-newacct.png" alt="Cobalt ManageAcct NewAcct" width="300" height="200" />
+<img src={require("/img/docs/get-started/gobie-manageacct-newacct.png").default} alt="Cobalt ManageAcct NewAcct" width="300" height="200" />
 </p>
 
 5. The **Add Account** page appears. Enter the account name and password. Click **Confirm**. The added account name is then displayed in the **Manage Accounts** page.
 
 <p>
-<img src="/img/docs/get-started/cobalteon-manageacct-add.png" alt="Cobalt ManageAcct AddAcct" width="300" height="200" />
+<img src={require("/img/docs/get-started/cobalteon-manageacct-add.png").default} alt="Cobalt ManageAcct AddAcct" width="300" height="200" />
 </p>
 
 #### Manage Networks
@@ -249,7 +249,7 @@ The Cobalt wallet displays a list of networks to which you can connect your wall
 1. In the **Account** menu, click **Manage Networks**. A list of networks is displayed. These are the networks currently added to your wallet.
 
 <p>
-<img src="/img/docs/get-started/cobalteon-managenet-list.png" alt="Cobalt ManageNet List" width="300" height="200" />
+<img src={require("/img/docs/get-started/cobalteon-managenet-list.png").default} alt="Cobalt ManageNet List" width="300" height="200" />
 </p>
 
 2. Click **Add Custom Network** to add a new network. The **Add Custom Network** page appears. Configure your network with the following:
@@ -262,7 +262,7 @@ The Cobalt wallet displays a list of networks to which you can connect your wall
 
 
 <p>
-<img src="/img/docs/get-started/cobalteon-managenet-mumbai.png" alt="Cobalt ManageNet Mumbai" width="300" height="200" />
+<img src={require("/img/docs/get-started/cobalteon-managenet-mumbai.png").default} alt="Cobalt ManageNet Mumbai" width="300" height="200" />
 </p>
 
    **Note:** Continue scrolling down on this page to display the **Assign color** field.
@@ -270,7 +270,7 @@ The Cobalt wallet displays a list of networks to which you can connect your wall
 3. In the **Assign color** field, use the drop-down menu to select a color for your new network. The color helps you quickly identify your network from the rest of the networks in the list. Select a color and click **Submit**.
 
 <p>
-<img src="/img/docs/get-started/cobalteon-managenet-color.png" alt="Cobalt ManageNet Color" width="300" height="200" />
+<img src={require("/img/docs/get-started/cobalteon-managenet-color.png").default} alt="Cobalt ManageNet Color" width="300" height="200" />
 </p>
 
 #### Terms of Use
@@ -292,13 +292,13 @@ To illustrate Cobalt wallet’s versatility, this example uses a contract addres
 1. In the **Assets** page, click **Import token**.
 
 <p>
-<img src="/img/docs/get-started/cobalteon-import-matic.png" alt="Cobalt ImportToken Matic" width="300" height="200" />
+<img src={require("/img/docs/get-started/cobalteon-import-matic.png").default} alt="Cobalt ImportToken Matic" width="300" height="200" />
 </p>
 
 2. The **Import token** page appears. Enter the **contract address** and click **Import**.
 
 <p>
-<img src="/img/docs/get-started/cobalteon-import-token-address.png" alt="Cobalt ImportToken Address" width="300" height="200" />
+<img src={require("/img/docs/get-started/cobalteon-import-token-address.png").default} alt="Cobalt ImportToken Address" width="300" height="200" />
 </p>
 
 
@@ -310,14 +310,14 @@ To illustrate Cobalt wallet’s versatility, this example uses a contract addres
 * **Balance** - The amount of tokens owned in the selected network.
 
 <p>
-<img src="/img/docs/get-started/cobalteon-import-proceed.png" alt="Cobalt ImportToken Proceed" width="300" height="200" />
+<img src={require("/img/docs/get-started/cobalteon-import-proceed.png").default} alt="Cobalt ImportToken Proceed" width="300" height="200" />
 </p>
 
 4. Once the import transaction is complete, the Cobalt wallet displays the imported token in the **Assets** page.
 
 
 <p>
-<img src="/img/docs/get-started/cobalteon-import-complete.png" alt="Cobalt ImportToken Complete" width="300" height="200" />
+<img src={require("/img/docs/get-started/cobalteon-import-complete.png").default} alt="Cobalt ImportToken Complete" width="300" height="200" />
 </p>
 
 ### Send ZEN
@@ -331,7 +331,7 @@ To send ZEN, perform the following steps:
 1. In the **Assets** page, click on the asset (**TZEN**) or corresponding value (for example, **0.51**) in the **Assets row**.  
 
 <p>
-<img src="/img/docs/get-started/gobie-cobalteon-assets.png" alt="Cobalt SendZen Assets" width="300" height="200" />
+<img src={require("/img/docs/get-started/gobie-cobalteon-assets.png").default} alt="Cobalt SendZen Assets" width="300" height="200" />
 </p>
 
 2. The **Send ZEN** page appears. Enter transaction details in the following fields:
@@ -343,19 +343,19 @@ To send ZEN, perform the following steps:
 3. Click **Next**.
 
 <p>
-<img src="/img/docs/get-started/gobie-cobalteon-send-zen.png" alt="Cobalt SendZen" width="300" height="200" />
+<img src={require("/img/docs/get-started/gobie-cobalteon-send-zen.png").default} alt="Cobalt SendZen" width="300" height="200" />
 </p>
 
 4. The **Send ZEN** page appears. Review the address and estimated fee. Click **Send**.
 
 <p>
-<img src="/img/docs/get-started/gobie-cobalteon-estimated-fee.png" alt="Cobalt SendZ GasFee" width="300" height="200" />
+<img src={require("/img/docs/get-started/gobie-cobalteon-estimated-fee.png").default} alt="Cobalt SendZ GasFee" width="300" height="200" />
 </p>
 
 5. Review the information and click **Send**. The **Transaction Submitted** page appears. 
 
 <p>
-<img src="/img/docs/get-started/gobie-cobalteon-transact-submitted.png" alt="Cobalt SendZ CheckMark" width="300" height="200" />
+<img src={require("/img/docs/get-started/gobie-cobalteon-transact-submitted.png").default} alt="Cobalt SendZ CheckMark" width="300" height="200" />
 </p>
 
 6. Optionally, verify that the send ZEN transaction is successful. Click **Link** in the Explorer field. The **EON Explorer** appears. It displays the recent Send transaction history.
@@ -376,7 +376,7 @@ To send ERC-20 tokens, perform the following steps:
 1. In the **Assets** page, click on the asset (**LINK**) or corresponding value (for example, **0.3**) in the **Assets row**. 
 
 <p>
-<img src="/img/docs/get-started/cobalteon-send-erc20.png" alt="Cobalt Send ERC20" width="300" height="200" />
+<img src={require("/img/docs/get-started/cobalteon-send-erc20.png").default} alt="Cobalt Send ERC20" width="300" height="200" />
 </p>
 
 
@@ -387,20 +387,20 @@ To send ERC-20 tokens, perform the following steps:
 * **Enter your password** - Enter your wallet’s password, which acts as a signature for this transaction.
 
 <p>
-<img src="/img/docs/get-started/cobalteon-erc20-link.png" alt="Cobalt Send ERC20 Link" width="300" height="200" />
+<img src={require("/img/docs/get-started/cobalteon-erc20-link.png").default} alt="Cobalt Send ERC20 Link" width="300" height="200" />
 </p>
 
 3. Click **Next**. The **Send LINK Tokens** page displays the token amount that is specified, the recipient address, and estimated gas fee for the send transaction. 
 
 
 <p>
-<img src="/img/docs/get-started/cobalteon-erc20-gasfee.png" alt="Cobalt Send ERC20 GasFee" width="300" height="200" />
+<img src={require("/img/docs/get-started/cobalteon-erc20-gasfee.png").default} alt="Cobalt Send ERC20 GasFee" width="300" height="200" />
 </p>
 
 4. Review the information and click **Send**. The **Transaction Submitted** page appears. 
 
 <p>
-<img src="/img/docs/get-started/cobalteon-erc20-checkmark.png" alt="Cobalt Send ERC20 CheckMark" width="300" height="200" />
+<img src={require("/img/docs/get-started/cobalteon-erc20-checkmark.png").default} alt="Cobalt Send ERC20 CheckMark" width="300" height="200" />
 </p>
 
 5. Optionally, verify that the send ERC20 transaction is successful. Click **Link** in the Explorer field. The **PolygonScan Explorer** appears. It displays the recent transaction history.
