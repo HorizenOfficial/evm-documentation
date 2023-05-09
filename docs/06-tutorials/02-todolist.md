@@ -148,12 +148,12 @@ To begin creating a dApp using ReactJS, perform the following steps:
 2. In your Documents folder (localhost), create a project directory (such as My Project) and a sub-folder called **todolist**.
 3. In a terminal window, go to the newly created **todolist** folder and initialize the ReactJS project by using the following command:
 
-   **Note:** The command, ```npx create-react-app .``` only executes in the **todolist** directory level. 
-
 ```
 npx create-react-app .
 npm install ethers@^5
 ```
+
+   **Note:** The command, ```npx create-react-app .``` only executes in the **todolist** directory level. 
 
 4. Create a **.env** file in the todolist folder by using the command:
 
