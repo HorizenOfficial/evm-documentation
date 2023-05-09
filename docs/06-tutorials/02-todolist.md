@@ -123,7 +123,8 @@ Perform the following steps:
 
     **Note:** Make sure that your MetaMask wallet has currency to pay for gas. Otherwise, copy your wallet address and go to the [EON Faucet](https://faucet.horizen.io) to make a request for tZEN.
 
-<img src={require("/img/docs/tutorial/remix-deployaddress.png").default} alt="remix-deployment-address" width="300" height="200" />
+
+![remix_todolist](/img/docs/tutorial/remix-deployaddress.png)
 
 12. Click **Deploy**. The MetaMask wallet displays a confirmation message.
 
