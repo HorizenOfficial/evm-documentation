@@ -115,7 +115,7 @@ Perform the following steps:
 7. Select the **compiler version**. 
 8. In the **Advanced Configuration**, make sure that the **Enable optimization** is checked  and set to **200**.
 
-<img src={require("/img/docs/tutorial/remix-compile-optimize.png").default} alt="remix-compiler" width="300" height="200" />
+<img src={require("/img/docs/tutorial/remix-compiler-optimize.png").default} alt="remix-compiler" width="300" height="200" />
 
 9. Click **Compile todolist.sol**. 
 10. After the compilation process successfully completes, click the **Deploy** icon.
