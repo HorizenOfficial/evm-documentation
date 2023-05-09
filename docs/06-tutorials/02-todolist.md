@@ -133,7 +133,9 @@ Perform the following steps:
 
 12. Click **Deploy**. The MetaMask wallet displays a confirmation message.
 
+<p>
 <img src={require("/img/docs/tutorial/remix-metamask-confirm.png").default} alt="remix-metamask" width="300" height="200" />
+</p>
 
 At the bottom of the **DEPLOY & RUN TRANSACTIONS** pane, click the **copy icon** (to your clipboard) in the **Deployed Contracts**. You will need the **deployment address** during the creation of the dApp. 
 
