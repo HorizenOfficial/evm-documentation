@@ -110,12 +110,17 @@ Perform the following steps:
 
 6. Click the Compiler icon. The COMPILER pane (side panel) appears.
 
+
+<p>
 <img src={require("/img/docs/tutorial/remix-compile-todolist.png").default} alt="remix-compiler" width="300" height="200" />
+</p>
 
 7. Select the **compiler version**. 
 8. In the **Advanced Configuration**, make sure that the **Enable optimization** is checked  and set to **200**.
 
+<p>
 <img src={require("/img/docs/tutorial/remix-compiler-optimize.png").default} alt="remix-compiler" width="300" height="200" />
+</p>
 
 9. Click **Compile todolist.sol**. 
 10. After the compilation process successfully completes, click the **Deploy** icon.
@@ -291,7 +296,9 @@ This is an **ABI** file example:
 
 At this point, your directory structure should look like the following:
 
+<p>
 <img src={require("/img/docs/tutorial/todolist-directory-structure.png").default} alt="remix-compiler" width="300" height="200" />
+</p>
 
 10. In the **App.js** file, replace its content with the following:
 
@@ -400,7 +407,9 @@ It is now functional. Play with the dApp by adding tasks and checking them off.
 
    **Note:** If the dApp does not appear in your browser, then check the setting in your browser to allow **JavaScript** to be enabled. Also, make sure that your MetaMask wallet with the Gobi Testnet network is connected to the web browser.
 
+<p>
 <img src={require("/img/docs/tutorial/todolist-dApp.png").default} alt="remix-compiler" width="300" height="200" />
+</p>
 
 ### Optional: Connection Fix
 
