@@ -18,7 +18,7 @@ To start this exercise you need to have the following apps/tools installed or av
 
 * **Remix IDE** - development tool to compile and deploy the smart contract. You can use the online version of the Remix IDE.
 
-   **Note:** Read the Remix documentation for usage.
+   **Note:** Read the [Remix documentation](https://remix-ide.readthedocs.io/en/latest/layout.html) for usage.
 
 * **Node.js** - a programming environment needed to create the dApp (installation required).
 
@@ -27,7 +27,9 @@ To start this exercise you need to have the following apps/tools installed or av
 ### Gobi Testnet Configuration
 
 **Network Name:** Gobi Testnet
+
 **RPC URL:** https://gobi-testnet.horizenlabs.io/ethv1
+
 **Chain ID:** 1663 
 
 
