@@ -299,7 +299,7 @@ This is an **ABI** file example:
 At this point, your directory structure should look like the following:
 
 <p>
-<img src={require("/img/docs/tutorial/todolist-directory-structure.png").default} alt="remix-compiler" width="300" height="200" />
+<img src={require("/img/docs/tutorial/todolist-directory-structure.png").default} alt="directory structure" width="300" height="200" />
 </p>
 
 10. In the **App.js** file, replace its content with the following:
