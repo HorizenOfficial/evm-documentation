@@ -468,11 +468,3 @@ if (!isConnected) return <div className="App"><button onClick={tryConnect}>Conne
 
 4. Save the updates.
 
-
-
-
-
-
-
-
-
