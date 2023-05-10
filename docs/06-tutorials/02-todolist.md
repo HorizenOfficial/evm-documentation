@@ -28,11 +28,11 @@ To start this exercise you need to have the following apps/tools installed or av
 ### Gobi Testnet Configuration
 
 ```
-  **Network Name:** Gobi Testnet
+  Network Name: Gobi Testnet
   
-  **RPC URL:** https://gobi-testnet.horizenlabs.io/ethv1
+  RPC URL: https://gobi-testnet.horizenlabs.io/ethv1
   
-  **Chain ID:** 1663
+  Chain ID: 1663
 ```
 
 
