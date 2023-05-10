@@ -169,8 +169,9 @@ REACT_APP_TODO_LIST_ADDRESS="<add your contract address>"
 
    **Note:** Your contract address appears in the **Remix IDE** under the **Deployed Contract** module. Click the **copy icon** then paste between the quotes.
 
-6. In the **src** directory, create a contract folder. 
+6. In the **src** directory, create a **contracts** folder. 
 7. In the **contracts** directory, create a file called, **TodoListABI.json**.
+
 8. In the **Remix IDE**, copy the **ABI** (bottom of the Compiler module).
 9. Insert the ABI into the **TodoListABI.json** file.
 
