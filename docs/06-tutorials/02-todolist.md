@@ -100,7 +100,8 @@ Perform the following steps:
 1. In the FILE EXPLORER (side panel), click the File Explorer icon.
 2. Select a workspace. 
 3. Click the new file icon. 
-4. Name the file, todolist.sol.
+4. Name the file, **todolist.sol**.
+
 5. Copy and paste the smart contract example or manually enter it using the main panel.
 
 ![remix_todolist](/img/docs/tutorial/remix-todolist.png)
