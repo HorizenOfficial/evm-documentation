@@ -25,17 +25,15 @@ To start this exercise you need to have the following apps/tools installed or av
 
 * **Gobi Testnet (current EON network)** - the EVM sidechain where the smart contract and dApp are deployed to.
 
-#### Gobi Testnet Configuration
+### Gobi Testnet Configuration
 
--**Network Name:** Gobi Testnet
--
--**Network Name:** Gobi Testnet
--
--**RPC URL:** https://gobi-testnet.horizenlabs.io/ethv1
--
--**RPC URL:** https://gobi-testnet.horizenlabs.io/ethv1
--
--**Chain ID:** 1663 
+```
+  **Network Name:** Gobi Testnet
+  
+  **RPC URL:** https://gobi-testnet.horizenlabs.io/ethv1
+  
+  **Chain ID:** 1663
+```
 
 
 ## Use TodoList Smart Contract
