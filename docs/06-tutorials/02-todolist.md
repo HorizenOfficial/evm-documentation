@@ -2,7 +2,8 @@
 title: Deploying a dApp using the Remix IDE
 ---
  
-This tutorial shows how to create a smart contract and a dApp using ReactJS, where the contract and the dApp will interact with each other. This two-part series discusses how to deploy a smart contract using the Remix IDE then develop the To Do List app using ReactJS.
+This tutorial shows how to create a smart contract and a dApp using ReactJS, where the contract and the dApp will interact with each other. This two-part series discusses how to deploy a smart contract using the Remix IDE, then develop a To Do List app using ReactJS.
+
 
 #### What is a Smart Contract?
 
