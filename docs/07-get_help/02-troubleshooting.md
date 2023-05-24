@@ -14,7 +14,7 @@ EON EVM supports most of the methods that are considered standard for EVM compat
 
 The Ethereum JSON-RPC is a standard collection of methods that all execution clients implement. It is the canonical interface between users and the network. This interface allows downstream tooling and infrastructure to treat different Ethereum clients as modules that can be swapped at will.
 
-The list of the methods supported, together with some interactive examples are available **[HERE](https://documenter.getpostman.com/view/18562215/2s8YK4t8CN)**.
+The list of the methods supported, together with some interactive examples are available **[HERE](https://postman.horizenlabs.io/)**.
 
 ### General Error Messages
 
