@@ -253,7 +253,7 @@ You will see the following execution results:
 Before you can deploy a contract, you need to add the import statement by running the command:
 
 ```
-import {ether} from hardhat;
+import { ether } from "hardhat";
 ```
 
 To deploy your contract **TestPayable.sol**, create a folder in your Hardhat project and name it, **scripts/**. Copy this script (below) and name it **Payable.ts**.  
