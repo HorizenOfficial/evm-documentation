@@ -15,11 +15,11 @@ The Horizen EON Explorer (Gobi Testnet Block Explorer) leverages the feature-ric
 
 
 
-# Key Features
+## Key Features
 
 The key features of the Gobi Testnet Block Explorer are modularized in each of the panels in the main landing page. 
 
-## Daily Transaction
+### Daily Transaction
 
 The **Daily Transaction** dashboard provides a real-time view of the blockchain with various data points.
 
@@ -35,7 +35,7 @@ The categories in the Daily Transaction dashboard includes:
 - **Total blocks** - The total number of blocks in the blockchain.
 - **Wallet address** - The total number of wallet addresses associated with transactions in the blockchain.
 
-## Blocks
+### Blocks
 
 The Block module provides key information about the block.
 
@@ -52,7 +52,7 @@ Key information includes:
 
 - **Miner (wallet) address** - The miner’s address. Click the miner's address link to navigate to the **Address Detail** page.
 
-## Transactions
+### Transactions
 
 The **Transaction** module provides key information about the transaction.
 
@@ -96,7 +96,7 @@ Key information includes:
 - **Block Number** - The number assigned to the block.
 - **Elapsed timer for the block** - A timer that displays the elapsed time since the block creation.
 
-## Forward Transfer
+### Forward Transfer
 
 When a user requests for tZEN from the Horizen Faucet, the forward transfer transaction is initiated. A forward transfer moves assets from the mainchain to the sidechain. These transactions, more specifically the transaction outputs, are unspendable on the mainchain. However, they include some metadata so they are redeemable on EON. 
 
@@ -117,7 +117,7 @@ Key information includes:
 - **Block Number** - The number assigned to the block.
 - **Elapsed timer for the block** - A timer that displays the elapsed time since the block creation.
 
-## Fee Payment
+### Fee Payment
 
 The blockchain fee is a tZEN-denoted fee that users are charged when processing transactions. The fee is required to process the transaction on the Gobi Testnet and ensure that transfers arrive at their expected destination. The fees are aggregated and paid to forger nodes that have forged at least one block during the last withdrawal epoch.
 
@@ -135,20 +135,20 @@ Key information includes:
 - **Block Number** - The number assigned to the block.
 - **Elapsed timer for the block** - A timer that displays the elapsed time since the block creation.
 
-# Blockchain Menu
+## Blockchain Menu
 
 The Blockchain menu has two feature sections:
 
 - Blocks
 - Transactions
 
-## Blocks 
+### Blocks 
 The Blocks section includes:
 
-- Blocks
+- [Blocks](#blocks)
 - Forged Blocks (Reorg)
 
-### Forged Blocks (Reorgs)
+#### Forged Blocks (Reorgs)
 Forged blocks or chain reorganization (reorgs) takes place when a block is removed from the blockchain and a node receives blocks that are part of a new (longest) chain.
 
 The EON Block Explorer highlights the Reorgs:
@@ -228,7 +228,7 @@ Key information includes:
 - **Verified** - A timer that displays the elapsed time since the contract was verified.
 - **Market Cap** - The value of the token if it is bought and sold with fiat currency.
 
-# Tokens Menu
+## Tokens Menu
 
 The Tokens menu has two feature options:
 
@@ -236,7 +236,7 @@ The Tokens menu has two feature options:
 - tZEN 
 
 
-## All (Tokens)
+### All (Tokens)
 
 The All (Tokens) option displays all ERC-20 tokens in the blockchain. 
 
@@ -251,7 +251,7 @@ Key information includes:
 - **Total Supply** - The total amount of available tokens.
 - **Holder Count** - The number of accounts with some amount of the token listed.
 
-## tZEN (Address)
+### tZEN (Address)
 
 The tZEN (Address) option displays all addresses with tZEN balances in the blockchain. 
 
@@ -266,18 +266,18 @@ Key information includes:
 - **Txn Count** - The number of transactions associated with this tZEN that are sent.
 
 
-# API Menu
+## API Menu
 The API menu has three feature options that are helpful resources for blockchain development and technical support:
 
 - GraphQL
 - RPC
 - ETH RPC
 
-## GraphQL
+### GraphQL
 
 **GraphQL** is a query language for APIs and a runtime for queries with data. It provides a complete review of your API and data. See [GraphQL](https://graphql.org/) for more information.
 
-## RPC 
+### RPC 
 
 The **RPC** option displays the API Documentation for developing applications and porting from Etherscan and Blockscout. Click on the desired API category for more detailed information.
 
@@ -286,7 +286,7 @@ The **RPC** option displays the API Documentation for developing applications an
 <img src={require("/img/docs/blockscout/gobi-exp-rpc.png").default} alt="rpc-api_documentation" width="900" height="700" />
 </p>
 
-## ETH RPC 
+### ETH RPC 
 The **ETH RPC** option displays the Eth API Documentation. The documentation provides supported RPC methods for sending requests to Blockscout.  Scroll to the desired RPC method for detailed information.
 
 <p>
@@ -294,7 +294,7 @@ The **ETH RPC** option displays the Eth API Documentation. The documentation pro
 </p>
 
 
-# Address Details
+## Address Details
 The **Address Details** page displays the selected address and its associated information. This option provides links to additional information including:
 
 
@@ -322,8 +322,8 @@ The **Address Details** page provides a copy icon and a QR Code (top right corne
 <img src={require("/img/docs/blockscout/gobi-exp-copy-icon.png").default} alt="copy-icon" width="300" height="200" />
 </p>
 
-# Transaction Details
-The Transaction Details page displays the transaction and associated information. 
+## Transaction Details
+The **Transaction Details** page displays the transaction and associated information. 
 
 <p>
 <img src={require("/img/docs/blockscout/gobi-exp-tranx-details.png").default} alt="transaction-details" width="900" height="700" />
@@ -353,7 +353,7 @@ Key information includes:
 
 ## Input
 
-The Input panel displays the input data that is used to call a specific function in a smart contract. The function call data includes the method Id and all parameters that the function requires. 
+The **Input** panel displays the input data that is used to call a specific function in a smart contract. The function call data includes the method Id and all parameters that the function requires. 
 
 As an example, a contract call can have a function (method, such as Stake) and input amount (quantity of Stake).
 
@@ -369,9 +369,9 @@ Key information includes:
 - **Type** - The type of input.
 - **Data** - The value of the input in hexadecimal encoding.
 
-# Token Transfers
+## Token Transfers
 
-The Token Transfers panel displays the transaction (type) of tokens from one source (wallet or dApp) to a specific address. 
+The **Token Transfers** panel displays the transaction (type) of tokens from one source (wallet or dApp) to a specific address. 
 
 <p>
 <img src={require("/img/docs/blockscout/gobi-exp-token-transfers.png").default} alt="token transfers" width="900" height="700" />
@@ -383,11 +383,11 @@ Key information includes:
 - **Transaction From/To** - The sending address (from) and the recipient address (to).
 - **Value** - The value of the transferred token.
 
-# Internal Transactions
+## Internal Transactions
 
 Currently, this feature is not enabled.
 
-# Logs
+## Logs
 The Logs panel displays the recorded event and associated key information.
 
 <p>
@@ -401,11 +401,11 @@ Key information includes:
 - **Data** - The event data (arrays or strings) in the log record. You cannot search for specific event data.
 - **Log Index** - The number of logged index (keys) of the event.
 
-# Raw Trace
+## Raw Trace
 
 Currently, this feature is not enabled.
 
-# State Changes
+## State Changes
 
 The State Change panel displays the version of changes for tZEN or token balances that occurred in the given transaction. 
 
@@ -422,7 +422,7 @@ Key information includes:
 - **Balance after** - The amount after the  transaction.
 - **Change** -  The change direction (up or down) of the balance.
 
-# Contract Address Details
+## Contract Address Details
 The **Contract Address Details** page displays the selected contract address and associated information. 
 
 <p>
@@ -441,7 +441,7 @@ Key information includes:
 - **Gas Used** - Gas used by the address.
 - **Last Balance Update** - Block number in which the address was updated.
 
-## Transactions Tab
+### Transactions Tab
 The **Transactions** tab displays all transactions that are associated with the selected contract address.  
 
 <p>
@@ -454,11 +454,11 @@ For each transaction, the contract call status is displayed along with specific 
 - **Address** - The address associated with the contract. Click for Address Details.
 - **Transaction Fee** - The amount of tZEN fee for the transaction.
 
-## Internal Transactions Tab
+### Internal Transactions Tab
 
 Currently, this feature is not enabled.
 
-## Coin Balance History Tab
+### Coin Balance History Tab
 
 The **Coin Balance History** tab displays your coin (cryptocurrency) associated with a connected wallet. This tab shows a graph of your coin balance through time (in days).
 
@@ -466,7 +466,7 @@ The **Coin Balance History** tab displays your coin (cryptocurrency) associated 
 <img src={require("/img/docs/blockscout/gobi-exp-coinbalance.png").default} alt="coin balance" width="900" height="700" />
 </p>
 
-## Logs Tab
+### Logs Tab
 
 The **Logs** tab displays log entries for a select transaction. 
 
@@ -486,15 +486,15 @@ This tab shows decoded metadata that includes:
 - **Indexed** - The type of input is either indexed (true) or not (false).
 - **Data** - The value of the input in hexadecimal encoding.
 
-### Topics
+#### Topics
 
 **Topics** describe the event. The first topic consists of the **signature** (keccak256 hash) of the event name and **types** (uint256, strings, etc) of its parameters. Anonymous events do not include the signature in the first topic.
 
-### Data
+#### Data
 
 Topics larger than 32 bytes are hashed as **data** in the log record. Data such as arrays or strings cannot be reliably used as a topic, therefore it is included as data in the log record.
 
-## Code Tab
+### Code Tab
 
 The **Code** tab displays the current contract’s code along with its metadata.
 
@@ -504,7 +504,7 @@ The **Code** tab displays the current contract’s code along with its metadata.
 <img src={require("/img/docs/blockscout/gobi-exp-codetab-notification.png").default} alt="code notification" width="900" height="700" />
 </p>
 
-### Contract Metadata
+#### Contract Metadata
 
 The contract’s metadata data include:
 
@@ -518,15 +518,15 @@ The contract’s metadata data include:
 <img src={require("/img/docs/blockscout/gobi-exp-code-tab.png").default} alt="code tab" width="900" height="700" />
 </p>
 
-### Constructor Arguments
+#### Constructor Arguments
 
 Some contracts require constructor arguments, which are specific starting values during the time of creation.  For example, a token contract names the token with constructor arguments.
 
-### Contract Source Code
+#### Contract Source Code
 
 The **Contract Source Code** panel displays the smart contract’s entire source code. This panel is not editable. Click the **Copy Source Code** button to copy to a clipboard.
 
-# Read Contract Tab
+## Read Contract Tab
 
 The Read Contract tab displays the selected or connected verified contract via its address. 
 
@@ -542,7 +542,7 @@ This tab allows you to check various contract attributes.
 <img src={require("/img/docs/blockscout/gobi-exp-read-contract.png").default} alt="read contract" width="900" height="700" />
 </p>
 
-## Read Contract Interaction
+### Read Contract Interaction
 
 You can read the smart contract attributes and make changes. These attributes include:
 
