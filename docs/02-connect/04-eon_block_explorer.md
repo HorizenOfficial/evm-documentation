@@ -62,26 +62,25 @@ The **Transaction** module provides key information about the transaction.
 
 Key information includes:
 
-- **Transaction Status** - Success or Error: (Awaiting internal transaction for reason)
+- **Transaction Status** - Indicates the status (Success or Error) details of the transaction.
 - **Transaction ID (hash)** - The unique identifier that validates the transaction.
 - **Address** - The wallet address associated with the transaction. 
 - **Transaction Fee** - The amount charged to process the transaction.
-- **Contract Address** - The contract address associated with the transaction. Click the address to **Address Detail** page.
+- **Contract Address** - The contract address associated with the transaction. Click the address link to naviagate to the **Address Detail** page.
 - **(Receiving) Address** - The receiving address associated with the transfer transaction. Click the address receiving asset to **Address Detail** page.
 
-## Gobi Testnet Block Explorer Features
+## Block Explorer Features
 
-The Gobi Testnet Block Explorer gives you the ability to search the blockchain for transactions, addresses, and statistics, including the customized features of:
+The EON Block Explorer gives you the ability to search the blockchain for transactions, addresses, and statistics, including the customized features of:
 
 - Backward Transfer
 - Forward Transfer
 - Fee Payment
-- Backward Transfer
 
 
 Typically, when a user decides to move ZEN from a sidechain back to the mainchain (to either send ZEN to another sidechain or to cash out, for example) the backward transfer transaction is deployed. Backward transfers are initiated on EON (EVM sidechain) as special transactions batched in withdrawal certificates and propagated by EON nodes to the mainchain.
 
-The Gobi Testnet Explorer highlights the Backward Transfer transaction:
+The EON Block Explorer highlights the Backward Transfer transaction:
 
 <p>
 <img src={require("/img/docs/blockscout/gobi-exp-backward.png").default} alt="backward-transaction" width="900" height="700" />
@@ -89,9 +88,9 @@ The Gobi Testnet Explorer highlights the Backward Transfer transaction:
 
 Key information includes:
 
-- **Transaction Status** - Success or Error: (Awaiting internal transaction for reason)
-- **Transaction ID (hash)** - The unique identifier that validates the transaction. Click to **Transaction Detail** page.
-- **(Sending) Address** - The sending address of the transaction. Click the address receiving asset (link) to **Address Detail** page.
+- **Transaction Status** - Indicates the status (Success or Error) details of the transaction.
+- **Transaction ID (hash)** - The unique identifier that validates the transaction. Click the transaction ID link to navigate to the **Transaction Detail** page.
+- **(Sending) Address** - The sending address of the transaction. Click the address receiving asset link navigate to the to **Address Detail** page.
 - **Amount of tZEN** - The amount of tZEN transferred in the transaction.
 - **Transaction Fee** - The amount charged to process the transaction.
 - **Block Number** - The number assigned to the block.
@@ -102,7 +101,7 @@ Key information includes:
 When a user requests for tZEN from the Horizen Faucet, the forward transfer transaction is initiated. A forward transfer moves assets from the mainchain to the sidechain. These transactions, more specifically the transaction outputs, are unspendable on the mainchain, but include some metadata so they are redeemable on EON (EVM sidechain). 
 It is the responsibility of EON nodes to monitor the mainchain for incoming transactions, and include them in EON.
 
-The Gobi Testnet Explorer highlights the Forward Transfer transaction:
+The EON Block Explorer highlights the Forward Transfer transaction:
 
 <p>
 <img src={require("/img/docs/blockscout/gobi-exp-forward.png").default} alt="forward-transaction" width="900" height="700" />
@@ -110,7 +109,7 @@ The Gobi Testnet Explorer highlights the Forward Transfer transaction:
 
 Key information includes:
 
-- **Transaction Status** - Success or Error: (Awaiting internal transaction for reason)
+- **Transaction Status** - Indicates the status (Success or Error) details of the transaction.
 - **Transaction ID (hash)** - The unique identifier that validates the transaction.
 - **(Receiving) Address** - The recipient address of the transaction.
 - **Amount of tZEN** - The amount of tZEN transferred in the transaction.
@@ -121,7 +120,7 @@ Key information includes:
 
 The blockchain fee is tZEN-specific fee that is charged to users when processing transactions. The fee is required to process the transaction on the Gobi Testnet and ensure that transfers arrive at their expected destination. The fees are aggregated and paid to forger nodes that have forged at least one block during the last withdrawal epoch.
 
-The Gobi Testnet Explorer highlights the Fee Payment transactions:
+The EON Block Explorer highlights the Fee Payment transactions:
 
 <p>
 <img src={require("/img/docs/blockscout/gobi-exp-fee.png").default} alt="fee-payment" width="900" height="700" />
@@ -150,7 +149,7 @@ The Blocks section includes:
 ### Forged Blocks (Reorgs)
 Forged blocks or chain reorganization (reorgs) takes place when a block is removed from the blockchain and a node receives blocks that are part of a new (longest) chain.
 
-The Gobi Testnet Explorer highlights the Reorgs:
+The EON Block Explorer highlights the Reorgs:
 
 <p>
 <img src={require("/img/docs/blockscout/gobi-exp-reorg.png").default} alt="reorgs" width="900" height="700" />
@@ -171,10 +170,10 @@ Key information includes:
 ## Transactions  
 The Transactions section includes:
 
-- Validated 
+- Validated Transactions
 - [Forward Transfer](#forward-transfer) 
 - [Fee Payments](#fee-payment)
-- Pending
+- Pending Transactions
 - Verified Contracts
 
 ### Validated Transactions
@@ -189,7 +188,7 @@ The **Validated Transaction** feature provides key information about the transac
 
 Key information includes:
 
-- **Transaction Status** - Success or Error: (Awaiting internal transaction for reason)
+- **Transaction Status** - Indicates the status (Success or Error) details of the transaction.
 - **Transaction ID (hash)** - The unique identifier that validates the transaction.
 - **Address** - The wallet address initiating the transaction. 
 - **Transaction Fee** - The amount charged to process the transaction.
@@ -219,7 +218,7 @@ Key information includes:
 - **Transaction (Txns)** - The number of transactions associated with the verified contract.
 - **Compiler** - The name of the compiler type.
 - **Version** - The version number of the compiler type.
-- **Optimization** - A green check mark indicates that optimization is applied. A red cross indicates that optimization was not applied.
+- **Optimization** - The optimizer applies a set of simplification rules to opcodes in the contract. A green check mark indicates that optimization is applied. A red cross indicates that optimization was not applied.
 - **Construction Args** - A green check mark indicates that construction arguments were used. A red cross indicates that construction arguments were not used.
 - **Verified** - A timer that displays the elapsed time since the contract was verified.
 - **Market Cap** - The value of the token if it is bought and sold with fiat currency.
@@ -267,7 +266,7 @@ The API menu has three feature options that are helpful resources for blockchain
 
 - GraphQL
 - RPC
-- Eth RPC
+- ETH RPC
 
 ## GraphQL
 
@@ -281,8 +280,8 @@ The **RPC** option displays the API Documentation for developing applications an
 <img src={require("/img/docs/blockscout/gobi-exp-rpc.png").default} alt="rpc-api_documentation" width="900" height="700" />
 </p>
 
-## Eth RPC 
-The **Eth RPC** option displays the Eth API Documentation. The documentation provides supported RPC methods for sending requests to Blockscout.  Scroll to the desired RPC method for detailed information.
+## ETH RPC 
+The **ETH RPC** option displays the Eth API Documentation. The documentation provides supported RPC methods for sending requests to Blockscout.  Scroll to the desired RPC method for detailed information.
 
 <p>
 <img src={require("/img/docs/blockscout/gobi-exp-eth-rpc.png").default} alt="eth rpc-api_documentation" width="900" height="700" />
