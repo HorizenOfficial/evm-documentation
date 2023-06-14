@@ -199,7 +199,8 @@ Key information includes:
 - **Contract Address** - Click the address to Address Detail page.
 - **(Receiving) Address** - Click the address receiving asset to Address Detail page.
 - **Block Number** - The number assigned to the block.
-- **Elapsed timer for the block** - A timer that displays the elapsed time since block creation period.
+- **Elapsed timer for the block** - A timer that displays the elapsed time since the block creation period.
+
 
 ### Pending Transactions
 Currently this feature is not enabled.
