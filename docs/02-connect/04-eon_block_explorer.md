@@ -48,9 +48,9 @@ Key information includes:
 - **Block number** - The number assigned to the block.
 - **Number of transactions** - The running number of transactions for the block.
 - **Number of bytes** - The amount of bytes for the block.
-- **Elapsed timer for the block** - Tracks amount of time since block creation.
+- **Elapsed timer for the block** - A timer that displays the elapsed time since the block creation.
 
-- **Miner (wallet) address** - The miner’s address. Click the address to Address Detail page.
+- **Miner (wallet) address** - The miner’s address. Click the miner's address link to navigate to the **Address Detail** page.
 
 ## Transactions
 
@@ -94,7 +94,7 @@ Key information includes:
 - **Amount of tZEN** - The amount of tZEN transferred in the transaction.
 - **Transaction Fee** - The amount charged to process the transaction.
 - **Block Number** - The number assigned to the block.
-- **Elapsed timer for the block** - A timer that displays the elapsed time since block creation period.
+- **Elapsed timer for the block** - A timer that displays the elapsed time since the block creation.
 
 ## Forward Transfer
 
@@ -115,7 +115,7 @@ Key information includes:
 - **(Receiving) Address** - The recipient address of the transaction.
 - **Amount of tZEN** - The amount of tZEN transferred in the transaction.
 - **Block Number** - The number assigned to the block.
-- **Elapsed timer for the block** - A timer that displays the elapsed time since block creation period.
+- **Elapsed timer for the block** - A timer that displays the elapsed time since the block creation.
 
 ## Fee Payment
 
@@ -133,7 +133,7 @@ Key information includes:
 - **Address** - The wallet address receiving the fee payment. 
 - **Amount of tZEN** - The amount of tZEN transferred in the transaction.
 - **Block Number** - The number assigned to the block.
-- **Elapsed timer for the block** - A timer that displays the elapsed time since block creation period.
+- **Elapsed timer for the block** - A timer that displays the elapsed time since the block creation.
 
 # Blockchain Menu
 
@@ -162,8 +162,8 @@ Key information includes:
 - **Block Number** - The number assigned to the block.
 - **Transactions** - The number of transactions for the block.
 - **Bytes** - The number of bytes for the block.
-- **Elapsed timer for the block** - Clock counting since block creation period.
-- **Miner (wallet) address** - The miner's wallet address. Click the address to **Address Detail** page.
+- **Elapsed timer for the block** - A timer that displays the elapsed time since the block creation.
+- **Miner (wallet) address** - The miner's wallet address. Click the miner's address link to navigate to the **Address Detail** page.
 - **Priority  Fee** - The priority fee is the additional amount of fee to have your transaction complete faster. This is also known as a tip.
 - **Reward Pool Fee** - The total amount of required fees users paid for the transactions in this block. This is also known as the base fee. 
 
@@ -199,7 +199,7 @@ Key information includes:
 - **Contract Address** - Click the address to Address Detail page.
 - **(Receiving) Address** - Click the address receiving asset to Address Detail page.
 - **Block Number** - The number assigned to the block.
-- **Elapsed timer for the block** - A timer that displays the elapsed time since the block creation period.
+- **Elapsed timer for the block** - A timer that displays the elapsed time since the block creation.
 
 
 ### Pending Transactions
@@ -247,7 +247,7 @@ The All (Tokens) option displays all ERC-20 tokens in the blockchain.
 Key information includes:
 
 - **Token (name)** - The name of the token.
-- **Address** - The wallet address associated with the token. Click the address to **Address Detail** page.
+- **Address** - The wallet address associated with the token. Click the wallet address link to navigate to the **Address Detail** page.
 - **Total Supply** - The total amount of available tokens.
 - **Holder Count** - The number of accounts with some amount of the token listed.
 
@@ -261,7 +261,7 @@ The tZEN (Address) option displays all addresses with tZEN balances in the block
 
 Key information includes:
 
-- **Address** - The wallet address. Click the address to **Address Detail** page.
+- **Address** - The wallet address. Click the wallet address link to navigate to the **Address Detail** page.
 - **Balance** - The total amount of tZEN.
 - **Txn Count** - The number of transactions associated with this tZEN that are sent.
 
@@ -442,7 +442,7 @@ Key information includes:
 - **Last Balance Update** - Block number in which the address was updated.
 
 ## Transactions Tab
-The Transactions tab displays all transactions that are associated with the selected contract address.  
+The **Transactions** tab displays all transactions that are associated with the selected contract address.  
 
 <p>
 <img src={require("/img/docs/blockscout/gobi-exp-transactiontab.png").default} alt="transaction tab" width="900" height="700" />
@@ -460,7 +460,7 @@ Currently, this feature is not enabled.
 
 ## Coin Balance History Tab
 
-The Coin Balance History tab displays your coin (cryptocurrency) associated with a connected wallet. This tab shows a graph of your coin balance through time (in days).
+The **Coin Balance History** tab displays your coin (cryptocurrency) associated with a connected wallet. This tab shows a graph of your coin balance through time (in days).
 
 <p>
 <img src={require("/img/docs/blockscout/gobi-exp-coinbalance.png").default} alt="coin balance" width="900" height="700" />
@@ -468,7 +468,7 @@ The Coin Balance History tab displays your coin (cryptocurrency) associated with
 
 ## Logs Tab
 
-The Logs tab displays log entries for a select transaction. 
+The **Logs** tab displays log entries for a select transaction. 
 
 **Note:** Use the **Search** option to query on a specific topic.
 
@@ -488,15 +488,15 @@ This tab shows decoded metadata that includes:
 
 ### Topics
 
-Topics describe the event. The first topic consists of the **signature** (keccak256 hash) of the event name and **types** (uint256, strings, etc) of its parameters. Anonymous events do not include the signature in the first topic.
+**Topics** describe the event. The first topic consists of the **signature** (keccak256 hash) of the event name and **types** (uint256, strings, etc) of its parameters. Anonymous events do not include the signature in the first topic.
 
 ### Data
 
-Topics larger than 32 bytes are hashed as data in the log record. Data such as arrays or strings cannot be reliably used as a topic, therefore it is included as data in the log record.
+Topics larger than 32 bytes are hashed as **data** in the log record. Data such as arrays or strings cannot be reliably used as a topic, therefore it is included as data in the log record.
 
 ## Code Tab
 
-The Code tab displays the current contract’s code along with its metadata.
+The **Code** tab displays the current contract’s code along with its metadata.
 
 **Note:** When a selected contract is not verified, an information notification appears showing a contract address that is verified with the same bytecode. Use the **Verify & Publish** button to verify the current contract.
 
