@@ -22,7 +22,7 @@ The key features of the Gobi Testnet Block Explorer are modularized in each of t
 The **Daily Transaction** dashboard provides a real-time view of the blockchain with various data points.
 
 <p>
-<img src={require("/img/docs/reference/gobi-exp-daily.png").default} alt="daily-transaction" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-daily.png").default} alt="daily-transaction" width="300" height="200" />
 </p>
 
 The categories in the Daily Transaction dashboard includes:
@@ -38,7 +38,7 @@ The categories in the Daily Transaction dashboard includes:
 The Block module provides key information about the block.
 
 <p>
-<img src={require("/img/docs/reference/gobi-exp-blocks.png").default} alt="blocks-module" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-blocks.png").default} alt="blocks-module" width="300" height="200" />
 </p>
 
 Key information includes:
@@ -54,7 +54,7 @@ Key information includes:
 The **Transaction** module provides key information about the transaction.
 
 <p>
-<img src={require("/img/docs/reference/gobi-exp-transactions.png").default} alt="transactions" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-transactions.png").default} alt="transactions" width="300" height="200" />
 </p>
 
 Key information includes:
@@ -81,7 +81,7 @@ Typically, when a user decides to move ZEN from a sidechain back to the mainchai
 The Gobi Testnet Explorer highlights the Backward Transfer transaction:
 
 <p>
-<img src={require("/img/docs/reference/gobi-exp-backward.png").default} alt="backward-transaction" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-backward.png").default} alt="backward-transaction" width="300" height="200" />
 </p>
 
 Key information includes:
@@ -102,7 +102,7 @@ It is the responsibility of EON nodes to monitor the mainchain for incoming tran
 The Gobi Testnet Explorer highlights the Forward Transfer transaction:
 
 <p>
-<img src={require("/img/docs/reference/gobi-exp-forward.png").default} alt="forward-transaction" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-forward.png").default} alt="forward-transaction" width="300" height="200" />
 </p>
 
 Key information includes:
@@ -121,7 +121,7 @@ The blockchain fee is tZEN-specific fee that is charged to users when processing
 The Gobi Testnet Explorer highlights the Fee Payment transactions:
 
 <p>
-<img src={require("/img/docs/reference/gobi-exp-fee.png").default} alt="fee-payment" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-fee.png").default} alt="fee-payment" width="300" height="200" />
 </p>
 
 Key information includes:
