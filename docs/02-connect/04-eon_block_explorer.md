@@ -278,7 +278,8 @@ The API menu has three feature options that are helpful resources for blockchain
 
 ## RPC 
 
-The **RPC** option displays the API Documentation for developing applications and porting from Etherscan and Blockscout. Click on the desired API category for detailed information.
+The **RPC** option displays the API Documentation for developing applications and porting from Etherscan and Blockscout. Click on the desired API category for more detailed information.
+
 
 <p>
 <img src={require("/img/docs/blockscout/gobi-exp-rpc.png").default} alt="rpc-api_documentation" width="900" height="700" />
