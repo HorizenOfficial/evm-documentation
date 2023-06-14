@@ -1,4 +1,8 @@
-# Horizen EON Explorer: Gobi Testnet Block Explorer
+---
+title: Horizen EON Explorer
+---
+
+
 
 The Horizen EON Explorer (Gobi Testnet Block Explorer) leverages the feature-rich Blockscout Explorer, an online tool for inspecting and analyzing the Gobi Testnet blockchain. Blockscout is an open-source code that allows the ability to customize a block explorer instance to view all transactions, past and current, on the blockchain. Customization can include information such as network hash rate and transaction details.
 
