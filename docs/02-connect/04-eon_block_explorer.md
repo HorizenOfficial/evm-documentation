@@ -310,7 +310,7 @@ Key information includes:
 The **Address Details** page provides a copy icon and a QR Code (top right corner) as a convenience to copy the address.
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-copy-icon.png").default} alt="copy-icon" width="500" height="300" />
+<img src={require("/img/docs/blockscout/gobi-exp-copy-icon.png").default} alt="copy-icon" width="300" height="200" />
 </p>
 
 # Transaction Details
