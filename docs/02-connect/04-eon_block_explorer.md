@@ -119,7 +119,8 @@ Key information includes:
 
 ## Fee Payment
 
-The blockchain fee is tZEN-specific fee that is charged to users when processing transactions. The fee is required to process the transaction on the Gobi Testnet and ensure that transfers arrive at their expected destination. The fees are aggregated and paid to forger nodes that have forged at least one block during the last withdrawal epoch.
+The blockchain fee is a tZEN-denoted fee that users are charged when processing transactions. The fee is required to process the transaction on the Gobi Testnet and ensure that transfers arrive at their expected destination. The fees are aggregated and paid to forger nodes that have forged at least one block during the last withdrawal epoch.
+
 
 The EON Block Explorer highlights the Fee Payment transactions:
 
