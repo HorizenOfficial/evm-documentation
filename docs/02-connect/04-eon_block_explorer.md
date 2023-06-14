@@ -98,7 +98,8 @@ Key information includes:
 
 ## Forward Transfer
 
-When a user requests for tZEN from the Horizen Faucet, the forward transfer transaction is initiated. A forward transfer moves assets from the mainchain to the sidechain. These transactions, more specifically the transaction outputs, are unspendable on the mainchain, but include some metadata so they are redeemable on EON (EVM sidechain). 
+When a user requests for tZEN from the Horizen Faucet, the forward transfer transaction is initiated. A forward transfer moves assets from the mainchain to the sidechain. These transactions, more specifically the transaction outputs, are unspendable on the mainchain. However, they include some metadata so they are redeemable on EON. 
+
 It is the responsibility of EON nodes to monitor the mainchain for incoming transactions, and include them in EON.
 
 The EON Block Explorer highlights the Forward Transfer transaction:
