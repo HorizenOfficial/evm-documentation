@@ -165,7 +165,8 @@ Key information includes:
 - **Elapsed timer for the block** - Clock counting since block creation period.
 - **Miner (wallet) address** - The miner's wallet address. Click the address to **Address Detail** page.
 - **Priority  Fee** - The priority fee is the additional amount of fee to have your transaction complete faster. This is also known as a tip.
-- **Reward Pool Fee** - The total amount of required fee users paid for the transactions in this block. This is also known as base fee. 
+- **Reward Pool Fee** - The total amount of required fees users paid for the transactions in this block. This is also known as the base fee. 
+
 - **Gas Limit** - The maximum amount of total gas consumed for all transactions in one block.
 - **Gas Used** - The total amount of gas used by all transactions in this block.
 
