@@ -11,7 +11,8 @@ The Horizen EON Explorer (Gobi Testnet Block Explorer) leverages the feature-ric
 <img src={require("/img/docs/blockscout/gobi-exp-landing.png").default} alt="landing-page" width="900" height="700" />
 </p>
 
-**Note:** Use **Search** to query for specific transaction, address (wallet or contract), block, and token.
+**Note:** Use **Search** to query for a specific transaction, address (wallet or contract), block, and token.
+
 
 
 # Key Features
