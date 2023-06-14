@@ -7,7 +7,7 @@ title: Horizen EON Explorer
 The Horizen EON Explorer (Gobi Testnet Block Explorer) leverages the feature-rich Blockscout Explorer, an online tool for inspecting and analyzing the Gobi Testnet blockchain. Blockscout is an open-source code that allows the ability to customize a block explorer instance to view all transactions, past and current, on the blockchain. Customization can include information such as network hash rate and transaction details.
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-landing.png").default} alt="landing-page" width="0" height="0" />
+<img src={require("/img/docs/blockscout/gobi-exp-landing.png").default} alt="landing-page" width="500" height="300" />
 </p>
 
 **Note:** Use **Search** to query for specific transaction, address (wallet or contract), block, and token.
@@ -22,7 +22,7 @@ The key features of the Gobi Testnet Block Explorer are modularized in each of t
 The **Daily Transaction** dashboard provides a real-time view of the blockchain with various data points.
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-daily.png").default} alt="daily-transaction" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-daily.png").default} alt="daily-transaction" width="500" height="300" />
 </p>
 
 The categories in the Daily Transaction dashboard includes:
@@ -38,7 +38,7 @@ The categories in the Daily Transaction dashboard includes:
 The Block module provides key information about the block.
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-blocks.png").default} alt="blocks-module" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-blocks.png").default} alt="blocks-module" width="500" height="300" />
 </p>
 
 Key information includes:
@@ -54,7 +54,7 @@ Key information includes:
 The **Transaction** module provides key information about the transaction.
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-transactions.png").default} alt="transactions" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-transactions.png").default} alt="transactions" width="500" height="300" />
 </p>
 
 Key information includes:
@@ -81,7 +81,7 @@ Typically, when a user decides to move ZEN from a sidechain back to the mainchai
 The Gobi Testnet Explorer highlights the Backward Transfer transaction:
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-backward.png").default} alt="backward-transaction" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-backward.png").default} alt="backward-transaction" width="500" height="300" />
 </p>
 
 Key information includes:
@@ -102,7 +102,7 @@ It is the responsibility of EON nodes to monitor the mainchain for incoming tran
 The Gobi Testnet Explorer highlights the Forward Transfer transaction:
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-forward.png").default} alt="forward-transaction" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-forward.png").default} alt="forward-transaction" width="500" height="300" />
 </p>
 
 Key information includes:
@@ -121,7 +121,7 @@ The blockchain fee is tZEN-specific fee that is charged to users when processing
 The Gobi Testnet Explorer highlights the Fee Payment transactions:
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-fee.png").default} alt="fee-payment" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-fee.png").default} alt="fee-payment" width="500" height="300" />
 </p>
 
 Key information includes:
@@ -150,7 +150,7 @@ Forged blocks or chain reorganization (reorgs) takes place when a block is remov
 The Gobi Testnet Explorer highlights the Reorgs:
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-reorg.png").default} alt="reorgs" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-reorg.png").default} alt="reorgs" width="500" height="300" />
 </p>
 
 Key information includes:
@@ -180,7 +180,7 @@ Transaction validation indicates that a transaction conforms to a specific proto
 The **Validated Transaction** feature provides key information about the transaction.
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-validated.png").default} alt="validated-transaction" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-validated.png").default} alt="validated-transaction" width="500" height="300" />
 </p>
 
 
@@ -204,7 +204,7 @@ A verified contract shares its source code with the public, including the compil
 The Verified Contracts feature provides key information about the contract.
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-verified-contract.png").default} alt="verified-contracts" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-verified-contract.png").default} alt="verified-contracts" width="500" height="300" />
 </p>
 
 
@@ -234,7 +234,7 @@ The Tokens menu has two feature options:
 The All (Tokens) option displays all ERC-20 tokens in the blockchain. 
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-alltokens.png").default} alt="all-tokens" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-alltokens.png").default} alt="all-tokens" width="500" height="300" />
 </p>
 
 Key information includes:
@@ -249,7 +249,7 @@ Key information includes:
 The tZEN (Address) option displays all addresses with tZEN balances in the blockchain. 
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-tzentokens.png").default} alt="tzen-tokens" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-tzentokens.png").default} alt="tzen-tokens" width="500" height="300" />
 </p>
 
 Key information includes:
@@ -275,14 +275,14 @@ The API menu has three feature options that are helpful resources for blockchain
 The **RPC** option displays the API Documentation for developing applications and porting from Etherscan and Blockscout. Click on the desired API category for detailed information.
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-rpc.png").default} alt="rpc-api_documentation" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-rpc.png").default} alt="rpc-api_documentation" width="500" height="300" />
 </p>
 
 ## Eth RPC 
 The **Eth RPC** option displays the Eth API Documentation. The documentation provides supported RPC methods for sending requests to Blockscout.  Scroll to the desired RPC method for detailed information.
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-eth-rpc.png").default} alt="eth rpc-api_documentation" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-eth-rpc.png").default} alt="eth rpc-api_documentation" width="500" height="300" />
 </p>
 
 
@@ -293,7 +293,7 @@ The **Address Details** page displays the selected address and associated inform
 - Token Transfers
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-address-details.png").default} alt="address-details" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-address-details.png").default} alt="address-details" width="500" height="300" />
 </p>
 
 Key information includes:
@@ -310,14 +310,14 @@ Key information includes:
 The **Address Details** page provides a copy icon and a QR Code (top right corner) as a convenience to copy the address.
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-copy-icon.png").default} alt="copy-icon" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-copy-icon.png").default} alt="copy-icon" width="500" height="300" />
 </p>
 
 # Transaction Details
 The Transaction Details page displays the transaction and associated information. 
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-tranx-details.png").default} alt="transaction-details" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-tranx-details.png").default} alt="transaction-details" width="500" height="300" />
 </p>
 
 Key information includes:
@@ -349,7 +349,7 @@ The Input panel displays the input data that is used to call a specific function
 As an example, a contract call can have a function (method, such as Stake) and input amount (quantity of Stake).
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-input.png").default} alt="Input" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-input.png").default} alt="Input" width="500" height="300" />
 </p>
 
 Key information includes:
@@ -365,7 +365,7 @@ Key information includes:
 The Token Transfers panel displays the transaction (type) of tokens from one source (wallet or dApp) to a specific address. 
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-token-transfers.png").default} alt="token transfers" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-token-transfers.png").default} alt="token transfers" width="500" height="300" />
 </p>
 
 Key information includes:
@@ -382,7 +382,7 @@ Currently, this feature is not enabled.
 The Logs panel displays the recorded event and associated key information.
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-logs.png").default} alt="Logs" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-logs.png").default} alt="Logs" width="500" height="300" />
 </p>
 
 Key information includes:
@@ -403,7 +403,7 @@ The State Change panel displays the version of changes for tZEN or token balance
 For example, the panel below shows the specific changes in the balances that occurred in a token mint transaction.
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-state-changes.png").default} alt="state changes" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-state-changes.png").default} alt="state changes" width="500" height="300" />
 </p>
 
 Key information includes:
@@ -417,7 +417,7 @@ Key information includes:
 The **Contract Address Details** page displays the selected contract address and associated information. 
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-contractaddress-details.png").default} alt="contract address details" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-contractaddress-details.png").default} alt="contract address details" width="500" height="300" />
 </p>
 
 
@@ -436,7 +436,7 @@ Key information includes:
 The Transactions tab displays all transactions that are associated with the selected contract address.  
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-transactiontab.png").default} alt="transaction tab" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-transactiontab.png").default} alt="transaction tab" width="500" height="300" />
 </p>
 
 For each transaction, the contract call status is displayed along with specific information which includes:
@@ -454,7 +454,7 @@ Currently, this feature is not enabled.
 The Coin Balance History tab displays your coin (cryptocurrency) associated with a connected wallet. This tab shows a graph of your coin balance through time (in days).
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-coinbalance.png").default} alt="coin balance" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-coinbalance.png").default} alt="coin balance" width="500" height="300" />
 </p>
 
 ## Logs Tab
@@ -464,7 +464,7 @@ The Logs tab displays log entries for a select transaction.
 **Note:** Use the **Search** option to query on a specific topic.
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-logs-tab.png").default} alt="logs tab" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-logs-tab.png").default} alt="logs tab" width="500" height="300" />
 </p>
 
 
@@ -492,7 +492,7 @@ The Code tab displays the current contract’s code along with its metadata.
 **Note:** When a selected contract is not verified, an information notification appears showing a contract address that is verified with the same bytecode. Use the **Verify & Publish** button to verify the current contract.
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-codetab-notification.png").default} alt="code notification" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-codetab-notification.png").default} alt="code notification" width="500" height="300" />
 </p>
 
 ### Contract Metadata
@@ -506,7 +506,7 @@ The contract’s metadata data include:
 - **Verified at** - A timestamp when the contract was verified.
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-code-tab.png").default} alt="code tab" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-code-tab.png").default} alt="code tab" width="500" height="300" />
 </p>
 
 ### Constructor Arguments
@@ -530,7 +530,7 @@ The Read Contract tab displays the selected or connected verified contract via i
 This tab allows you to check various contract attributes. 
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-read-contract.png").default} alt="read contract" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-read-contract.png").default} alt="read contract" width="500" height="300" />
 </p>
 
 ## Read Contract Interaction
@@ -556,13 +556,13 @@ The Write Contract tab displays the selected or connected verified contract via 
 **Note:** When a selected contract is not verified, an information notification appears showing a contract address that is verified with the same bytecode. 
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-verifiedcontract-info.png").default} alt="verified contract notification" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-verifiedcontract-info.png").default} alt="verified contract notification" width="500" height="300" />
 </p>
 
 This tab allows you to directly interact with the contract and view its methods. Before you can interact with the smart contract, you must be connected to a wallet.
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-write-contract.png").default} alt="write contract" width="300" height="200" />
+<img src={require("/img/docs/blockscout/gobi-exp-write-contract.png").default} alt="write contract" width="500" height="300" />
 </p>
 
 ### Write Contract Interaction
