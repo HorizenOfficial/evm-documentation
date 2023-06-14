@@ -180,7 +180,8 @@ The Transactions section includes:
 - Verified Contracts
 
 ### Validated Transactions
-Transaction validation indicates that a transaction conforms to a specific protocol requirement to deem it as valid. Once the transaction is considered valid it is added to the distributed ledger.
+Transaction validation indicates that a transaction conforms to a specific protocol requirement to deem it as valid. Once the transaction is considered valid, it is added to the distributed ledger.
+
  
 The **Validated Transaction** feature provides key information about the transaction.
 
