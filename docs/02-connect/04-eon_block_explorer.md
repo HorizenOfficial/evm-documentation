@@ -48,7 +48,8 @@ Key information includes:
 - **Block number** - The number assigned to the block.
 - **Number of transactions** - The running number of transactions for the block.
 - **Number of bytes** - The amount of bytes for the block.
-- **Elapsed timer for the block** - Clock counting since block creation period.
+- **Elapsed timer for the block** - Tracks amount of time since block creation.
+
 - **Miner (wallet) address** - The miner’s address. Click the address to Address Detail page.
 
 ## Transactions
