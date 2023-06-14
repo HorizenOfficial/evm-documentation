@@ -295,7 +295,8 @@ The **ETH RPC** option displays the Eth API Documentation. The documentation pro
 
 
 # Address Details
-The **Address Details** page displays the selected address and associated information. This option provides links to other detail information including:
+The **Address Details** page displays the selected address and its associated information. This option provides links to additional information including:
+
 
 - Transaction
 - Token Transfers
