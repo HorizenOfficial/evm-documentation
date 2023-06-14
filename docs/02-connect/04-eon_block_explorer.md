@@ -141,7 +141,7 @@ The Blockchain menu has two feature sections:
 ## Blocks 
 The Blocks section includes:
 
-- [Blocks](/#Blocks)
+- [Blocks](#Blocks)
 - Forged Blocks (Reorg)
 
 ### Forged Blocks (Reorgs)
@@ -169,8 +169,8 @@ Key information includes:
 The Transactions section includes:
 
 - Validated 
-- Forward Transfer 
-- Fee Payments
+- [Forward Transfer](#Forward-Transfer) 
+- [Fee Payments](#Fee-Payment)
 - Pending
 - Verified Contracts
 
