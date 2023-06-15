@@ -452,7 +452,8 @@ For each transaction, the contract call status is displayed along with specific 
 
 - **Transaction Hash** - The transaction Id or hash associated with the contract. Click for Transaction Details.
 - **Address** - The address associated with the contract. Click for Address Details.
-- **Transaction Fee** - The amount of tZEN fee for the transaction.
+- **Transaction Fee** - The amount charged to process the transaction.
+
 
 ### Internal Transactions Tab
 
