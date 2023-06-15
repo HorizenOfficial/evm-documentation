@@ -461,7 +461,8 @@ Currently, this feature is not enabled.
 
 ### Coin Balance History Tab
 
-The **Coin Balance History** tab displays your coin (cryptocurrency) associated with a connected wallet. This tab shows a graph of your coin balance through time (in days).
+The **Coin Balance History** tab displays your coin (cryptocurrency) associated with a connected wallet. This tab shows a graph of your coin balance throughout time (in days).
+
 
 <p>
 <img src={require("/img/docs/blockscout/gobi-exp-coinbalance.png").default} alt="coin balance" width="900" height="700" />
