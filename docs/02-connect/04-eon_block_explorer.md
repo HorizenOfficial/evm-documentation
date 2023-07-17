@@ -91,14 +91,14 @@ Key information includes:
 - **Transaction Status** - Indicates the status (Success or Error) details of the transaction.
 - **Transaction ID (hash)** - The unique identifier that validates the transaction. Click the transaction ID link to navigate to the **Transaction Detail** page.
 - **(Sending) Address** - The sending address of the transaction. Click the address receiving asset link navigate to the to **Address Detail** page.
-- **Amount of tZEN** - The amount of tZEN transferred in the transaction.
+- **Amount of TZEN** - The amount of TZEN transferred in the transaction.
 - **Transaction Fee** - The amount charged to process the transaction.
 - **Block Number** - The number assigned to the block.
 - **Elapsed timer for the block** - A timer that displays the elapsed time since the block creation.
 
 ### Forward Transfer
 
-When a user requests for tZEN from the Horizen Faucet, the forward transfer transaction is initiated. A forward transfer moves assets from the mainchain to the sidechain. These transactions, more specifically the transaction outputs, are unspendable on the mainchain. However, they include some metadata so they are redeemable on EON. 
+When a user requests for TZEN from the Horizen Faucet, the forward transfer transaction is initiated. A forward transfer moves assets from the mainchain to the sidechain. These transactions, more specifically the transaction outputs, are unspendable on the mainchain. However, they include some metadata so they are redeemable on EON. 
 
 It is the responsibility of EON nodes to monitor the mainchain for incoming transactions, and include them in EON.
 
@@ -113,13 +113,13 @@ Key information includes:
 - **Transaction Status** - Indicates the status (Success or Error) details of the transaction.
 - **Transaction ID (hash)** - The unique identifier that validates the transaction.
 - **(Receiving) Address** - The recipient address of the transaction.
-- **Amount of tZEN** - The amount of tZEN transferred in the transaction.
+- **Amount of TZEN** - The amount of TZEN transferred in the transaction.
 - **Block Number** - The number assigned to the block.
 - **Elapsed timer for the block** - A timer that displays the elapsed time since the block creation.
 
 ### Fee Payment
 
-The blockchain fee is a tZEN-denoted fee that users are charged when processing transactions. The fee is required to process the transaction on the Gobi Testnet and ensure that transfers arrive at their expected destination. The fees are aggregated and paid to forger nodes that have forged at least one block during the last withdrawal epoch.
+The blockchain fee is a TZEN-denoted fee that users are charged when processing transactions. The fee is required to process the transaction on the Gobi Testnet and ensure that transfers arrive at their expected destination. The fees are aggregated and paid to forger nodes that have forged at least one block during the last withdrawal epoch.
 
 
 The EON Block Explorer highlights the Fee Payment transactions:
@@ -131,7 +131,7 @@ The EON Block Explorer highlights the Fee Payment transactions:
 Key information includes:
 
 - **Address** - The wallet address receiving the fee payment. 
-- **Amount of tZEN** - The amount of tZEN transferred in the transaction.
+- **Amount of TZEN** - The amount of TZEN transferred in the transaction.
 - **Block Number** - The number assigned to the block.
 - **Elapsed timer for the block** - A timer that displays the elapsed time since the block creation.
 
@@ -219,7 +219,7 @@ Key information includes:
 
 - **Total Number of Contracts in the Last 24 hours** - The total number of verified contracts in the last 24 hours.
 - **Address** - The contract address. 
-- **Balance** - The total amount of tZEN associated with the smart contract address.
+- **Balance** - The total amount of TZEN associated with the smart contract address.
 - **Transaction (Txns)** - The number of transactions associated with the verified contract.
 - **Compiler** - The name of the compiler type.
 - **Version** - The version number of the compiler type.
@@ -233,7 +233,7 @@ Key information includes:
 The Tokens menu has two feature options:
 
 - All
-- tZEN 
+- TZEN 
 
 
 ### All (Tokens)
@@ -251,9 +251,9 @@ Key information includes:
 - **Total Supply** - The total amount of available tokens.
 - **Holder Count** - The number of accounts with some amount of the token listed.
 
-### tZEN (Address)
+### TZEN (Address)
 
-The tZEN (Address) option displays all addresses with tZEN balances in the blockchain. 
+The TZEN (Address) option displays all addresses with TZEN balances in the blockchain. 
 
 <p>
 <img src={require("/img/docs/blockscout/gobi-exp-tzentokens.png").default} alt="tzen-tokens" width="500" height="300" />
@@ -262,8 +262,8 @@ The tZEN (Address) option displays all addresses with tZEN balances in the block
 Key information includes:
 
 - **Address** - The wallet address. Click the wallet address link to navigate to the **Address Detail** page.
-- **Balance** - The total amount of tZEN.
-- **Txn Count** - The number of transactions associated with this tZEN that are sent.
+- **Balance** - The total amount of TZEN.
+- **Txn Count** - The number of transactions associated with this TZEN that are sent.
 
 
 ## API Menu
@@ -307,7 +307,7 @@ The **Address Details** page displays the selected address and its associated in
 
 Key information includes:
 
-- **Balance** - Address balance in tZEN (does not include ERC-20, ERC-721, ERC-1155 tokens).
+- **Balance** - Address balance in TZEN (does not include ERC-20, ERC-721, ERC-1155 tokens).
 - **Tokens** - All tokens in the account and total value.
 - **Transactions** - Number of transactions related to this address.
 - **Transfers** - Number of transfers to/from this address.
@@ -346,7 +346,7 @@ Key information includes:
 - **Max Fee per Gas** - Maximum total amount per unit of gas a user is willing to pay for a transaction, including base fee and priority fee.
 - **Max Priority Fee per Gas** - User defined maximum fee (tip) per unit of gas paid to validator for transaction prioritization.
 - **Priority Fee / Tip** - User-defined tip sent to validator for transaction priority/inclusion.
-- **Reward Pool Fee**  - Amount of tZEN that goes to the Reward Pool for this transaction. Equals Block Base Fee per Gas * Gas Used.
+- **Reward Pool Fee**  - Amount of TZEN that goes to the Reward Pool for this transaction. Equals Block Base Fee per Gas * Gas Used.
 - **Gas Used by Transaction**  - Actual gas amount used by the transaction.
 - **Nonce Position** - Transaction number from the sending address. Each transaction sent from an address increments the nonce by 1.
 - **Raw Input** - Binary data included with the transaction. See input/logs for additional information.
@@ -407,7 +407,7 @@ Currently, this feature is not enabled.
 
 ## State Changes
 
-The State Change panel displays the version of changes for tZEN or token balances that occurred in the given transaction. 
+The State Change panel displays the version of changes for TZEN or token balances that occurred in the given transaction. 
 
 For example, the panel below shows the specific changes in the balances that occurred in a token mint transaction.
 
@@ -434,7 +434,7 @@ Key information includes:
 
 - **Token** - The name of the token associated with the contract address. 
 - **Creator** - Transaction and address of creation. 
-- **Balance** - Address balance in tZEN does not include ERC20, ERC721, ERC1155 tokens).
+- **Balance** - Address balance in TZEN does not include ERC20, ERC721, ERC1155 tokens).
 - **Tokens** - All tokens in the account and total value.
 - **Transactions** - Number of transactions related to this address.
 - **Transfers** - Number of transfers to/from this address.

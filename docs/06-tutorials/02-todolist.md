@@ -132,7 +132,7 @@ Perform the following steps:
 10. After the compilation process successfully completes, click the **Deploy** icon.
 11. The **DEPLOY & RUN TRANSACTIONS** pane appear. In the **ENVIRONMENT** field, toggle to **Injected Provider - MetaMask**. The wallet must display the **Gobi Testnet network (1663)**.
 
-    **Note:** Make sure that your MetaMask wallet has currency to pay for gas. Otherwise, copy your wallet address and go to the [EON Faucet](https://faucet.horizen.io) to make a request for tZEN.
+    **Note:** Make sure that your MetaMask wallet has currency to pay for gas. Otherwise, copy your wallet address and go to the [EON Faucet](https://faucet.horizen.io) to make a request for TZEN.
 
 
 ![remix_todolist](/img/docs/tutorial/remix-deployaddress.png)
