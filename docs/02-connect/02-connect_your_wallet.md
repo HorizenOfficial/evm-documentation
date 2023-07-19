@@ -37,15 +37,15 @@ Adding a network example:
 
 ![alt_text](/img/docs/get-started/metamask-add-network2.png)
 
-##### EON Mainnet
+##### Horizen EON
 
-      Network name:  EON Mainnet
+      Network name:  Horizen EON
       New RPC URL:  https://eon-rpc.horizenlabs.io/ethv1
       Chain ID: 7332
       Currency symbol: ZEN
       Block Explorer: https://eon-explorer.horizenlabs.io/
 
-Once you have specified the RPC endpoint and Chain ID to make a connection, a notification appears stating, **“EON Mainnet was successfully added”**.
+Once you have specified the RPC endpoint and Chain ID to make a connection, a notification appears stating, **“Horizen EON was successfully added”**.
 
 ##### Gobi Testnet
 
