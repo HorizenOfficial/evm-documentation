@@ -34,7 +34,7 @@ The RPC (Remote Procedure Call) endpoint works as a node's address: it's a URL w
     </tr>
     <tr>
       <td>Mainnet</td>
-      <td>TBD</td>
+      <td>https://eon-rpc.horizenlabs.io/ethv1</td>
     </tr>
   </tbody>
 </table>
@@ -65,7 +65,7 @@ The `chainId` was introduced by Ethereum to prevent replay attacks on different 
     </tr>
     <tr>
       <td>Mainnet</td>
-      <td>TBD</td>
+      <td>7332</td>
     </tr>
   </tbody>
 </table>

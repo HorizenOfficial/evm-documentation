@@ -1,5 +1,5 @@
 ---
-title: Get tZEN from the Faucet
+title: Get TZEN from the Faucet
 ---
 
 
