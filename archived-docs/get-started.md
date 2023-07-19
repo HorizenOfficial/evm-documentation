@@ -91,7 +91,7 @@ Adding a network example:
 ##### Gobi Testnet
 
       Network name:  Gobi Testnet
-      New RPC URL:  https://gobi-testnet.horizenlabs.io/ethv1
+      New RPC URL:  https://gobi-rpc.horizenlabs.io/ethv1
       Chain ID: 1663 
       Currency symbol: ZEN
       Block Explorer: https://gobi-explorer.horizen.io/
@@ -121,7 +121,7 @@ The RPC (Remote Procedure Call) endpoint works as a node's address: it's a URL w
   <tr>
    <td>Gobi Testnet
    </td>
-   <td>https://gobi-testnet.horizenlabs.io/ethv1
+   <td>https://gobi-rpc.horizenlabs.io/ethv1
    </td>
   </tr>
   <tr>
