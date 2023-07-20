@@ -135,7 +135,7 @@ A network is needed in order to deploy a smart contract. In the configuration fi
 ```
 …networks: {    
 	zen: {
-		provider: () => new HDWalletProvider("word1 … word12", `https://gobi-testnet.horizenlabs.io/ethv1`),
+		provider: () => new HDWalletProvider("word1 … word12", `https://gobi-rpc.horizenlabs.io/ethv1`),
       network_id: 1663,  
       production: false
     }
@@ -364,7 +364,7 @@ const config: HardhatUserConfig = {
   defaultNetwork: "zen",
   networks: {
     zen: {
-      url: ‘https://gobi-testnet.horizenlabs.io/ethv1',
+      url: ‘https://gobi-rpc.horizenlabs.io/ethv1',
       accounts: {mnemonic: "word1 … word12"},
       gasPrice: "auto"
     }, 

@@ -157,7 +157,7 @@ const config: HardhatUserConfig = {
   defaultNetwork: "zen",
   networks: {
     zen: {
-      url: ‘https://gobi-testnet.horizenlabs.io/ethv1',
+      url: ‘https://gobi-rpc.horizenlabs.io/ethv1',
       accounts: {mnemonic: "word1 … word12"},
       gasPrice: "auto"
     }, 
