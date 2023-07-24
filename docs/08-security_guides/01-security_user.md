@@ -5,7 +5,7 @@ EON Security for Users
 
 Security in the realm of blockchain technology is paramount. For users in the blockchain space, particularly those engaged with the EON network, it's essential to understand and employ good security practices to protect your assets and personal data from potential threats. In this document, we delve into the world of the EON network security. We want to emphasize the importance of security within EON, the distinct security features that EON implements, and present a user-friendly guide to help users enhance their own security. Furthermore, it addresses the common threats faced within the EON environment, outlines EON's future plans for bolstering security, and underscores the necessity for users to prioritize and actively participate in ensuring their security within the network.
 
-# Overview 
+## Overview 
 
 The first area of understanding is that EON is an EVM, or the Ethereum Virtual Machine, running in the Horizen ecosystem, enabling users to create and run smart contracts. Security within EON is critical for protecting these contracts and the transactions they govern from unauthorized access or malicious manipulation. It's this security that provides you with the confidence to participate in the network, knowing your assets are protected.
 
