@@ -83,7 +83,8 @@ Spoofed or cloned websites are malicious sites created to look exactly like legi
 
 It’s important to note that there are takeover risks associated with legitimate websites as well. Some of the most common attacks include SQL Injection, Cross-Site Scripting (XSS), and Cross-Site Request Forgery (CSRF). In SQL Injection, information about how data is stored in a database can be leaked by exploiting the execution of search queries. An unauthorized user could make themself a database administrator, access sensitive information, or even destroy server data.
 
-In 2018, Magecart successfully stole the credit card information of British Airways customers by exploiting a XSS vulnerability in a JavaScript library used on the website.The attackers altered a script to send customer information to a spoofed British Airways website using a similar domain name, tricking customers into thinking they were purchasing from a secure server.
+In 2018, Magecart successfully stole the credit card information of British Airways customers by exploiting a XSS vulnerability in a JavaScript library used on the website. The attackers altered a script to send customer information to a spoofed British Airways website using a similar domain name, tricking customers into thinking they were purchasing from a secure server.
+
 
 ### Crypto Malware
 
