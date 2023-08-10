@@ -123,7 +123,7 @@ A network is needed in order to deploy a smart contract. In the configuration fi
 ```
 …networks: {    
 	zen: {
-		provider: () => new HDWalletProvider("word1 … word12", `https://gobi-rpc.horizenlabs.io/ethv1`),
+		provider: () => new HDWalletProvider("word1 … word12", `https://gobi-testnet.horizenlabs.io/ethv1`),
       network_id: 1663,  
       production: false
     }
