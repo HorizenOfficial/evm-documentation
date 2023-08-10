@@ -122,7 +122,7 @@ Block Explorer: _leave blank_
 
 ```
 Network name:  Gobi Testnet Local
-New RPC URL:  http://127.0.0.1:9545/ethv1 
+New RPC URL:  https://gobi-testnet.horizenlabs.io/ethv1 
 Chain ID: 1663
 Currency symbol: ZEN
 Block Explorer: https://gobi-explorer.horizen.io
