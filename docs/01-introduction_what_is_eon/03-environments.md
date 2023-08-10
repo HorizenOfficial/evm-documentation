@@ -30,7 +30,7 @@ The RPC (Remote Procedure Call) endpoint works as a node's address: it's a URL w
     </tr>
     <tr>
       <td>Gobi Testnet</td>
-      <td>https://gobi-rpc.horizenlabs.io/ethv1</td>
+      <td>https://gobi-testnet.horizenlabs.io/ethv1</td>
     </tr>
     <tr>
       <td>Mainnet</td>
