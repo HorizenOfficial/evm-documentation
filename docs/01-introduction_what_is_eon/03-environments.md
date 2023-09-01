@@ -2,7 +2,6 @@
 
 title: Environments 
 
-image: https://eon.horizen.io/docs/img/MetaData_img_blueprint_eon-doc.jpg
 ---
 
 <head>

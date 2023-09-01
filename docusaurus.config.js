@@ -34,38 +34,36 @@ const algoliaConfig = process.env.ALGOLIA_APP_ID
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Horizen EON Documentation',
+  title: "Horizen EON Documentation",
   url: process.env.URL,
   baseUrl: process.env.BASE_URL,
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.svg',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.svg",
 
-  plugins: [
-    "./matomo",
-  ],
+  plugins: ["./matomo"],
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/',
-          sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: "/",
+          sidebarPath: require.resolve("./sidebars.js"),
           // includeCurrentVersion: false,
           // versions: dynamicVersions
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -76,34 +74,36 @@ const config = {
     ({
       navbar: {
         logo: {
-          alt: 'Horizen EON Logo',
-          src: 'img/HEON_logo_dark_1.svg',
-          srcDark: 'img/HEON_logo_light_1.svg',
+          alt: "Horizen EON Logo",
+          src: "img/HEON_logo_dark_1.svg",
+          srcDark: "img/HEON_logo_light_1.svg",
           href: process.env.URL,
-          target: '_self',
+          target: "_self",
         },
         items: [
           {
-            type: 'doc',
-            docId: 'introduction_what_is_eon/introduction',
-            position: 'left',
-            label: 'Documentation',
+            type: "doc",
+            docId: "introduction_what_is_eon/introduction",
+            position: "left",
+            label: "Documentation",
           },
-        //   {
-        //   type: 'docsVersionDropdown',
-        //   position: 'right',
-        //   dropdownActiveClassDisabled: true,
-        // },
+          //   {
+          //   type: 'docsVersionDropdown',
+          //   position: 'right',
+          //   dropdownActiveClassDisabled: true,
+          // },
         ],
       },
       ...algoliaConfig,
       colorMode: {
-        defaultMode: 'dark',
+        defaultMode: "dark",
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      image:
+        "https://eon.horizen.io/docs/img/MetaData_img_blueprint_eon-doc.jpg",
     }),
 };
 
