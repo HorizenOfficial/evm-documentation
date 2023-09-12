@@ -83,15 +83,16 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "introduction_what_is_eon/introduction",
+            docId: "horizen_eon/introduction_what_is_eon/introduction",
             position: "left",
-            label: "Documentation",
+            label: "Horizen EON",
           },
-          //   {
-          //   type: 'docsVersionDropdown',
-          //   position: 'right',
-          //   dropdownActiveClassDisabled: true,
-          // },
+            {
+            type: 'doc',
+            docId: "governance/overview/about",
+            position: "left",
+            label: "Governance",
+          },
         ],
       },
       ...algoliaConfig,
