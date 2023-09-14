@@ -81,3 +81,9 @@ The transaction is reversible by executing a transaction signed by the ownerAddr
 #### Enable forging
 At last make a `POST` request to `/block/startForging` to command the node to start forge blocks (if the node is not yet running you can set to true the `automaticForging` parameter in the `forger` section of the config file). \
 To stop forging you can call a similar endpoint `/block/stopForging`.
+
+#### Stake maturity
+When a forger stake is created is not immediately ready to let the forger take part into the forgers' election. It needs **2 consensus epochs** before the stake reaches the maturity period; after that, the forger will be ready to take part into the slot leader lottery and be able to forge new blocks. 
+
+#### Verify the stake is created
+To make sure the operations above were successful, you can make a `POST` request to `/transaction/allForgingStakes` and verify the publicKey used to create the forger stake appears in the returned list.
