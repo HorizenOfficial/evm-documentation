@@ -3,8 +3,13 @@ title: How to stake on EON
 ---
 
 ## How to stake on EON
-First, you need to run a node; you can find how to do so [here](../04-develop_and_deploy_smart_contracts/04-local_build_and_deploy.md). \
-Then you need to create a VrfKey pair by making a `POST` request to `/wallet/createVrfSecret`, the endpoint will return something like
+A forger is required to run a node; if you still don't have a node, here are some [instructions](../04-develop_and_deploy_smart_contracts/04-local_build_and_deploy.md). \
+The steps below require some basic general knowledge; a web application for staking is under construction and will be made available soon.
+
+#### Create Forger keys
+On your local node, create new forger keys by making a `POST` request to `/wallet/createVrfSecret`.
+The request will return your `publicKey` (later called `vrfPubKey`), while the privateKey will be stored in the node's wallet.
+
 ```
 {
   "result" : {
@@ -29,13 +34,13 @@ Make a `POST` request to `/transaction/makeForgerStake` with body
 }
 ```
 where:
-- `ownerAddress`: is the address that is requesting to stake such amount and will be able to unstake it in the future;
-- `blockSignPublicKey`: is the address that will sign the block when forged; it can be the same address as the ownerAddress or a different one (delegate forging); if this value is not specified the ownerAddress will be used;
+- `ownerAddress`: is the address that is requesting to stake such amount and the only one allowed to unstake (withdraw) the specified amount;
+- `blockSignPublicKey`: is the address that will sign the block when forged. It can be the same address as the ownerAddress or a different one (delegate forging); if this value is not specified the ownerAddress will be used;
 - `vrfPubKey`: this is the key created in the previous step;
-- `value`: the amount to put on stake.
+- `value`: the amount of ZEN expressed in Satoshis (10^8) to put on stake, that will represent your voting power.
 
-#### Smart contract
-This is an example of how to call the smart contract written in javascript:
+#### How to create a forging stake using web3js
+Below there is an example (written in javascript to run in Remix IDE) of how to create the forging stake by interacting with the contract:
 ```
 (async () => {
     try {
@@ -55,7 +60,7 @@ This is an example of how to call the smart contract written in javascript:
         const ownerAddress = accounts[0];
         // pick one of the existing forgers, or create a new forger
         const blockSignPublicKey = "0x" + YOUR_BLOCK_SIGN; // the address that will sign the block when forged; it can be the same address as the ownerAddress or a different one (delegate forging); if this value is not specified the ownerAddress will be used
-        const forgerVrfPublicKey = "0x" + YOUR_VRFKEY; // this is the key created in the previous step
+        const forgerVrfPublicKey = "0x" + YOUR_VRF_KEY; // this is the key created in the previous step
         const first32BytesForgerVrfPublicKey = forgerVrfPublicKey.substring(0, 66);
         const lastByteForgerVrfPublicKey = "0x" + forgerVrfPublicKey.substring(66, 68);
 
@@ -69,7 +74,10 @@ This is an example of how to call the smart contract written in javascript:
     }
   })()
 ```
-⚠️ **Please, remember to replace YOUR_BLOCK_SIGN and YOUR_VRF_KEY with the actual keys!**
+⚠️ **Please, remember to replace YOUR_BLOCK_SIGN and YOUR_VRF_KEY with the actual keys, and make sure to specify the path of the native contract ABI (not provided in the documentation, but available here together with the complete Remix workspace)!** \
+⚠️ **Please, notice that with this operation you are increasing the voting power of the forger defined by the blockSignPublicKey and forgerVrfKey, and with that the chance to produce blocks. The operation is a delegation of stake but no rewards will be automatically forwarded to you if you are not the owner of both blockSignPublicKey and forgerVrfKey. Double check them before executing the transaction.
+The transaction is reversible by executing a transaction signed by the ownerAddress.**
 
+#### Enable forging
 At last make a `POST` request to `/block/startForging` to command the node to start forge blocks (if the node is not yet running you can set to true the `automaticForging` parameter in the `forger` section of the config file). \
 To stop forging you can call a similar endpoint `/block/stopForging`.
