@@ -35,7 +35,7 @@ const algoliaConfig = process.env.ALGOLIA_APP_ID
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Horizen Documentation",
-  url: "https://docs.horizen.com",
+  url: "https://docs.horizen.io",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
