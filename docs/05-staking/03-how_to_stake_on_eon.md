@@ -2,8 +2,8 @@
 title: How to stake on EON
 ---
 
-## How to stake on EON
-A forger is required to run a node; if you still don't have a node, here are some [instructions](../04-develop_and_deploy_smart_contracts/04-local_build_and_deploy.md). \
+# How to stake on EON
+A forger is required to run a node; if you still don't have a node, here are some [instructions](../04-develop_and_deploy_smart_contracts/04-local_build_and_deploy.md).  
 The steps below require some basic general knowledge; a web application for staking is under construction and will be made available soon.
 
 #### Create Forger keys
@@ -74,12 +74,12 @@ Below there is an example (written in javascript to run in Remix IDE) of how to 
     }
   })()
 ```
-⚠️ **Please, remember to replace YOUR_BLOCK_SIGN and YOUR_VRF_KEY with the actual keys, and make sure to specify the path of the native contract ABI (not provided in the documentation, but available here together with the complete Remix workspace)!** \
+⚠️ **Please, remember to replace YOUR_BLOCK_SIGN and YOUR_VRF_KEY with the actual keys, and make sure to specify the path of the native contract ABI (not provided in the documentation, but available here together with the complete Remix workspace)!**  
 ⚠️ **Please, notice that with this operation you are increasing the voting power of the forger defined by the blockSignPublicKey and forgerVrfKey, and with that the chance to produce blocks. The operation is a delegation of stake but no rewards will be automatically forwarded to you if you are not the owner of both blockSignPublicKey and forgerVrfKey. Double check them before executing the transaction.
 The transaction is reversible by executing a transaction signed by the ownerAddress.**
 
 #### Enable forging
-At last make a `POST` request to `/block/startForging` to command the node to start forge blocks (if the node is not yet running you can set to true the `automaticForging` parameter in the `forger` section of the config file). \
+At last make a `POST` request to `/block/startForging` to command the node to start forge blocks (if the node is not yet running you can set to true the `automaticForging` parameter in the `forger` section of the config file).  
 To stop forging you can call a similar endpoint `/block/stopForging`.
 
 #### Stake maturity
