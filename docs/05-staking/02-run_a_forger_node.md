@@ -1,10 +1,10 @@
 ---
-title: Run a forger node
+title: Run a Forger Node
 ---
 
 # Run a forger node
 
-### The difference between a forger and a regular node
-A regular node plays a more passive role in the network; it receives the transactions from the neighbors peers, forwards them and validate transactions and blocks before including them in the mempool and history.  
-As we said in the previous chapter, a forger participate actively in the network consensus by forging blocks.
+### Difference between a Forger and Regular Node
+A regular node plays a more passive role in the network than a forger node. A regular node receives the transactions and blocks from the neighbors peers. It validates the transactions and blocks before including them in the mempool and history and then it forwards them to its peers.  
+As previous mentioned, a forger participate actively in the network consensus by forging blocks.
 To become a forger, the user must stake ZEN.

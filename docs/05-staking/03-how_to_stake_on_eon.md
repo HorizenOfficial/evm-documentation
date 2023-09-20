@@ -1,12 +1,12 @@
 ---
-title: How to stake on EON
+title: How to Stake on EON
 ---
 
 # How to stake on EON
-A forger is required to run a node; if you still don't have a node, here are some [instructions](../04-develop_and_deploy_smart_contracts/04-local_build_and_deploy.md).  
-The steps below require some basic general knowledge; a web application for staking is under construction and will be made available soon.
+A forger is required to run a node. See [How to Locally Build and Deploy and Develop and Deploy a Smart Contract](../04-develop_and_deploy_smart_contracts/04-local_build_and_deploy.md) for information on creating and running a node.  
+The following steps require some basic general knowledge; a web application for staking is under construction and will be made available soon.
 
-#### Create Forger keys
+#### Create Forger Keys
 On your local node, create new forger keys by making a `POST` request to `/wallet/createVrfSecret`.
 The request will return your `publicKey` (later called `vrfPubKey`), while the privateKey will be stored in the node's wallet.
 
@@ -21,7 +21,7 @@ The request will return your `publicKey` (later called `vrfPubKey`), while the p
 ``` 
 
 At this point there are two ways of staking on EON: via HTTP endpoint or via smart contract.
-#### HTTP endpoint
+#### HTTP Endpoint
 Make a `POST` request to `/transaction/makeForgerStake` with body
 ```
 {
@@ -39,8 +39,8 @@ where:
 - `vrfPubKey`: this is the key created in the previous step;
 - `value`: the amount of ZEN expressed in Satoshis (10^8) to put on stake, that will represent your voting power.
 
-#### How to create a forging stake using web3js
-Below there is an example (written in javascript to run in Remix IDE) of how to create the forging stake by interacting with the contract:
+#### Create a Forging Stake using Web3js
+Here is an example (written in javascript to be run in Remix IDE) on creating the forging stake with smart contract interaction:
 ```
 (async () => {
     try {
@@ -74,16 +74,16 @@ Below there is an example (written in javascript to run in Remix IDE) of how to 
     }
   })()
 ```
-⚠️ **Please, remember to replace YOUR_BLOCK_SIGN and YOUR_VRF_KEY with the actual keys, and make sure to specify the path of the native contract ABI (not provided in the documentation, but available here together with the complete Remix workspace)!**  
-⚠️ **Please, notice that with this operation you are increasing the voting power of the forger defined by the blockSignPublicKey and forgerVrfKey, and with that the chance to produce blocks. The operation is a delegation of stake but no rewards will be automatically forwarded to you if you are not the owner of both blockSignPublicKey and forgerVrfKey. Double check them before executing the transaction.
+⚠️ **Remember to replace YOUR_BLOCK_SIGN and YOUR_VRF_KEY with the actual keys. Make sure to specify the path of the native contract ABI (not provided in the documentation, but available here together with the complete Remix workspace)!**  
+⚠️ **Notice that this operation involves increasing the voting power of the forger defined by the blockSignPublicKey and forgerVrfKey, and with that the chance to produce blocks. The operation is a delegation of stake where no rewards will be automatically forwarded to you if you are not the owner of both blockSignPublicKey and forgerVrfKey. Ensure ownership before executing the transaction.
 The transaction is reversible by executing a transaction signed by the ownerAddress.**
 
-#### Enable forging
-At last make a `POST` request to `/block/startForging` to command the node to start forge blocks (if the node is not yet running you can set to true the `automaticForging` parameter in the `forger` section of the config file).  
-To stop forging you can call a similar endpoint `/block/stopForging`.
+#### Enable Forging
+Make a `POST` request to `/block/startForging` to command the node to start forge blocks (if the node is not yet running you can set to true the `automaticForging` parameter in the `forger` section of the config file).  
+To stop forging call the endpoint `/block/stopForging`.
 
-#### Stake maturity
-When a forger stake is created is not immediately ready to let the forger take part into the forgers' election. It needs **2 consensus epochs** before the stake reaches the maturity period; after that, the forger will be ready to take part into the slot leader lottery and be able to forge new blocks. 
+#### Stake Maturity
+When a forger stake is created, it is not immediately ready to let the forger take part into the forgers' election. The stake needs **2 consensus epochs** before reaching the maturity period. Afterwards, the forger will be ready to take part into the slot leader lottery and be able to forge new blocks. 
 
-#### Verify the stake is created
-To make sure the operations above were successful, you can make a `POST` request to `/transaction/allForgingStakes` and verify the publicKey used to create the forger stake appears in the returned list.
+#### Verify the Stake Creation
+To make sure the operation was successful, you can make a `POST` request to `/transaction/allForgingStakes` and verify the publicKey used to create the forger stake appears in the returned list.
