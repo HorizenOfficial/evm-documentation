@@ -86,4 +86,4 @@ To stop forging, call the endpoint `/block/stopForging`.
 When a forger stake is created, it is not immediately ready to let the forger take part in the forgers' election. The stake needs **2 consensus epochs** before reaching the maturity period. Afterwards, the forger will be ready to take part in the slot leader lottery and be able to forge new blocks. 
 
 #### Verify the Stake Creation
-To make sure the operation was successful, you can make a `POST` request to `/transaction/allForgingStakes` and verify the publicKey used to create the forger stake appears in the returned list.
+To make sure the operation was successful, make a `POST` request to `/transaction/allForgingStakes` and verify the publicKey used to create the forger stake appears in the returned list.
