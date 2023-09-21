@@ -3,7 +3,7 @@ title: How to Stake on EON
 ---
 
 # How to Stake on EON
-A forger is required to run a node. See [How to Locally Build and Deploy and Develop and Deploy a Smart Contract](../04-develop_and_deploy_smart_contracts/04-local_build_and_deploy.md) for information on creating and running a node.  
+A forger is required to run a node. See [How to Locally Build and Deploy](../04-develop_and_deploy_smart_contracts/04-local_build_and_deploy.md) for information on creating and running a node.  
 The following steps require some basic general knowledge; a web application for staking is under construction and will be made available soon.
 
 #### Create Forger Keys
