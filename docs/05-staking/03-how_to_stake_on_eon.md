@@ -40,7 +40,7 @@ where:
 - `value`: the amount of ZEN expressed in Satoshis (10^8) to put on stake, that will represent your voting power.
 
 #### Create a Forging Stake using Web3js
-Here is an example (written in javascript to be run in Remix IDE) on creating the forging stake with smart contract interaction:
+Here is an example (written in JavaScript to be run in Remix IDE) of creating the forging stake with a smart contract interaction:
 ```
 (async () => {
     try {
