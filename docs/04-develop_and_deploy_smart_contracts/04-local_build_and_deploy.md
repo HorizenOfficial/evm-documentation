@@ -63,7 +63,7 @@ curl -fsSL https://raw.githubusercontent.com/docker/cli/master/contrib/completio
 If you have performed the previous setup instructions and you want to restart the client, run the following command at the root folder of the project (inside the cloned repository):
 
 ```
-docker compose up -d
+./scripts/startup.sh
 ```
 
 **WARNING:** **Risk Data Corruption** - Always shut down the node properly by executing *shutdown.sh*, available in the scripts folder, at the end of your testing session and/or before turning off your machine (computer or virtual machine). 
