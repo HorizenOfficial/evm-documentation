@@ -79,7 +79,7 @@ Here is an example (written in JavaScript to be run in Remix IDE) of creating th
 The transaction is reversible by executing a transaction signed by the ownerAddress.**
 
 #### Enable Forging
-Make a `POST` request to `/block/startForging` to command the node to start forge blocks (if the node is not yet running you can set to true the `automaticForging` parameter in the `forger` section of the config file).  
+Make a `POST` request to `/block/startForging` to command the node to start forging blocks. If the node is not yet running, set the `automaticForging` parameter to `true` in the `forger` section of the config file.  
 To stop forging call the endpoint `/block/stopForging`.
 
 #### Stake Maturity
