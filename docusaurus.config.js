@@ -103,7 +103,7 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       image:
-        "https://eon.horizen.io/docs/img/MetaData_img_blueprint_eon-doc.jpg",
+        "https://eon.horizen.io/docs/img/Meta_Image_Horizen-documentation.jpg",
     }),
 };
 
