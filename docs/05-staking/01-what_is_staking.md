@@ -1,5 +1,5 @@
 ---
-title: What is staking
+title: What is Staking
 ---
 
 # What is Staking?
