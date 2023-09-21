@@ -34,9 +34,9 @@ const algoliaConfig = process.env.ALGOLIA_APP_ID
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Horizen EON Documentation",
-  url: process.env.URL,
-  baseUrl: process.env.BASE_URL,
+  title: "Horizen Documentation",
+  url: "https://docs.horizen.io",
+  baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.svg",
@@ -75,9 +75,9 @@ const config = {
       navbar: {
         logo: {
           alt: "Horizen EON Logo",
-          src: "img/HEON_logo_dark_1.svg",
-          srcDark: "img/HEON_logo_light_1.svg",
-          href: process.env.URL,
+          src: "img/horizenDOCS-dark.svg",
+          srcDark: "img/horizenDOCS-white.svg",
+          href: '/',
           target: "_self",
         },
         items: [
@@ -85,7 +85,7 @@ const config = {
             type: "doc",
             docId: "introduction_what_is_eon/introduction",
             position: "left",
-            label: "Documentation",
+            label: "Horizen EON",
           },
           //   {
           //   type: 'docsVersionDropdown',
