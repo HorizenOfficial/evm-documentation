@@ -65,7 +65,7 @@ Set a unique namespace, EON chainId and RPC endpoint in your config. Remember th
       "processingFilterGroup": "default",
       "sources": [
         # Highly-recommended to have at least 1 websocket endpoint
-        "htwsstps://eon-rpc.horizenlabs.io/ethv1",
+        "wss://eon-rpc.horizenlabs.io/ethv1",
         # You can put multiple endpoints for failover
         "https://eon-rpc.horizenlabs.io/ethv1"
       ]
@@ -78,10 +78,10 @@ Set a unique namespace, EON chainId and RPC endpoint in your config. Remember th
 
 ```bash
 # backfill certain contracts or block ranges
-pnpm flair backfill --chain 7332 --address 0xd253A5203817225e9768C05E5996d642fb96bA86 -d backward --max-blocks 10000
+pnpm flair backfill --chain 7332 --address 0x3057ac6839569E813F73B0D1801354e4562a45A5 -d backward --max-blocks 10000
 
 # backfill for a specific block number, if you have certain events you wanna test with
-pnpm flair backfill --chain 7332 -b 25384688
+pnpm flair backfill --chain 7332 -b 798095
 
 # backfill for the recent data in the last X minute
 pnpm flair backfill --chain 7332 --min-timestamp="30 mins ago" -d backward
