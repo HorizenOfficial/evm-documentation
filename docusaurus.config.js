@@ -24,10 +24,6 @@ const algoliaConfig = process.env.ALGOLIA_APP_ID
         appId: process.env.ALGOLIA_APP_ID,
         apiKey: process.env.ALGOLIA_API_KEY,
         indexName: process.env.ALGOLIA_INDEX_NAME,
-        replaceSearchResultPathname: {
-          from: '/docs/',
-          to: '/horizen_eon/',
-        },
       },
     }
   : {};
@@ -83,9 +79,15 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "horizen_eon/introduction_what_is_eon/introduction",
+            docId: "docs/horizen_eon/introduction_what_is_eon/introduction",
             position: "left",
             label: "Horizen EON",
+          },
+          {
+            type: "doc",
+            docId: "docs/governance/test/introduction",
+            position: "left",
+            label: "Governance",
           },
         ],
       },
