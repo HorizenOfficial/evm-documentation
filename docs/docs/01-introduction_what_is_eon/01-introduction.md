@@ -1,10 +1,12 @@
 ---
+
+slug: /
 title: Introduction
-description: Learn more about the Horizen ecosystem and products, including Horizen EON, governance, and more.
+description: Dive into the official Horizen EON documentation portal to learn how to communicate, interact, and build on Horizen’s EVM sidechain.
 ---
 
 <head>
-  <title>Horizen Documentation</title>
+  <title>Horizen EON Documentation</title>
 </head>
 
 

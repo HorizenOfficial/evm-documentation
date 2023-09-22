@@ -47,18 +47,6 @@ const sidebars = {
       'horizen_eon/security_guides/security_user',
     ],
   },
-  governance: {
-    'Overview': [
-      'governance/overview/about',
-      'governance/overview/guiding_values',
-      'governance/overview/constitution',
-      'governance/overview/communication_channels',
-    ],
-    'Proposal Process': [
-      'governance/proposal_process/proposal_categories',
-      'governance/proposal_process/proposal_phases',
-    ],
-  },
   // But you can create a sidebar manually
   /*
   tutorialSidebar: [

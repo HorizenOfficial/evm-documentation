@@ -77,7 +77,7 @@ const config = {
           alt: "Horizen EON Logo",
           src: "img/horizenDOCS-dark.svg",
           srcDark: "img/horizenDOCS-white.svg",
-          href: '/',
+          href: '/horizen_eon/introduction_what_is_eon/introduction',
           target: "_self",
         },
         items: [
