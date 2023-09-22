@@ -26,7 +26,7 @@ const algoliaConfig = process.env.ALGOLIA_APP_ID
         indexName: process.env.ALGOLIA_INDEX_NAME,
         replaceSearchResultPathname: {
           from: '/docs/',
-          to: '/',
+          to: '/horizen_eon/',
         },
       },
     }
