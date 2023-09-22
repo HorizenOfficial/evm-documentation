@@ -47,28 +47,6 @@ const sidebars = {
       'horizen_eon/security_guides/security_user',
     ],
   },
-  // governance: {
-  //   'Overview': [
-  //     'governance/overview/about',
-  //     'governance/overview/guiding_values',
-  //     'governance/overview/constitution',
-  //     'governance/overview/communication_channels',
-  //   ],
-  //   'Proposal Process': [
-  //     'governance/proposal_process/proposal_categories',
-  //     'governance/proposal_process/proposal_phases',
-  //   ],
-  //   'Voting Process': [
-  //     'governance/voting_process/linking_mainchain_address',
-  //     'governance/voting_process/voting_process',
-  //   ],
-  //   'Reference': [
-  //      'governance/reference/foundational_docs',
-  //      'governance/reference/submit_vote',
-  //      'governance/reference/join_discussion',
-  //  'governance/reference/submit_vote',
-  //   ],
-  // },
   // But you can create a sidebar manually
   /*
   tutorialSidebar: [

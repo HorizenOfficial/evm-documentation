@@ -87,12 +87,6 @@ const config = {
             position: "left",
             label: "Horizen EON",
           },
-          // {
-          //   type: 'doc',
-          //   docId: "governance/overview/about",
-          //   position: "left",
-          //   label: "Governance",
-          // },
         ],
       },
       ...algoliaConfig,

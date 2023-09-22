@@ -1,5 +1,0 @@
----
-title: Constitution
----
-
-TBD
