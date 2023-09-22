@@ -41,7 +41,9 @@ const config = {
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.svg",
 
-  plugins: ["./matomo"],
+  plugins: [
+    "./matomo",
+  ],
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -58,9 +60,8 @@ const config = {
       ({
         docs: {
           routeBasePath: "/",
-          sidebarPath: require.resolve("./sidebars.js"),
-          // includeCurrentVersion: false,
-          // versions: dynamicVersions
+          path: "docs",
+          sidebarPath: require.resolve('./sidebarEON.js'),
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -82,16 +83,11 @@ const config = {
         },
         items: [
           {
-            type: "doc",
-            docId: "introduction_what_is_eon/introduction",
-            position: "left",
-            label: "Horizen EON",
+            type: 'doc',
+            position: 'left',
+            docId: 'horizen_eon/introduction_what_is_eon/introduction',
+            label: 'Horizen EON',
           },
-          //   {
-          //   type: 'docsVersionDropdown',
-          //   position: 'right',
-          //   dropdownActiveClassDisabled: true,
-          // },
         ],
       },
       ...algoliaConfig,
