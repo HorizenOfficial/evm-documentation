@@ -1,4 +1,5 @@
 ---
+slug: /docs/horizen_eon/introduction_what_is_eon/Inside_EON
 title: Inside EON
 ---
 
