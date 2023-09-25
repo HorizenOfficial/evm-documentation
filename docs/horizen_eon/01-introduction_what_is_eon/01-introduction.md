@@ -1,5 +1,4 @@
 ---
-
 slug: /
 title: Introduction
 description: Learn more about the Horizen ecosystem and products, including Horizen EON, governance, and more.
