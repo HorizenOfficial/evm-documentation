@@ -75,7 +75,7 @@ Here is an example (written in JavaScript to be run in the Remix IDE) of creatin
   })()
 ```
 ⚠️ **Remember to replace YOUR_BLOCK_SIGN and YOUR_VRF_KEY with the actual keys, and to specify the path of the native contract ABI. The contract ABI is not provided here, but it is available with the complete Remix workspace.**  
-⚠️ **Notice that this operation involves increasing the voting power of the forger defined by the blockSignPublicKey and forgerVrfKey, and with that the chance to produce blocks. The operation is a delegation of stake where no rewards will be automatically forwarded to you if you are not the owner of both blockSignPublicKey and forgerVrfKey. Ensure ownership before executing the transaction.
+⚠️ **Notice that this operation involves increasing the voting power of the forger defined by the blockSignPublicKey and forgerVrfKey, and with that the chance to produce blocks. In case of delegation of stake no rewards will be automatically forwarded to you if you are not the owner of both blockSignPublicKey and forgerVrfKey. Ensure ownership before executing the transaction.
 The transaction is reversible by executing a transaction signed by the ownerAddress.**
 
 #### Enable Forging
