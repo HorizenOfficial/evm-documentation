@@ -7,11 +7,9 @@ export default function Hello() {
       <div
         style={{
           margin: "20px",
-          fontSize: '20px',
         }}>
         <p>
           Foundational Docs page
-          <br/>
           <br/>
           <ul>
             <li>
