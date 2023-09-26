@@ -109,4 +109,78 @@ module.exports = {
       ],
     },
   ],
+  governance: [
+    {
+      type: 'category',
+      label: 'Overview',
+      items: [
+        {
+          type: 'doc',
+          id: 'governance/overview/about',
+        },
+        {
+          type: 'doc',
+          id: 'governance/overview/guiding_values',
+        },
+        {
+          type: 'doc',
+          id: 'governance/overview/constitution',
+        },
+        {
+          type: 'doc',
+          id: 'governance/overview/communication_channels',
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Proposal Process',
+      items: [
+        {
+          type: 'doc',
+          id: 'governance/proposal_process/proposal_categories',
+        },
+        {
+          type: 'doc',
+          id: 'governance/proposal_process/proposal_phases',
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Voting Process',
+      items: [
+        {
+          type: 'doc',
+          id: 'governance/voting_process/linking_mainchain_address',
+        },
+        {
+          type: 'doc',
+          id: 'governance/voting_process/voting_process',
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Reference',
+      items: [
+        {
+          type: 'doc',
+          id: 'governance/reference/foundational_docs',
+        },
+        {
+          type: 'doc',
+          id: 'governance/reference/submit_vote',
+        },
+        {
+          type: 'doc',
+          id: 'governance/reference/join_discussion',
+        },
+        {
+          type: 'doc',
+          id: 'governance/reference/submit_vote',
+        },
+      ],
+    },
+  ]
 };
