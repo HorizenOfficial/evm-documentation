@@ -27,7 +27,7 @@ Make a `POST` request to `/transaction/makeForgerStake` with body
 {
     "forgerStakeInfo": {
         "ownerAddress": "e8674062598b86d8258257a4d79e99d15594d864", 
-        "blockSignPublicKey": "e8674062598b86d8258257a4d79e99d15594d864", 
+        "blockSignPublicKey": "01b3bc756eca50bd878649072bf3d2876fa02bcdbdb1acaf3f37cb8bdf5600d99f1f9046cb", 
         "vrfPubKey": "4439cbfd50af1b846e5ef06889d3192ef7a459bdd4640dc6da506062de43113c80", 
         "value": 10000
     }
