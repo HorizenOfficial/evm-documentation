@@ -6,14 +6,21 @@ export default function Hello() {
     <Layout>
       <div
         style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          height: '50vh',
+          margin: "20px",
           fontSize: '20px',
         }}>
         <p>
-          Foundational Docs page...
+          Foundational Docs page
+          <br/>
+          <br/>
+          <ul>
+            <li>
+              <a href="#">Document 1</a>
+            </li>
+            <li>
+              <a href="#">Document 2</a>
+            </li>
+          </ul>
         </p>
       </div>
     </Layout>
