@@ -26,7 +26,7 @@ const algoliaConfig = process.env.ALGOLIA_APP_ID
         indexName: process.env.ALGOLIA_INDEX_NAME,
         replaceSearchResultPathname: {
           from: '/docs/',
-          to: '/',
+          to: '/horizen_eon/',
         },
       },
     }
@@ -34,14 +34,16 @@ const algoliaConfig = process.env.ALGOLIA_APP_ID
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Horizen EON Documentation",
-  url: process.env.URL,
-  baseUrl: process.env.BASE_URL,
+  title: "Horizen Documentation",
+  url: "https://docs.horizen.io",
+  baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.svg",
 
-  plugins: ["./matomo"],
+  plugins: [
+    "./matomo",
+  ],
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -58,9 +60,8 @@ const config = {
       ({
         docs: {
           routeBasePath: "/",
-          sidebarPath: require.resolve("./sidebars.js"),
-          // includeCurrentVersion: false,
-          // versions: dynamicVersions
+          path: "docs",
+          sidebarPath: require.resolve('./sidebars.js'),
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -75,9 +76,9 @@ const config = {
       navbar: {
         logo: {
           alt: "Horizen EON Logo",
-          src: "img/HEON_logo_dark_1.svg",
-          srcDark: "img/HEON_logo_light_1.svg",
-          href: process.env.URL,
+          src: "img/horizenDOCS-dark.svg",
+          srcDark: "img/horizenDOCS-white.svg",
+          href: '/',
           target: "_self",
         },
         items: [
@@ -104,7 +105,7 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       image:
-        "https://eon.horizen.io/docs/img/MetaData_img_blueprint_eon-doc.jpg",
+        "https://eon.horizen.io/docs/img/Meta_Image_Horizen-documentation.jpg",
     }),
 };
 
