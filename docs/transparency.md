@@ -84,15 +84,15 @@ A list of estimated annual DAO operational costs incurred by The Horizen Foundat
     </tr>
     <tr>
       <td>Mainchain Development Services</td>
-      <td>$1,730,000 USD Avg.(historical rage: $1,200,000 - $2,280,000)</td>
+      <td>$1,730,000 USD Avg.<br/><span style={{fontSize:"12px"}}>(historical range: $1,200,000 - $2,280,000)</span></td>
     </tr>
     <tr>
       <td>Infrastructure Maintenance</td>
-      <td>$400,000 USD Avg. (historical rage: $40,000 - $860,000)</td>
+      <td>$400,000 USD Avg.<br/><span style={{fontSize:"12px"}}>(historical range: $40,000 - $860,000)</span></td>
     </tr>
     <tr>
       <td>Ecosystem Services Support with community management, project management, ecosystem adoption, and grant program implementation</td>
-      <td>$151,472 USD Avg. (historical rage: $2,400 - $258,750)</td>
+      <td>$151,472 USD Avg.<br/><span style={{fontSize:"12px"}}>(historical range: $2,400 - $258,750)</span></td>
     </tr>
     <tr>
       <td>Professional Fees (legal & tax)</td>

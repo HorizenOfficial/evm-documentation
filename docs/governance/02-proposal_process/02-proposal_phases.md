@@ -4,7 +4,7 @@ title: Proposal Phases
 
 The proposal process consists of nine phases as follows:
 
- See the Constitution of the Horizen DAO [LINK] for more detail.
+ See the [Constitution](/governance/overview/constitution) of the Horizen DAO for more detail.
 
 <u>Phase 1: Proposal Idea and Research</u>
 <p></p>

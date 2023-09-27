@@ -239,7 +239,7 @@ Tokenholders may, at any time during the Initial or Standard Term, vote to remov
 The initial Special Council Members are:
 * Brian Rose
 
-* Marwan Alzarouni
+* Marwan Alzarouni (pending)
 
 * Benjamin Charbit 
 
@@ -249,7 +249,7 @@ The initial Special Council Members are:
 
 * Elias Ahonen
 
-* Francisco Spadafora
+* Francisco Spadafora (pending)
 
 &nbsp;&nbsp;&nbsp;<h4>&nbsp;&nbsp;&nbsp;c. Responsibilities</h4>
 
@@ -261,7 +261,7 @@ Given the responsibilities of Special Council members, candidates for the role o
 
 * Experience in the web3 industry and a demonstrated interest in the Horizen ecosystem.
 
-*Background in community engagement and community safety, with an emphasis on decentralized governance systems and communities.
+* Background in community engagement and community safety, with an emphasis on decentralized governance systems and communities.
 
 * An entrepreneurial mindset.
 
