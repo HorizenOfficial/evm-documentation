@@ -10,5 +10,5 @@ title: Foundational Documents
 
 **Foundation Memorandum of Association**   <a target="\_blank" href={require('/static/references/Memorandum.pdf').default}>Download PDF</a>
 
-**Articles of Association** <a target="\_blank" href={require('/static/references/Articles.pdf').default}>Download PDF</a>
+**Foundation Articles of Association** <a target="\_blank" href={require('/static/references/Articles.pdf').default}>Download PDF</a>
 
