@@ -43,9 +43,9 @@ A strong social layer that builds trust and maintains integrity across the Horiz
 
 * The **"EONIP Process"** means the rules and procedures for submitting and voting on EONIPs, detailed further below in this Constitution.
 
-* The **"Bylaws"** means the bylaws of the Foundation as adopted by the Foundation in accordance with the Foundation Articles (as amended from time to time). A copy of the Bylaws is available here: [Foundational Documents](https://docs.horizen.io/governance/reference/foundational_docs).
+* The **"Bylaws"** means the bylaws of the Foundation as adopted by the Foundation in accordance with the Foundation Articles (as amended from time to time). A copy of the Bylaws is available here: [Foundational Documents](/governance/reference/foundational_docs).
 
-* The **"Foundation Articles"** means the Memorandum and Articles of Association of the Foundation (as may be amended from time to time). A copy of the Foundation Articles is available here: [Foundational Documents](https://docs.horizen.io/governance/reference/foundational_docs).
+* The **"Foundation Articles"** means the Memorandum and Articles of Association of the Foundation (as may be amended from time to time). A copy of the Foundation Articles is available here: [Foundational Documents](/governance/reference/foundational_docs).
 
 * **"Technical ZenIP"** means any ZenIP which requires a technical implementation or upgrade to the Horizen blockchain, or which requires the modification of the Foundation Governing Documents or this Constitution.
 
