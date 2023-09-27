@@ -61,7 +61,7 @@ const config = {
         docs: {
           routeBasePath: "/",
           path: "docs",
-          sidebarPath: require.resolve('./sidebarEON.js'),
+          sidebarPath: require.resolve('./sidebars.js'),
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -83,10 +83,16 @@ const config = {
         },
         items: [
           {
+            type: "doc",
+            docId: "horizen_eon/introduction_what_is_eon/introduction",
+            position: "left",
+            label: "Horizen EON",
+          },
+            {
             type: 'doc',
-            position: 'left',
-            docId: 'horizen_eon/introduction_what_is_eon/introduction',
-            label: 'Horizen EON',
+            docId: "governance/overview/about",
+            position: "left",
+            label: "Governance",
           },
         ],
       },
