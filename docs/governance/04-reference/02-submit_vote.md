@@ -2,5 +2,7 @@
 title: Submit or Vote on a Proposal
 ---
 
+[Discourse](https://horizen.discourse.group)
+
 **Snapshot** 
-[Introduction to Snapshot and link]
+[Coming Soon]

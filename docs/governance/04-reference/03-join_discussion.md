@@ -2,4 +2,4 @@
 title: Join the Discussion
 ---
 
-[Introduction to Discord]
+[Discord](https://discord.com/invite/z8eebsj7Sv)
