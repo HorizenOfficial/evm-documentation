@@ -176,10 +176,6 @@ module.exports = {
           type: 'doc',
           id: 'governance/reference/join_discussion',
         },
-        {
-          type: 'doc',
-          id: 'governance/reference/submit_vote',
-        },
       ],
     },
   ]
