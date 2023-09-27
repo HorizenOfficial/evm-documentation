@@ -8,6 +8,6 @@ DAO stands for “Decentralized Autonomous Organization”, and has emerged as t
 
 Through Horizen DAO, any member of the Horizen community can have a say over the direction of the project. This is privilege and responsibility to which community members are expected to accord appropriate seriousness.
 
-This website lays out the basics of Horizen DAO and explains how to participate in governance. Look around, familiarize yourself with the guidelines and processes, and get involved!
+This section lays out the basics of Horizen DAO and explains how to participate in governance. Look around, familiarize yourself with the guidelines and processes, and get involved!
 
 
