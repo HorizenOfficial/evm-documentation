@@ -2,6 +2,9 @@
 title: Remix IDE
 ---
 
+| :warning: Disclaimer          |
+|:---------------------------|
+| EON is compatible with **EVM Paris**. You must use compiler versions up to **v0.8.19**. Otherwise, the deployment will fail. The next release of EON will port **EVM Shanghai** compatibility and will be announced at a future date.      |
 
 
 ## Using Remix IDE
