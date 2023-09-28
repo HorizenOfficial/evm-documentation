@@ -1,5 +1,5 @@
 ---
-title: Forger Node
+title: Forger Node Requirements
 ---
 
 The recent submission of **ZenIP 42206** which states that reward currently paid to **Secure Node** in the Horizen mainchain block will be redirected to an **EON Forger Subsidy Fund**. Thus, any node assigned as a **Forger Node** in the EON ecosystem must have the configuration requirements listed in the EON Forger Node Criteria. The EON Forger Node requirements can be implemented by users or blockchain providers. 
