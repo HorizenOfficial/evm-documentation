@@ -72,7 +72,7 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          id: "horizen_eon/staking/what_is_staking",
+          id: 'horizen_eon/staking/what_is_staking',
         },
         {
           type: 'doc',
