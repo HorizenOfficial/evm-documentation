@@ -24,13 +24,13 @@ Minimum and recommended instance requirements for running an EON Forger Node in 
   </thead>
   <tbody>
     <tr>
-      <td>-CPU Core count</td>
+      <td>CPU Core count</td>
       <td>4</td>
       <td>8</td>
       <td> </td>
     </tr>
     <tr>
-      <td>-Frequency/IPC</td>
+      <td>Frequency/IPC</td>
       <td>2.5 GHz</td>
       <td>3.0+ GHz</td>
       <td>High frequency is required in order to scale better.</td>
