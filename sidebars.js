@@ -82,6 +82,10 @@ module.exports = {
           type: 'doc',
           id: 'horizen_eon/staking/how_to_stake_on_eon',
         },
+        {
+          type: 'doc',
+          id: 'horizen_eon/staking/forger_node',
+        },
       ],
     },
     {
