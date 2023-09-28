@@ -20,6 +20,17 @@ The request will return your `publicKey` (later called `vrfPubKey`), while the p
 }
 ``` 
 
+Then you need to create a blockSignPublicKey by making a `POST` request to `/wallet/createPrivateKey25519`.
+```
+{
+  "result" : {
+    "proposition" : {
+      "publicKey" : "01b3bc756eca50bd878649072bf3d2876fa02bcdbdb1acaf3f37cb8bdf5600d99f1f9046cb"
+    }
+  }
+}
+``` 
+
 At this point there are two ways of staking on EON: via HTTP endpoint or via smart contract.
 #### HTTP Endpoint
 Make a `POST` request to `/transaction/makeForgerStake` with body
