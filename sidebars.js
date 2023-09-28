@@ -68,6 +68,24 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Staking',
+      items: [
+        {
+          type: 'doc',
+          id: 'horizen_eon/staking/what_is_staking',
+        },
+        {
+          type: 'doc',
+          id: 'horizen_eon/staking/run_a_forger_node',
+        },
+        {
+          type: 'doc',
+          id: 'horizen_eon/staking/how_to_stake_on_eon',
+        },
+      ],
+    },
+    {
+      type: 'category',
       label: 'Tutorials',
       items: [
         {
