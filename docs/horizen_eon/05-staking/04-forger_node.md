@@ -7,7 +7,8 @@ The recent submission of **ZenIP 42206** which states that reward currently paid
 #### Additional Information
 
 * Read the [Horizen Blog](https://blog.horizen.io/zenip-42206-explained-redirect-horizen-secure-node-rewards-into-horizen-eon/) that explains the need for a secure EON ecosystem.
-* View the [Beyond Horizen](https://www.youtube.com/watch?v=Y1JUJ4ymk_I) espisode on **Redirecting Secure Node Rewards to EON**.
+* View the [Beyond Horizen](https://www.youtube.com/watch?v=Y1JUJ4ymk_I) episode on **Redirecting Secure Node Rewards to EON**.
+
 
 # EON Forger Node Criteria
 
