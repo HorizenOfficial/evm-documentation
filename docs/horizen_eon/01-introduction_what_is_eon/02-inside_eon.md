@@ -2,12 +2,6 @@
 title: Inside EON
 ---
 
-<head>
-  <title>Horizen EON Documentation</title>
-</head>
-
-
-
 For the EVM project, Horizen Labs has adopted Ethereum’s Account-based transaction model to represent assets as balances within accounts.
 
 ## Stateful Model: Account-based Transaction Design
