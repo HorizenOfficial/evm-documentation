@@ -3,13 +3,6 @@
 title: Environments 
 
 ---
-
-<head>
-  <title>Horizen EON Documentation</title>
-</head>
-
-
-
 ## RPC Server
 
 The RPC (Remote Procedure Call) endpoint works as a node's address: it's a URL where requests for blockchain data can be sent to. The Ethereum JSON-RPC specification defines some industry standard methods which can be used to retrieve data from a node.
