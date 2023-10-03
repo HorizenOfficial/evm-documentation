@@ -4,11 +4,11 @@ title: Horizen EON Explorer
 
 
 
-The Horizen EON Explorer (Gobi Testnet Block Explorer) leverages the feature-rich Blockscout Explorer, an online tool for inspecting and analyzing the Gobi Testnet blockchain. Blockscout is open-source code that allows the ability to customize a block explorer instance to view all transactions, past and current, on the blockchain. Customization options include information such as the network's hash rate and transaction details.
+The Horizen EON Explorer leverages the feature-rich Blockscout Explorer, an online tool for inspecting and analyzing the Horizen EON blockchain. Blockscout is open-source code that allows the ability to customize a block explorer instance to view all transactions, past and current, on the blockchain. Customization options include information such as the network's hash rate and transaction details.
 
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-landing.png").default} alt="landing-page" width="900" height="700" />
+<img src={require("/img/docs/blockscout/exp-landing.png").default} alt="landing-page" width="900" height="700" />
 </p>
 
 **Note:** Use **Search** to query for a specific transaction, address (wallet or contract), block, and token.
@@ -17,17 +17,17 @@ The Horizen EON Explorer (Gobi Testnet Block Explorer) leverages the feature-ric
 
 ## Key Features
 
-The key features of the Gobi Testnet Block Explorer are modularized in each of the panels in the main landing page. 
+The key features of the Horizen EON Block Explorer are modularized in each of the panels in the main landing page. 
 
-### Daily Transaction
+### Daily Transactions
 
-The **Daily Transaction** dashboard provides a real-time view of the blockchain with various data points.
+The **Daily Transactions** dashboard provides a real-time view of the blockchain with various data points.
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-daily.png").default} alt="daily-transaction" width="900" height="700" />
+<img src={require("/img/docs/blockscout/exp-daily-txs.png").default} alt="daily-transaction" width="900" height="700" />
 </p>
 
-The categories in the Daily Transaction dashboard includes:
+The categories in the Daily Transactions dashboard includes:
 
 - A **graph view** of transactions processed during a time period. It includes metrics for tracking gas and transactions on a daily basis.
 - **Average block time** - This is the average time that a block is created.
@@ -40,7 +40,7 @@ The categories in the Daily Transaction dashboard includes:
 The Block module provides key information about the block.
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-blocks.png").default} alt="blocks-module" width="900" height="700" />
+<img src={require("/img/docs/blockscout/exp-blocks.png").default} alt="blocks-module" width="900" height="700" />
 </p>
 
 Key information includes:
@@ -57,7 +57,7 @@ Key information includes:
 The **Transaction** module provides key information about the transaction.
 
 <p>
-<img src={require("/img/docs/blockscout/gobi-exp-transactions.png").default} alt="transactions" width="900" height="700" />
+<img src={require("/img/docs/blockscout/exp-transactions.png").default} alt="transactions" width="900" height="700" />
 </p>
 
 Key information includes:
@@ -119,7 +119,7 @@ Key information includes:
 
 ### Fee Payment
 
-The blockchain fee is a TZEN-denoted fee that users are charged when processing transactions. The fee is required to process the transaction on the Gobi Testnet and ensure that transfers arrive at their expected destination. The fees are aggregated and paid to forger nodes that have forged at least one block during the last withdrawal epoch.
+The blockchain fee is a ZEN-denoted fee that users are charged when processing transactions. The fee is required to process the transaction on Horizen EON and ensures that transfers arrive at their expected destination. The fees are aggregated and paid to forger nodes that have forged at least one block during the last withdrawal epoch.
 
 
 The EON Block Explorer highlights the Fee Payment transactions:
