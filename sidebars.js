@@ -128,6 +128,10 @@ module.exports = {
           type: 'doc',
           id: 'horizen_eon/security_guides/security_user',
         },
+        {
+          type: 'doc',
+          id: 'horizen_eon/security_guides/security_dev',
+        },
       ],
     },
   ],
