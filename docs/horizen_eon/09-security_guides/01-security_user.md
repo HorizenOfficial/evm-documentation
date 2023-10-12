@@ -53,7 +53,7 @@ Cryptocurrency wallets, much like traditional wallets, require careful handling 
 
 There are no official user support centers for wallets – any links you may see that claim to be able to provide support are looking to extract sensitive information like your seed phrase. 
 
-However, there are a lot of good articles on Wallet Safety that provide best practices and advice. We have linked to some of the prominent ones below:
+However, there are a lot of good articles on wallet safety that provide best practices and advice. We have linked to some of the prominent ones below:
 
 * [Wallet Security](https://hacken.io/discover/wallet-security/)
 * [What are crypto-wallets?](https://www.forbes.com/sites/digital-assets/article/what-are-crypto-wallets/?sh=5ab204ed6a62)
