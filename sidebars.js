@@ -90,6 +90,16 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Service Providers',
+      items: [
+        {
+          type: 'doc',
+          id: 'horizen_eon/service_providers/eon_service_providers',
+        },
+      ],
+    },
+    {
+      type: 'category',
       label: 'Tutorials',
       items: [
         {
