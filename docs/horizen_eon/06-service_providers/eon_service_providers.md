@@ -2,7 +2,7 @@
 title: EON-compatible Service Providers
 ---
 
-The EON ecosystem is perpetually changing with new partners and integrations. To accommodate the compatibility of EON platform with third-party integration, several service provider protocols are used to facilitate the on-boarding of new dApps, services, tools, and more.
+The EON ecosystem is perpetually changing with new partners and integrations. To accommodate the compatibility of EON platform with third-party integration, several service provider protocols are used to facilitate the onboarding of new dApps, services, tools, and more.
 
 See the [EON Ecosystem](https://eon.horizen.io/ecosystem) for a description of current service providers.    
 
