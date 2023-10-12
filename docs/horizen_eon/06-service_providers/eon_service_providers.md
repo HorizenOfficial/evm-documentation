@@ -48,7 +48,7 @@ See the [Flair](https://github.com/HorizenOfficial/evm-documentation/pull/78) do
 
 The Graph is an indexing protocol for organizing blockchain data and accessible with GraphQL.
 
-Request for [EON Graph-specific](http://info@horizen.io) documentation.
+Request for [EON Graph-specific](mailto:info@horizen.io) documentation.
 
 
 ## Pyth Protocol
