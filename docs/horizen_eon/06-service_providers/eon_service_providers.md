@@ -9,7 +9,7 @@ See the [EON Ecosystem](https://eon.horizen.io/ecosystem) for a description of c
 
 # Service Providers: Technology Features
 
-As new partners and integrations are on-boarding to the EON ecosystem, the need to use the following service providers’ technologies is imperative for a successful EVM-compatible sidechain:
+As new partners and integrations are onboarding to the EON ecosystem, the need to use the following service providers’ technologies is imperative for a successful EVM-compatible sidechain:
 
 
 ## Ankr  
