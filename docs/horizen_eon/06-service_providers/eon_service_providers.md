@@ -16,7 +16,7 @@ As new partners and integrations are on-boarding to the EON ecosystem, the need 
 
 Ankr provides a Web3 infrastructure that has many use cases, from Web3 API, staking, blockchain deployment tool, and smart contract execution. 
 
-Request for [EON Ankr-specific](http://info@horizen.io) documentation. 
+Request for [EON Ankr-specific](mailto:info@horizen.io) documentation. 
 
 
 ## Band Protocol
