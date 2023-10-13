@@ -108,7 +108,7 @@ Perform the following steps to link one EON address to one or more mainchain add
 
 
 
-13. Click **Link**. The Pending pop-up appears stating that the transaction has been submitted.
+13. Click **Link**. The Pending pop-up appears stating that the transaction is being submitted.
 
 <p>
 <img src={require("/img/docs/dao/submitted.png").default} alt="Pending Spin" width="300" height="200" />
