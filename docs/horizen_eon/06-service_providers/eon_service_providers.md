@@ -41,7 +41,7 @@ See the [Covalent](https://www.covalenthq.com/docs/networks/horizen/) documentat
 
 Flair provides real-time and historical custom data indexing for EON. It offers reusable indexing primitives (such as fault-tolerant RPC ingestors, custom processors, re-org aware database integrations) to make it easy to receive, transform, store and access your on-chain data.
 
-See the [Flair](https://github.com/HorizenOfficial/evm-documentation/pull/78) documentation for more information. 
+See the [Flair](https://docs.flair.dev/) documentation for more information. 
 
 
 ## The Graph Protocol
