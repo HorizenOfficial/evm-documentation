@@ -45,4 +45,4 @@ Take a look at the Cloudflare Pages pipeline on Github to get the URL of your de
 
 [Cloudflare Pages Deployment Guide](https://horizenlabs.atlassian.net/wiki/spaces/PE/pages/133529601/Cloudflare+Pages)
 
-### This project is licensed under the terms of the MIT license. <add link>
+
