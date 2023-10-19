@@ -23,7 +23,7 @@ Perform the following steps to link one EON address to one or more mainchain add
 
 
 
-1. Open the [Horizen Governance ](https://eon.horizen.io/governance/dao)page. 
+1. Open the [Horizen Governance](https://eon.horizen.io/governance/dao) page. 
 
 
 <p>
