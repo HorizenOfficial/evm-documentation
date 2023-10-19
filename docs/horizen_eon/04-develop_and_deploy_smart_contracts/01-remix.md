@@ -42,8 +42,6 @@ A project contract is a smart contract that you will create in order to test, de
 
 2. A new file name field appears. Enter your desired file name.
 
-![newfile](/img/docs/build/newfilename.png)
-
 <p>
 <img src={require("/img/docs/build/newfilename.png").default} alt="New File Name" width="300" height="200" />
 </p>
@@ -208,8 +206,6 @@ To use the EonWorkspace example files, perform the following:
 
 
 In the **Remix File Explorer**, the scripts are located in the **examples** folder. To execute a script, select the desired filename.js file. Right-click to open the drop-down menu. Select **Run**. 
-
-![eonworkspace](/img/docs/deploy/remix-script-rightclick.png)
 
 <p>
 <img src={require("/img/docs/deploy/remix-script-rightclick.png").default} alt="ReMix Script" width="300" height="200" />
