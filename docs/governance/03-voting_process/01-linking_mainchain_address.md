@@ -30,7 +30,7 @@ Perform the following steps to link one EON address to one or more mainchain add
 <img src={require("/img/docs/dao/dao_gov_landingpage.png").default} alt="Gov Landing Page" width="700" height="500" />
 </p>
 
-2. Click **Connect Wallet**. The EON wallet (MetaMask) appears in the top-right corner. Once connected, the **EON addres** field is automatically filled with the connected EON address. 
+2. Click **Connect Wallet**. The EON wallet (MetaMask) appears in the top-right corner. Once connected, the **EON address** field is automatically filled with the connected EON address. 
 
 **Note:** If the EON wallet (MetaMask) was previously connected to the Horizen Governance app, then it is automatically connected. 
 
