@@ -10,7 +10,7 @@ To enable voting power to all accounts within the Horizen ecosystem, the **Gover
 
 ### Configuring a Network
 
-Before linking an EON wallet, make sure that the appropriate network is available. If not, add the network to the EON wallet and set it as the primary network. 
+Before linking to an EON address, make sure that the appropriate network is available. If not, add the network to the EON wallet and set it as the primary network. 
 
 See [Connect your Wallet](/horizen_eon/connect/connect_your_wallet) in the EON documentation.
 
