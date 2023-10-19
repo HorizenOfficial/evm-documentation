@@ -6,7 +6,7 @@ Because Snapshot is not compatible with Horizen’s mainchain, it has been integ
 
 ## Overview
 
-To enable voting power to all accounts within the Horizen ecosystem, the **Governance Linking** app provides a mechanism to link multiple mainchain addresses to one  EON address. Upon linking, a user’s voting power for the Horizen DAO will be the sum total of their ZEN balance on EON, plus the ZEN balance of all of their linked mainchain addresses. This makes it easier for users to vote with the totality of their ZEN without having to move assets. 
+To enable voting power to all accounts within the Horizen ecosystem, the **Governance Linking** app provides a mechanism to link multiple mainchain addresses to one EON address. Upon linking, a user’s voting power for the Horizen DAO will be the sum total of their ZEN balance on EON, plus the ZEN balance of all of their linked mainchain addresses. This makes it easier for users to vote with the totality of their ZEN without having to move assets. 
 
 ### Configuring a Network
 
