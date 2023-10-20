@@ -36,6 +36,10 @@ module.exports = {
         },
         {
           type: 'doc',
+          id: 'horizen_eon/connect/wrap_zen',
+        },
+        {
+          type: 'doc',
           id: 'horizen_eon/connect/eon_block_explorer',
         },
       ],
