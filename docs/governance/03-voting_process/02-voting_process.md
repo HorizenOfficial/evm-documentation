@@ -6,11 +6,11 @@ Once an ZenIP/EONIP has been approved for voting, it will proceed to a live Snap
 
 The two categories of ZenIPs/EONIPs have different requirements for vote quorums and majorities:
 
-* **Technical ZenIP/EONIP** 
+* [Technical ZenIP/EONIP](https://snapshot.org/#/horizenfoundationtechnical.eth/create) 
 
     * There must be at least 10% of the circulating supply of $ZEN participating in the vote. The proposal must receive at least 67% of votes in favor in order to pass.
 
-* **Non-Technical ZenIP/EONIP** 
+* [Non-Technical ZenIP/EONIP](https://snapshot.org/#/horizenfoundationnontechnical.eth/create)
 
     * There must be at least 5% of the circulating supply of $ZEN participating in the vote. The proposal must receive more votes in favor than against in order to pass.
 
