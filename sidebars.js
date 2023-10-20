@@ -36,7 +36,7 @@ module.exports = {
         },
         {
           type: 'doc',
-          id: 'horizen_eon/connect/wrapped_zen',
+          id: 'horizen_eon/connect/wrap_zen',
         },
         {
           type: 'doc',
