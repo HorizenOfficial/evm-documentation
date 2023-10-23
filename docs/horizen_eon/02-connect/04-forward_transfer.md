@@ -20,7 +20,7 @@ Before performing a forward transfer of assets, make sure that the following is 
 
 ## Send ZEN
 
-To send ZEN from the Horizen mainchain to EON, use Sphere: 
+To send ZEN from the Horizen mainchain to EON, use [Sphere](https://www.horizen.io/wallets/spherebyhorizen/): 
 
 
 
