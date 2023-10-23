@@ -69,7 +69,7 @@ To send ZEN from the Horizen mainchain to EON, use Sphere:
 8. Review the Transaction Details pane for accuracy. The transaction type should be -4.
 
 <p>
-<img src={require("/img/docs/forward/forward_blockexplorer_trans7.png").default} alt="Block Explorer" width="600" height="400" />
+<img src={require("/img/docs/forward/forward_blockexplorer_trans7.png").default} alt="Block Explorer" width="800" height="600" />
 </p>
 
 
