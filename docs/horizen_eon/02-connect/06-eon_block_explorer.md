@@ -588,8 +588,3 @@ Use the smart contract functions to change the data in the selected contract. Th
 - **transferForm** - Allows a transfer from an account that is not making the transaction.
 
 
-
-
-
-
-

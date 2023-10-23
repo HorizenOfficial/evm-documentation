@@ -12,3 +12,5 @@ WZEN is an ERC-20 token standard-compliant cryptocurrency that retains the value
 ## Smart Contract to Wrap ZEN
 
 Use the smart contract address to wrap ZEN: [0xF5cB8652a84329A2016A386206761f455bCEDab6](https://eon-explorer.horizenlabs.io/address/0xF5cB8652a84329A2016A386206761f455bCEDab6)
+
+
