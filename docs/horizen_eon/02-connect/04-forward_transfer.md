@@ -41,7 +41,7 @@ To send ZEN from the Horizen mainchain to EON, use Sphere:
 3. The **Send** page appears. Your **Sphere wallet name** appears at the top of the page.
 
 <p>
-<img src={require("/img/docs/forward/forward_sphere_send2eon4.png").default} alt="Configure Send Page" width="300" height="200" />
+<img src={require("/img/docs/forward/forward_sphere_send2eon4.png").default} alt="Configure Send Page" width="800" height="600" />
 </p>
 
 4. Configure the following fields in the **Send** page:
@@ -63,7 +63,7 @@ To send ZEN from the Horizen mainchain to EON, use Sphere:
 7. A successful transaction notification appears. Click **View on Blockchain** to see the transaction details.
 
 <p>
-<img src={require("/img/docs/forward/forward_sphere_transuccessful6.png").default} alt="Transaction Successful" width="300" height="200" />
+<img src={require("/img/docs/forward/forward_sphere_transuccessful6.png").default} alt="Transaction Successful" width="800" height="600" />
 </p>
 
 8. Review the Transaction Details pane for accuracy. The transaction type should be -4.
