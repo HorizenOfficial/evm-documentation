@@ -55,7 +55,7 @@ To send ZEN from the Horizen mainchain to EON, use Sphere:
 6. Enter your Sphere wallet** password**. Click **Confirm**.
 
 <p>
-<img src={require("/img/docs/forward/forward_sphere_confirmpass5.png").default} alt="Configure Send Page" width="300" height="200" />
+<img src={require("/img/docs/forward/forward_sphere_confirmpass5.png").default} alt="Configure Send Page" width="600" height="400" />
 </p>
 
 
