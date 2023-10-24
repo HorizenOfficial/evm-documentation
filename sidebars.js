@@ -40,6 +40,10 @@ module.exports = {
         },
         {
           type: 'doc',
+          id: 'horizen_eon/connect/backward_transfer',
+        },
+        {
+          type: 'doc',
           id: 'horizen_eon/connect/wrap_zen',
         },
         {
