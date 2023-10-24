@@ -33,7 +33,7 @@ To perform a backward transfer in the Horizen ecosystem, use the following steps
 <img src={require("/img/docs/backward/backward_connectwallet2.png").default} alt="Wallet Connect" width="600" height="400" />
 </p>
 
- **Note:** The **MetaMask** crypto wallet is used for the EON address in this example.
+   **Note:** The **MetaMask** crypto wallet is used for the EON address in this example.
 
 
 3. Select a wallet to connect. If you have connected a recent crypto wallet, it will appear at the top right of the page. Otherwise, get a wallet and configure it with the **Horizen EON** network. Make sure that you have ZEN to perform a backward transfer. 
