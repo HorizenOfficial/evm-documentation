@@ -24,13 +24,13 @@ To perform a backward transfer in the Horizen ecosystem, use the following steps
 1. Navigate to the [Transfer](https://eon.horizen.io/app/transfer) page in the EON application. 
 
 <p>
-<img src={require("/img/docs/backward/backward_launchpage1.png").default} alt="Landing Page" width="300" height="200" />
+<img src={require("/img/docs/backward/backward_launchpage1.png").default} alt="Landing Page" width="800" height="600" />
 </p>
 
 2. Click **Connect Wallet**.
 
 <p>
-<img src={require("/img/docs/backward/backward_connectwallet2.png").default} alt="Wallet Connect" width="300" height="200" />
+<img src={require("/img/docs/backward/backward_connectwallet2.png").default} alt="Wallet Connect" width="600" height="400" />
 </p>
 
 **Note:** The **MetaMask** crypto wallet is used for the EON address in this example.
@@ -60,7 +60,7 @@ To perform a backward transfer in the Horizen ecosystem, use the following steps
 8. Click **View in Block Explorer**. The Block Explorer appears. Review the transaction details to verify a successful transfer. 
 
 <p>
-<img src={require("/img/docs/backward/backward_blockexplorer8.png").default} alt="Block Explorer" width="300" height="200" />
+<img src={require("/img/docs/backward/backward_blockexplorer8.png").default} alt="Block Explorer" width="800" height="600" />
 </p>
 
 9. Open **Sphere** to confirm the ZEN transfer in your mainchain wallet. Typically a backward transfer on EON can take up to four and a half hours to show up in the mainchain.
@@ -68,7 +68,7 @@ To perform a backward transfer in the Horizen ecosystem, use the following steps
 **Note:** In the **Sphere Activity** page, review the **Transaction Type** and **Amount** columns for verification. The transaction type, **Sidechain bw transfer**, indicates a successful transaction.
 
 <p>
-<img src={require("/img/docs/backward/backward_spherebwtransfer9.png").default} alt="Block Explorer" width="300" height="200" />
+<img src={require("/img/docs/backward/backward_spherebwtransfer9.png").default} alt="Block Explorer" width="800" height="600" />
 </p>
 
 
