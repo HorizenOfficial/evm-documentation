@@ -14,7 +14,7 @@ Before performing a backward transfer of assets, make sure that you have the fol
 * Wallet connected to EON dApp
 * Mainchain wallet address (Sphere)
 
-**Note:** Download [Sphere](https://www.horizen.io/wallets/spherebyhorizen/) to create a mainchain wallet, if needed.
+ **Note:** Download [Sphere](https://www.horizen.io/wallets/spherebyhorizen/) to create a mainchain wallet, if needed.
 
 
 # Perform Backward Transfer
@@ -33,7 +33,7 @@ To perform a backward transfer in the Horizen ecosystem, use the following steps
 <img src={require("/img/docs/backward/backward_connectwallet2.png").default} alt="Wallet Connect" width="600" height="400" />
 </p>
 
-**Note:** The **MetaMask** crypto wallet is used for the EON address in this example.
+ **Note:** The **MetaMask** crypto wallet is used for the EON address in this example.
 
 
 3. Select a wallet to connect. If you have connected a recent crypto wallet, it will appear at the top right of the page. Otherwise, get a wallet and configure it with the **Horizen EON** network. Make sure that you have ZEN to perform a backward transfer. 
@@ -65,7 +65,7 @@ To perform a backward transfer in the Horizen ecosystem, use the following steps
 
 9. Open **Sphere** to confirm the ZEN transfer in your mainchain wallet. Typically a backward transfer on EON can take up to four and a half hours to show up in the mainchain.
 
-**Note:** In the **Sphere Activity** page, review the **Transaction Type** and **Amount** columns for verification. The transaction type, **Sidechain bw transfer**, indicates a successful transaction.
+ **Note:** In the **Sphere Activity** page, review the **Transaction Type** and **Amount** columns for verification. The transaction type, **Sidechain bw transfer**, indicates a successful transaction.
 
 <p>
 <img src={require("/img/docs/backward/backward_spherebwtransfer9.png").default} alt="Block Explorer" width="800" height="600" />
