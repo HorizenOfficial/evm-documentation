@@ -51,6 +51,17 @@ The Graph is an indexing protocol for organizing blockchain data and accessible 
 Request for [EON Graph-specific](mailto:info@horizen.io) documentation.
 
 
+## LayerZero
+
+LayerZero is an omnichain interoperability protocol designed for lightweight message passing across chains. LayerZero provides authentic and guaranteed message delivery with configurable trustlessness.
+
+See the [LayerZero](https://layerzero.gitbook.io/docs/) documentation for more information.
+
+#### Horizen EON
+
+* **Chain ID:** 215
+* **Endpoint:** 0xb6319cC6c8c27A8F5dAF0dD3DF91EA35C4720dd7
+
 ## Pyth Protocol
 
 The Pyth protocol allows market participants to publish pricing information on-chain for others to use. The Pyth Network is an oracle that publishes financial market data to multiple blockchains. 
