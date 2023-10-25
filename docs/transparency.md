@@ -168,7 +168,7 @@ The initial Special Council members, split by cohort, are as follows:
 
 * Brian Rose
 
-* Marwan Alzarouni (pending)
+* Marwan Alzarouni 
 
 * Benjamin Charbit 
 
@@ -180,7 +180,7 @@ The initial Special Council members, split by cohort, are as follows:
 
 * Elias Ahonen
 
-* Francisco Spadafora (pending)
+* Edward Noyons
 
 **Compensation:**
 
@@ -204,6 +204,6 @@ There are a few governance channels and tools available, each serving its own pu
 
 * Snapshot: [Coming Soon] is an off-chain voting interface that allows the community to vote on ZenIPs and EONIPs based on the amount of $ZEN they hold, and delegate voting power to a different delegate.
 
-Because Snapshot is not compatible with Horizen’s mainchain, it is integrated with EON, which is Ethereum-compatible. This means that $ZEN tokenholders will need to “link” their mainchain $ZEN address with an EON address in order to capture their full voting power for proposals in Snapshot. More information on this process can be found here: [Coming Soon].
+Because Snapshot is not compatible with Horizen’s mainchain, it is integrated with EON, which is Ethereum-compatible. This means that $ZEN tokenholders will need to “link” their mainchain $ZEN address with an EON address in order to capture their full voting power for proposals in Snapshot. More information on this process can be found here: [Snapshot](https://snapshot.org/#/horizenfoundation.eth).
 
 The process of voting, choice of any of the tools, and length of voting can be changed by the community through a Technical ZenIP.
