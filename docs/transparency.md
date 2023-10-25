@@ -202,8 +202,8 @@ There are a few governance channels and tools available, each serving its own pu
 
 * [Discourse](http://forum.horizen.io): is an open forum for governance related discussions. It is where tokenholders can create ZenIPs and EONIPs, view current and past proposals, and comment on proposals. Members of the Horizen community must register for an account before contributing and engaging with posts.
 
-* Snapshot: [Snapshot](https://snapshot.org/#/horizenfoundation.eth) is an off-chain voting interface that allows the community to vote on ZenIPs and EONIPs based on the amount of $ZEN they hold, and delegate voting power to a different delegate.
+* [Snapshot](https://snapshot.org/#/horizenfoundation.eth): is an off-chain voting interface that allows the community to vote on ZenIPs and EONIPs based on the amount of $ZEN they hold, and delegate voting power to a different delegate.
 
-Because Snapshot is not compatible with Horizen’s mainchain, it is integrated with EON, which is Ethereum-compatible. This means that $ZEN tokenholders will need to “link” their mainchain $ZEN address with an EON address in order to capture their full voting power for proposals in Snapshot. More information on this process can be found here: [Horizen Governance](https://eon.horizen.io/governance/dao) documentation.
+Because Snapshot is not compatible with Horizen’s mainchain, it is integrated with EON, which is Ethereum-compatible. This means that $ZEN tokenholders will need to “link” their mainchain $ZEN address with an EON address in order to capture their full voting power for proposals in Snapshot. More information on this process can be found [here](https://eon.horizen.io/governance/dao).
 
 The process of voting, choice of any of the tools, and length of voting can be changed by the community through a Technical ZenIP.
