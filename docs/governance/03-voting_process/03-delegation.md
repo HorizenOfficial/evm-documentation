@@ -28,7 +28,7 @@ Make sure that you know the wallet address of the person you wish to delegate yo
 
 3. In the **To** field, enter the delegate’s crypto wallet address or Ethereum Service Name (ESN) name.
 
-4. **(Optional)** If you decide to **enable** the slider to **Limit the delegations to a specific space**, you need to do this for each delegation sub-spaces. One for **horizenfoundationtechnical.eth** sub-space and the other for **horizenfoundationnontechnical.eth** sub-space. The **Space** field becomes active.
+4. **(Optional)** If you decide to **enable** the slider to **Limit the delegations to a specific space**, you need to do this for each delegation sub-spaces. One for **horizenfoundationtechnical.eth** sub-space and for the **horizenfoundationnontechnical.eth** sub-space. The **Space** field becomes active.
 
 5. In the **Space** field, enter the name of the sub-space for each Horizen Foundation (**horizenfoundationtechnical.eth** and **horizenfoundationnontechnical.eth**).
 
