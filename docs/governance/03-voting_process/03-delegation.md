@@ -10,10 +10,7 @@ Make sure that you know the wallet address of the person you wish to delegate yo
 
 **Note:** The **MetaMask** crypto wallet is used in this example.
 
-
 # Delegate Your Vote
-
-
 
 1. Open the [Delegate](https://snapshot.org/#/delegate/horizenfoundation.eth) tab to delegate your vote.
 
@@ -25,17 +22,18 @@ Make sure that you know the wallet address of the person you wish to delegate yo
 
     **Note:** Make sure that your crypto wallet is configured to the **Ethereum Mainnet** network.
 
-
 <p>
 <img src={require("/img/docs/delegation/metamask_confignetwork2.png").default} alt="Wallet Connect" width="300" height="200" />
 </p>
 
 3. In the **To** field, enter the delegate’s crypto wallet address or Ethereum Service Name (ESN) name.
+
 4. **(Optional)** If you decide to **enable** the slider to **Limit the delegations to a specific space**, you need to do this for each delegation sub-spaces. One for **horizenfoundationtechnical.eth** sub-space and the other for **horizenfoundationnontechnical.eth** sub-space. The **Space** field becomes active.
 
 5. In the **Space** field, enter the name of the sub-space for each Horizen Foundation (**horizenfoundationtechnical.eth** and **horizenfoundationnontechnical.eth**).
 
 6. The **Top delegates** field displays the current delegation for the Horizen Foundation.
+
 7. Click **Confirm**.
 
 **Note:** In case the delegate and the delegator both cast their respective vote, the delegation is not counted, thus resulting in a temporary re-appropriation of voting power for that particular proposal. 
