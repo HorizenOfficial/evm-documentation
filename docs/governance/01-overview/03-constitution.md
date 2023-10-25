@@ -171,7 +171,7 @@ If additional information is not needed, your ZenIP/EONIP will proceed to the vo
 
 &nbsp;&nbsp;&nbsp;<h4>&nbsp;&nbsp;&nbsp;g. Vote</h4>
 
-Now that your ZenIP/EONIP has been approved for voting, it will go to a live Snapshot vote. Voting can be accessed at this link: [Coming Soon]. As a $ZEN tokenholder, you can participate in this Snapshot voting.
+Now that your ZenIP/EONIP has been approved for voting, it will go to a live Snapshot vote. Voting can be accessed at [Snapshot](https://snapshot.org/#/horizenfoundation.eth). As a $ZEN tokenholder, you can participate in this Snapshot voting.
 
 ZenIPs/EONIPs are divided into two main categories, that each have their own requirements for adoption subject to a vote, in addition to the above requirements for drafting and submitting the proposals before they are put to a vote.
 
@@ -187,7 +187,7 @@ ZenIPs/EONIPs are divided into two main categories, that each have their own req
 
 * Quorum: There must be at least 10% of total circulating supply of $ZEN participating in the vote.
 
-To vote on a proposal using a wallet that contains delegating voting power, you must login to [Coming Soon]. $ZEN tokens that are delegated must have been delegated to the wallet address that is voting before the voting period begins.
+To vote on a proposal using a wallet that contains delegating voting power, you must login to [Snapshot](https://snapshot.org/#/horizenfoundation.eth). $ZEN tokens that are delegated must have been delegated to the wallet address that is voting before the voting period begins.
 
 Voting remains open for a period of 72 hours. At this time, anyone who meets the qualifications to vote may vote once for every $ZEN contained in (or delegated to) the wallet they are voting from. Following 72 hours, voting closes, and no more votes may be cast.
 
