@@ -239,7 +239,7 @@ Tokenholders may, at any time during the Initial or Standard Term, vote to remov
 The initial Special Council Members are:
 * Brian Rose
 
-* Marwan Alzarouni (pending)
+* Marwan Alzarouni 
 
 * Benjamin Charbit 
 
@@ -249,7 +249,7 @@ The initial Special Council Members are:
 
 * Elias Ahonen
 
-* Francisco Spadafora (pending)
+* Edward Noyons
 
 &nbsp;&nbsp;&nbsp;<h4>&nbsp;&nbsp;&nbsp;c. Responsibilities</h4>
 
