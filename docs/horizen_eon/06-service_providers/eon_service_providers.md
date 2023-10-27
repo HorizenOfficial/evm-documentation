@@ -85,3 +85,9 @@ See the following Relink documentations for additional information:
 * [Relink Protocol](https://docs.relink.services/)
 * [Relink - Trustless Chainlink Relaying Service](https://github.com/RelinkServices/relink-contracts-solidity-evm/blob/main/README.md#relink---trustless-chainlink-relaying-service)
 * [Relink Contract-Solidity-EVM repository](https://github.com/RelinkServices/relink-contracts-solidity-evm)
+
+## Revoke.cash
+
+Revoke.cash is a tool that helps you manage your wallet’s token approvals on over 60 networks. When using marketplace or exchange dApps, you have to grant them permission to spend your tokens and NFTs. This is called a token approval. If you don’t revoke these approvals, the dApp can spend your tokens forever. Revoke.cash allows you to inspect and revoke the approvals that you no longer use to prevent unwanted access to your funds.
+
+See the [Revoke.cash](https://revoke.cash/) documentation for more information.
