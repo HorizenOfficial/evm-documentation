@@ -226,7 +226,7 @@ The Special Council replaces the Horizen Community Council (HCC). The Horizen Co
 
 Initially, the Special Council will be made up of seven (7) seats. Those seats will be filled by seven (7) individuals, initially appointed by the Foundation Director(s), who will serve a term that begins on the date this Constitution is effective, until the first election cycles (“Initial Term”), as detailed below. Thereafter, Tokenholders can nominate and elect Special Council members to serve a standard Term of one year (“Standard Term”), unless, subject to one of the conditions below, a Special Council member is removed before the end of their Standard Term.
 
-To stagger elections and optimize continuity of the Special Council, committee seats are randomly assigned to either a September cohort consisting of four (4) seats or a March cohort consisting of three (3) seats. Together, these cohorts will be subject to the Election Cycles discussed below. Beginning in 2024 and continuing every year thereafter unless otherwise modified pursuant to this Constitution:
+To stagger elections and optimize continuity of the Special Council, committee seats are randomly assigned to either a September cohort consisting of four (4) seats or a March cohort consisting of three (3) seats. Together, these cohorts will be subject to the Election Cycles discussed below. Beginning in 2025 and continuing every year thereafter unless otherwise modified pursuant to this Constitution:
 
 * Elections for the March cohort will commence on February 15 at 12:00 UTC of the relevant year and continue for seven (7) days until the election has been completed.
 
