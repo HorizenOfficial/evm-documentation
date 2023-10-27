@@ -191,7 +191,7 @@ If any issues arise, the Remix IDE will provide a status notification before con
 4. Click **transact**. The Terminal panel displays a success status for the interaction with your smart contract.
 
 <p>
-<img src={require("/img/docs/deploy/successmessage.png").default} alt="Success" width="600" height="400" />
+<img src={require("/img/docs/deploy/successmessage.png").default} alt="Success" width="800" height="600" />
 </p>
 
 ### Interaction with Sample Contract 
