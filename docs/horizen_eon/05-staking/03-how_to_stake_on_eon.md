@@ -29,7 +29,19 @@ Then you need to create a blockSignPublicKey by making a `POST` request to `/wal
     }
   }
 }
-``` 
+```
+
+Then you need to generate an Ethereum compatible address key pair called `PrivateKeySecp256k1`.
+In order to do that you can either import it by including it in the `wallet.genesisSecrets` conf section, or create it by making a `POST` request to `wallet/createPrivateKeySecp256k1`.
+```
+{
+  "result": {
+    "proposition": {
+      "address": "e8674062598b86d8258257a4d79e99d15594d864"
+    }
+  }
+}
+```
 
 At this point there are two ways of staking on EON: via HTTP endpoint or via smart contract.
 #### HTTP Endpoint
