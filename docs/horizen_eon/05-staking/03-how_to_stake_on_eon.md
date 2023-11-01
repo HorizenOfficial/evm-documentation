@@ -31,7 +31,7 @@ Then you need to create a blockSignPublicKey by making a `POST` request to `/wal
 }
 ```
 
-Then you need to add an ethereum like key called `PrivateKeySecp256k1`.
+Then you need to generate an Ethereum compatible address key pair called `PrivateKeySecp256k1`.
 In order to do that you can either import it by including it in the `wallet.genesisSecrets` conf section, or create it by making a `POST` request to `wallet/createPrivateKeySecp256k1`.
 ```
 {
