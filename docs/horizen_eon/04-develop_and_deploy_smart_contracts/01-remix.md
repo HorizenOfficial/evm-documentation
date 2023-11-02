@@ -35,11 +35,16 @@ A project contract is a smart contract that you will create in order to test, de
 
 1. Go to the **File Explorer** pane. Click on the **Create New File** icon. 
 
-![createfile](/img/docs/build/createnewfile.png)
+<p>
+<img src={require("/img/docs/build/createnewfile.png").default} alt="Create New File" width="300" height="200" />
+</p>
+
 
 2. A new file name field appears. Enter your desired file name.
 
-![newfile](/img/docs/build/newfilename.png)
+<p>
+<img src={require("/img/docs/build/newfilename.png").default} alt="New File Name" width="300" height="200" />
+</p>
 
 3. Use this sample project contract by copying and pasting it in the Editor panel. This sample contract is written in Solidity.
 
@@ -92,7 +97,10 @@ Perform the following steps to compile your contract:
 2. The Solidity Compiler appears in the side panel. 
 3. Click **Compile &lt;Your contract file name&gt;**. In this example, the filename is *MyProjectContract.sol*.
 
-![compiler](/img/docs/build/soliditycompiler.png)
+<p>
+<img src={require("/img/docs/build/soliditycompiler.png").default} alt="Solidity Compiler" width="300" height="200" />
+</p>
+
 
 **Note:** A check mark appears next to the task icons once the operation is complete.
 
@@ -162,7 +170,9 @@ Upon expanding the pane, your contract instance displays three actions that corr
 
 For **non-payable functions**, DO NOT specify a value other than zero (0). Any value more than 0 is not accepted by the smart contract and the transaction will fail.
 
-![nonpayfunction](/img/docs/deploy/nonpayablefunction.png)
+<p>
+<img src={require("/img/docs/deploy/nonpayablefunction.png").default} alt="Non Payable" width="300" height="200" />
+</p>
 
 #### Payable Functions
 
@@ -180,7 +190,9 @@ If any issues arise, the Remix IDE will provide a status notification before con
 
 4. Click **transact**. The Terminal panel displays a success status for the interaction with your smart contract.
 
-![sucessmessage](/img/docs/deploy/successmessage.png)
+<p>
+<img src={require("/img/docs/deploy/successmessage.png").default} alt="Success" width="900" height="600" />
+</p>
 
 ### Interaction with Sample Contract 
 
@@ -197,7 +209,9 @@ To use the EonWorkspace example files, perform the following:
 
 In the **Remix File Explorer**, the scripts are located in the **examples** folder. To execute a script, select the desired filename.js file. Right-click to open the drop-down menu. Select **Run**. 
 
-![eonworkspace](/img/docs/deploy/remix-script-rightclick.png)
+<p>
+<img src={require("/img/docs/deploy/remix-script-rightclick.png").default} alt="ReMix Script" width="300" height="200" />
+</p>
 
 
 ### Get Basic Information
