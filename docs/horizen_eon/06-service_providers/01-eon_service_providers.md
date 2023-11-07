@@ -91,3 +91,35 @@ See the following Relink documentations for additional information:
 Revoke.cash is a tool that helps you manage your wallet’s token approvals on over 60 networks. When using marketplace or exchange dApps, you have to grant them permission to spend your tokens and NFTs. This is called a token approval. If you don’t revoke these approvals, the dApp can spend your tokens forever. Revoke.cash allows you to inspect and revoke the approvals that you no longer use to prevent unwanted access to your funds.
 
 See the [Revoke.cash](https://revoke.cash/) documentation for more information.
+
+## Archon
+
+Archon has built a bridge on top of LayerZero.  The bridge is here:
+
+* [Archon bridge](https://bridge.archon.finance/)
+
+The contract addresses are as follows:
+
+#### EON NETWORK :
+* Wrapped Token Bridge (Receiving originals tokens from ETH and Avalanche) : 0xA2C2214dD03a60404C5AdeF4514E77fC00668592
+* Original Token Bridge (Wrap ZEN to ETH) : 0x4fd89120A6d34024Cb86a9a0d7819565Fe4eC351
+* Original Token Bridge (Wrap ZEN to Avalanche) : 0x7A302432D99DE20bc622e9148b690f22ef21436e
+* Wrapped ETH : 0x2c2E0B0c643aB9ad03adBe9140627A645E99E054
+* Wrapped AVAX : 0x6318374DFb468113E06d3463ec5Ed0B6Ae0F0982
+* Wrapped USDC : 0xCc44eB064CD32AAfEEb2ebb2a47bE0B882383b53
+* Wrapped USDT : 0xA167bcAb6791304EDa9B636C8beEC75b3D2829E6
+* Wrapped DAI : 0x38C2a6953F86a7453622B1E7103b738239728754
+* Wrapped LINK : 0xDF8DBA35962Aa0fAD7ade0Df07501c54Ec7c4A89
+* Wrapped BTC : 0x1d7fb99AED3C365B4DEf061B7978CE5055Dfc1e7
+
+* ETHEREUM NETWORK :
+
+    * Wrapped Token Bridge (Receiving WZEN from EON) : 0x8dE1Fb1F8a23202C7282716AE0089c6a96e07995
+    * Original Token Bridge (Wrap originals tokens to EON) : 0x954367cb2028e704B62a4093f648BE453aCA3989
+    * Wrapped ZEN : 0xd21475D90686c9A6FDBe0849cb6670fEc2aC9E21
+
+* AVALANCHE NETWORK :
+
+    * Wrapped Token Bridge (Receiving WZEN from EON) : 0xB2F5d60530C5E589bd9326e4c57933F611a624C6
+    * Original Token Bridge (Wrap originals tokens to EON) : 0x0c81b1905125ED89C42a0aDa098adfd461f8A9C5
+    * Wrapped ZEN : 0xAA1dA1591cBF7f2Df46884E7144297FF15Ea3a7f
