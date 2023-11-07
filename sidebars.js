@@ -156,6 +156,11 @@ module.exports = {
         },
       ],
     },
+    {
+      type: "link",
+      label: "JSON-RPC Documentation",
+      href: "https://postman.horizenlabs.io/",
+    },
   ],
   governance: [
     {
