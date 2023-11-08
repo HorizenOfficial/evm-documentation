@@ -180,7 +180,7 @@ The initial Special Council members, split by cohort, are as follows:
 
 * Elias Ahonen
 
-* Edward Noyons
+* Leila Salieva
 
 **Compensation:**
 

@@ -249,7 +249,7 @@ The initial Special Council Members are:
 
 * Elias Ahonen
 
-* Edward Noyons
+* Leila Salieva
 
 &nbsp;&nbsp;&nbsp;<h4>&nbsp;&nbsp;&nbsp;c. Responsibilities</h4>
 
