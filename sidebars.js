@@ -108,6 +108,10 @@ module.exports = {
           type: 'doc',
           id: 'horizen_eon/service_providers/eon_service_providers',
         },
+        {
+          type: 'doc',
+          id: 'horizen_eon/service_providers/eon_native_stablecoin',
+        },
       ],
     },
     {
