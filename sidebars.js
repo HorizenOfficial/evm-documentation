@@ -210,6 +210,10 @@ module.exports = {
           type: 'doc',
           id: 'governance/voting_process/delegation',
         },
+        {
+          type: 'doc',
+          id: 'governance/voting_process/important_voting_information',
+        },
       ],
     },
     {
