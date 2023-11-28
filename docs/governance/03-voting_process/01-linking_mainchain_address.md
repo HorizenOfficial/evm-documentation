@@ -8,6 +8,8 @@ Because Snapshot is not compatible with Horizen’s mainchain, it has been integ
 
 To enable voting power to all accounts within the Horizen ecosystem, the **Governance Linking** app provides a mechanism to link multiple mainchain addresses to one EON address. Upon linking, a user’s voting power for the Horizen DAO will be the sum total of their ZEN balance on EON, plus the ZEN balance of all of their linked mainchain addresses. This makes it easier for users to vote with the totality of their ZEN without having to move assets. 
 
+IMPORTANT NOTE: At this time, only $ZEN held in Sphere or on EON at the time of the voting snapshot will count towards voting power. $ZEN held elsewhere will not be captured. In advance of any vote, please ensure that all $ZEN you wish to vote with is held in Sphere or EON by the snapshot date. This date will be communicated to the community well before any vote.
+
 ### Configuring a Network
 
 Before linking to an EON address, make sure that the appropriate network is available. If not, add the network to the EON wallet and set it as the primary network. 
