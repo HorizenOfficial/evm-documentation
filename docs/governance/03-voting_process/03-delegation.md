@@ -41,5 +41,5 @@ Make sure that you know the wallet address of the person you wish to delegate yo
 
 ### Approved for Voting
 
-Your ZENIP/EONIP is now approved for voting and is tallied to a live [**Snapshot Vote**]([url](https://snapshot.org/#/horizenfoundation.eth)https://snapshot.org/#/horizenfoundation.eth).
+Your ZENIP/EONIP is now approved for voting and is tallied to a live ([Snapshot Vote](https://snapshot.org/#/horizenfoundation.eth)https://snapshot.org/#/horizenfoundation.eth).
 
