@@ -26,7 +26,7 @@ Make sure that you know the wallet address of the person you wish to delegate yo
 <img src={require("/img/docs/delegation/metamask_confignetwork2.png").default} alt="Wallet Connect" width="300" height="200" />
 </p>
 
-3. In the **To** field, enter the delegate’s **crypto wallet address** or **Ethereum Service Name (ESN)** name.
+3. In the **To** field, enter the delegate’s **crypto wallet address** or **Ethereum Name Service (ENS)** name.
 
 4. **(Optional)** If you decide to **enable** the slider to **Limit the delegations to a specific space**, you need to do this for each delegation sub-spaces. One for **horizenfoundationtechnical.eth** sub-space and for the **horizenfoundationnontechnical.eth** sub-space. The **Space** field becomes active.
 
@@ -41,5 +41,5 @@ Make sure that you know the wallet address of the person you wish to delegate yo
 
 ### Approved for Voting
 
-Your ZENIP/EONIP is now approved for voting and is tallied to a live **Snapshot Vote** dApp  **[Coming Soon]**.
+Your ZENIP/EONIP is now approved for voting and is tallied to a live [Snapshot Vote](https://snapshot.org/#/horizenfoundation.eth).
 
