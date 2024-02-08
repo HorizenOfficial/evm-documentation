@@ -595,7 +595,7 @@ SCNODE_REST_PASSWORD= # Use this variable only to set up authentication on the r
 
 You are now set, the **client** starts automatically.
 
-**Note:** GOBI TESTNET requires time to synchronize the entire blockchain. While waiting, check the progress by comparing the last block in the [Gobi Explorer](https://gobi-explorer.horizen.io) with the response of the following RPC method:
+**Note:** GOBI TESTNET requires time to synchronize the entire blockchain. While waiting, check the progress by comparing the last block in the [Gobi Explorer](https://gobi-explorer.horizenlabs.io) with the response of the following RPC method:
 
 ```
 curl -X POST "http://127.0.0.1:9545/ethv1/" --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":"test"}' -H "accept: application/json"
@@ -633,7 +633,7 @@ Network name:  Gobi Testnet Local
 New RPC URL:  http://127.0.0.1:9545/ethv1 
 Chain ID: 1663
 Currency symbol: ZEN
-Block Explorer: https://gobi-explorer.horizen.io
+Block Explorer: https://gobi-explorer.horizenlabs.io
 ```
 
 **Note:** For configuring a wallet or network provider with the testnet local node the "RPC Server" must be the **local one (localhost)**. Use the **Chain ID** for  the  corresponding  testnet. 

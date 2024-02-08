@@ -31,7 +31,7 @@ Chain ID: 1663
 Currency symbol: ZEN
 ```
 
-In this exercise, the [EON Explorer](https://gobi-explorer.horizen.io/) is connected to the Gobi Testnet. The smart contract was developed and deployed to the Gobi Testnet network. The verification process will be performed using the **Via flattened source code** option in the EON Explorer.
+In this exercise, the [EON Explorer](https://gobi-explorer.horizenlabs.io/) is connected to the Gobi Testnet. The smart contract was developed and deployed to the Gobi Testnet network. The verification process will be performed using the **Via flattened source code** option in the EON Explorer.
 
 ### Flatten the Smart Contract
 
@@ -48,7 +48,7 @@ All smart contract development tools have a source code flattener. For example:
 
 ### Check for the Deployed Contract
 
-In the [EON Explorer](https://gobi-explorer.horizen.io/), perform the following steps to begin the verification process:
+In the [EON Explorer](https://gobi-explorer.horizenlabs.io/), perform the following steps to begin the verification process:
 
 1. Once you have deployed your contract, your developer tool will display the address the network has assigned your contract to. Copy that address.
 
