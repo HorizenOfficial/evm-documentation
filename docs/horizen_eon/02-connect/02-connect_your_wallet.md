@@ -53,7 +53,7 @@ Once you have specified the RPC endpoint and Chain ID to make a connection, a no
       New RPC URL:  https://gobi-rpc.horizenlabs.io/ethv1
       Chain ID: 1663 
       Currency symbol: TZEN
-      Block Explorer: https://gobi-explorer.horizen.io/
+      Block Explorer: https://gobi-explorer.horizenlabs.io/
 
 Once you have specified the RPC endpoint and Chain ID to make a connection, a notification appears stating, **“Gobi Testnet was successfully added”**.
 
