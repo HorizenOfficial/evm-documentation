@@ -20,9 +20,6 @@ title: Blockscout API contract verification
    ```shell
    npm install @nomicfoundation/hardhat-verify \
    @nomiclabs/hardhat-waffle \
-   @thirdweb-dev/chains \
-   @thirdweb-dev/sdk \
-   dotenv \
    hardhat \
    hardhat-deploy
    ```
