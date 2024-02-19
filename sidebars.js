@@ -76,6 +76,10 @@ module.exports = {
           type: 'doc',
           id: 'horizen_eon/develop_and_deploy_smart_contracts/verying_a_smart_contract',
         },
+        {
+          type: 'doc',
+          id: 'horizen_eon/develop_and_deploy_smart_contracts/api_smart_contract_verification',
+        },
       ],
     },
     {
