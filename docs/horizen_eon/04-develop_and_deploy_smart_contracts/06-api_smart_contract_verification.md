@@ -98,7 +98,7 @@ title: Blockscout API contract verification
 
 #### Note
 
-- You may receive an error during verification:
+- You may receive this message during verification.
   ```
   hardhat-verify found one or more errors during the verification process:
 
@@ -108,10 +108,10 @@ title: Blockscout API contract verification
   Contract verification may have succeeded and should be checked manually.
   Message: Unknown UID
   ```
-- Check the verification success by visiting the block explorer and viewing verified contracts.
+- Visit the block explorer and view verified contracts to confirm it was successful.
 
-## THIRDWEB
-- To verify contracts deployed using Thirdweb, the Thirdweb SDK is required along with the chainlist and a Thirdweb generated API KEY.
+## thirdweb
+- To verify contracts deployed using thirdweb, the thirdweb SDK is required along with the chainlist and a thirdweb generated API KEY.
 
 ### Setup
 
@@ -121,7 +121,7 @@ title: Blockscout API contract verification
    @thirdweb-dev/sdk \
    dotenv
    ```
-2. Create a Thirdweb API key if you don't have one: [Create API Key](https://thirdweb.com/create-api-key).
+2. Create a thirdweb API key if you don't have one: [Create API Key](https://thirdweb.com/create-api-key).
 3. Create a `.env` file in the parent directory:
     ```
     SECRET_KEY=<your_secret_key>
@@ -172,4 +172,4 @@ title: Blockscout API contract verification
    ```
 #### Note
 
-- Each Thirdweb contract type only needs to be verified once, e.g. if another user has already verified "DropERC721" then your attempt will fail and tell you it's already verified.
+- Each thirdweb contract type only needs to be verified once, e.g. if another user has already verified "DropERC721" then your attempt will fail and tell you it's already verified.
