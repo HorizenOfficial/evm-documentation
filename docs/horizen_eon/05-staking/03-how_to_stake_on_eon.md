@@ -8,4 +8,4 @@ A forger is required to run a node. See [How to Locally Build and Deploy](../04-
 The following steps require some basic general knowledge; a web application for staking is under construction and will be made available soon.
 
 ## Forger Node instructions
-Please follow the instructions on this page to set up a forger node: [Forger node](https://github.com/HorizenOfficial/compose-evm-simplified?tab=readme-ov-file#running-a-forger-node)
+Please follow the instructions on [this page](https://github.com/HorizenOfficial/compose-evm-simplified?tab=readme-ov-file#running-a-forger-node) to set up a forger node.
