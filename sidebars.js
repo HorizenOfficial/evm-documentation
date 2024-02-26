@@ -106,6 +106,10 @@ module.exports = {
           type: 'doc',
           id: 'horizen_eon/staking/pause_forging',
         },
+        {
+          type: 'doc',
+          id: 'horizen_eon/staking/faq',
+        }
       ],
     },
     {
