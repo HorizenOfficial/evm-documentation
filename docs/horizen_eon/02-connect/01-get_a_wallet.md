@@ -4,7 +4,8 @@ title: Get a Wallet
 
 
 
-To interact with smart contracts in the EVM, you need a valid EVM-compatible wallet. Use Metamask to connect to the EON network:
+To interact with smart contracts in the EVM, you need a valid EVM-compatible wallet. Use MetaMask to connect to the EON network:
+
 
 * [MetaMask](https://metamask.io/)
 
