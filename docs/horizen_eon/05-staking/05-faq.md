@@ -26,7 +26,7 @@ transaction fee = gasUsed * baseFeePerGas + gasUsed *maxPriorityFeePerGas
 ```
 - baseFeePerGas is a minimum rate a user has to pay to include their transaction in the next block. This value is generated with every block header by the protocol and may change block by block, based on how full the previous block was.
 - The other part of the fee is determined by maxPriorityFeePerGas and represents the so called "forger tip": it is an additional fee the transaction submitter is willing to pay to have its transaction included as soon as possible.
-- there is another user specified parameter in the transaction:
+- There is another user specified parameter in the transaction:
 maxFeePerGas - represents the maximum fee a user is willing to pay for a transaction.
 This parameter actually limits the maxPriorityFeePerGas with tthis rule:\
 if ( baseFeePerGas + maxPriorityFeePerGas) > 	maxFeePerGas, then maxPriorityFeePerGas will be reduced in order to maintain the upper bound of the 	maxFeePerGas.
