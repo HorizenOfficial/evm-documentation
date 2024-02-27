@@ -35,6 +35,6 @@ if ( baseFeePerGas + maxPriorityFeePerGas) > 	maxFeePerGas, then maxPriorityFeeP
 
 The baseFee in EON is collected in a pool and redistributed at *the end of each withdrawal epoch* to all the forgers of the epoch, proportionally to the number of blocks they forged in the epoch. (this is a distinction from the Ethereum protocol, where the baseFee is burned).\
 Additionally, each forger earns all the forger tips of the transactions included in the blocks he forgerd. Also forger's tips are redistributed at the end of each withdrawal epoch.\
-Widthdrawal epoch length is based on the number of mainchain blocks referenced by the sidechain: each epoch switch happens every 100 mainchain blocks. Given that in the mainchain a block is forged on average every 2 minutes and 30seconds, it takes approximately 4 hours to switch a withdrawal epoch.
+Withdrawal epoch length is based on the number of mainchain blocks referenced by the sidechain: each epoch switch happens every 100 mainchain blocks. Given that in the mainchain a block is forged on average every 2 minutes and 30seconds, it takes approximately 4 hours to switch a withdrawal epoch.
 
 Fee payments are calculated automatically by every node and enforced at consensus level. They can also be checked in the EON Explorer at this address: [https://eon-explorer.horizenlabs.io/fee-payment](https://eon-explorer.horizenlabs.io/fee-payment)
