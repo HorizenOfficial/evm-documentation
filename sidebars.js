@@ -80,23 +80,27 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Staking',
+      label: 'Forging And Staking',
       items: [
         {
           type: 'doc',
-          id: 'horizen_eon/staking/what_is_staking',
+          id: 'horizen_eon/forging_and_staking/run_a_forger_node',
         },
         {
           type: 'doc',
-          id: 'horizen_eon/staking/run_a_forger_node',
+          id: 'horizen_eon/forging_and_staking/what_is_staking',
         },
         {
           type: 'doc',
-          id: 'horizen_eon/staking/how_to_stake_on_eon',
+          id: 'horizen_eon/forging_and_staking/how_to_stake_on_eon',
         },
         {
           type: 'doc',
-          id: 'horizen_eon/staking/forger_node',
+          id: 'horizen_eon/forging_and_staking/forger_node',
+        },
+        {
+          type: 'doc',
+          id: 'horizen_eon/forging_and_staking/pause_forging',
         },
       ],
     },
