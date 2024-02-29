@@ -84,7 +84,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Forging And Staking',
+      label: 'Staking',
       items: [
         {
           type: 'doc',
