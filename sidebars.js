@@ -88,11 +88,11 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          id: 'horizen_eon/staking/run_a_forger_node',
+          id: 'horizen_eon/staking/what_is_staking',
         },
         {
           type: 'doc',
-          id: 'horizen_eon/staking/what_is_staking',
+          id: 'horizen_eon/staking/run_a_forger_node',
         },
         {
           type: 'doc',
@@ -106,6 +106,10 @@ module.exports = {
           type: 'doc',
           id: 'horizen_eon/staking/pause_forging',
         },
+        {
+          type: 'doc',
+          id: 'horizen_eon/staking/faq',
+        }
       ],
     },
     {
