@@ -150,7 +150,7 @@ or
 
 `docker exec -it zend /bin/bash`
 
-### Useful tags for the evmapp .env file
+### Useful variables for the evmapp .env file
 
 This is located in: compose-evm-simplified/deployments/forger/eon
 
