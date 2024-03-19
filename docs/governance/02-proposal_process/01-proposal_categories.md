@@ -10,4 +10,4 @@ A **Technical** ZenIP/EONIP requires a technical implementation or upgrade to th
 
 A **Non-Technical** ZenIP/EONIP is any other proposal which does not require a technical upgrade to the Horizen or EON blockchain; such a proposal may relate to making grants, proposing arrangements with third parties, or conducting governance of the Horizen Foundation.
 
-To submit a Technical ZenIP or EONIP, you must hold or be delegated at least 200,000 $ZEN. To submit a Non-Technical ZenIP or EONIP, you must hold or be delegated at least 100,000 $ZEN. 
+To submit a Technical ZenIP or EONIP, you must hold or be delegated at least 100,000 $ZEN. To submit a Non-Technical ZenIP or EONIP, you must hold or be delegated at least 20,000 $ZEN. 
