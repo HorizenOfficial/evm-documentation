@@ -8,11 +8,11 @@ The two categories of ZenIPs/EONIPs have different requirements for vote quorums
 
 * [Technical ZenIP/EONIP](https://snapshot.org/#/horizenfoundationtechnical.eth/create) 
 
-    * There must be at least 10% of the circulating supply of $ZEN participating in the vote. The proposal must receive at least 67% of votes in favor in order to pass.
+    * There must be at least 5% of the circulating supply of $ZEN participating in the vote. The proposal must receive at least 67% of votes in favor in order to pass.
 
 * [Non-Technical ZenIP/EONIP](https://snapshot.org/#/horizenfoundationnontechnical.eth/create)
 
-    * There must be at least 5% of the circulating supply of $ZEN participating in the vote. The proposal must receive more votes in favor than against in order to pass.
+    * There must be at least 3% of the circulating supply of $ZEN participating in the vote. The proposal must receive more votes in favor than against in order to pass.
 
 Delegation is permitted, and $ZEN tokens that are delegated must have been delegated to the wallet address that is voting before the voting period begins.
 

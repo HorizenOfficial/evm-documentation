@@ -87,9 +87,9 @@ As detailed in this Constitution and further in the Foundation Governing Documen
 
 Before you can submit a ZenIP or EONIP, you must first check to see whether there have been past discussions about your proposal idea, what issues were raised, any reasons a past ZenIP or EONIP (as applicable) may have been rejected or not welcomed by the community during a vote, and whether any other facts and circumstances have changed that would make your proposal idea proposal infeasible or unwarranted. To do this, you must check past discussions on Discourse (**"Discourse"**) and the Horizen Improvement Proposals Discord channel and confirm that either (1) your idea is novel and has not been proposed before (**“Option 1”**) or (2) if your idea has been proposed before, the idea you plan to propose is substantially different such that the likelihood of success during a vote by the community is high (**“Option 2”**). This is the initial research phase.
 
-To submit a Non-Technical ZenIP you must hold or be delegated at least 100,000 $ZEN. To submit a Technical ZenIP you must hold or be delegated at least 200,000 $ZEN.
+To submit a Non-Technical ZenIP you must hold or be delegated at least 25,000 $ZEN. To submit a Technical ZenIP you must hold or be delegated at least 100,000 $ZEN.
 
-To submit a Non-Technical EONIP, you must hold or be delegated at least 100,000 $ZEN. To submit a Technical EONIP, you must hold or be delegated at least 200,000 $ZEN.
+To submit a Non-Technical EONIP, you must hold or be delegated at least 25,000 $ZEN. To submit a Technical EONIP, you must hold or be delegated at least 100,000 $ZEN.
 
 Once you have completed the initial research phase, and your proposal idea meets either Option 1 or Option 2 above, you can post your idea to the Horizen Discourse following this template:
 
@@ -179,13 +179,13 @@ ZenIPs/EONIPs are divided into two main categories, that each have their own req
 
 * Majority: The proposal must receive more votes in favor than against to pass; and
 
-* Quorum: There must be at least 5% of total circulating supply of $ZEN participating in the vote.
+* Quorum: There must be at least 3% of total circulating supply of $ZEN participating in the vote.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii. Technical ZenIP/EONIP</h5>
 
 * Majority: Of the total votable $ZEN tokens participating in the vote, the proposal must receive at least 67% votes in favor of the proposal to pass; and
 
-* Quorum: There must be at least 10% of total circulating supply of $ZEN participating in the vote.
+* Quorum: There must be at least 5% of total circulating supply of $ZEN participating in the vote.
 
 To vote on a proposal using a wallet that contains delegating voting power, you must login to [Snapshot](https://snapshot.org/#/horizenfoundation.eth). $ZEN tokens that are delegated must have been delegated to the wallet address that is voting before the voting period begins.
 
