@@ -32,8 +32,8 @@ transaction fee = gasUsed * baseFeePerGas + gasUsed *maxPriorityFeePerGas
 - The other part of the fee is determined by maxPriorityFeePerGas and represents the so called "forger tip": it is an additional fee the transaction submitter is willing to pay to have its transaction included as soon as possible.
 - there is another user specified parameter in the transaction:
 maxFeePerGas - represents the maximum fee a user is willing to pay for a transaction.
-This parameter actually limits the maxPriorityFeePerGas with tthis rule:\
-if ( baseFeePerGas + maxPriorityFeePerGas) > 	maxFeePerGas, then maxPriorityFeePerGas will be reduced in order to maintain the upper bound of the 	maxFeePerGas.
+This parameter actually limits the maxPriorityFeePerGas with this rule:
+if ( baseFeePerGas + maxPriorityFeePerGas) > maxFeePerGas, then maxPriorityFeePerGas will be reduced in order to maintain the upper bound of the maxFeePerGas.
 - Finally, we can have also legacy (non EIP-1559) transactions, with only a gasPrice parameter that we use for both maxFeePerGas and maxPriorityFeePerGas values
 
 
@@ -141,10 +141,6 @@ Scan your forger from an external machine ports 1-1000
 #### Check that the forger is forging blocks:
 
 `docker logs evmapp | grep forged`
-
-or
-
-`cat logs/evmapp/debug.log | grep -e 'Successfully generated block'`
 
 ### Working with Zend
 
