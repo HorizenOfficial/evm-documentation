@@ -14,7 +14,6 @@ We start with a centralized approach where the attestation will be posted on the
 - Queries the NH validator node to retrieve the latest `nh_last_attestation_id`
 - If `nh_last_attestation_id > eth_last_attestation_id`,  then the last `nh_last_attestation_id - eth_last_attestation_id` are posted by invoking either the `submitAttestation` or `submitAttestationsBatch` smart contract method. This provides some degree of robustness against disconnections of the relayer and reverted transactions.
 
-The deliverable is a Docker Image that will bootstrap an Ethereum client equipped with write access to NHPV.sol and Sepolia ETH funds.
 
 ## Attestation Submission Frequency
 The policy leading to the publication of a new attestation is met when one of the following rules is satisfied:
