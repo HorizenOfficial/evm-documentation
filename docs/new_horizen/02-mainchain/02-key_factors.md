@@ -6,7 +6,7 @@ title: New Horizen Mainchain Key Factors
 Substrate is built with the goal of giving developers the possibility to quickly create new blockchains with their custom logic, guaranteeing maximum flexibility in terms of composability, configurability, and customization. This is ideal in the long term to keep high quality and maintainability.
 
 ## Upgradability
-The framework comes with the support of WASM runtimes, meaning that the logic can easily be distributed and run by validators and network participants. This is a great advantage when dealing with node upgrades affecting consensus rules, as nodes can automatically distribute the new code on-chain and run it without requiring to download a new client version and deal with deprecations and hard forks.
+The framework comes with the support of WASM runtimes, meaning that the logic can easily be distributed and run by validators and network participants. This is a great advantage when dealing with node upgrades affecting consensus rules, as nodes can automatically distribute the new code on-chain and run it without requiring a download of a new client version and dealing with deprecations and hard forks.
 
 ## Robustness
 Substrate is at the core of the Polkadot ecosystems and it’s successfully used by several other projects. It is very stable, continuously updated, and comes with several tools like explorers, wallets, utilities, libraries, etc.
