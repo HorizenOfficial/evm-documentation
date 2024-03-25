@@ -1,5 +1,6 @@
 ---
 title: Introduction to New Horizen
+slug: '/'
 ---
 
 # New Horizen
