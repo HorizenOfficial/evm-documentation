@@ -2,7 +2,6 @@
 title: New Horizen Mainchain Specification
 ---
 
-# Foundational Framework
-New Horizen embraces the “modular blockchain” paradigm, which emphasizes the design of decentralized systems with interchangeable components. In this context, we have carefully chosen Substrate as the foundation for our software development.
+# New Horizen Mainchain Overview
 
-The next section outlines the reasons behind our decision, with a focus on how Substrate aligns with our modular approach.
+![alt_text](/img/docs/nharch/nhmainchain.png)

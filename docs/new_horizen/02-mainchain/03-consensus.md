@@ -5,7 +5,9 @@ title: New Horizen Mainchain Consensus
 # New Horizen Mainchain Consensus
 
 ## Block Authoring
-BABE (Blind Assignment for Blockchain Extension) provides slot-based block authoring with a known set of validators and is typically used in proof-of-stake blockchains. Slot assignment is based on the evaluation of a Verifiable Random Function (VRF). Each validator is assigned a weight for an epoch. This epoch is broken up into slots and the validator evaluates its VRF at each slot. For each slot that the validator's VRF output is below its weight, it is allowed to author a block.
+Currently we have implemented [AURA](https://docs.substrate.io/reference/glossary/#authority-round-aura) as the block authoring algorithm, while leveraging the Staking pallet.
+
+BABE (Blind Assignment for Blockchain Extension) will be implemented shortly.  It provides slot-based block authoring with a known set of validators and is typically used in proof-of-stake blockchains. Slot assignment is based on the evaluation of a Verifiable Random Function (VRF). Each validator is assigned a weight for an epoch. This epoch is broken up into slots and the validator evaluates its VRF at each slot. For each slot that the validator's VRF output is below its weight, it is allowed to author a block.
 
 
 | Parameter | Value | Description |
@@ -15,7 +17,7 @@ BABE (Blind Assignment for Blockchain Extension) provides slot-based block autho
 
 
 ## Block Finalization
-GRANDPA (GHOST-based Recursive ANcestor Deriving Prefix Agreement) is a block finalization algorithm designed to work alongside block production mechanisms such as BABE.
+[GRANDPA](https://paritytech.github.io/polkadot-sdk/master/sc_consensus_grandpa/index.html) (GHOST-based Recursive ANcestor Deriving Prefix Agreement) is a block finalization algorithm designed to work alongside block production mechanisms such as BABE.
 
 On a high level, the GRANDPA algorithm follows these steps:
 

@@ -4,6 +4,8 @@ title: New Horizen Proof Verification Chain
 
 # New Horizen Proof Verification Chain
 
+![alt_text](/img/docs/nharch/nharch.png)
+
 New Horizen is made of five core components that are defined below.
 
 ## Mainchain

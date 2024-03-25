@@ -6,16 +6,19 @@ title: Smart Contract Functionality
 
 ## Overview
 
-Have a new Smart Contract deployed on Ethereum where an authorized NH entity publishes the proof verification result. This smart contract:
-- Inherits from AccessControl.
-- Keeps the attestations as storage variables.
+The New Horizen Smart Contract is deployed on Ethereum, where it receives an attestation from the New Horizen authorized relayer.
+
+## Storage Variables
+
+The New Horizen Smart Contract keeps the attestations as storage variables:
 
 ```
 mapping(uint256 => bytes32) public proofsAttestations;
 ```
 
-- Has a method to submit new attestations.
+## Methods
 
+### Submit Attestation Method
 ```
 function submitAttestation(
    uint256 _attestationId,
@@ -23,12 +26,12 @@ function submitAttestation(
 )external onlyRole(ADMIN);
 ```
 
-- Which verify that the attestation id is incremental (newAttestationId = latestAttestationId + 1) if and only if this check is enabled, so we need to add a configuration flag somewhere.
-    * For the initial delivery, we will have a very simple relayer that will be replaced with a proper production-ready bridge for later milestones. As such, we don’t want the attestation publishing being stopped due to some unexpected errors, so we can initially skip this check and keep publishing attestations and, if there are holes, submit them manually later.
-- Add a new entry to the mapping using the newAttestationId and storing the newAttestation.
-- Emit a new `AttestationPosted(attestationId, attestation)` event.
+- Verifies that the attestation id is incremental (newAttestationId = latestAttestationId + 1) if and only if this check is enabled. For Milestone 1.1, we have a very simple relayer that will be replaced with a proper production-ready bridge for later milestones. As such, we don’t want the attestation publishing being stopped due to some unexpected errors, so we can initially skip this check and keep publishing attestations and, if there are holes, submit them manually later.
+- Adds a new entry to the mapping using the newAttestationId and storing the newAttestation.
+- Emits a new AttestationPosted(attestationId, attestation) event.
 
-Another method might be useful in situations when the relayer goes down for some reasons and gets back online when multiple attestations have been published on NH:
+### Submit Attestations Batch Method
+This method is used in the situation when multiple attestations have been published on New Horizen while the relayer is down but recovers later on.
 
 ```
 function submitAttestationsBatch(
@@ -36,12 +39,13 @@ function submitAttestationsBatch(
    bytes32[] _proofsAttestations
 )external onlyRole(ADMIN);
 ```
+- Checks that `_attestationIds.len() == _proofsAttestations.len()`.
+- Invokes multiple times the `submitAttestation` method.
 
-- Checks that _attestationIds.len() == _proofsAttestations.len().
-- Invokes multiple times the submitAttestation method.
-It’s a bit cheaper than calling submitAttestation externally multiple times, as you’ll pay the initial gas fee only one time, plus it avoids edge cases related to Ethereum nonce management.
+It’s a bit cheaper than calling submitAttestation externally multiple times, as you’ll pay the initial gas fee only one time.   Additionally, it avoids edge cases related to Ethereum nonce management.
 
-- Has a method to be called by proof submitters’ contracts to verify that their proof has been attested by a published attestation.
+### Verify Proof Attestation Method
+This method is used by proof submitters’ contracts to verify that their proof has been attested by a published attestation.
 
 ```
 function verifyProofAttestation(
@@ -50,14 +54,13 @@ function verifyProofAttestation(
       bytes calldata _merklePath,
       uint32 _number_of_leaves,
       uint256 _index
-) external view returns (bool)
+   ) external view returns (bool)
 ```
-Which:
-- Checks _attestationId exists in the proofsAttestations storage mapping.
-- Computes claimedAttestation = apply(_leaf, _merklePath, _index).
-- Returns claimedAttestation ==  proofsAttestation[_attestationId].
 
+- Checks `_attestationId` exists in the `proofsAttestations` storage mapping.
+- Computes `claimedAttestation = apply(_leaf, _merklePath, _index)`.
+- Returns `claimedAttestation ==  proofsAttestation[_attestationId]`.
 
-The verification of the Merkle Path is carried out by employing the Merkle.sol library contract provided by EigenDA. We preferred this choice over OpenZeppelin as it is assuming that both leaves and internal nodes are ordered lexicographically, which is something not necessarily true for us; moreover, EigenDA implementation is more optimized.
+The verification of the Merkle path is carried out by employing the [Merkle.sol](https://github.com/HorizenLabs/CDK_contracts/blob/bp/nh_wip/contracts/lib/Merkle.sol) library contract provided by **EigenDA**. We preferred this choice over OpenZeppelin, as it is assuming that both leaves and internal nodes are ordered lexicographically, which is something not necessarily true for us.  Moreover, **EigenDA** implementation is more optimized.
 
-However, such implementation needs to be modified to accommodate the fact that Substrate uses a slightly optimized version of a Binary Merkle tree, while the contract assumes the Merkle Tree to be always complete and balanced. Please refer to the Substrate source code for more info.
+However, such implementation needs to be modified to accommodate the fact that Substrate uses a slightly optimized version of a Binary Merkle tree, while the contract assumes the Merkle tree to be always complete and balanced. Please refer to the Substrate [source code](https://github.com/paritytech/polkadot-sdk/blob/b0741d4f78ebc424c7544e1d2d5db7968132e577/substrate/utils/binary-merkle-tree/src/lib.rs#L237) for more info.

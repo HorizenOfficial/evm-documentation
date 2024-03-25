@@ -1,10 +1,8 @@
 ---
-title: Attestation Mechanism Initial Functionality
+title: Attestation Mechanism Functionality
 ---
 
-# Attestation Mechanism Initial Functionality
-
-## Initial Functionality
+# Attestation Mechanism Functionality
 
 We start with a centralized approach where the attestation will be posted on the target settlement chain by an authorized relayer controlled by Horizen. The relayer:
 
@@ -21,7 +19,7 @@ The policy leading to the publication of a new attestation is met when one of th
 - Last published attestation is older than T seconds and there is at least one proof in the new tree.
 - A root user forces the emission of the event.
 
-Note this attestation submission mechanism will cost around 40k-50k gas.  How frequently an attestation should be relayed to a given chain is not a trivial question and it is influenced by different factors:
+Note this attestation submission mechanism will cost around 40k-50k gas.  How frequently an attestation should be relayed to a given chain is influenced by different factors:
 
 - Usage of New Horizen Mainchain.
 - The fees to be paid by NH to post an attestation on-chain and by users to verify on-chain that their proof is part of the attestation.
