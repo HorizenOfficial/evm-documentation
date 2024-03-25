@@ -26,7 +26,7 @@ function submitAttestation(
 )external onlyRole(ADMIN);
 ```
 
-- Verifies that the attestation id is incremental (newAttestationId = latestAttestationId + 1) if and only if this check is enabled. For Milestone 1.1, we have a very simple relayer that will be replaced with a proper production-ready bridge for later milestones. As such, we don’t want the attestation publishing being stopped due to some unexpected errors, so we can initially skip this check and keep publishing attestations and, if there are holes, submit them manually later.
+- Verifies that the attestation id is incremental (`newAttestationId = latestAttestationId + 1`) if and only if this check is enabled.
 - Adds a new entry to the mapping using the newAttestationId and storing the newAttestation.
 - Emits a new AttestationPosted(attestationId, attestation) event.
 
