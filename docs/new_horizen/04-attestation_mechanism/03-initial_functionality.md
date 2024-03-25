@@ -8,13 +8,11 @@ title: Attestation Mechanism Initial Functionality
 
 We start with a centralized approach where the attestation will be posted on the target settlement chain by an authorized relayer controlled by Horizen. The relayer:
 
-- Connects to an Ethereum client
-- Connects to a NH validator node
-- Queries the NH Contract to check the latest published eth_last_attestation_id
-- Queries the NH validator node to retrieve the latest nh_last_attestation_id
-- If nh_last_attestation_id > eth_last_attestation_id  then the last nh_last_attestation_id - eth_last_attestation_id are posted by invoking either the submitAttestation or submitAttestationsBatch smart contract method
-    * This provides some degree of robustness against disconnections of the relayer/reverted transactions.
-    * Further work is required in this regard, but considering that we are going to deprecate this centralized layer in favor of a more decentralized and robust bridge, it’s definitely not worth the effort.
+- Connects to an Ethereum client.
+- Connects to a NH validator node.
+- Queries the NH Contract to check the latest published `eth_last_attestation_id`.
+- Queries the NH validator node to retrieve the latest `nh_last_attestation_id`
+- If `nh_last_attestation_id > eth_last_attestation_id`,  then the last `nh_last_attestation_id - eth_last_attestation_id` are posted by invoking either the `submitAttestation` or `submitAttestationsBatch` smart contract method. This provides some degree of robustness against disconnections of the relayer and reverted transactions.
 
 The deliverable is a Docker Image that will bootstrap an Ethereum client equipped with write access to NHPV.sol and Sepolia ETH funds.
 
