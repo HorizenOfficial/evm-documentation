@@ -14,7 +14,6 @@ Signature: submitProof(proof, public_inputs) -> Result<tx_hash, Error>
 
 In case of success, the proof is included in the mempool, relayed, and eventually included in a proposed block and then finalized.
 
-**Note:** each different proof verification pallet will expose this API.
 
 ## RPC Commands
 - **Endpoint:** PoE (Proof of Existence)
