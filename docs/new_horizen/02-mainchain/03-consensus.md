@@ -39,5 +39,5 @@ On a high level, the GRANDPA algorithm follows these steps:
 
 | Parameter | Value | Description |
 | --- | --- | --- |
-| Session | 600 slots |A period that has a constant set of validators. They can only join or exit the validator set at a session change. |
+| Session | 600 slots |A period that has a constant set of validators. Validators can only join or exit the validator set at a session change. |
 | Era | 6 sessions | At the end of any era, there is the election of the next validators and the payout of the rewards. |
