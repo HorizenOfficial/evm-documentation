@@ -21,7 +21,7 @@ keccak256(“fflonk”, public_inputs)
 ```
 
 ## Pallets
-Three pallets have been developed and introduced in the runtime in order to accommodate the requirements:
+Three pallets have been developed in the runtime to accommodate the requirements:
 
 
 - **settlement-fflonk:** Contains the definition of the `submitProof` transaction and the logic to parse public inputs and verify the proof, invoking our `fflonk-verifier` crate. Once a proof is verified, it’s inserted into the merkle tree whose attestation is next to be published.
