@@ -22,4 +22,4 @@ In case of success, the proof is included in the mempool, relayed, and eventuall
 Signature: proofPath(attestation_id, proof_leaf) -> Result<merkle_path, Error> Type: non-blocking
 ```
 
-For the initial launch, the management of the calls to these APIs is “embedded” into the PolygonCDK core code and is not available out-of-the-box to the end user.
+Currently these APIs are “embedded” into the PolygonCDK core code and not available the end user.
