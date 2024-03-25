@@ -7,7 +7,7 @@ Below are the details about the API interface exposed by the Mainchain node to P
 
 ## SettlementFflonkPallet
 - **Type:** non-blocking
-- **Description:** submit the proof and return the transaction hash if it is valid, Error otherwise.
+- **Description:** submit the proof and return the transaction hash if it is valid, error otherwise.
 ```
 Signature: submitProof(proof, public_inputs) -> Result<tx_hash, Error>
 ```
