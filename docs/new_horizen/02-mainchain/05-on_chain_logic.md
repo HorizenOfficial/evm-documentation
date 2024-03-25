@@ -10,8 +10,8 @@ The flow will be the following:
 1. A user (rollup / zkApp) submits the proof via our API.
 2. If the proof is valid, it is relayed by the consensus and eventually included in a Mainchain block; otherwise the transaction reverts with an error.
 3. The failing transaction will be included in the block anyway, and the user will pay fees for it. This is to prevent DoS attacks.
-4. When the block in which the proof was posted is finalized,  a ProofVerified event is emitted, containing a proof_leaf and an attestation_id value.
-5. When a predefined policy is met, a Merkle tree for the attestation_id is generated and a new Attestation event emitted with id and root fields.
+4. When the block in which the proof was posted is finalized,  a `ProofVerified` event is emitted, containing a `proof_leaf` and an `attestation_id` value.
+5. When a predefined policy is met, a Merkle tree for the `attestation_id` is generated and a new Attestation event emitted with `id` and `root` fields.
 
 
 In this phase, we use just a single type of verifier (fflonk) with a predetermined verification key. The `proof_leaf` will be:
