@@ -12,7 +12,7 @@ The attestation data structure is a digitally-signed message that contains:
 
 ![alt_text](/img/docs/attestation/attestation_data_structure.png)
 
-In order to prove that a given proof is part of the attestation, the user supplies a Merkle Proof (Path) leading from its proof to the Merkle Root (attestation).
+In order to prove that a given proof is part of the attestation, the user supplies a Merkle proof (path) leading from its proof to the Merkle root (attestation).
 
 ![alt_text](/img/docs/attestation/attestation_data_structure2.png)
 
