@@ -7,7 +7,7 @@ title: New Horizen Proof Verification Chain
 New Horizen is made of five core components that are defined below.
 
 ## Mainchain
-This is an L1 Proof of Stake blockchain implemented as a Substrate Relay Chain. Its main responsibilities, besides exchanging Zen, the primary token of the chain, are to receive, verify, and store validity proofs.  It houses the verifier modules, such as the Fflonk native verifier.  In some other documents, this component may also be referred to as the Proof Verification Chain.
+This is an L1 Proof of Stake blockchain implemented as a Substrate Relay Chain. Its main responsibilities, besides exchanging $ZEN, the primary token of the chain, are to receive, verify, and store validity proofs.  It houses the verifier modules, such as the Fflonk native verifier.  In some other documents, this component may also be referred to as the Proof Verification Chain.
 
 ## Proof Submission Interface
 Proof Submission Interface: This is the interface (i.e. transactions and RPC calls) used by clients (zk rollups and zkapps) to submit proofs to New Horizen for verification.
@@ -18,8 +18,7 @@ The protocol leading to publication of the Merkle root (of the proof tree) onto 
 ## New Horizen Smart Contract
 The core responsibility of this smart contract (NewHorizenProofVerifier.sol) is to store new attestations, validate them, and provide capabilities for NH users to verify that their proof is part of the attestation.
 
-
 ## Proof Submitters
-Users interested in verifying proof on NH because:
+Users interested in verifying proofs on NH because:
  - It is cheaper than doing it on a given settlement layer (e.g. Ethereum).
  - For notarization/timestamping purposes.

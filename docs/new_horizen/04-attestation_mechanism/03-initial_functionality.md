@@ -29,4 +29,4 @@ Note this attestation submission mechanism will cost around 40k-50k gas.  How fr
 - Usage of New Horizen Mainchain.
 - The fees to be paid by NH to post an attestation on-chain and by users to verify on-chain that their proof is part of the attestation.
 - Users’ choice in terms of cost-finality tradeoff.
-- Decoupling of NH Mainchain from the chain(s) on which posting the attestations.
+- Decoupling of NH Mainchain from the chain(s) which are posting the attestations.
