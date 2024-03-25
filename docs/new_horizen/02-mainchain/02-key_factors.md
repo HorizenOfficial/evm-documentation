@@ -19,6 +19,6 @@ Additionally, it is written in Rust, a modern programming language that is the t
 The community around Polkadot and other Substrate-based chains (both parachains and solo chains) is very big and active. The framework is currently used by more than 150 projects. Its GitHub repository constantly receives hundreds of contributions every month.
 
 ## Consensus
-Everything already said about modularity applies to consensus as well. Substrate has some built-in mechanisms, like PoW, Aura, Babe, and GRANDPA.  New Horizen uses Babe for block authoring to allow validators to produce new blocks based on their staking and the evaluation of a VRF function, while GRANDPA is the choice for block finalization.
+Everything already said about modularity applies to consensus as well. Substrate has some built-in mechanisms, like PoW, Aura, BABE, and GRANDPA.  New Horizen uses BABE for block authoring to allow validators to produce new blocks based on their staking and the evaluation of a VRF function, while GRANDPA is used for block finalization.
 
 The mix of these two mechanisms provides high availability as blocks can always be produced with Babe, even though forks and chain reorganizations can happen (deterministic finality), but also a reduced time to deterministic finality when the supermajority of validators completes GRANDPA rounds.  Overall, this consensus has several similarities with Gasper (Ethereum) and Ouroboros Praos (Cardano).
