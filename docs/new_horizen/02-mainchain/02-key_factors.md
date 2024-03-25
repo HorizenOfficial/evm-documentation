@@ -13,7 +13,7 @@ Substrate is at the core of the Polkadot ecosystems and it’s successfully used
 
 ## Performance
 Despite being designed with modularity and compatibility in mind, Substrate is also very focused on efficiency and scalability. It adopts very smart technical solutions like erasure coding, blockchain state pruning, etc.
-Additionally, it is written in Rust, a modern programming language that is the top choice for blockchain projects nowadays, bringing security and performance at the same time.
+Additionally, it is written in Rust, a modern programming language that is the top choice for blockchain projects nowadays, providing both security and performance.
 
 ## Support
 The community around Polkadot and other Substrate-based chains (both parachains and solo chains) is very big and active. The framework is currently used by more than 150 projects. Its GitHub repository constantly receives hundreds of contributions every month.
