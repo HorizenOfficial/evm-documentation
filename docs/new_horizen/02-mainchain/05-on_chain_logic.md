@@ -14,7 +14,7 @@ The flow will be the following:
 5. When a predefined policy is met, a Merkle tree for the `attestation_id` is generated and a new Attestation event emitted with `id` and `root` fields.
 
 
-In this phase, we use just a single type of verifier (fflonk) with a predetermined verification key. The `proof_leaf` will be:
+Currently we use just a single type of verifier (fflonk) with a predetermined verification key. The `proof_leaf` will be:
 
 ```
 keccak256(“fflonk”, public_inputs)
