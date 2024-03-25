@@ -18,7 +18,7 @@ The deliverable is a Docker Image that will bootstrap an Ethereum client equippe
 
 ## Attestation Submission Frequency
 The policy leading to the publication of a new attestation is met when one of the following rules is satisfied:
-- Last attestation_id contains N proofs.
+- Last `attestation_id` contains N proofs.
 - Last published attestation is older than T seconds and there is at least one proof in the new tree.
 - A root user forces the emission of the event.
 
