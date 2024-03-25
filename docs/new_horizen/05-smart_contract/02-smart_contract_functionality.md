@@ -40,7 +40,7 @@ function submitAttestationsBatch(
 )external onlyRole(ADMIN);
 ```
 - Checks that `_attestationIds.len() == _proofsAttestations.len()`.
-- Invokes multiple times the `submitAttestation` method.
+- Invokes the `submitAttestation` method multiple times.
 
 It’s a bit cheaper than calling submitAttestation externally multiple times, as you’ll pay the initial gas fee only one time.   Additionally, it avoids edge cases related to Ethereum nonce management.
 
