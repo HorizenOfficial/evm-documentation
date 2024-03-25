@@ -13,7 +13,7 @@ This is an L1 Proof of Stake blockchain implemented as a Substrate Relay Chain. 
 This is the interface (i.e. transactions and RPC calls) used by clients (zk rollups and zkapps) to submit proofs to New Horizen for verification.
 
 ## Attestation Mechanism
-The protocol leading to publication of the Merkle root (of the proof tree) onto the New Horizen smart contract on Ethereum once a given publication policy is met.
+The protocol that publishes the Merkle root of the proof tree onto the New Horizen smart contract on Ethereum once a given publication policy is met.
 
 ## New Horizen Smart Contract
 The core responsibility of this smart contract (NewHorizenProofVerifier.sol) is to store new attestations, validate them, and provide capabilities for NH users to verify that their proof is part of the attestation.
