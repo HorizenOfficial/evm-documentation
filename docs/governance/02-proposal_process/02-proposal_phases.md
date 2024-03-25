@@ -10,15 +10,15 @@ The proposal process consists of nine phases as follows:
 <p></p>
 The person or people with an idea for a proposal check discussions on official channels to determine whether the idea has been previously proposed. Any idea must either:
 
-* Have not been proposed before, or 
+* Have not been proposed before, or
 
-* Be substantially different than an idea that has been previously proposed but not approved, such that there is a high likelihood of success during a community vote. 
+* Be substantially different than an idea that has been previously proposed but not approved, such that there is a high likelihood of success during a community vote.
 
 As long as one of these criteria is met, an idea may then be posted to Discourse using the template outlined in the Constitution.
 <p></p>
 <u>Phase 2: Idea Modification</u>
 <p></p>
-Once an idea is posted to Discourse, the moderator will confirm that it adheres to DAO guidelines before being made public on Discourse. Any changes to the idea at that point may only be made via the comments to the published idea on Discourse and comments must be flagged as “official” changes, as submitters will not have the opportunity to modify a proposal idea once submitted to the moderator for publication. 
+Once an idea is posted to Discourse, the moderator will confirm that it adheres to DAO guidelines before being made public on Discourse. Any changes to the idea at that point may only be made via the comments to the published idea on Discourse and comments must be flagged as “official” changes, as submitters will not have the opportunity to modify a proposal idea once submitted to the moderator for publication.
 <p></p>
 <u>Phase 3: Community Feedback</u>
 <p></p>
