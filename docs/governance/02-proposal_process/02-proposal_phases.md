@@ -40,7 +40,7 @@ The Special Council meets at least once a month to review draft proposals that a
 <p></p>
 <u>Phase 7: Voting</u>
 <p></p>
-An improvement proposal that has been approved for voting will proceed to a vote on Snapshot.  Refer to the Voting Process section [Link] for additional information on the voting process and guidelines.
+An improvement proposal that has been approved for voting will proceed to a vote on Snapshot.  Refer to the <a href='/governance/voting_process/voting_process'>Voting Process section</a> for additional information on the voting process and guidelines. 
 <p></p>
 <u>Phase 8: Cooldown Period</u>
 <p></p>
