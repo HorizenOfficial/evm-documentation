@@ -6,7 +6,7 @@ title: Attestation Mechanism Data Structure
 ## Data Structure
 
 The attestation data structure is a digitally-signed message that contains:
-- **Merkle root** of a Merkle Tree that contains proofs as leaves.
+- **Merkle root** of a Merkle tree that contains proofs as leaves.
 - **Digital signatures** of validators representing at least ⅔ of the total stake in New Horizen Mainchain.
 - An **Attestation ID**. Used for identification, synchronization, and security purposes.
 
