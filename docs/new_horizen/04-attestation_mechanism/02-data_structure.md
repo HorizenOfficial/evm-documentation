@@ -20,7 +20,7 @@ It is worth mentioning that Substrate employs a slightly optimized version of a 
 
 ![alt_text](/img/docs/attestation/substrate_optimized_merkle_tree.png)
 
-This allows us to reduce the size of the tree and, more interestingly for us, reducing the size of the merkle path for all the leaves with index between [2k , 2k-2], as a new level is added to the tree only when there are actual nodes available.
+This allows us to reduce the size of the tree and, more interestingly for us, reduces the size of the Merkle path for all the leaves with index between [2k , 2k-2], as a new level is added to the tree only when there are actual nodes available.
 In order to decouple the Mainchain from Ethereum (the chain on which the attestation) will be posted, the following assumptions are made:
 
 - The **basic operations** done by the Mainchain consensus are:
