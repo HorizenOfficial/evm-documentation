@@ -152,3 +152,57 @@ See the following Relink documentations for additional information:
 Revoke.cash is a tool that helps you manage your wallet’s token approvals on over 60 networks. When using marketplace or exchange dApps, you have to grant them permission to spend your tokens and NFTs. This is called a token approval. If you don’t revoke these approvals, the dApp can spend your tokens forever. Revoke.cash allows you to inspect and revoke the approvals that you no longer use to prevent unwanted access to your funds.
 
 See the [Revoke.cash](https://revoke.cash/) documentation for more information.
+
+## Archon
+
+One of Horizen's partners, Archon, has built a bridge on top of the LayerZero protocol.  The bridge is here:
+
+* [Archon bridge](https://bridge.archon.finance/)
+
+#### EON NETWORK :
+On the Horizen EON network, in order to received previously wrapped tokens from Ethereum and Avalanche in their original form, use the following:
+* Contract name : "Wrapped Token Bridge"
+* Contract address : 0xA2C2214dD03a60404C5AdeF4514E77fC00668592
+
+In order to send Zen or other native assets to Ethereum, use the following:
+* Contract name : "Original Token Bridge"
+* Contract address : 0x4fd89120A6d34024Cb86a9a0d7819565Fe4eC351
+
+In order to send Zen or other native assets to Avalanche, use the following:
+* Contract name : Original Token Bridge
+* Contract address : 0x7A302432D99DE20bc622e9148b690f22ef21436e
+
+Finally, the following addresses are for a variety of bridged assets:
+* EON contract address for Wrapped ETH : 0x2c2E0B0c643aB9ad03adBe9140627A645E99E054
+* EON contract address for AVAX : 0x6318374DFb468113E06d3463ec5Ed0B6Ae0F0982
+* EON contract address for USDC : 0xCc44eB064CD32AAfEEb2ebb2a47bE0B882383b53
+* EON contract address for USDT : 0xA167bcAb6791304EDa9B636C8beEC75b3D2829E6
+* EON contract address for DAI : 0x38C2a6953F86a7453622B1E7103b738239728754
+* EON contract address for LINK : 0xDF8DBA35962Aa0fAD7ade0Df07501c54Ec7c4A89
+* EON contract address for BTC : 0x1d7fb99AED3C365B4DEf061B7978CE5055Dfc1e7
+
+#### ETHEREUM NETWORK :
+On the Ethereum network, the following contract will receive Wrapped Zen (WZEN) from EON:
+* Contract name : "Wrapped Token Bridge"
+* Contract address : 0x8dE1Fb1F8a23202C7282716AE0089c6a96e07995
+
+In order to wrap native Ethereum assets and send them to EON, use the following:
+* Contract name : "Original Token Bridge"
+* Contract address : 0x954367cb2028e704B62a4093f648BE453aCA3989
+
+Finally, the contract address for Wrapped Zen on Ethereum is:
+* Contract name : "Wrapped Zen"
+* Contract address : 0xd21475D90686c9A6FDBe0849cb6670fEc2aC9E21
+
+
+#### AVALANCHE NETWORK :
+On the Avalanche network, the following contract will receive Wrapped Zen (WZEN) from EON:
+* Contract name : "Wrapped Token Bridge"
+* Contract address : 0xB2F5d60530C5E589bd9326e4c57933F611a624C6
+
+In order to wrap native Avalanche assets and send them to EON, use the following:
+* Contract name : "Original Token Bridge"
+* Contract address : 0x0c81b1905125ED89C42a0aDa098adfd461f8A9C5
+
+Finally, the contract address for Wrapped Zen on Avalanche is:
+* Wrapped ZEN : 0xAA1dA1591cBF7f2Df46884E7144297FF15Ea3a7f

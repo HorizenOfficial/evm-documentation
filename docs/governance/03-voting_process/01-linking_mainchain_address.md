@@ -2,22 +2,26 @@
 title: Linking Mainchain and EON $ZEN Addresses
 ---
 
-Because Snapshot is not compatible with Horizen’s mainchain, it has been integrated into EON, which is Ethereum-compatible. This means that $ZEN tokenholders will need to “link” their mainchain $ZEN address with an EON address in order to capture their full voting power for proposals in Snapshot. 
+| :warning: Disclaimer          |
+|:---------------------------|
+| There is currently only technical support for linking balances held in Sphere to EON addresses.  Other wallets like Arizen, Myzenwallet, etc. are unsupported for linking as are exchange balances.  Moving Zen to Sphere is the only officially supported way to link Horizen Zen to EON.     |
+
+Because Snapshot is not compatible with Horizen’s mainchain, it has been integrated into EON, which is Ethereum-compatible. This means that $ZEN tokenholders will need to “link” their mainchain $ZEN address with an EON address in order to capture their full voting power for proposals in Snapshot.
 
 ## Overview
 
-To enable voting power to all accounts within the Horizen ecosystem, the **Governance Linking** app provides a mechanism to link multiple mainchain addresses to one EON address. Upon linking, a user’s voting power for the Horizen DAO will be the sum total of their ZEN balance on EON, plus the ZEN balance of all of their linked mainchain addresses. This makes it easier for users to vote with the totality of their ZEN without having to move assets. 
+To enable voting power to all accounts within the Horizen ecosystem, the **Governance Linking** app provides a mechanism to link multiple mainchain addresses to one EON address. Upon linking, a user’s voting power for the Horizen DAO will be the sum total of their ZEN balance on EON, plus the ZEN balance of all of their linked mainchain addresses. This makes it easier for users to vote with the totality of their ZEN without having to move assets.
 
 IMPORTANT NOTE: At this time, only $ZEN held in Sphere or on EON at the time of the voting snapshot will count towards voting power. $ZEN held elsewhere will not be captured. In advance of any vote, please ensure that all $ZEN you wish to vote with is held in Sphere or EON by the snapshot date. This date will be communicated to the community well before any vote.
 
 ### Configuring a Network
 
-Before linking to an EON address, make sure that the appropriate network is available. If not, add the network to the EON wallet and set it as the primary network. 
+Before linking to an EON address, make sure that the appropriate network is available. If not, add the network to the EON wallet and set it as the primary network.
 
 See [Connect your Wallet](/horizen_eon/connect/connect_your_wallet) in the EON documentation.
 
 
-## Linking Addresses 
+## Linking Addresses
 
 Perform the following steps to link one EON address to one or more mainchain addresses.
 
@@ -25,16 +29,16 @@ Perform the following steps to link one EON address to one or more mainchain add
 
 
 
-1. Open the [Horizen Governance](https://eon.horizen.io/governance/dao) page. 
+1. Open the [Horizen Governance](https://eon.horizen.io/governance/dao) page.
 
 
 <p>
 <img src={require("/img/docs/dao/dao_gov_landingpage.png").default} alt="Gov Landing Page" width="700" height="500" />
 </p>
 
-2. Click **Connect Wallet**. The EON wallet (MetaMask) appears in the top-right corner. Once connected, the **EON address** field is automatically filled with the connected EON address. 
+2. Click **Connect Wallet**. The EON wallet (MetaMask) appears in the top-right corner. Once connected, the **EON address** field is automatically filled with the connected EON address.
 
-**Note:** If the EON wallet (MetaMask) was previously connected to the Horizen Governance app, then it is automatically connected. 
+**Note:** If the EON wallet (MetaMask) was previously connected to the Horizen Governance app, then it is automatically connected.
 
 <p>
 <img src={require("/img/docs/dao/dao_gov_walletconnected2.png").default} alt="Wallet Connected" width="300" height="200" />
@@ -79,7 +83,7 @@ Perform the following steps to link one EON address to one or more mainchain add
 
 
 
-9. The **Sign message with address** pop-up appears. Paste the EON address in the message field. 
+9. The **Sign message with address** pop-up appears. Paste the EON address in the message field.
 
 <p>
 <img src={require("/img/docs/dao/dao_sphere_sigcreate7.png").default} alt="Create Signature" width="300" height="200" />
@@ -124,16 +128,16 @@ Perform the following steps to link one EON address to one or more mainchain add
 
 
 
-15. The **Linked Address** appears showing that the EON Address and Mainchain Address are linked. 
+15. The **Linked Address** appears showing that the EON Address and Mainchain Address are linked.
 
 <p>
 <img src={require("/img/docs/dao/dao_gov_linkmultiple4.png").default} alt="Addresses Linked" width="300" height="200" />
 </p>
 
 
-#### Link Multiple Mainchain Addresses 
+#### Link Multiple Mainchain Addresses
 
-Repeat the steps discussed in Linking Addresses to link additional mainchain addresses with the EON address. 
+Repeat the steps discussed in Linking Addresses to link additional mainchain addresses with the EON address.
 
 
 #### Unlink an Account
