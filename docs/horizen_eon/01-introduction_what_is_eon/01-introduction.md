@@ -1,12 +1,8 @@
 ---
 title: Introduction
 description: Learn more about the Horizen ecosystem and products, including Horizen EON, governance, and more.
+slug: '/horizen_eon'
 ---
-
-<head>
-  <title>Horizen Documentation</title>
-</head>
-
 
 | :warning: Disclaimer          |
 |:---------------------------|
