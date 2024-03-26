@@ -2,6 +2,9 @@
 title: Introduction to New Horizen
 slug: '/'
 ---
+<head>
+  <title>Horizen Documentation</title>
+</head>
 
 # New Horizen
 
