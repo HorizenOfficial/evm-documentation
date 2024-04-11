@@ -166,12 +166,26 @@ Before you can link your multisignature wallet you need to first create signatur
 
 1. Open Sphere and login to your account.
 2. On the left hand navigation, select the Wallet that is associated with (a signer of) the multisignature wallet you are trying to link.
-3. You will now be shown a list of addresses associated with that wallet. Select the handwriting icon for the address in question.
+3. You will now be shown a list of addresses associated with that wallet. Select the _handwriting icon_ for the address in question.
+
+<p>
+<img src={require("/img/docs/dao/dao_linking_sphere_icon.png").default} alt="Sphere Handwriting Icon" width="300" height="200" />
+</p>
+
+
+
 4. Next you will be shown a window for you to sign a message. Steps for this part are as follows:
     - Enter a value into the textbox which is a combination of the **multisignature address** and **EON address** you are trying to link.
         - Example: If your EON address is _ABC_ and your multisignature address is _XYZ_, then the value you should enter is as follows: _ABCXYZ_.
     - Select the **Create Signature** button. 
     - Once your signature is shown to you, copy it to the clipboard by clicking the **Copy to Clipboard** button.
+
+<p>
+<img src={require("/img/docs/dao/dao_linking_sphere_sig.png").default} alt="Sphere Handwriting Icon" width="300" height="200" />
+</p>
+
+
+
 5. Save this signature somewhere as it will be used in the **Linking Your Multisig** step.
 
 
@@ -185,8 +199,20 @@ Make sure you have created signatures for each wallet signer before beginning th
 2. On the left hand navigation select _Governance -> Horizen DAO_ and you will be brought to the wallet linking page.
 3. Connect your wallet by clicking the **Connect Wallet** button on the top right of the screen. 
 4. Select the **Link Mainchain Address** button.
+
+<p>
+<img src={require("/img/docs/dao/dao_linking_link_modal.png").default} alt="Linking Modal" width="300" height="200" />
+</p>
+
+
+
 5. Once selected, the **Link Address** modal will appear.
     - Enter the mainchain address (multisignature) into the _Mainchain Address_ field. This is the mainchain multisignature address you want to link to your EON address. 
+
+    <p>
+    <img src={require("/img/docs/dao/dao_linking_link_modal_form.png").default} alt="Linking Modal Form" width="300" height="200" />
+    </p>
+
     - Enter the first signature in the _Mainchain Signature_ field
     - Select the **Advanced (Multisig)** dropdown towards the bottom of the modal. This will open a new set of fields for you to enter.
         - Enter the redeem script into the _Redeem Script_ field. This is the redeem script which was generated when you originally created your multisignature wallet. 
@@ -194,6 +220,12 @@ Make sure you have created signatures for each wallet signer before beginning th
         - If there are more signatures please repeat the step by:
             - Selecting the **Add Signature** button.
             - Entering the subsequent signature into the new field that is displayed. 
+
+            <p>
+            <img src={require("/img/docs/dao/dao_linking_link_modal_form_filled.png").default} alt="Linking Modal Form" width="300" height="200" />
+            </p>
+
+
 6. Once all of the signatures have been added, select the **Link** button at the bottom of the modal. If all information was entered correctly then your wallets will be linked successfully.
 
 **Note:** In case of a failure, it’s important to follow the steps very carefully. There is a higher likelihood of mistakes in the values entered because there are many steps and multiple individuals involved in this process.
