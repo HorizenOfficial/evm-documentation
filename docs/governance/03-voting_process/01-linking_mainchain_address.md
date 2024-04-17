@@ -159,3 +159,73 @@ To unlink an account (mainchain address), perform the following steps:
 
 
 3. Click **Unlink**. The selected mainchain address is unlinked and no longer listed in the **Linked Address** pane.
+
+### Linking a Multisignature Wallet
+#### Generating Signatures for Multisig Wallets
+Before you can link your multisignature wallet you need to first create signatures for each of the signers for the multisignature address. In order to create a signature you will need the Sphere Wallet desktop application. Each signer will have to repeat the steps outlined below. 
+
+1. Open Sphere and login to your account.
+2. On the left hand navigation, select the Wallet that is associated with (a signer of) the multisignature wallet you are trying to link.
+3. You will now be shown a list of addresses associated with that wallet. Select the _handwriting icon_ for the address in question.
+
+<p>
+<img src={require("/img/docs/dao/dao_linking_sphere_icon.png").default} alt="Sphere Handwriting Icon" width="300" height="200" />
+</p>
+
+
+
+4. Next you will be shown a window for you to sign a message. Steps for this part are as follows:
+    - Enter a value into the textbox which is a combination of the **multisignature address** and **EON address** you are trying to link.
+        - Example: If your EON address is 0x7Ad67fa4da9f069940GE0A117A1ae57B0Eea4b49 and your multisignature address is zrAyfokUPmXVvmDAzXgCHJ6dpKqXnCwU6EK, then the value you should enter is as follows: 0x7Ad67fa4da9f069940GE0A117A1ae57B0Eea4b49zrAyfokUPmXVvmDAzXgCHJ6dpKqXnCwU6EK.
+    - Select the **Create Signature** button. 
+    - Once your signature is shown to you, copy it to the clipboard by clicking the **Copy to Clipboard** button.
+
+<p>
+<img src={require("/img/docs/dao/dao_linking_sphere_sig.png").default} alt="Sphere Handwriting Icon" width="300" height="200" />
+</p>
+
+
+
+5. Save this signature somewhere as it will be used in the **Linking Your Multisig** step.
+
+
+**Note**: Each user that is a signer to the multisignature wallet needs to repeat the steps above. For example, if there are four signers, then four signatures are needed. Once this is completed you can move to the **Linking Your Multisig** step.
+
+
+#### Linking Your Multisig Wallet
+Make sure you have created signatures for each wallet signer before beginning this step.
+
+1. Go to the EON dApp via [https://eon.horizen.io/app/start-here](https://eon.horizen.io/app/start-here).
+2. On the left hand navigation select _Governance -> Horizen DAO_ and you will be brought to the wallet linking page.
+3. Connect your wallet by clicking the **Connect Wallet** button on the top right of the screen. 
+4. Select the **Link Mainchain Address** button.
+
+<p>
+<img src={require("/img/docs/dao/dao_linking_link_modal.png").default} alt="Linking Modal" width="300" height="200" />
+</p>
+
+
+
+5. Once selected, the **Link Address** modal will appear.
+    - Enter the mainchain address (multisignature) into the _Mainchain Address_ field. This is the mainchain multisignature address you want to link to your EON address. 
+
+    <p>
+    <img src={require("/img/docs/dao/dao_linking_link_modal_form.png").default} alt="Linking Modal Form" width="300" height="200" />
+    </p>
+
+    - Enter the first signature in the _Mainchain Signature_ field
+    - Select the **Advanced (Multisig)** dropdown towards the bottom of the modal. This will open a new set of fields for you to enter.
+        - Enter the redeem script into the _Redeem Script_ field. This is the redeem script which was generated when you originally created your multisignature wallet. 
+        - You will see an additional field with a label “Enter mainchain signature #2”. Enter the second signature you have.
+        - If there are more signatures please repeat the step by:
+            - Selecting the **Add Signature** button.
+            - Entering the subsequent signature into the new field that is displayed. 
+
+            <p>
+            <img src={require("/img/docs/dao/dao_linking_link_modal_form_filled.png").default} alt="Linking Modal Form" width="300" height="200" />
+            </p>
+
+
+6. Once all of the signatures have been added, select the **Link** button at the bottom of the modal. If all information was entered correctly then your wallets will be linked successfully.
+
+**Note:** In case of a failure, it’s important to follow the steps very carefully. There is a higher likelihood of mistakes in the values entered because there are many steps and multiple individuals involved in this process.
