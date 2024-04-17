@@ -176,7 +176,7 @@ Before you can link your multisignature wallet you need to first create signatur
 
 4. Next you will be shown a window for you to sign a message. Steps for this part are as follows:
     - Enter a value into the textbox which is a combination of the **multisignature address** and **EON address** you are trying to link.
-        - Example: If your EON address is _ABC_ and your multisignature address is _XYZ_, then the value you should enter is as follows: _ABCXYZ_.
+        - Example: If your EON address is 0x7Ad67fa4da9f069940GE0A117A1ae57B0Eea4b49 and your multisignature address is zrAyfokUPmXVvmDAzXgCHJ6dpKqXnCwU6EK, then the value you should enter is as follows: 0x7Ad67fa4da9f069940GE0A117A1ae57B0Eea4b49zrAyfokUPmXVvmDAzXgCHJ6dpKqXnCwU6EK.
     - Select the **Create Signature** button. 
     - Once your signature is shown to you, copy it to the clipboard by clicking the **Copy to Clipboard** button.
 
