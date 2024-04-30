@@ -7,6 +7,7 @@ This quick guide is meant to help you go over the simple steps to vote on ZENIPs
 ## FAQ
 
 1. **How much voting power do I have?**
+
 Your voting power is a sum of the following criteria:
 * ZEN in your EON wallet.
 * ZEN in your linked mainchain wallet.
@@ -15,6 +16,7 @@ Your voting power is a sum of the following criteria:
 Please note that Horizen uses Snapshot for voting. This means that your voting power will be a total of the items above at a specific block height on EON. If token values change after that specified block height it will not be included in your voting power. 
 
 2. **How do I link my mainchain wallet to my EON address?**
+
 Being that many users prefer to keep their ZEN on Horizen’s mainchain we’ve made it possible to vote on proposals while keeping ZEN on the mainchain. Please use the following guide to link your mainchain and EON addresses: 
 
 [https://docs.horizen.io/governance/voting_process/linking_mainchain_address/](https://docs.horizen.io/governance/voting_process/linking_mainchain_address/)
