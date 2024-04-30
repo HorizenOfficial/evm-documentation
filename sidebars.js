@@ -329,6 +329,10 @@ module.exports = {
           type: 'doc',
           id: 'governance/voting_process/delegation',
         },
+        {
+          type: 'doc',
+          id: 'governance/voting_process/quick_voting_guide',
+        },
       ],
     },
     {
