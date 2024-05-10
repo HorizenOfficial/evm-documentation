@@ -92,7 +92,7 @@ module.exports = {
         },
         {
           type: 'doc',
-          id: 'horizen_eon/staking/run_a_forger_node',
+          id: 'horizen_eon/staking/node_types_on_eon',
         },
         {
           type: 'doc',
