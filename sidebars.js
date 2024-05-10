@@ -132,6 +132,10 @@ module.exports = {
       items: [
         {
           type: 'doc',
+          id: 'horizen_eon/tutorials/forger_node_setup_guide',
+        },
+        {
+          type: 'doc',
           id: 'horizen_eon/tutorials/thirdweb',
         },
         {
