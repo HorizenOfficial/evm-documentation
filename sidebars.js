@@ -70,10 +70,6 @@ module.exports = {
         },
         {
           type: 'doc',
-          id: 'horizen_eon/develop_and_deploy_smart_contracts/local_build_and_deploy',
-        },
-        {
-          type: 'doc',
           id: 'horizen_eon/develop_and_deploy_smart_contracts/verying_a_smart_contract',
         },
         {
@@ -97,10 +93,6 @@ module.exports = {
         {
           type: 'doc',
           id: 'horizen_eon/staking/how_to_stake_on_eon',
-        },
-        {
-          type: 'doc',
-          id: 'horizen_eon/staking/forger_node',
         },
         {
           type: 'doc',
