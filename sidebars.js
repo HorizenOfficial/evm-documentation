@@ -97,10 +97,6 @@ module.exports = {
         {
           type: 'doc',
           id: 'horizen_eon/staking/pause_forging',
-        },
-        {
-          type: 'doc',
-          id: 'horizen_eon/staking/faq',
         }
       ],
     },
@@ -125,6 +121,10 @@ module.exports = {
         {
           type: 'doc',
           id: 'horizen_eon/tutorials/forger_node_setup_guide',
+        },
+        {
+          type: 'doc',
+          id: 'horizen_eon/tutorials/faq',
         },
         {
           type: 'doc',
