@@ -43,7 +43,7 @@ Additionally, each forger earns all the forger tips of the transactions included
 
 Withdrawal epoch length is based on the number of mainchain blocks referenced by the sidechain: each epoch switch happens every 100 mainchain blocks. Given that in the mainchain a block is forged on average every 2 minutes and 30seconds, it takes approximately 4 hours to switch a withdrawal epoch.
 
-Fee payments are calculated automatically by every node and enforced at consensus level. They can also be checked in the EON Explorer at this address: [https://eon-explorer.horizenlabs.io/fee-payment](https://eon-explorer.horizenlabs.io/fee-payment)
+Fee payments are calculated automatically by every node and enforced at consensus level. They can also be checked in the EON Explorer at this address: [https://eon-explorer.horizenlabs.io/fee-payments](https://eon-explorer.horizenlabs.io/fee-payments)
 
 ### How to check epoch slot data?
 Use this http endpoint on the node to check the current epoch/slot: 
