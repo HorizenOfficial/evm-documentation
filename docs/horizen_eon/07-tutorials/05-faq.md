@@ -236,7 +236,7 @@ SCNODE_NET_MAX_OUT_CONNECTIONS=25
 SCNODE_FORGER_MAXCONNECTIONS=100
 ```
 
-#### Legacy cpu
+#### Legacy CPU
 ```
 ZEND_TAG=v5.0.1-legacy-cpu
 ```
