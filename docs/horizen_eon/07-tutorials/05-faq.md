@@ -195,3 +195,63 @@ Nmap done: 1 IP address (1 host up) scanned in 0.31 seconds
 
 ## Logs
 
+### Check the evmapp logs
+```bash
+docker logs --tail 60 evmapp
+```
+
+If the forger does not forge a block (most of the time):
+```bash
+[INFO ] 2024-03-15 09:43:40:450 +0000 [ AbstractForger.scala:176 ][scala-execution-context-global-72] io.horizen.account.forger.AccountForger - Slot is skipped with reason: No eligible forging stake found.
+```
+
+If you forge the block, the log will say this instead:
+```bash
+[INFO ][ AbstractForger.scala:170 ] [scala-execution-context-global-51657] io.horizen.account.forger.AccountForger - Got successfully forged block with id BLOCKHASH
+```
+
+### Check that the forger is forging blocks
+```bash
+docker logs evmapp | grep forged
+```
+
+### Working with Zend
+#### Check the zend logs
+```bash
+docker logs --tail 60 zend
+```
+
+#### Get shell on zend container
+```bash
+docker exec -it zend /bin/bash
+```
+
+#### Useful tags for the evmapp .env file
+This is located in: compose-evm-simplified/deployments/forger/eon
+
+#### Connections to enable good network communication
+```
+SCNODE_NET_MAX_IN_CONNECTIONS=100
+SCNODE_NET_MAX_OUT_CONNECTIONS=25
+SCNODE_FORGER_MAXCONNECTIONS=100
+```
+
+#### Legacy cpu
+```
+ZEND_TAG=v5.0.1-legacy-cpu
+```
+
+## Using the EON Block Explorer
+*The name of your forger is the generated Ethereum (of course it means ZEN)  address of your forger*
+
+The public key of a forger node maps to the name of the forger node by the address derivation:
+
+*Public key -> Address*
+*Start with the public key (128 characters / 64 bytes)*
+
+*Take the Keccak-256 hash of the public key. You should now have a string that is 64 characters / 32 bytes. (note: SHA3-256 eventually became the standard, but Ethereum uses Keccak)*
+
+*Take the last 40 characters / 20 bytes of this public key (Keccak-256). Or, in other words, drop the first 24 characters / 12 bytes. These 40 characters / 20 bytes are the address. When prefixed with 0x it becomes 42 characters long.*
+
+
+
