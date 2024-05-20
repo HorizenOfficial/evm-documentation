@@ -410,9 +410,31 @@ git clone https://github.com/HorizenOfficial/eon-smart-contract-tools
 Using these tools will enable you stake and unstake to an EON forger node. 
 1. First, open Remix IDE by going here: [https://remix.ethereum.org/](https://remix.ethereum.org/)
 2. Next, create a workspace and name it “Forger Node”
+<p>
+<img src={require("/img/docs/tutorial/remix-create-workspace-1.png").default} alt="Remix Create Workspace" width="600" height="400" />
+</p>
+<p>
+<img src={require("/img/docs/tutorial/remix-create-workspace-2.png").default} alt="Remix Create Workspace" width="600" height="400" />
+</p>
+
 3. Import the Remix folder scripts. Click the *Upload Folder* icon as shown below. Select the following folder location which was downloaded to your computer: *eon-smart-contract-tools/contracts/forger_stake_delegation/remix*
+<p>
+<img src={require("/img/docs/tutorial/remix-file-explorer1.png").default} alt="Remix Upload Folder" width="600" height="400" />
+</p>
+<p>
+<img src={require("/img/docs/tutorial/remix-file-explorer2.png").default} alt="Remix Upload Folder" width="600" height="400" />
+</p>
+
 4. Open *delegate.js* file in the explorer window and fill in the necessary inputs. You need to fill out the following fields: **Amount**, **YOUR_BLOCK_SIGN_PUBKEY**, and **YOUR_VRF_PUBKEY**. Amount is the amount you like to stake (make sure you have this amount in your wallet). These key values are those which were given to you when setting up the forger node.
+<p>
+<img src={require("/img/docs/tutorial/remix-delegate-env.png").default} alt="Remix Update File" width="600" height="400" />
+</p>
+
 5. Go to the Deploy & run transactions and in ENVIRONMENT select Injected Provider — MetaMask. Then MetaMask will prompt you to ask what address you’d like to use. In this case, the address that has the ZEN to Stake.
+<p>
+<img src={require("/img/docs/tutorial/remix-deploy-run.png").default} alt="Remix Deploy and run transaction" width="600" height="400" />
+</p>
+
 6. Back to the file explorer section, open delegate.js and select ***run***.
 7. Accept the transaction on MetaMask. Click on, ***I want to proceed anyway and then Confirm***. (make sure you have enough ZEN left over to pay for gas). Wait until the logs say that the transaction was completed in the REMIX log section.
 8. Check your staking on the Explorer.
