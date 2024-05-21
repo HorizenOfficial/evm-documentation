@@ -16,9 +16,9 @@ To make sure the operation was successful, make a `POST` request to `/transactio
 ### When will I get a stake reward?
 The consensus epoch is 12.5 hours long, or 15000 blocks x 3 second timeslots.
 
-The chance a forger has to forger a block is the proportion of stake from the 2 previous consensus Epochs. This could be up to 25 hours ago.
+The chance a forger has to forger a block is the proportion of stake from the 2 previous consensus epochs. This could be up to 25 hours ago.
 
-Regular payments are made to forgers every 100 mainchain blocks, or about every 250 minutes (4-5 hours). This is also known as the withdrawal Epoch.
+Regular payments are made to forgers every 100 mainchain blocks, or about every 250 minutes (4-5 hours). This is also known as the withdrawal epoch.
 
 Once a week, the weekly payment is made in a single payment. It is based on the proportion of blocks the forger forged compared to all the blocks forged. This usually happens on Monday.
 
