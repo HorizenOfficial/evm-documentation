@@ -14,7 +14,7 @@ Each consensus epoch length is 15000 slots * 3 seconds per slot = 12h30minutes.
 To make sure the operation was successful, make a `POST` request to `/transaction/allForgingStakes` and verify the publicKey used to create the forger stake appears in the returned list.
 
 ### When will I get a stake reward?
-The consensus Epoch is 12.5 hours long. or 15000 blocks x 3 second timeslots.
+The consensus epoch is 12.5 hours long, or 15000 blocks x 3 second timeslots.
 
 The chance a forger has to forger a block is the proportion of stake from the 2 previous consensus Epochs. This could be up to 25 hours ago.
 
