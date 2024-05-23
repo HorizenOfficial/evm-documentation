@@ -83,12 +83,6 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: "new_horizen/introduction_what_is_nh/introduction",
-            position: "left",
-            label: "New Horizen",
-          },
-          {
             type: "doc",
             docId: "horizen_eon/introduction_what_is_eon/introduction",
             position: "left",
