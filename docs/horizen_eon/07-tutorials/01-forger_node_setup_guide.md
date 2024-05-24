@@ -3,10 +3,10 @@ title: EON Forger Node Setup Guide
 ---
 
 # Introduction
-Guide assumes you are setting up a forger node on EON mainnet. If you would like to set up a forger on Gobi testnet, replace all eon with gobi in these instructions.
+Guide assumes you are setting up a forger node on EON mainnet. If you would like to set up a forger on Gobi testnet, replace all **eon** with **gobi** in these instructions.
 
 ## Requirements
-The recent submission of **ZenIP 42206** which states that reward currently paid to **Secure Node** in the Horizen mainchain block will be redirected to an **EON Forger Subsidy Fund**. Thus, any node assigned as a **Forger Node** in the EON ecosystem must have the configuration requirements listed in the EON Forger Node Criteria. The EON Forger Node requirements can be implemented by users or blockchain providers.
+The recent submission of [**ZenIP 42206**](https://blog.horizen.io/zenip-42206-explained-redirect-horizen-secure-node-rewards-into-horizen-eon/) which states that reward currently paid to [**Secure Node**](https://blog.horizen.io/secure-node-full-deprecation-timeline-eon-forger-node-instructions/) in the Horizen mainchain block will be redirected to an **EON Forger Subsidy Fund**. Thus, any node assigned as a [**Forger Node**](https://smart-1840-update-forger-doc.evm-documentation.pages.dev/horizen_eon/tutorials/forger_node_setup_guide) in the EON ecosystem must have the configuration requirements listed in the EON Forger Node Criteria. The EON Forger Node requirements can be implemented by users or blockchain providers.
 
 ### Additional Information
 - Read the [Horizen Blog](https://blog.horizen.io/zenip-42206-explained-redirect-horizen-secure-node-rewards-into-horizen-eon/) that explains the need for a secure EON ecosystem.
