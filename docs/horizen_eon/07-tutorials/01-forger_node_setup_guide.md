@@ -391,16 +391,33 @@ Using these tools will enable you to stake and unstake your Zen to an EON forger
 </p>
 
 6. Go back to the file explorer section. Select the open delegate.js file, right-click on it, and select ***run***.
+<p>
+<img src={require("/img/docs/tutorial/remix-run-delegate.png").default} alt="Remix run file" width="600" height="400" />
+</p>
+
 7. Accept the transaction on MetaMask by clicking ***I want to proceed anyway and then Confirm***. (make sure you have enough ZEN left over to pay for gas). Wait until the logs say that the transaction was completed in the REMIX log section.
+<p>
+<img src={require("/img/docs/tutorial/metamask-warning1.png").default} alt="MetaMask Accept Transaction" width="600" height="400" />
+</p>
+<p>
+<img src={require("/img/docs/tutorial/metamask-warning2.png").default} alt="MetaMask Accept Transaction" width="600" height="400" />
+</p>
+
 8. Check your staking on the Explorer.
-    - Go to the [Forger Contract Read Functions](https://eon-explorer.horizenlabs.io/address/0x0000000000000000000022222222222222222222/read-contract#address-tabs) page.
-    - Click on the *Read Contract* tab.
-    - Connect your wallet.
-    - Go to the *GetPagedForgersStakersByUser* method and enter the following:
-        - MetaMask Address
-        - 0 for the start *index* field
-        - 1 in the PageSize field
-        - Then click on *Query*
+- Go to the [Forger Contract Read Functions](https://eon-explorer.horizenlabs.io/address/0x0000000000000000000022222222222222222222/read-contract#address-tabs) page.
+- Click on the *Read Contract* tab.
+- Connect your wallet.
+- Go to the *GetPagedForgersStakersByUser* method and enter the following:
+   - MetaMask Address
+   - 0 for the start *index* field
+   - 1 in the PageSize field
+   - Then click on *Query*
+<p>
+<img src={require("/img/docs/tutorial/explorer-staking1.png").default} alt="EON Explorer" width="600" height="400" />
+</p>
+<p>
+<img src={require("/img/docs/tutorial/explorer-staking2.png").default} alt="EON Explorer" width="600" height="400" />
+</p>
 
 This will get your forged staked info such as amount of ZEN staked, and your ***stakeId***. Save your ***stakeId*** since you will need this input to unstake your ZEN.
 
@@ -420,6 +437,9 @@ This will get your forged staked info such as amount of ZEN staked, and your ***
 ## Monitor Your Validated Blocks
 Go to the [EON Explorer](https://eon-explorer.horizenlabs.io/). Locate the Ethereum-generated address that was issued to you earlier during the Generate Keys step (these keys should always be stored in a secure location. Enter your Ethereum address in the search bar at the top right of the Explorer page and press enter.
 location).
+<p>
+<img src={require("/img/docs/tutorial/eon-explorer-address-search.png").default} alt="EON Explorer Address Search" width="600" height="400" />
+</p>
 
 All ZEN earned by validated blocks will be sent to this address, so keep this and the private key in a safe place. Go to the Blocks validated tab, and you will see all the blocks you have validated.
 
