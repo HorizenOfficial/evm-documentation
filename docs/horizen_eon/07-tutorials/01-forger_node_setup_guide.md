@@ -366,7 +366,7 @@ Using these tools will enable you to stake and unstake your Zen to an EON forger
 - Click the *Upload Folder* icon as shown below and find the folder location containing the extracted files from your downloaded zip folder (the noted download location from the previous steps above). 
 - Select the *remix* folder, which can be found under *eon-smart-contract-tools-main/contracts/forger_stake_delegation/remix*, and click *upload*. 
 
-**Before continuing, please have the key-value pairs that were created in the *Generate Keys* step ready and available to use. These values will be used in the next step.
+\*\* Before continuing, please have the key-value pairs that were created in the *Generate Keys* step ready and available to use. These values will be used in the next step.
 <p>
 <img src={require("/img/docs/tutorial/remix-file-explorer1.png").default} alt="Remix Upload Folder" width="600" height="400" />
 </p>
@@ -374,18 +374,24 @@ Using these tools will enable you to stake and unstake your Zen to an EON forger
 <img src={require("/img/docs/tutorial/remix-file-explorer2.png").default} alt="Remix Upload Folder" width="600" height="400" />
 </p>
 
-4. Open *delegate.js* file in the explorer window and fill in the necessary inputs. You need to fill out the following fields: **Amount**, **YOUR_BLOCK_SIGN_PUBKEY**, and **YOUR_VRF_PUBKEY**. Amount is the amount you like to stake (make sure you have this amount in your wallet). These key values are those which were given to you when setting up the forger node.
+4. From the *remix* folder, select the *delegate.js* file in the explorer window. Locate the section to the right and look for lines *9,10, & 11*. Fill in the following required fields: 
+- ***Amount***
+   - This is the amount you’d like to stake (make sure you have this amount in your MetaMask wallet).
+- ***YOUR_BLOCK_SIGN_PUBKEY***
+- ***YOUR_VRF_PUBKEY ***
 <p>
 <img src={require("/img/docs/tutorial/remix-delegate-env.png").default} alt="Remix Update File" width="600" height="400" />
 </p>
+***(Make sure to use double quotations around the input values. The values shown in the above screenshot are an example of how your values should be input)***
 
-5. Go to the Deploy & run transactions and in ENVIRONMENT select Injected Provider — MetaMask. Then MetaMask will prompt you to ask what address you’d like to use. In this case, the address that has the ZEN to Stake.
+5. Go to the *Deploy & run transactions* located in the left window pane of the explorer menu. Under *ENVIRONMENT* select *Injected Provider — MetaMask*.
+- You may be prompted to Connect with MetaMask, assuming this is your first time connecting your web wallet. Check the box to allow the connection, click Next, and then Confirm. 
 <p>
 <img src={require("/img/docs/tutorial/remix-deploy-run.png").default} alt="Remix Deploy and run transaction" width="600" height="400" />
 </p>
 
-6. Back to the file explorer section, open delegate.js and select ***run***.
-7. Accept the transaction on MetaMask. Click on, ***I want to proceed anyway and then Confirm***. (make sure you have enough ZEN left over to pay for gas). Wait until the logs say that the transaction was completed in the REMIX log section.
+6. Go back to the file explorer section. Select the open delegate.js file, right-click on it, and select ***run***.
+7. Accept the transaction on MetaMask by clicking ***I want to proceed anyway and then Confirm***. (make sure you have enough ZEN left over to pay for gas). Wait until the logs say that the transaction was completed in the REMIX log section.
 8. Check your staking on the Explorer.
     - Go to the [Forger Contract Read Functions](https://eon-explorer.horizenlabs.io/address/0x0000000000000000000022222222222222222222/read-contract#address-tabs) page.
     - Click on the *Read Contract* tab.
@@ -396,9 +402,9 @@ Using these tools will enable you to stake and unstake your Zen to an EON forger
         - 1 in the PageSize field
         - Then click on *Query*
 
-This will get your forged staked info such as amount of ZEN staked, and your ***stakeId***. Save the ***stakeId*** since you will need this input to unstake your ZEN.
+This will get your forged staked info such as amount of ZEN staked, and your ***stakeId***. Save your ***stakeId*** since you will need this input to unstake your ZEN.
 
-*Once your forger node evmapp gets fully synced you will need to wait approximately 9 hours (two epochs) in order to be eligible to participate in the block validating process.*
+*Once your forger node EVMAPP gets fully synced, you will need to wait approximately 9 hours (two epochs) in order to be eligible to participate in the block validating process.*
 
 ### Unstaking
 1. Before you can unstake you should set active the eth_sign feature in Metamask wallet. (you should disable this after unstaking):
@@ -406,21 +412,15 @@ This will get your forged staked info such as amount of ZEN staked, and your ***
 2. Open Remix and select the *withdraw.js* file for editing
 3. Update the **STAKE_ID** field to the value that you received when staking. 
 4. Run the script.
-5. Metmask will prompt you to sign a message, click **Sign**
+5. Metamask will prompt you to sign a message, click **Sign**
 6. Disable the eth_sign feature.
 
-*If you would like to send funds back to the Horizen mainchain please use the following guide to backwards transfer: https://docs.horizen.io/horizen_eon/connect/backward_transfer.*
+*If you would like to send funds back to the Horizen mainchain please use the following [guide](https://docs.horizen.io/horizen_eon/connect/backward_transfer) to do a backwards transfer.*
 
 ## Monitor Your Validated Blocks
-Go to the eon explorer and search for your Ethereum generated address. The one that you generated in the /home/user/compose-evm-simplified/scripts/forger/generate_keys.sh. 
+Go to the [EON Explorer](https://eon-explorer.horizenlabs.io/). Locate the Ethereum-generated address that was issued to you earlier during the Generate Keys step (these keys should always be stored in a secure location. Enter your Ethereum address in the search bar at the top right of the Explorer page and press enter.
+location).
 
-All ZEN earned by validated blocks will be sent to this address. So keep this and the private key in a safe place. Go to Blocks validated tab and you will see all blocks you already validated.
-
-You can check for blocks you forged using the following command: 
-```bash
-docker logs evmapp | grep -i forged
-```
+All ZEN earned by validated blocks will be sent to this address, so keep this and the private key in a safe place. Go to the Blocks validated tab, and you will see all the blocks you have validated.
 
 Please look at the FAQ section to learn more or engage with the community on the Horizen discord server.
-
-
