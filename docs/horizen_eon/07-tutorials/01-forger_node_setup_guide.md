@@ -128,7 +128,7 @@ What network would you like to setup 'eon' (mainnet) or 'gobi' (testnet):
 #? 
 ```
 
-\*\* For this next step, it’s suggested that a new wallet seed phrase be set up rather than using an existing one. For users who have previously set up a forger node and prefer to import their existing seed phrase, you may do so by typing *yes* followed by *Enter*.
+\*\*For this next step, it’s suggested that a new wallet seed phrase be set up rather than using an existing one. For users who have previously set up a forger node and prefer to import their existing seed phrase, you may do so by typing *yes* followed by *Enter*.
 
 Type *no* and press *Enter*
 
@@ -367,7 +367,7 @@ Using these tools will enable you to stake and unstake your $ZEN to an EON forge
 - Click the *Upload Folder* icon as shown below and find the folder location containing the extracted files from your downloaded zip folder (the noted download location from the previous steps above). 
 - Select the *remix* folder, which can be found under *eon-smart-contract-tools-main/contracts/forger_stake_delegation/remix*, and click *upload*. 
 
-\*\* Before continuing, please have the key-value pairs that were created in the *Generate Keys* step ready and available to use. These values will be used in the next step.
+\*\*Before continuing, please have the key-value pairs that were created in the *Generate Keys* step ready and available to use. These values will be used in the next step.
 <p>
 <img src={require("/img/docs/tutorial/remix-file-explorer1.png").default} alt="Remix Upload Folder" width="600" height="400" />
 </p>
@@ -375,28 +375,29 @@ Using these tools will enable you to stake and unstake your $ZEN to an EON forge
 <img src={require("/img/docs/tutorial/remix-file-explorer2.png").default} alt="Remix Upload Folder" width="600" height="400" />
 </p>
 
-4. From the *remix* folder, select the *delegate.js* file in the explorer window. Locate the section to the right and look for lines *9,10, & 11*. Fill in the following required fields: 
-- ***Amount***
+4. From the *remix* folder, select the *delegate.js* file in the explorer window. Locate the section to the right and look for lines *9, 10, & 11*. Fill in the following required fields: 
+- ***AMOUNT***
    - This is the amount you’d like to stake (make sure you have this amount in your MetaMask wallet).
 - ***YOUR_BLOCK_SIGN_PUBKEY***
 - ***YOUR_VRF_PUBKEY ***
 <p>
 <img src={require("/img/docs/tutorial/remix-delegate-env.png").default} alt="Remix Update File" width="600" height="400" />
 </p>
+
 ***(Make sure to use double quotations around the input values. The values shown in the above screenshot are an example of how your values should be input)***
 
-5. Go to the *Deploy & run transactions* located in the left window pane of the explorer menu. Under *ENVIRONMENT* select *Injected Provider — MetaMask*.
+5. Go to the *Deploy & Run Transactions* located in the left window pane of the explorer menu. Under *ENVIRONMENT* select *Injected Provider — MetaMask*.
 - You may be prompted to Connect with MetaMask, assuming this is your first time connecting your web wallet. Check the box to allow the connection, click Next, and then Confirm. 
 <p>
 <img src={require("/img/docs/tutorial/remix-deploy-run.png").default} alt="Remix Deploy and run transaction" width="600" height="400" />
 </p>
 
-6. Go back to the file explorer section. Select the open delegate.js file, right-click on it, and select ***run***.
+6. Go back to the file explorer section. Select the open delegate.js file, right-click on it, and select ***Run***.
 <p>
 <img src={require("/img/docs/tutorial/remix-run-delegate.png").default} alt="Remix run file" width="600" height="400" />
 </p>
 
-7. Accept the transaction on MetaMask by clicking ***I want to proceed anyway and then Confirm***. (make sure you have enough $ZEN left over to pay for gas). Wait until the logs say that the transaction was completed in the REMIX log section.
+7. Accept the transaction on MetaMask by clicking ***I want to proceed anyway and then Confirm***. (make sure you have enough $ZEN left over to pay for gas). Wait until the logs say that the transaction was completed in the Remix log section.
 <p>
 <img src={require("/img/docs/tutorial/metamask-warning1.png").default} alt="MetaMask Accept Transaction" width="600" height="400" />
 </p>
@@ -408,10 +409,10 @@ Using these tools will enable you to stake and unstake your $ZEN to an EON forge
 - Go to the [Forger Contract Read Functions](https://eon-explorer.horizenlabs.io/address/0x0000000000000000000022222222222222222222/read-contract#address-tabs) page.
 - Click on the *Read Contract* tab.
 - Connect your wallet.
-- Go to the *GetPagedForgersStakersByUser* method and enter the following:
-   - MetaMask Address
-   - 0 for the start *index* field
-   - 1 in the PageSize field
+- Go to the *getPagedForgersStakesByUser* method and enter the following:
+   - MetaMask address
+   - 0 for the *startIndex* field
+   - 1 in the *pageSize* field
    - Then click on *Query*
 <p>
 <img src={require("/img/docs/tutorial/explorer-staking1.png").default} alt="EON Explorer" width="600" height="400" />
@@ -425,12 +426,12 @@ This will get your forged staked info such as amount of $ZEN staked, and your **
 *Once your forger node EVMAPP gets fully synced, you will need to wait approximately 9 hours (two epochs) in order to be eligible to participate in the block validating process.*
 
 ### Unstaking
-1. Before you can unstake you should set active the eth_sign feature in Metamask wallet. (you should disable this after unstaking):
+1. Before you can unstake, you should set active the eth_sign feature in Metamask wallet (you should disable this after unstaking):
     - Advanced Settings → Active the Eth_sign Requests → Read & Confirm the warning → Click on Continue.
 2. Open Remix and select the *withdraw.js* file for editing
 3. Update the **STAKE_ID** field to the value that you received when staking. 
 4. Run the script.
-5. Metamask will prompt you to sign a message, click **Sign**
+5. Metamask will prompt you to sign a message, click ***Sign***
 6. Disable the eth_sign feature.
 
 *If you would like to send funds back to the Horizen mainchain please use the following [guide](https://docs.horizen.io/horizen_eon/connect/backward_transfer) to do a backwards transfer.*
