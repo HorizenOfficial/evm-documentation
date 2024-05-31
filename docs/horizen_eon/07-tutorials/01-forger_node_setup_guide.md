@@ -3,7 +3,7 @@ title: EON Forger Node Setup Guide
 ---
 
 # Introduction
-This guide assumes you are setting up a forger node on EON mainnet. If you would like to set up a forger on Gobi testnet, replace all **eon** with **gobi** in these instructions.
+This guide assumes you are setting up a forger node on EON mainnet. If you would like to set up a forger on Gobi testnet, replace all **EON** with **Gobi** in these instructions.
 
 ## Requirements
 The recent submission of [**ZenIP 42206**](https://blog.horizen.io/zenip-42206-explained-redirect-horizen-secure-node-rewards-into-horizen-eon/) states that rewards currently paid to [**Secure Nodes**](https://blog.horizen.io/secure-node-full-deprecation-timeline-eon-forger-node-instructions/) in the Horizen mainchain block will be redirected to an **EON Forger Subsidy Fund**. Thus, any node assigned as a [**Forger Node**](https://smart-1840-update-forger-doc.evm-documentation.pages.dev/horizen_eon/tutorials/forger_node_setup_guide) in the EON ecosystem must have the configuration requirements listed in the EON Forger Node Criteria. The EON Forger Node requirements can be implemented by users or blockchain providers.
@@ -110,7 +110,7 @@ cd compose-evm-simplified
 ./scripts/init.sh
 ```
 
-Select 2 and press *Enter*.
+Select *2* for forger and press *Enter*.
 ```bash
 === Checking all the requirements ===
 
@@ -120,7 +120,7 @@ What kind of node type would you like to run:
 #?
 ```
 
-Type 2 for forger and press *Enter*.
+Select *1* for EON and press *Enter*.
 ```bash
 What network would you like to setup 'eon' (mainnet) or 'gobi' (testnet):
 1) eon
@@ -128,7 +128,7 @@ What network would you like to setup 'eon' (mainnet) or 'gobi' (testnet):
 #? 
 ```
 
-**For this next step, it’s suggested that a new wallet seed phrase be set up rather than using an existing one. For users who have previously set up a forger node and prefer to import their existing seed phrase, you may do so by typing *yes* followed by *Enter*.
+\*\* For this next step, it’s suggested that a new wallet seed phrase be set up rather than using an existing one. For users who have previously set up a forger node and prefer to import their existing seed phrase, you may do so by typing *yes* followed by *Enter*.
 
 Type *no* and press *Enter*
 
@@ -302,7 +302,7 @@ Run the following command to generate keys for your forger node.
  Ethereum Private Key for MetaMask  : …
 ```
 
-**You will see values for each of the keys and addresses above. Copy the entire output shown from the previous command and store it in a password vault or a secured password manager. If you prefer not to, please save these keys in a safe place as they will be used for staking zen to your forger in a later step.**
+**You will see values for each of the keys and addresses above. Copy the entire output shown from the previous command and store it in a password vault or a secured password manager. If you prefer not to, please save these keys in a safe place as they will be used for staking $ZEN to your forger in a later step.**
 
 You may verify that the keys were generated correctly by running the following command:
 
@@ -327,20 +327,21 @@ docker compose -f /home/user/compose-evm-simplified/deployments/forger/eon/docke
 ```
 You should see the same values you’ve saved from the previous step in the output above. 
 
-### Stake Zen to your Forger
+### Stake $ZEN to your Forger
 **Prerequisites**
-In order to stake ZEN to a forger node, you first need to send your preferred staking amount of ZEN to a wallet that supports EON network. In this guide, we will be using MetaMask wallet.
 
-1. Create a Metamask wallet 
+In order to stake $ZEN to a forger node, you first need to send your preferred staking amount of $ZEN to a wallet that supports the EON network. In this guide, we will be using MetaMask wallet.
+
+1. Create a MetaMask wallet 
 2. Add EON network to your wallet dApp. 
     - This guide assumes you are using MetaMask dApp as your wallet of choice. Use the following guide to connect the EON network to your MetaMask wallet:
     [https://docs.horizen.io/horizen_eon/connect/connect_your_wallet](https://docs.horizen.io/horizen_eon/connect/connect_your_wallet).
-3. Forward transfer (send) ZEN to your MetaMask wallet.
-    - Please use the following guide to forward transfer ZEN to that wallet address:
+3. Forward transfer (send) $ZEN to your MetaMask wallet.
+    - Please use the following guide to forward transfer $ZEN to that wallet address:
     [https://docs.horizen.io/horizen_eon/connect/forward_transfer](https://docs.horizen.io/horizen_eon/connect/forward_transfer).
 
 ### Staking
-In this guide, we will walk you through the process of staking zen to your forger node by using [Web Remix IDE](https://remix.ethereum.org/). For more information about Remix IDE, see the following documentation: [https://docs.horizen.io/horizen_eon/develop_and_deploy_smart_contracts/remix](https://docs.horizen.io/horizen_eon/develop_and_deploy_smart_contracts/remix).
+In this guide, we will walk you through the process of staking $ZEN to your forger node by using [Web Remix IDE](https://remix.ethereum.org/). For more information about Remix IDE, see the following documentation: [https://docs.horizen.io/horizen_eon/develop_and_deploy_smart_contracts/remix](https://docs.horizen.io/horizen_eon/develop_and_deploy_smart_contracts/remix).
 
 In order to use [Web Remix IDE](https://remix.ethereum.org/) to set up staking for your forger node, you first need to [download](https://github.com/HorizenOfficial/eon-smart-contract-tools/archive/refs/heads/main.zip) the eon-smart-contract-tools-main zip folder containing a suite of scripts that will help to automate the setup process and extract the files within the zip folder. Please note the drive location where this folder is downloaded, as you will need to upload files from this folder at a later step.
 
@@ -352,7 +353,7 @@ For more advanced users who wish to download the repository containing the suite
 git clone https://github.com/HorizenOfficial/eon-smart-contract-tools
 ```
 
-Using these tools will enable you to stake and unstake your Zen to an EON forger node. 
+Using these tools will enable you to stake and unstake your $ZEN to an EON forger node. 
 1. First, open [Web Remix IDE](https://remix.ethereum.org/)
 2. Next, click on the 3 horizontal lines to the left of Workspaces and select Create. This will prompt you to create a new workspace. Name the workspace “Forger Node,” as shown below, and click OK.
 <p>
@@ -395,7 +396,7 @@ Using these tools will enable you to stake and unstake your Zen to an EON forger
 <img src={require("/img/docs/tutorial/remix-run-delegate.png").default} alt="Remix run file" width="600" height="400" />
 </p>
 
-7. Accept the transaction on MetaMask by clicking ***I want to proceed anyway and then Confirm***. (make sure you have enough ZEN left over to pay for gas). Wait until the logs say that the transaction was completed in the REMIX log section.
+7. Accept the transaction on MetaMask by clicking ***I want to proceed anyway and then Confirm***. (make sure you have enough $ZEN left over to pay for gas). Wait until the logs say that the transaction was completed in the REMIX log section.
 <p>
 <img src={require("/img/docs/tutorial/metamask-warning1.png").default} alt="MetaMask Accept Transaction" width="600" height="400" />
 </p>
@@ -419,7 +420,7 @@ Using these tools will enable you to stake and unstake your Zen to an EON forger
 <img src={require("/img/docs/tutorial/explorer-staking2.png").default} alt="EON Explorer" width="600" height="400" />
 </p>
 
-This will get your forged staked info such as amount of ZEN staked, and your ***stakeId***. Save your ***stakeId*** since you will need this input to unstake your ZEN.
+This will get your forged staked info such as amount of $ZEN staked, and your ***stakeId***. Save your ***stakeId*** since you will need this input to unstake your $ZEN.
 
 *Once your forger node EVMAPP gets fully synced, you will need to wait approximately 9 hours (two epochs) in order to be eligible to participate in the block validating process.*
 
@@ -441,6 +442,6 @@ location).
 <img src={require("/img/docs/tutorial/eon-explorer-address-search.png").default} alt="EON Explorer Address Search" width="600" height="400" />
 </p>
 
-All ZEN earned by validated blocks will be sent to this address, so keep this and the private key in a safe place. Go to the Blocks validated tab, and you will see all the blocks you have validated.
+All $ZEN earned by validated blocks will be sent to this address, so keep this and the private key in a safe place. Go to the Blocks validated tab, and you will see all the blocks you have validated.
 
 Please look at the FAQ section to learn more or engage with the community on the Horizen discord server.
