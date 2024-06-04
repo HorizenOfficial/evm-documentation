@@ -1,8 +1,8 @@
 ---
-title: Run a Forger Node
+title: Node Types on EON
 ---
 
-# Run a Forger Node
+# Node Types on EON
 
 ### Difference between a Forger and Regular Node
 A regular node plays a more passive role in the network than a forger node. A regular node receives the transactions and blocks from the neighbors peers. It validates the transactions and blocks before including them in the mempool and history and then it forwards them to its peers.  

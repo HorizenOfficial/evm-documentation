@@ -70,10 +70,6 @@ module.exports = {
         },
         {
           type: 'doc',
-          id: 'horizen_eon/develop_and_deploy_smart_contracts/local_build_and_deploy',
-        },
-        {
-          type: 'doc',
           id: 'horizen_eon/develop_and_deploy_smart_contracts/verying_a_smart_contract',
         },
         {
@@ -92,7 +88,7 @@ module.exports = {
         },
         {
           type: 'doc',
-          id: 'horizen_eon/staking/run_a_forger_node',
+          id: 'horizen_eon/staking/node_types_on_eon',
         },
         {
           type: 'doc',
@@ -100,15 +96,7 @@ module.exports = {
         },
         {
           type: 'doc',
-          id: 'horizen_eon/staking/forger_node',
-        },
-        {
-          type: 'doc',
           id: 'horizen_eon/staking/pause_forging',
-        },
-        {
-          type: 'doc',
-          id: 'horizen_eon/staking/faq',
         }
       ],
     },
@@ -130,6 +118,14 @@ module.exports = {
       type: 'category',
       label: 'Tutorials',
       items: [
+        {
+          type: 'doc',
+          id: 'horizen_eon/tutorials/forger_node_setup_guide',
+        },
+        {
+          type: 'doc',
+          id: 'horizen_eon/tutorials/faq',
+        },
         {
           type: 'doc',
           id: 'horizen_eon/tutorials/thirdweb',
