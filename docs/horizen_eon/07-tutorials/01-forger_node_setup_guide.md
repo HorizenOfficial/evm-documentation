@@ -313,7 +313,7 @@ You may verify that the keys were generated correctly by running the following c
 
 ```bash
 ## Verify that the keys were generated correctly
-docker compose -f /home/user/compose-evm-simplified/deployments/forger/eon/docker-compose.yml exec evmapp gosu user bash -c 'curl -sXPOST "http://127.0.0.1:${SCNODE_REST_PORT}/wallet/allPublicKeys" -H "accept: application/json" -H "Content-Type: application/json"'
+docker compose -f deployments/forger/eon/docker-compose.yml exec evmapp gosu user bash -c 'curl -sXPOST "http://127.0.0.1:${SCNODE_REST_PORT}/wallet/allPublicKeys" -H "accept: application/json" -H "Content-Type: application/json"'
 
 ## Compare the returned public key with yours.
 
