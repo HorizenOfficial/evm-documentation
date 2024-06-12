@@ -278,9 +278,9 @@ docker compose -f deployments/forger/eon/docker-compose.yml exec evmapp gosu use
 
 After this, you will need to wait until your EVMAPP node is fully synced with EON’s most current block. You can check the EON Mainchain current block here: [https://eon-explorer.horizenlabs.io/](https://eon-explorer.horizenlabs.io/). For Gobi testnet check here: [https://gobi-explorer.horizenlabs.io/](https://gobi-explorer.horizenlabs.io/). 
 
-If the output number shown when running the previous command does not match the height number shown from the latest block on the [EON Explorer page](https://eon-explorer.horizenlabs.io/), you may continue to run the previous command until both numbers match.
+**If the output number shown when running the previous command does not match the height number shown from the latest block on the [EON Explorer page](https://eon-explorer.horizenlabs.io/), you may continue to run the previous command until both numbers match.
 
-Over time, continue verifying that the node is running by checking the sync status (this may take some time).
+Continue verifying that the node is running by checking the sync status (this may take some time).
 
 ✅ Your EVMAPP node will be fully synced when it reaches the last block height shown on the [EON Explorer Page](https://eon-explorer.horizenlabs.io/). Once this occurs, you may proceed to the next step of generating keys for your forger node. 
 
