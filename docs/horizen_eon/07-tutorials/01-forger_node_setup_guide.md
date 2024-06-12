@@ -270,6 +270,10 @@ docker exec evmapp gosu user curl -X POST "http://127.0.0.1:9545/node/info" -H "
 ```
 
 To verify that you’re running the latest version of EVMAPP, you may visit [https://github.com/HorizenOfficial/compose-evm-simplified/releases/latest](https://github.com/HorizenOfficial/compose-evm-simplified/releases/latest). The output shown when running the previous command should match the version shown on the [EVMAPP latest releases](https://github.com/HorizenOfficial/compose-evm-simplified/releases/latest) page.
+```bash
+## Get current block height and verify if evmapp node is fully synced
+docker compose -f deployments/forger/eon/docker-compose.yml exec evmapp gosu user curl -sX POST "http://127.0.0.1:9545/block/best" -H "accept: application/json" | jq '.result.height'
+```
 
 After this, you will need to wait until your EVMAPP node is fully synced with EON’s most current block. You can check the EON Mainchain current block here: [https://eon-explorer.horizenlabs.io/](https://eon-explorer.horizenlabs.io/). For Gobi testnet check here: [https://gobi-explorer.horizenlabs.io/](https://gobi-explorer.horizenlabs.io/). 
 
