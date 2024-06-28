@@ -345,6 +345,8 @@ to collect the rewards, and exposes a "claim" function that each delegator can c
 
 You can check the smart contract code here: [https://github.com/HorizenOfficial/eon-delegated-staking](https://github.com/HorizenOfficial/eon-delegated-staking).
 
+More info on the methods exposed can also be found in the [README file here](https://github.com/HorizenOfficial/eon-delegated-staking/tree/main/delegated-staking-contracts).
+
 A new instance of the smart contract is required for each forger: if you want to deploy one for your forger, the factory is available at this address: [TODO](todo)
 
 After having deployed the smart contract, take note of its address: you will need it in the following setp.
