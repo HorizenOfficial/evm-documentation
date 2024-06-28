@@ -33,6 +33,10 @@ Minimum and recommended instance requirements for running an EON Forger Node in 
 - Must not restrict peer connections.
 - Must configure the EON P2P TCP port 9084 to be reachable from the outside for other nodes to connect to (EON MUST accept incoming connections from other nodes).
 
+**Minimum ZEN Stake**
+- A minimum amount of 10 ZEN in stake (summing all the delegations) is required for forgers to be eligible to propose a block.
+
+
 **Note:** The requirements detailed can be added to or modified without notice.
 
 ## Docker Setup
@@ -330,7 +334,36 @@ docker compose -f deployments/forger/eon/docker-compose.yml exec evmapp gosu use
  }
 }
 ```
-You should see the same values you’ve saved from the previous step in the output above. 
+You should see the same values you’ve saved from the previous step in the output above.
+
+### (Optional) Reward smart contract deployment
+Starting from EON 1.4 you can redirect part of the forger's rewards to a smart contract, tipically to use it to handle rewards distribution to delegators (but you can implement any workflow you want).<br>
+The redirection will be specified with two parameters (rewardShare and rewardAddress) set during the forger registration step, described in the next point of this guide.<br>
+<br>
+You can use any smartcontract, but Horizen provides an audited and certified smart contract with a default implementation: it is able 
+to collect the rewards, and exposes a "claim" function that each delegator can call to retrieve the money.
+
+You can check the smart contract code here: [https://github.com/HorizenOfficial/eon-delegated-staking](https://github.com/HorizenOfficial/eon-delegated-staking).
+
+A new instance of the smart contract is required for each forger, if you want to deploy one for your forger the factory is available at this address: [TODO](todo)
+
+
+### Forger registration
+Starting from EON 1.4, a forger on-chain registration is required before being able to accept delegations.
+You can launch the transaction using the http endpoint  [/transaction/registerForger](https://github.com/HorizenOfficial/eon/blob/main/doc/api/transaction/registerForger.md)  in your local node.
+The mandatory parameters are:
+- blockSignPubKey and vrfPubKey: use the keys generated in the previous point
+- stakedAmount: the initial stake you want to assign to your forger. Represented as an integer value specified in zennies, and must be >= 10 ZEN. You will be able to withdraw at any time using the same address used by sending this transaction.
+- rewardShare:  Reward to be redirected to a separate reward address (integer, range from 0 to 1000 - where 1000 represents 100%)
+- rewardAddress: External reward address (may be a single EOA or (more likely) a smart contract handling rewards distribution to delegators, described in the previous point). Must be present only if rewardShare is > 0. Omit the initial 0x prefix when specifing it.
+
+**Important:**<br>
+rewardShare and rewardAddress parameters will not be updatable once set. If you want to change them after the registration, 
+you will have to register a new forger with different keys.
+
+Check the [/transaction/registerForger](https://github.com/HorizenOfficial/eon/blob/main/doc/api/transaction/registerForger.md) EON documentation page for further info.
+
+
 
 ### Stake $ZEN to your Forger
 **Prerequisites**
@@ -370,7 +403,7 @@ Using these tools will enable you to stake and unstake your $ZEN to an EON forge
 
 3. Import the Remix folder scripts. To do this:
 - Click the *Upload Folder* icon as shown below and find the folder location containing the extracted files from your downloaded zip folder (the noted download location from the previous steps above). 
-- Select the *remix* folder, which can be found under *eon-smart-contract-tools-main/contracts/forger_stake_delegation/remix*, and click *upload*. 
+- Select the *remix* folder, which can be found under *eon-smart-contract-tools-main/contracts/forger_stake_v2/remix*, and click *upload*. 
 
 \*\*Before continuing, please have the key-value pairs that were created in the *Generate Keys* step ready and available to use. These values will be used in the next step.
 <p>
