@@ -345,25 +345,29 @@ to collect the rewards, and exposes a "claim" function that each delegator can c
 
 You can check the smart contract code here: [https://github.com/HorizenOfficial/eon-delegated-staking](https://github.com/HorizenOfficial/eon-delegated-staking).
 
-A new instance of the smart contract is required for each forger, if you want to deploy one for your forger the factory is available at this address: [TODO](todo)
+A new instance of the smart contract is required for each forger: if you want to deploy one for your forger, the factory is available at this address: [TODO](todo)
+
+After having deployed the smart contract, take note of its address: you will need it in the following setp.
+
+**(Note: this step is not needed if in the  following forger registration step you specify rewardShare = 0, meaning you don't wont to split the rewards and send all of them to the forger)**
 
 
 ### Forger registration
-Starting from EON 1.4, a forger on-chain registration is required before being able to accept delegations.
+Starting from EON 1.4, a forger on-chain registration is required before being able to accept delegations and forge blocks.
 You can launch the transaction using the http endpoint  [/transaction/registerForger](https://github.com/HorizenOfficial/eon/blob/main/doc/api/transaction/registerForger.md)  in your local node.
 The mandatory parameters are:
-- blockSignPubKey and vrfPubKey: use the keys generated in the previous point
-- stakedAmount: the initial stake you want to assign to your forger. Represented as an integer value specified in zennies, and must be >= 10 ZEN. You will be able to withdraw at any time using the same address used by sending this transaction.
+- blockSignPubKey and vrfPubKey: use the keys generated in the previous 'Generate keys' point
+- stakedAmount: the initial stake you want to assign to your forger. Represented as an integer value specified in zennies, and must be >= 10 ZEN. The amount will be taken from your local node wallet, and you will be able to withdraw it any time using the same address used by sending this transaction (but keep in mind that if the total delegated amount will become < 10 ZEN, your forger will no more be able to propose blocks).
 - rewardShare:  Reward to be redirected to a separate reward address (integer, range from 0 to 1000 - where 1000 represents 100%)
-- rewardAddress: External reward address (may be a single EOA or (more likely) a smart contract handling rewards distribution to delegators, described in the previous point). Must be present only if rewardShare is > 0. Omit the initial 0x prefix when specifing it.
+- rewardAddress: External reward address (may be a single EOA or (more likely) a smart contract handling rewards distribution to delegator - see previous point). Must be present only if rewardShare is > 0. Omit the initial 0x prefix when specifing it.
 
 **Important:**<br>
-rewardShare and rewardAddress parameters will not be updatable once set. If you want to change them after the registration, 
-you will have to register a new forger with different keys.
+Double check rewardShare and rewardAddress parameters before launching the transaction, since they will not be updatable once set! If you want to change them after the registration, 
+you will have to register a new forger with different keys, and move all the delegations to the new forger.
 
-Check the [/transaction/registerForger](https://github.com/HorizenOfficial/eon/blob/main/doc/api/transaction/registerForger.md) EON documentation page for further info.
+Check the [/transaction/registerForger](https://github.com/HorizenOfficial/eon/blob/main/doc/api/transaction/registerForger.md) EON documentation page for further info on this endpoint.
 
-
+Existing forgers present before eon 1.4 will not have to perform this step, and will be registered by default, with rewardShare = 0.
 
 ### Stake $ZEN to your Forger
 **Prerequisites**
