@@ -337,7 +337,7 @@ docker compose -f deployments/forger/eon/docker-compose.yml exec evmapp gosu use
 You should see the same values you’ve saved from the previous step in the output above.
 
 ### (Optional) Reward smart contract deployment
-Starting from EON 1.4 you can redirect part of the forger's rewards to a smart contract, tipically to use it to handle rewards distribution to delegators (but you can implement any workflow you want).<br>
+Starting from EON 1.4 you can redirect part of the forger's rewards to a smart contract, typically to use it to handle rewards distribution to delegators (but you can implement any workflow you want).<br>
 The redirection will be specified with two parameters (rewardShare and rewardAddress) set during the forger registration step, described in the next point of this guide.<br>
 <br>
 You can use any smartcontract, but Horizen provides an audited and certified smart contract with a default implementation: it is able 
