@@ -33,6 +33,10 @@ Minimum and recommended instance requirements for running an EON Forger Node in 
 - Must not restrict peer connections.
 - Must configure the EON P2P TCP port 9084 to be reachable from the outside for other nodes to connect to (EON MUST accept incoming connections from other nodes).
 
+**Minimum ZEN Stake**
+- A minimum amount of 10 ZEN in stake (summing all the delegations) is required for forgers to be eligible to propose a block.
+
+
 **Note:** The requirements detailed can be added to or modified without notice.
 
 ## Docker Setup
@@ -330,7 +334,43 @@ docker compose -f deployments/forger/eon/docker-compose.yml exec evmapp gosu use
  }
 }
 ```
-You should see the same values you’ve saved from the previous step in the output above. 
+You should see the same values you’ve saved from the previous step in the output above.
+
+### (Optional) Reward smart contract deployment
+Starting from EON 1.4 you can redirect part of the forger's rewards to a smart contract, typically to use it to handle rewards distribution to delegators (but you can implement any workflow you want).<br>
+The redirection will be specified with two parameters (rewardShare and rewardAddress) set during the forger registration step, described in the next point of this guide.<br>
+<br>
+You can use any smartcontract, but Horizen provides an audited and certified smart contract with a default implementation: it is able 
+to collect the rewards, and exposes a "claim" function that each delegator can call to retrieve the money.
+
+You can check the smart contract code here: [https://github.com/HorizenOfficial/eon-delegated-staking](https://github.com/HorizenOfficial/eon-delegated-staking).
+
+More info on the methods exposed can also be found in the [README file here](https://github.com/HorizenOfficial/eon-delegated-staking/tree/main/delegated-staking-contracts).
+
+A new instance of the smart contract is required for each forger: if you want to deploy one for your forger, the factory is available at this address: [0x8604Bb903B7D54F666bA1e75f98045345C63132a ](https://eon-explorer.horizenlabs.io/address/0x8604Bb903B7D54F666bA1e75f98045345C63132a?tab=contract)
+
+You can call the method deployDelegatedStakingReferenceImplementation of the factory, parameters required are the signPubKey and vrfKey that identify your forger (the latter is split in two different parameters: one for the first 32bytes and one for the last btye).
+The method execution will trigger the deploy of the smart contract instance.  Take note of its address: you will need it in the following setp.
+
+**(Note: this step is not needed if in the  following forger registration step you specify rewardShare = 0, meaning you don't wont to split the rewards and send all of them to the forger)**
+
+
+### Forger registration
+Starting from EON 1.4, a forger on-chain registration is required before being able to accept delegations and forge blocks.
+You can launch the transaction using the http endpoint  [/transaction/registerForger](https://github.com/HorizenOfficial/eon/blob/main/doc/api/transaction/registerForger.md)  in your local node.
+The mandatory parameters are:
+- blockSignPubKey and vrfPubKey: use the keys generated in the previous 'Generate keys' point
+- stakedAmount: the initial stake you want to assign to your forger. Represented as an integer value specified in zennies, and must be >= 10 ZEN. The amount will be taken from your local node wallet, and you will be able to withdraw it any time using the same address used by sending this transaction (but keep in mind that if the total delegated amount will become < 10 ZEN, your forger will no more be able to propose blocks).
+- rewardShare:  Reward to be redirected to a separate reward address (integer, range from 0 to 1000 - where 1000 represents 100%)
+- rewardAddress: External reward address (may be a single EOA or (more likely) a smart contract handling rewards distribution to delegator - see previous point). Must be present only if rewardShare is > 0. Omit the initial 0x prefix when specifing it.
+
+**Important:**<br>
+Double check rewardShare and rewardAddress parameters before launching the transaction, since they will not be updatable once set! If you want to change them after the registration, 
+you will have to register a new forger with different keys, and move all the delegations to the new forger.
+
+Check the [/transaction/registerForger](https://github.com/HorizenOfficial/eon/blob/main/doc/api/transaction/registerForger.md) EON documentation page for further info on this endpoint.
+
+Existing forgers present before eon 1.4 will not have to perform this step, and will be registered by default, with rewardShare = 0.
 
 ### Stake $ZEN to your Forger
 **Prerequisites**
@@ -370,7 +410,7 @@ Using these tools will enable you to stake and unstake your $ZEN to an EON forge
 
 3. Import the Remix folder scripts. To do this:
 - Click the *Upload Folder* icon as shown below and find the folder location containing the extracted files from your downloaded zip folder (the noted download location from the previous steps above). 
-- Select the *remix* folder, which can be found under *eon-smart-contract-tools-main/contracts/forger_stake_delegation/remix*, and click *upload*. 
+- Select the *remix* folder, which can be found under *eon-smart-contract-tools-main/contracts/forger_stake_v2/remix*, and click *upload*. 
 
 \*\*Before continuing, please have the key-value pairs that were created in the *Generate Keys* step ready and available to use. These values will be used in the next step.
 <p>
