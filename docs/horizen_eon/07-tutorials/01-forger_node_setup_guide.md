@@ -347,9 +347,10 @@ You can check the smart contract code here: [https://github.com/HorizenOfficial/
 
 More info on the methods exposed can also be found in the [README file here](https://github.com/HorizenOfficial/eon-delegated-staking/tree/main/delegated-staking-contracts).
 
-A new instance of the smart contract is required for each forger: if you want to deploy one for your forger, the factory is available at this address: [TODO](todo)
+A new instance of the smart contract is required for each forger: if you want to deploy one for your forger, the factory is available at this address: [0x8604Bb903B7D54F666bA1e75f98045345C63132a ](https://eon-explorer.horizenlabs.io/address/0x8604Bb903B7D54F666bA1e75f98045345C63132a?tab=contract)
 
-After having deployed the smart contract, take note of its address: you will need it in the following setp.
+You can call the method deployDelegatedStakingReferenceImplementation of the factory, parameters required are the signPubKey and vrfKey that identify your forger (the latter is split in two different parameters: one for the first 32bytes and one for the last btye).
+The method execution will trigger the deploy of the smart contract instance.  Take note of its address: you will need it in the following setp.
 
 **(Note: this step is not needed if in the  following forger registration step you specify rewardShare = 0, meaning you don't wont to split the rewards and send all of them to the forger)**
 
