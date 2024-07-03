@@ -451,10 +451,10 @@ Using these tools will enable you to stake and unstake your $ZEN to an EON forge
 </p>
 
 8. Check your staking on the Explorer.
-- Go to the [Forger Contract Read Functions](https://eon-explorer.horizenlabs.io/address/0x0000000000000000000022222222222222222222/read-contract#address-tabs) page.
-- Click on the *Read Contract* tab.
+- Go to the [Forger Stake V2 Contract  Read Functions](https://eon-explorer.horizenlabs.io/address/0x0000000000000000000022222222222222222333?tab=read_contract) page.
+- Click on the *Connect wallet* button.
 - Connect your wallet.
-- Go to the *getPagedForgersStakesByUser* method and enter the following:
+- Go to the *getPagedForgersStakesByDelegator* method and enter the following:
    - MetaMask address
    - 0 for the *startIndex* field
    - 1 in the *pageSize* field
@@ -466,7 +466,7 @@ Using these tools will enable you to stake and unstake your $ZEN to an EON forge
 <img src={require("/img/docs/tutorial/explorer-staking2.png").default} alt="EON Explorer" width="600" height="400" />
 </p>
 
-This will get your forged staked info such as amount of $ZEN staked, and your ***stakeId***. Save your ***stakeId*** since you will need this input to unstake your $ZEN.
+This will get your stakes info such as forger pubkey, vrfkey and amount of $ZEN staked.
 
 *Once your forger node EVMAPP gets fully synced, you will need to wait approximately 9 hours (two epochs) in order to be eligible to participate in the block validating process.*
 
@@ -474,7 +474,7 @@ This will get your forged staked info such as amount of $ZEN staked, and your **
 1. Before you can unstake, you should set active the eth_sign feature in Metamask wallet (you should disable this after unstaking):
     - Advanced Settings → Active the Eth_sign Requests → Read & Confirm the warning → Click on Continue.
 2. Open Remix and select the *withdraw.js* file for editing
-3. Update the **STAKE_ID** field to the value that you received when staking. 
+3. Update the **AMOUNT** , **YOUR_BLOCK_SIGN_PUBKEY** and **YOUR_VRF_PUBKEY** fields with the correct values (you can also widthdraw a partial amount)
 4. Run the script.
 5. Metamask will prompt you to sign a message, click ***Sign***
 6. Disable the eth_sign feature.
