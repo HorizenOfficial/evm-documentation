@@ -457,7 +457,7 @@ Using these tools will enable you to stake and unstake your $ZEN to an EON forge
 - Go to the *getPagedForgersStakesByDelegator* method and enter the following:
    - MetaMask address
    - 0 for the *startIndex* field
-   - 1 in the *pageSize* field
+   - 10 in the *pageSize* field
    - Then click on *Query*
 <p>
 <img src={require("/img/docs/tutorial/explorer-staking1.png").default} alt="EON Explorer" width="600" height="400" />
