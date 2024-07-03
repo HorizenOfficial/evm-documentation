@@ -462,9 +462,7 @@ Using these tools will enable you to stake and unstake your $ZEN to an EON forge
 <p>
 <img src={require("/img/docs/tutorial/explorer-staking1.png").default} alt="EON Explorer" width="600" height="400" />
 </p>
-<p>
-<img src={require("/img/docs/tutorial/explorer-staking2.png").default} alt="EON Explorer" width="600" height="400" />
-</p>
+
 
 This will get your stakes info such as forger pubkey, vrfkey and amount of $ZEN staked.
 
