@@ -33,6 +33,10 @@ Minimum and recommended instance requirements for running an EON Forger Node in 
 - Must not restrict peer connections.
 - Must configure the EON P2P TCP port 9084 to be reachable from the outside for other nodes to connect to (EON MUST accept incoming connections from other nodes).
 
+**Minimum ZEN Stake**
+- A minimum amount of 10 ZEN in stake (summing all the delegations) is required for forgers to be eligible to propose a block.
+
+
 **Note:** The requirements detailed can be added to or modified without notice.
 
 ## Docker Setup
@@ -60,7 +64,7 @@ sudo chmod a+r /etc/apt/keyrings/docker.asc
 echo \ "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \ $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \ sudo tee /etc/apt/sources.list.d/docker.list > /dev/null 
 
 
-## Install Docker’s official packages and required dependancies
+## Install Docker’s official packages and required dependencies
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 
@@ -68,7 +72,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 
 Test the installation
 ```bash
-## Add curent logged in user to Docker group
+## Add current logged in user to Docker group
 sudo usermod -aG docker "$USER"
 
 ## Set temporal Docker group to 'user'
@@ -95,7 +99,7 @@ This message shows that your installation appears to be working correctly.
 ## Run a Forger Node
 Download the official EON forger node repository from GitHub
 ```bash
-## Install required packages and necessary dependancies for forger node setup
+## Install required packages and necessary dependencies for forger node setup
 sudo apt-get update
 sudo apt-get install git jq pwgen aria2 -y
 
@@ -128,7 +132,7 @@ What network would you like to setup 'eon' (mainnet) or 'gobi' (testnet):
 #? 
 ```
 
-\*\*For this next step, it’s suggested that a new wallet seed phrase be set up rather than using an existing one. For users who have previously set up a forger node and prefer to import their existing seed phrase, you may do so by typing *yes* followed by *Enter*.
+For this next step, it’s suggested that a new wallet seed phrase be set up rather than using an existing one. For users who have previously set up a forger node and prefer to import their existing seed phrase, you may do so by typing *yes* followed by *Enter*.
 
 Type *no* and press *Enter*
 
@@ -330,7 +334,43 @@ docker compose -f deployments/forger/eon/docker-compose.yml exec evmapp gosu use
  }
 }
 ```
-You should see the same values you’ve saved from the previous step in the output above. 
+You should see the same values you’ve saved from the previous step in the output above.
+
+### (Optional) Reward smart contract deployment
+Starting from EON 1.4 you can redirect part of the forger's rewards to a smart contract, typically to use it to handle rewards distribution to delegators (but you can implement any workflow you want).<br/>
+The redirection will be specified with two parameters (rewardShare and rewardAddress) set during the forger registration step, described in the next point of this guide.<br/>
+<br/>
+You can use any smart contract, but Horizen provides an audited and certified smart contract with a default implementation: it is able 
+to collect the rewards, and exposes a "claim" function that each delegator can call to retrieve the money.
+
+You can check the smart contract code here: [https://github.com/HorizenOfficial/eon-delegated-staking](https://github.com/HorizenOfficial/eon-delegated-staking).
+
+More info on the methods exposed can also be found in the [README file here](https://github.com/HorizenOfficial/eon-delegated-staking/tree/main/delegated-staking-contracts).
+
+A new instance of the smart contract is required for each forger: if you want to deploy one for your forger, the factory is available at this address: [0x8604Bb903B7D54F666bA1e75f98045345C63132a ](https://eon-explorer.horizenlabs.io/address/0x8604Bb903B7D54F666bA1e75f98045345C63132a?tab=contract)
+
+You can call the method deployDelegatedStakingReferenceImplementation of the factory, parameters required are the signPubKey and vrfKey that identify your forger (the latter is split in two different parameters: one for the first 32 bytes and one for the last byte).
+The method execution will trigger the deployment of the smart contract instance.  Take note of its address: you will need it in the following step.
+
+**(Note: this step is not needed if in the  following forger registration step you specify rewardShare = 0, meaning you don't want to split the rewards and send all of them to the forger)**
+
+
+### Forger registration
+Starting from EON 1.4, a forger on-chain registration is required before being able to accept delegations and forge blocks.
+You can launch the transaction using the http endpoint  [/transaction/registerForger](https://github.com/HorizenOfficial/eon/blob/main/doc/api/transaction/registerForger.md)  in your local node.
+The mandatory parameters are:
+- blockSignPubKey and vrfPubKey: use the keys generated in the previous 'Generate keys' point
+- stakedAmount: the initial stake you want to assign to your forger. Represented as an integer value specified in zennies, and must be >= 10 ZEN. The amount will be taken from your local node wallet, and you will be able to withdraw it any time using the same address used by sending this transaction (but keep in mind that if the total delegated amount will become < 10 ZEN, your forger will no more be able to propose blocks).
+- rewardShare:  Reward to be redirected to rewardAddress (integer, range from 0 to 1000 - where 1000 represents 100%)
+- rewardAddress: External reward address (may be a single EOA or (more likely) a smart contract handling rewards distribution to delegator - see previous point). Must be present only if rewardShare is > 0. Omit the initial 0x prefix when specifying it.
+
+**Important:**<br/>
+Double check rewardShare and rewardAddress parameters before launching the transaction, since they will not be updatable once set! If you want to change them after the registration, 
+you will have to register a new forger with different keys, and move all the delegations to the new forger.
+
+Check the [/transaction/registerForger](https://github.com/HorizenOfficial/eon/blob/main/doc/api/transaction/registerForger.md) EON documentation page for further info on this endpoint.
+
+Existing forgers present before EON 1.4 will not have to perform this step, and will be registered by default, with rewardShare = 0.
 
 ### Stake $ZEN to your Forger
 **Prerequisites**
@@ -350,7 +390,7 @@ In this guide, we will walk you through the process of staking $ZEN to your forg
 
 In order to use [Web Remix IDE](https://remix.ethereum.org/) to set up staking for your forger node, you first need to [download](https://github.com/HorizenOfficial/eon-smart-contract-tools/archive/refs/heads/main.zip) the eon-smart-contract-tools-main zip folder containing a suite of scripts that will help to automate the setup process and extract the files within the zip folder. Please note the drive location where this folder is downloaded, as you will need to upload files from this folder at a later step.
 
-**Before proceeding, make sure to extract the files from the downloaded zip folder and note the location of the extracted files. Also, please make sure to sign in to your MetaMask web wallet account before continuing your Remix IDE setup. 
+Before proceeding, make sure to extract the files from the downloaded zip folder and note the location of the extracted files. Also, please make sure to sign in to your MetaMask web wallet account before continuing your Remix IDE setup.
 
 For more advanced users who wish to download the repository containing the suite of scripts needed to automate the setup process, you may use Git to do so:
 ```bash
@@ -370,9 +410,9 @@ Using these tools will enable you to stake and unstake your $ZEN to an EON forge
 
 3. Import the Remix folder scripts. To do this:
 - Click the *Upload Folder* icon as shown below and find the folder location containing the extracted files from your downloaded zip folder (the noted download location from the previous steps above). 
-- Select the *remix* folder, which can be found under *eon-smart-contract-tools-main/contracts/forger_stake_delegation/remix*, and click *upload*. 
+- Select the *remix* folder, which can be found under *eon-smart-contract-tools-main/contracts/forger_stake_v2/remix*, and click *upload*. 
 
-\*\*Before continuing, please have the key-value pairs that were created in the *Generate Keys* step ready and available to use. These values will be used in the next step.
+Before continuing, please have the key-value pairs that were created in the *Generate Keys* step ready and available to use. These values will be used in the next step.
 <p>
 <img src={require("/img/docs/tutorial/remix-file-explorer1.png").default} alt="Remix Upload Folder" width="600" height="400" />
 </p>
@@ -411,43 +451,36 @@ Using these tools will enable you to stake and unstake your $ZEN to an EON forge
 </p>
 
 8. Check your staking on the Explorer.
-- Go to the [Forger Contract Read Functions](https://eon-explorer.horizenlabs.io/address/0x0000000000000000000022222222222222222222/read-contract#address-tabs) page.
-- Click on the *Read Contract* tab.
+- Go to the [Forger Stake V2 Contract  Read Functions](https://eon-explorer.horizenlabs.io/address/0x0000000000000000000022222222222222222333?tab=read_contract) page.
+- Click on the *Connect wallet* button.
 - Connect your wallet.
-- Go to the *getPagedForgersStakesByUser* method and enter the following:
+- Go to the *getPagedForgersStakesByDelegator* method and enter the following:
    - MetaMask address
    - 0 for the *startIndex* field
-   - 1 in the *pageSize* field
+   - 10 in the *pageSize* field
    - Then click on *Query*
 <p>
 <img src={require("/img/docs/tutorial/explorer-staking1.png").default} alt="EON Explorer" width="600" height="400" />
 </p>
-<p>
-<img src={require("/img/docs/tutorial/explorer-staking2.png").default} alt="EON Explorer" width="600" height="400" />
-</p>
 
-This will get your forged staked info such as amount of $ZEN staked, and your ***stakeId***. Save your ***stakeId*** since you will need this input to unstake your $ZEN.
 
-*Once your forger node EVMAPP gets fully synced, you will need to wait approximately 9 hours (two epochs) in order to be eligible to participate in the block validating process.*
+This will get your stakes info such as forger pubkey, vrfkey and amount of $ZEN staked.
+
+*Remember that each modification of the stakes will take effect after 2 consensus epochs (25 hours max) in order to be eligible to participate in the block validating process.*
 
 ### Unstaking
-1. Before you can unstake, you should set active the eth_sign feature in Metamask wallet (you should disable this after unstaking):
-    - Advanced Settings → Active the Eth_sign Requests → Read & Confirm the warning → Click on Continue.
-2. Open Remix and select the *withdraw.js* file for editing
-3. Update the **STAKE_ID** field to the value that you received when staking. 
-4. Run the script.
-5. Metamask will prompt you to sign a message, click ***Sign***
-6. Disable the eth_sign feature.
+1. Open Remix and select the *withdraw.js* file for editing
+2. Update the **AMOUNT** , **YOUR_BLOCK_SIGN_PUBKEY** and **YOUR_VRF_PUBKEY** fields with the correct values (you can also withdraw a partial amount)
+3. Run the script.
 
 *If you would like to send funds back to the Horizen mainchain please use the following [guide](https://docs.horizen.io/horizen_eon/connect/backward_transfer) to do a backwards transfer.*
 
 ## Monitor Your Validated Blocks
 Go to the [EON Explorer](https://eon-explorer.horizenlabs.io/). Locate the Ethereum-generated address that was issued to you earlier during the Generate Keys step (these keys should always be stored in a secure location. Enter your Ethereum address in the search bar at the top right of the Explorer page and press enter.
-location).
 <p>
 <img src={require("/img/docs/tutorial/eon-explorer-address-search.png").default} alt="EON Explorer Address Search" width="600" height="400" />
 </p>
 
-All $ZEN earned by validated blocks will be sent to this address, so keep this and the private key in a safe place. Go to the Blocks validated tab, and you will see all the blocks you have validated.
+All $ZEN earned by validated blocks will be sent to this address (except a rewardShare > 0 was set during forger registration, see Forger registration section), so keep this and the private key in a safe place. 
 
 Please look at the FAQ section to learn more or engage with the community on the Horizen discord server.
