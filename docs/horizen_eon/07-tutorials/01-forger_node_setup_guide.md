@@ -353,8 +353,8 @@ A new instance of the smart contract is required for each forger: if you want to
 
 You can call the method deployDelegatedStakingReferenceImplementation of the factory, parameters required are the signPubKey and vrfKey that identify your forger (the latter is split in two different parameters: one for the first 32 bytes and one for the last byte).
 
-The method execution will trigger the deployment of the smart contract instance: once executed, you shuld see in the transaction log the new smart contract created. You can also see it in the explorer: check the transaction detail page, than click the tab "Internal txns"; you should see a "Create" transaction from the factory contract. The destination is the address of your newly created contract. <br/>
-Take note of its address: you will need it in the following step.
+The method execution will trigger the deployment of the smart contract instance: once executed, you shuld see in the transaction log the new smart contract created. You can also see it in the explorer: check the transaction detail page, then click the tab "Internal txns"; you should see a "Create" transaction from the factory contract. The destination is the address of your newly created contract. <br/>
+Take note of this address: you will need it in the following step.
 
 <img src={require("/img/docs/tutorial/factoryTxDetail.png").default} alt="Factory transaction detail" width="600" height="154" />
 
