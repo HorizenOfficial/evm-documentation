@@ -339,7 +339,9 @@ You should see the same values you’ve saved from the previous step in the outp
 ### (Optional) Reward smart contract deployment
 Starting from EON 1.4 you can redirect part of the forger's rewards to a smart contract, typically to use it to handle rewards distribution to delegators (but you can implement any workflow you want).<br/>
 The redirection will be specified with two parameters (rewardShare and rewardAddress) set during the forger registration step, described in the next point of this guide.<br/>
-<br/>
+
+**(Note: this step is not needed if in the  following forger registration step you specify rewardShare = 0, meaning you don't want to split the rewards and send all of them to the forger)**
+
 You can use any smart contract, but Horizen provides an audited and certified smart contract with a default implementation: it is able 
 to collect the rewards, and exposes a "claim" function that each delegator can call to retrieve the money.
 
@@ -350,10 +352,11 @@ More info on the methods exposed can also be found in the [README file here](htt
 A new instance of the smart contract is required for each forger: if you want to deploy one for your forger, the factory is available at this address: [0x8604Bb903B7D54F666bA1e75f98045345C63132a ](https://eon-explorer.horizenlabs.io/address/0x8604Bb903B7D54F666bA1e75f98045345C63132a?tab=contract)
 
 You can call the method deployDelegatedStakingReferenceImplementation of the factory, parameters required are the signPubKey and vrfKey that identify your forger (the latter is split in two different parameters: one for the first 32 bytes and one for the last byte).
-The method execution will trigger the deployment of the smart contract instance.  Take note of its address: you will need it in the following step.
 
-**(Note: this step is not needed if in the  following forger registration step you specify rewardShare = 0, meaning you don't want to split the rewards and send all of them to the forger)**
+The method execution will trigger the deployment of the smart contract instance: once executed, you shuld see in the transaction log the new smart contract created. You can also see it in the explorer: check the transaction detail page, then click the tab "Internal txns"; you should see a "Create" transaction from the factory contract. The destination is the address of your newly created contract. <br/>
+Take note of this address: you will need it in the following step.
 
+<img src={require("/img/docs/tutorial/factoryTxDetail.png").default} alt="Factory transaction detail" width="600" height="154" />
 
 ### Forger registration
 Starting from EON 1.4, a forger on-chain registration is required before being able to accept delegations and forge blocks.
