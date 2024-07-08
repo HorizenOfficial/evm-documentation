@@ -54,8 +54,6 @@ In the [EON Explorer](https://gobi-explorer.horizenlabs.io/), perform the follow
 
 2. Open the EON Explorer and paste the contract address into the **Search** field.
 
-![alt_text](/img/docs/deploy/contract-address.png)
-
 3. The **Contract Address Details** page appears. Review the information displayed. In the lower pane, click **Code**.
 
 ![alt_text](/img/docs/deploy/address-details.png)
@@ -96,7 +94,7 @@ Set the form with the following:
 
   **Note:** It is recommended **NOT** to use the **Brave web browser** for **EON Explorer** contract verification because of interface limitations.
   
-8. Click the **Read Contract** tab or **Write Contract** tab to display and interact with the contract details and any related transactions. 
+8. Click the **Read Contract** tab or **Write Contract** tab to display and interact with the contract details and any related transactions. In case of a partial match (cases where the compiled bytecode matches the deployed bytecode except for the metadata hash) a message will appear like in the following image and it's possible to verify again the contract.
 
 ![alt_text](/img/docs/deploy/verifysuccess1.png)
 
