@@ -320,7 +320,7 @@ Key information includes:
 
 - **Token** - The name of the token associated with the contract address. 
 - **Creator** - Transaction and address of creation. 
-- **Balance** - Address balance in TZEN does not include ERC20, ERC721, ERC1155 tokens).
+- **Balance** - Address balance in TZEN (does not include ERC20, ERC721, ERC1155 tokens).
 - **Transactions** - Number of transactions related to this address.
 - **Transfers** - Number of transfers to/from this address.
 - **Gas Used** - Gas used by the address.
