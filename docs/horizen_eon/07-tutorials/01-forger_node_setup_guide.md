@@ -413,7 +413,7 @@ Using these tools will enable you to stake and unstake your $ZEN to an EON forge
 
 3. Import the Remix folder scripts. To do this:
 - Click the *Upload Folder* icon as shown below and find the folder location containing the extracted files from your downloaded zip folder (the noted download location from the previous steps above). 
-- Select the *remix* folder, which can be found under *eon-smart-contract-tools-main/contracts/forger_stake_v2/remix*, and click *upload*. 
+- Select the *remix* folder, which can be found under *eon-smart-contract-tools-main/contracts/forger_stake/remix*, and click *upload*. 
 
 Before continuing, please have the key-value pairs that were created in the *Generate Keys* step ready and available to use. These values will be used in the next step.
 <p>
@@ -454,7 +454,7 @@ Before continuing, please have the key-value pairs that were created in the *Gen
 </p>
 
 8. Check your staking on the Explorer.
-- Go to the [Forger Stake V2 Contract  Read Functions](https://eon-explorer.horizenlabs.io/address/0x0000000000000000000022222222222222222333?tab=read_contract) page.
+- Go to the [Forger Stake Contract Read Functions](https://eon-explorer.horizenlabs.io/address/0x0000000000000000000022222222222222222333?tab=read_contract) page.
 - Click on the *Connect wallet* button.
 - Connect your wallet.
 - Go to the *getPagedForgersStakesByDelegator* method and enter the following:
