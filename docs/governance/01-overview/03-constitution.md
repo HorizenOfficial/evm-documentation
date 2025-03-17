@@ -237,9 +237,9 @@ To stagger elections and optimize continuity of the Special Council, committee s
 Tokenholders may, at any time during the Initial or Standard Term, vote to remove a Special Council member through, and subject to, a Non-Technical ZenIP Process. If, at any time, one or several Special Council members are removed such that a vacancy exists on the Special Council, including where all seven seats are vacant, the Foundation Director(s) shall, acting in the best interests of the Foundation, have the authority to nominate and appoint replacement members to the Special Council who shall serve a Standard Term until such time as they are removed by tokenholders subject to the Non-Technical ZenIP Process or are replaced in the immediately next election.
 
 The initial Special Council Members are:
-* Brian Rose
+* Johncarlo Maddalena
 
-* Marwan Alzarouni 
+* Domenico Minniti
 
 * Benjamin Charbit 
 
